@@ -7,5 +7,5 @@ import (
 
 func main() {
 	fmt.Println("Hello World")
-	SvcClient.GetRandomNumbers()
+	SvcClient.GetRandomNumbers(16, 1, 6)
 }

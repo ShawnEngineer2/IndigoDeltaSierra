@@ -11,21 +11,33 @@ type header struct {
 	headerValue string
 }
 
-func Get(svcEndpoint string, body string, headers []header) []byte {
+func Get(svcEndpoint string, body string, headers []header) (int, []byte) {
 	fmt.Println("Made it to GET")
 
 	fmt.Println("Configuring Call ...")
 
 	client := &http.Client{}
 
-	//Add headers here
-
 	//Add Body
+	if len(body) > 0 {
+		fmt.Println("Adding Body")
+	}
 
 	req, err := http.NewRequest("GET", svcEndpoint, nil)
 
 	if err != nil {
 		fmt.Println(err.Error())
+	}
+
+	//Add headers here
+	if headers != nil {
+		fmt.Println("Adding Headers")
+
+		for _, currHeader := range headers {
+			msg := "Adding Header " + currHeader.headerName + " with Value " + currHeader.headerValue
+			fmt.Println(msg)
+			req.Header.Add(currHeader.headerName, currHeader.headerValue)
+		}
 	}
 
 	fmt.Println("Making Call ...")
@@ -43,6 +55,6 @@ func Get(svcEndpoint string, body string, headers []header) []byte {
 		fmt.Println(err.Error())
 	}
 
-	return bodyBytes
+	return resp.StatusCode, bodyBytes
 
 }
