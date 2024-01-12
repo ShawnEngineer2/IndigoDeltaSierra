@@ -1,8 +1,8 @@
 package SvcClient
 
 import (
-	"fmt"
 	"io"
+	"log/slog"
 	"net/http"
 )
 
@@ -11,48 +11,47 @@ type header struct {
 	headerValue string
 }
 
-func Get(svcEndpoint string, body string, headers []header) (int, []byte) {
-	fmt.Println("Made it to GET")
+func Get(svcEndpoint string, body string, headers []header, logger *slog.Logger) (int, []byte) {
 
-	fmt.Println("Configuring Call ...")
+	logger.Info("Configuring Call")
 
 	client := &http.Client{}
 
 	//Add Body
 	if len(body) > 0 {
-		fmt.Println("Adding Body")
+		logger.Info("Adding Body")
 	}
 
 	req, err := http.NewRequest("GET", svcEndpoint, nil)
 
 	if err != nil {
-		fmt.Println(err.Error())
+		logger.Error(err.Error())
 	}
 
 	//Add headers here
 	if headers != nil {
-		fmt.Println("Adding Headers")
+		logger.Info("Adding Headers")
 
 		for _, currHeader := range headers {
 			msg := "Adding Header " + currHeader.headerName + " with Value " + currHeader.headerValue
-			fmt.Println(msg)
+			logger.Info(msg)
 			req.Header.Add(currHeader.headerName, currHeader.headerValue)
 		}
 	}
 
-	fmt.Println("Making Call ...")
+	logger.Info("Making Call")
 
 	resp, err := client.Do(req)
 
 	if err != nil {
-		fmt.Print(err.Error())
+		logger.Error(err.Error())
 	}
 
 	defer resp.Body.Close()
 	bodyBytes, err := io.ReadAll(resp.Body)
 
 	if err != nil {
-		fmt.Println(err.Error())
+		logger.Error(err.Error())
 	}
 
 	return resp.StatusCode, bodyBytes

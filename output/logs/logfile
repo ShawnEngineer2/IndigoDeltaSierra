@@ -1,0 +1,57 @@
+{"time":"2024-01-11T23:25:39.436241-05:00","level":"INFO","msg":"Hello Log Message"}
+{"time":"2024-01-11T23:28:47.445283-05:00","level":"INFO","msg":"Hello Log Message"}
+{"time":"2024-01-11T23:32:07.669332-05:00","level":"INFO","msg":"Hello Log Message"}
+{"time":"2024-01-11T23:32:07.669749-05:00","level":"INFO","msg":"Hello World"}
+{"time":"2024-01-11T23:52:44.889995-05:00","level":"INFO","msg":"Hello Log Message"}
+{"time":"2024-01-11T23:52:44.890634-05:00","level":"INFO","msg":"Hello World"}
+{"time":"2024-01-11T23:57:50.018322-05:00","level":"INFO","msg":"Hello Log Message"}
+{"time":"2024-01-11T23:57:50.019043-05:00","level":"INFO","msg":"Hello World"}
+{"time":"2024-01-11T23:57:50.019131-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-01-11T23:57:50.019245-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-01-11T23:57:50.019268-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-01-11T23:58:55.363438-05:00","level":"INFO","msg":"Hello Log Message"}
+{"time":"2024-01-11T23:58:55.364171-05:00","level":"INFO","msg":"Hello World"}
+{"time":"2024-01-11T23:58:55.364245-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-01-11T23:58:55.364351-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-01-11T23:58:55.364372-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-01-11T23:58:55.364389-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-01-12T00:10:42.227929-05:00","level":"INFO","msg":"Hello Log Message"}
+{"time":"2024-01-12T00:10:42.228608-05:00","level":"INFO","msg":"Hello World"}
+{"time":"2024-01-12T00:10:42.228803-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-01-12T00:10:42.228907-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-01-12T00:10:42.228939-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-01-12T00:10:42.228961-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-01-12T00:22:21.597928-05:00","level":"INFO","msg":"Hello Log Message"}
+{"time":"2024-01-12T00:22:21.598619-05:00","level":"INFO","msg":"Hello World"}
+{"time":"2024-01-12T00:22:21.59873-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-01-12T00:22:21.598839-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-01-12T00:22:21.598861-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-01-12T00:22:21.59888-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-01-12T00:36:56.020261-05:00","level":"INFO","msg":"Hello Log Message"}
+{"time":"2024-01-12T00:36:56.020943-05:00","level":"INFO","msg":"Hello World"}
+{"time":"2024-01-12T00:36:56.02103-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-01-12T00:36:56.021132-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-01-12T00:36:56.021149-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-01-12T00:36:56.021168-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-01-12T00:48:24.321187-05:00","level":"INFO","msg":"Hello Log Message"}
+{"time":"2024-01-12T00:48:24.321765-05:00","level":"INFO","msg":"Hello World"}
+{"time":"2024-01-12T00:48:24.321856-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-01-12T00:48:24.321961-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-01-12T00:48:24.321984-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-01-12T00:48:24.322005-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-01-12T01:03:42.01987-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-01-12T01:03:42.020457-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-01-12T01:03:42.020492-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-01-12T01:03:42.020512-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-01-12T01:07:24.909418-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-01-12T01:07:24.910198-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-01-12T01:07:24.91024-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-01-12T01:07:24.910259-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-01-12T01:16:16.983752-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-01-12T01:16:16.984357-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-01-12T01:16:16.984369-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-01-12T01:16:16.984381-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-01-12T01:31:27.015444-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-01-12T01:31:27.016075-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-01-12T01:31:27.016109-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-01-12T01:31:27.016137-05:00","level":"INFO","msg":"Making Call"}

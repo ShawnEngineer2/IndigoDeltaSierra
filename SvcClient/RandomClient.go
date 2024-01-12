@@ -1,28 +1,36 @@
 package SvcClient
 
 import (
-	"fmt"
+	"log/slog"
 	"strconv"
+	"strings"
 )
 
-func GetRandomNumbers(numValues int, numMin int, numMax int) {
+func GetRandomNumbers(numValues int, numMin int, numMax int, logger *slog.Logger, userAgent string) []string {
 
-	const baseSvcUrl string = "https://www.random.org/integersss"
+	const baseSvcUrl string = "https://www.random.org/integers"
 	const numValueBoundary int = 1000
 
 	//Validate Number of Values input
 	if numValues < 1 {
-		fmt.Println("Must request at least one random number")
+		logger.Error("Must request at least one random number")
+		return nil
+
 	} else if numValues > numValueBoundary {
 		msg := "Cannot request more than " + strconv.Itoa(numValueBoundary) + " numbers per service call"
-		fmt.Println(msg)
+		logger.Error(msg)
+		return nil
 	}
 
 	//Validate Min and Max values
 	if numMin < 0 {
-		fmt.Println("Minimum value must be at least 0")
+		logger.Error("Minimum value must be at least 0")
+		return nil
+
 	} else if numMax < 1 {
-		fmt.Println("Maximum value must be at least 1")
+		logger.Error("Maximum value must be at least 1")
+		return nil
+
 	}
 
 	//Build Service URL
@@ -32,19 +40,23 @@ func GetRandomNumbers(numValues int, numMin int, numMax int) {
 	var svcHeaders = []header{
 		{
 			headerName:  "User-Agent",
-			headerValue: "shawn.engineer2@gmail.com",
+			headerValue: userAgent,
 		},
 	}
 
 	//Use "Get" from SvcBaseFunctions to retrieve results from the service
-	httpCode, responseBytes := Get(svcUrl, "", svcHeaders)
+	httpCode, responseBytes := Get(svcUrl, "", svcHeaders, logger)
 	responseString := string(responseBytes)
 
 	//Handle non-OK failure codes - taking the simple route here
 	if httpCode != 200 && httpCode != 201 {
 		msg := "Service Error Occurred : Status Code : " + strconv.Itoa(httpCode) + " Error Message : " + responseString
-		fmt.Println(msg)
+		logger.Error(msg)
+		return nil
 	}
 
-	fmt.Println(responseString)
+	//Return the body data
+	payload := strings.Split(responseString, "\t")
+	return payload
+
 }
