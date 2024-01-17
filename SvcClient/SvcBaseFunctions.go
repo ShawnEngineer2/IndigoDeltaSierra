@@ -1,4 +1,4 @@
-package SvcClient
+package svcclient
 
 import (
 	"io"

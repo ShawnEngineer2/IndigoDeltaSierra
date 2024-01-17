@@ -2,39 +2,143 @@ package main
 
 import (
 	"fmt"
-	"indigodeltasierra/SvcClient"
+	"indigodeltasierra/datamodels"
+	"indigodeltasierra/svcclient"
+	"indigodeltasierra/sysfile"
+	"indigodeltasierra/validators"
 	"io"
 	"log/slog"
+	"os"
+	"time"
 
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 
-type config struct {
-	intervalSeed    int
-	emailAddress    string
-	queueEndpointIP string
-	queueTopic      string
-	logLocation     string
-}
-
 func main() {
 
-	//Configure settings for the simulator
-	config := config{
-		intervalSeed:    15,
-		emailAddress:    "shawn.engineer2@gmail.com",
-		queueEndpointIP: "",
-		queueTopic:      "Topic",
-		logLocation:     "output/logs/logfile",
+	//Allocate constants
+	const CONFIG_FILE_PATH string = "./config.iot"
+	const EXIT_FAILURE int = 125
+	const EXIT_CLEAN int = 0
+	const STARTUP_MSG string = "System Starting"
+	const SHUTDOWN_MSG string = "Run Complete ... Shutting Down"
+	const DEFAULT_SVC_WAIT int = 3
+	const MAX_QUBZ_COUNT int = 100000
+
+	//Set up console logger
+	consoleLogger := slog.Default()
+	consoleLogger.Info(STARTUP_MSG)
+
+	//Check for Config file
+	consoleLogger.Info("Checking for Config file ... ")
+
+	if !sysfile.FileExists(CONFIG_FILE_PATH) {
+		consoleLogger.Error("Cannot find Config file in boot directory ... startup terminated!")
+		os.Exit(EXIT_FAILURE)
 	}
 
-	logger := slog.New(slog.NewJSONHandler(RotatingLog(config.logLocation), nil))
+	//Load Config file
+	consoleLogger.Info("Found Config file ... begin load ...")
 
-	randomNumberSet := SvcClient.GetRandomNumbers(6, 1, 6, logger, config.emailAddress)
+	config := datamodels.Config{}
 
-	for _, randomNumber := range randomNumberSet {
-		fmt.Println(randomNumber)
+	if !sysfile.LoadFileToStruct(CONFIG_FILE_PATH, &config) {
+		consoleLogger.Error("Could not load Config file ... startup terminated")
+		os.Exit(EXIT_FAILURE)
+	} else {
+		consoleLogger.Info("Config values loaded")
+		consoleLogger.Info("Validating Config ...")
+
+		errCount := validators.ValidateConfig(config, *consoleLogger)
+
+		if errCount > 0 {
+			consoleLogger.Error(fmt.Sprintf("%s errors identified in loaded config. Startup terminated ... please correct and start again", fmt.Sprint(errCount)))
+			os.Exit(EXIT_FAILURE)
+		} else {
+			consoleLogger.Info("Config values validated. Loaded values are:")
+			consoleLogger.Info(fmt.Sprintf("%+v", config))
+		}
+
 	}
+
+	//Setup logfile logger
+	consoleLogger.Info("Configuring File Logger to output path " + config.LogLocation + " ...")
+	fileLogger := slog.New(slog.NewJSONHandler(RotatingLog(config.LogLocation), nil))
+	fileLogger.Info(STARTUP_MSG)
+	fileLogger.Info("Config Values for this run ...")
+	fileLogger.Info(fmt.Sprintf("%+v", config))
+
+	//Load a random list of Qubz names from the name file
+	//--Load the qubz name file into a struct
+	//--Identify a random set of names to load into the Qubz Matrix
+	if config.QubzCount < MAX_QUBZ_COUNT {
+		//Grab a random set of numbers between 1 and max qubz count and load those names
+		fileLogger.Info("Loading Qubz")
+	} else {
+		//Just load'em all into the Qubz Matrix
+		fileLogger.Info("Loading Qubz")
+	}
+
+	//Cooling off wait so we don't overload the random number generator service
+	consoleLogger.Info("Service Cooloff Wait ...")
+	time.Sleep(time.Duration(DEFAULT_SVC_WAIT) * time.Second)
+
+	quotaExceeded, err := svcclient.CheckQuotaExceeded(fileLogger, config.EmailAddress)
+
+	if err != nil {
+		msg := "Service Abend: Error checking Random Service Quota: " + err.Error()
+		consoleLogger.Error(msg)
+		fileLogger.Error(msg)
+		os.Exit(EXIT_FAILURE)
+	} else if quotaExceeded {
+		msg := "Service Abend: Random Service Quota exceeded"
+		consoleLogger.Error(msg)
+		fileLogger.Error(msg)
+		os.Exit(EXIT_FAILURE)
+	}
+
+	//Load the route table into a struct
+
+	//Randomly assign routes to the Qubz in the Qubz Matrix
+
+	//Cool off wait for random number generator service - then check quota
+	consoleLogger.Info("Service Cooloff Wait ...")
+	time.Sleep(time.Duration(DEFAULT_SVC_WAIT) * time.Second)
+
+	quotaExceeded, err = svcclient.CheckQuotaExceeded(fileLogger, config.EmailAddress)
+
+	if err != nil {
+		msg := "Service Abend: Error checking Random Service Quota: " + err.Error()
+		consoleLogger.Error(msg)
+		fileLogger.Error(msg)
+		os.Exit(EXIT_FAILURE)
+	} else if quotaExceeded {
+		msg := "Service Abend: Random Service Quota exceeded"
+		consoleLogger.Error(msg)
+		fileLogger.Error(msg)
+		os.Exit(EXIT_FAILURE)
+	}
+
+	//Load the Event Types file into a struct
+
+	quotaExceeded, err = svcclient.CheckQuotaExceeded(fileLogger, config.EmailAddress)
+
+	if err != nil {
+		msg := "Service Abend: Error checking Random Service Quota: " + err.Error()
+		consoleLogger.Error(msg)
+		fileLogger.Error(msg)
+		os.Exit(EXIT_FAILURE)
+	} else if quotaExceeded {
+		msg := "Service Abend: Random Service Quota exceeded"
+		consoleLogger.Error(msg)
+		fileLogger.Error(msg)
+		os.Exit(EXIT_FAILURE)
+	}
+
+	//Exit with a CLEAN (no errors) code
+	fileLogger.Info(SHUTDOWN_MSG)
+	consoleLogger.Info(SHUTDOWN_MSG)
+	os.Exit(EXIT_CLEAN)
 }
 
 func RotatingLog(path string) io.Writer {

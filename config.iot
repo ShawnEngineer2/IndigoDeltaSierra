@@ -1,0 +1,9 @@
+{
+    "qubzCount":10000,
+    "eventInterval":15,
+    "eventCycleCount":5,
+    "emailAddress":"shawn.engineer2@gmail.com",
+    "queueEndpoint":"127.0.0.1",
+    "queueTopic":"topic",
+    "logLocation":"./output/logs/logfile"
+}

@@ -1,6 +1,7 @@
-package SvcClient
+package svcclient
 
 import (
+	"errors"
 	"log/slog"
 	"strconv"
 	"strings"
@@ -58,5 +59,50 @@ func GetRandomNumbers(numValues int, numMin int, numMax int, logger *slog.Logger
 	//Return the body data
 	payload := strings.Split(responseString, "\t")
 	return payload
+
+}
+
+func CheckQuotaExceeded(fileLogger *slog.Logger, userAgent string) (bool, error) {
+	//This function checks the random number service remaining bit quota and returns TRUE if available bits is less than the Bit Boundary
+	const svcUrl string = "https://www.random.org/quota/?format=plain"
+	const bitBoundary int = 1000
+
+	//Populate required headers
+	var svcHeaders = []header{
+		{
+			headerName:  "User-Agent",
+			headerValue: userAgent,
+		},
+	}
+
+	//Use "Get" from SvcBaseFunctions to retrieve results from the service
+	httpCode, responseBytes := Get(svcUrl, "", svcHeaders, fileLogger)
+	responseString := string(responseBytes)
+
+	//Handle non-OK failure codes - taking the simple route here
+	if httpCode != 200 && httpCode != 201 {
+		msg := "Service Error Occurred : Status Code : " + strconv.Itoa(httpCode) + " Error Message : " + responseString
+		fileLogger.Error(msg)
+		return false, errors.New("Service Error Occurred")
+	}
+
+	//Process the returned response
+	//----------------------------------
+	quotaExceeded := false
+
+	quotaInt, err := strconv.Atoi(strings.TrimRight(responseString, "\n"))
+
+	if err != nil {
+		//Log the error
+		fileLogger.Error("Error Checking Random Service Quota: " + err.Error())
+		return false, err
+	}
+
+	if quotaInt < bitBoundary {
+		quotaExceeded = true
+	}
+
+	//Return the body data
+	return quotaExceeded, nil
 
 }
