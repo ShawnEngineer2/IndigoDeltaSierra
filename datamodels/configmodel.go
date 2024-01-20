@@ -10,4 +10,5 @@ type Config struct {
 	QueueEndpoint   string `json:"queueEndpoint"`
 	QueueTopic      string `json:"queueTopic"`
 	LogLocation     string `json:"logLocation"`
+	QubzNameFile    string `json:"qubzNameFile"`
 }

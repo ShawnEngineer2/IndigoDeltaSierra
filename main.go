@@ -17,13 +17,13 @@ import (
 func main() {
 
 	//Allocate constants
-	const CONFIG_FILE_PATH string = "./config.iot"
+	const CONFIG_FILE_PATH string = "./config.dat"
 	const EXIT_FAILURE int = 125
 	const EXIT_CLEAN int = 0
 	const STARTUP_MSG string = "System Starting"
 	const SHUTDOWN_MSG string = "Run Complete ... Shutting Down"
 	const DEFAULT_SVC_WAIT int = 3
-	const MAX_QUBZ_COUNT int = 100000
+	var max_qubz_count int = 0
 
 	//Set up console logger
 	consoleLogger := slog.Default()
@@ -68,15 +68,43 @@ func main() {
 	fileLogger.Info("Config Values for this run ...")
 	fileLogger.Info(fmt.Sprintf("%+v", config))
 
-	//Load a random list of Qubz names from the name file
-	//--Load the qubz name file into a struct
-	//--Identify a random set of names to load into the Qubz Matrix
-	if config.QubzCount < MAX_QUBZ_COUNT {
-		//Grab a random set of numbers between 1 and max qubz count and load those names
-		fileLogger.Info("Loading Qubz")
+	//Load Qubz Names and IDs from the Qubz Name File
+	qubznames := []datamodels.Qubz{}
+
+	if !sysfile.LoadFileToStruct(config.QubzNameFile, &qubznames) {
+		consoleLogger.Error(fmt.Sprintf("Could not load Qubz Names from file %s ... startup terminated", config.QubzNameFile))
+		os.Exit(EXIT_FAILURE)
 	} else {
+		max_qubz_count = len(qubznames)
+		consoleLogger.Info(fmt.Sprintf("Qubz Names loaded from file %s ... %d names loaded", config.QubzNameFile, max_qubz_count))
+	}
+
+	//Use the loaded names list to source a random set of Qubz names
+	qubzmatrix := make([]datamodels.QubzMatrix, config.QubzCount)
+
+	if config.QubzCount == 0 || config.QubzCount == max_qubz_count {
 		//Just load'em all into the Qubz Matrix
-		fileLogger.Info("Loading Qubz")
+		fileLogger.Info("Loading All Qubz Names ...")
+
+		qubzmatrix = make([]datamodels.QubzMatrix, max_qubz_count)
+
+		for i, x := range qubznames {
+			qubzmatrix[i].QubzID = x.QubzID
+			qubzmatrix[i].QubzName = x.QubzName
+		}
+
+		fmt.Println(qubzmatrix[10])
+
+	} else if config.QubzCount < max_qubz_count {
+		//Grab a random set of numbers of QubzCount between 1 and max qubz count and load those names
+		fileLogger.Info("Loading Random Qubz Names ...")
+
+		fmt.Println(svcclient.GetRandomNumbers(config.QubzCount, 0, (max_qubz_count - 1), fileLogger, config.EmailAddress))
+
+	} else if config.QubzCount > max_qubz_count {
+		//Too many Qubz requested - throw an error
+		consoleLogger.Error(fmt.Sprintf("Not enough names in %s file (%d) to satisfy requested number of Qubz (%d) ... startup terminated", config.QubzNameFile, len(qubznames), config.QubzCount))
+		os.Exit(EXIT_FAILURE)
 	}
 
 	//Cooling off wait so we don't overload the random number generator service

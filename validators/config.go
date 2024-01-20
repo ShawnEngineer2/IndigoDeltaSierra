@@ -12,13 +12,10 @@ func ValidateConfig(configToValidate datamodels.Config, consoleLogger slog.Logge
 	validationErrorCount := 0
 
 	//Validate Qubz Count
-	if configToValidate.QubzCount <= 0 {
+	if configToValidate.QubzCount < 0 {
 		consoleLogger.Error("QubzCount value cannot be less than 1")
 		validationErrorCount++
 
-	} else if configToValidate.QubzCount > 100000 {
-		consoleLogger.Error("QubzCount value cannot be greater than 100000")
-		validationErrorCount++
 	}
 
 	//Validate Event Interval

@@ -83,7 +83,7 @@ func CheckQuotaExceeded(fileLogger *slog.Logger, userAgent string) (bool, error)
 	if httpCode != 200 && httpCode != 201 {
 		msg := "Service Error Occurred : Status Code : " + strconv.Itoa(httpCode) + " Error Message : " + responseString
 		fileLogger.Error(msg)
-		return false, errors.New("Service Error Occurred")
+		return false, errors.New("service error occurred")
 	}
 
 	//Process the returned response
