@@ -1,0 +1,312 @@
+[
+  {
+    "LocationID": 1,
+    "LocationCode": "ABZ",
+    "Description": "Aberdeen",
+    "City": "Aberdeen",
+    "State": "Scotland",
+    "Country": "Scotland",
+    "Latitude": 57.15229508820280000,
+    "Longitude": -2.11164018063489000
+  },
+  {
+    "LocationID": 2,
+    "LocationCode": "ANC",
+    "Description": "Anchorage",
+    "City": "Anchorage",
+    "State": "AK",
+    "Country": "USA",
+    "Latitude": 61.19868852046160000,
+    "Longitude": -149.92930622351800000
+  },
+  {
+    "LocationID": 3,
+    "LocationCode": "ATL",
+    "Description": "Atlanta",
+    "City": "Atlanta",
+    "State": "GA",
+    "Country": "USA",
+    "Latitude": 33.76383259370800000,
+    "Longitude": -84.41190401346990000
+  },
+  {
+    "LocationID": 4,
+    "LocationCode": "BOM",
+    "Description": "Mumbai",
+    "City": "Mumbai",
+    "State": "Maharashtra",
+    "Country": "India",
+    "Latitude": 19.10294118029500000,
+    "Longitude": 72.86675143926080000
+  },
+  {
+    "LocationID": 5,
+    "LocationCode": "BWN",
+    "Description": "SpaceX Launch City",
+    "City": "Brownsville",
+    "State": "TX",
+    "Country": "USA",
+    "Latitude": 25.94987363295000000,
+    "Longitude": -97.52965260466550000
+  },
+  {
+    "LocationID": 6,
+    "LocationCode": "CCU",
+    "Description": "Kolkata",
+    "City": "Kolkata",
+    "State": "West Bengal",
+    "Country": "India",
+    "Latitude": 22.53195649770430000,
+    "Longitude": 88.33695385255590000
+  },
+  {
+    "LocationID": 7,
+    "LocationCode": "CHS",
+    "Description": "Charleston",
+    "City": "Charleston",
+    "State": "SC",
+    "Country": "USA",
+    "Latitude": 32.78399904878120000,
+    "Longitude": -79.93478574672710000
+  },
+  {
+    "LocationID": 8,
+    "LocationCode": "CLT",
+    "Description": "Charlotte",
+    "City": "Charlotte",
+    "State": "NC",
+    "Country": "USA",
+    "Latitude": 35.21201792138400000,
+    "Longitude": -80.84739501927270000
+  },
+  {
+    "LocationID": 9,
+    "LocationCode": "DEL",
+    "Description": "Delhi",
+    "City": "Delhi",
+    "State": "NCR",
+    "Country": "India",
+    "Latitude": 28.65061197103070000,
+    "Longitude": 77.16943490406120000
+  },
+  {
+    "LocationID": 10,
+    "LocationCode": "DFW",
+    "Description": "Dallas",
+    "City": "Dallas",
+    "State": "TX",
+    "Country": "USA",
+    "Latitude": 32.75936907847620000,
+    "Longitude": -96.79473730276210000
+  },
+  {
+    "LocationID": 11,
+    "LocationCode": "EDI",
+    "Description": "Edinburgh",
+    "City": "Edinburgh",
+    "State": "Scotland",
+    "Country": "Scotland",
+    "Latitude": 55.94963995272400000,
+    "Longitude": -3.19469793426124000
+  },
+  {
+    "LocationID": 12,
+    "LocationCode": "HYD",
+    "Description": "Hyderabad",
+    "City": "Hyderabad",
+    "State": "Telangana",
+    "Country": "India",
+    "Latitude": 17.41621177822630000,
+    "Longitude": 78.42244979461840000
+  },
+  {
+    "LocationID": 13,
+    "LocationCode": "IAH",
+    "Description": "Houston",
+    "City": "Houston",
+    "State": "TX",
+    "Country": "USA",
+    "Latitude": 29.78935900942550000,
+    "Longitude": -95.39173398306610000
+  },
+  {
+    "LocationID": 14,
+    "LocationCode": "ISS",
+    "Description": "International Space Station",
+    "City": "Near Orbit",
+    "State": "Earth",
+    "Country": "All",
+    "Latitude": 37.14132188578790000,
+    "Longitude": -110.20655925434300000
+  },
+  {
+    "LocationID": 15,
+    "LocationCode": "KUL",
+    "Description": "Kuala Lumpur",
+    "City": "Kuala Lumpur",
+    "State": "Selangor",
+    "Country": "Malaysia",
+    "Latitude": 3.16043379966351000,
+    "Longitude": 101.68318618759800000
+  },
+  {
+    "LocationID": 16,
+    "LocationCode": "LAX",
+    "Description": "Los Angeles",
+    "City": "Los Angeles",
+    "State": "CA",
+    "Country": "USA",
+    "Latitude": 34.01548433895280000,
+    "Longitude": -118.24287044561400000
+  },
+  {
+    "LocationID": 17,
+    "LocationCode": "MEL",
+    "Description": "Melbourne",
+    "City": "Melbourne",
+    "State": "Victoria",
+    "Country": "Austrailia",
+    "Latitude": -37.85587324686830000,
+    "Longitude": 145.03096431278500000
+  },
+  {
+    "LocationID": 18,
+    "LocationCode": "MEX",
+    "Description": "Mexico City",
+    "City": "Mexico City",
+    "State": "Venustiano Carranza",
+    "Country": "Mexico",
+    "Latitude": 19.41218627382020000,
+    "Longitude": -99.13756840854190000
+  },
+  {
+    "LocationID": 19,
+    "LocationCode": "MSY",
+    "Description": "New Orleans",
+    "City": "New Orleans",
+    "State": "LA",
+    "Country": "USA",
+    "Latitude": 29.97699877567010000,
+    "Longitude": -90.08651096839540000
+  },
+  {
+    "LocationID": 20,
+    "LocationCode": "NSP",
+    "Description": "McMurdo Station",
+    "City": "South Pole Station",
+    "State": "Antarctica",
+    "Country": "Antarctica",
+    "Latitude": -77.84669480068340000,
+    "Longitude": 166.67102957755600000
+  },
+  {
+    "LocationID": 21,
+    "LocationCode": "ORD",
+    "Description": "Chicago",
+    "City": "Chicago",
+    "State": "IL",
+    "Country": "USA",
+    "Latitude": 41.85816719600940000,
+    "Longitude": -87.65781798057590000
+  },
+  {
+    "LocationID": 22,
+    "LocationCode": "PNY",
+    "Description": "Pondicherry",
+    "City": "Pondicherry",
+    "State": "Puducherry",
+    "Country": "India",
+    "Latitude": 11.93562049030990000,
+    "Longitude": 79.80477234690720000
+  },
+  {
+    "LocationID": 23,
+    "LocationCode": "SAN",
+    "Description": "San Diego",
+    "City": "San Diego",
+    "State": "CA",
+    "Country": "USA",
+    "Latitude": 32.75023016964570000,
+    "Longitude": -117.12688481493100000
+  },
+  {
+    "LocationID": 24,
+    "LocationCode": "SAT",
+    "Description": "San Antonio",
+    "City": "San Antonio",
+    "State": "TX",
+    "Country": "USA",
+    "Latitude": 29.44381578162870000,
+    "Longitude": -98.53365832141920000
+  },
+  {
+    "LocationID": 25,
+    "LocationCode": "SCL",
+    "Description": "Santiago",
+    "City": "Santiago",
+    "State": "Chile",
+    "Country": "Chile",
+    "Latitude": -33.46064955386060000,
+    "Longitude": -70.68271626388030000
+  },
+  {
+    "LocationID": 26,
+    "LocationCode": "SEA",
+    "Description": "Seattle",
+    "City": "Seattle",
+    "State": "WA",
+    "Country": "USA",
+    "Latitude": 47.61708935357370000,
+    "Longitude": -122.31460913084900000
+  },
+  {
+    "LocationID": 27,
+    "LocationCode": "SHL",
+    "Description": "Shimla",
+    "City": "Shimla",
+    "State": "Himachal Pradesh",
+    "Country": "India",
+    "Latitude": 31.09467782684840000,
+    "Longitude": 77.16708848569270000
+  },
+  {
+    "LocationID": 28,
+    "LocationCode": "SIN",
+    "Description": "Singapore",
+    "City": "Singapore",
+    "State": "Singapore",
+    "Country": "Singapore",
+    "Latitude": 1.29889231907896000,
+    "Longitude": 103.82775446130100000
+  },
+  {
+    "LocationID": 29,
+    "LocationCode": "STL",
+    "Description": "St Louis",
+    "City": "St Louis",
+    "State": "MO",
+    "Country": "USA",
+    "Latitude": 38.64225892481570000,
+    "Longitude": -90.21120201467090000
+  },
+  {
+    "LocationID": 30,
+    "LocationCode": "SYD",
+    "Description": "Sydney",
+    "City": "Sydney",
+    "State": "New South Wales",
+    "Country": "Austrailia",
+    "Latitude": -33.88999322010040000,
+    "Longitude": 151.16538136207100000
+  },
+  {
+    "LocationID": 31,
+    "LocationCode": "ZAL",
+    "Description": "Valdivia",
+    "City": "Valdivia",
+    "State": "Chile",
+    "Country": "Chile",
+    "Latitude": -39.82141784940900000,
+    "Longitude": -73.24263552986730000
+  }
+]

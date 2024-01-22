@@ -1,0 +1,14 @@
+[
+  {
+    "ClassOfServiceID": 1,
+    "ClassOfService": "Express"
+  },
+  {
+    "ClassOfServiceID": 2,
+    "ClassOfService": "Premium"
+  },
+  {
+    "ClassOfServiceID": 3,
+    "ClassOfService": "Standard"
+  }
+]

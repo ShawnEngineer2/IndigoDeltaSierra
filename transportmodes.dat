@@ -1,0 +1,22 @@
+[
+  {
+    "TransportModeID": 1,
+    "TransportMode": "Dragon"
+  },
+  {
+    "TransportModeID": 2,
+    "TransportMode": "Plane"
+  },
+  {
+    "TransportModeID": 3,
+    "TransportMode": "Ship"
+  },
+  {
+    "TransportModeID": 4,
+    "TransportMode": "Train"
+  },
+  {
+    "TransportModeID": 5,
+    "TransportMode": "Truck"
+  }
+]
