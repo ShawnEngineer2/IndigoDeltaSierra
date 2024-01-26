@@ -9,7 +9,6 @@ import (
 	"io"
 	"log/slog"
 	"os"
-	"time"
 
 	"gopkg.in/natefinch/lumberjack.v2"
 )
@@ -108,8 +107,8 @@ func main() {
 	}
 
 	//Cooling off wait so we don't overload the random number generator service
-	consoleLogger.Info("Service Cooloff Wait ...")
-	time.Sleep(time.Duration(DEFAULT_SVC_WAIT) * time.Second)
+	//consoleLogger.Info("Service Cooloff Wait ...")
+	//time.Sleep(time.Duration(DEFAULT_SVC_WAIT) * time.Second)
 
 	quotaExceeded, err := svcclient.CheckQuotaExceeded(fileLogger, config.EmailAddress)
 
@@ -130,8 +129,8 @@ func main() {
 	//Randomly assign routes to the Qubz in the Qubz Matrix
 
 	//Cool off wait for random number generator service - then check quota
-	consoleLogger.Info("Service Cooloff Wait ...")
-	time.Sleep(time.Duration(DEFAULT_SVC_WAIT) * time.Second)
+	//consoleLogger.Info("Service Cooloff Wait ...")
+	//time.Sleep(time.Duration(DEFAULT_SVC_WAIT) * time.Second)
 
 	quotaExceeded, err = svcclient.CheckQuotaExceeded(fileLogger, config.EmailAddress)
 
@@ -162,6 +161,11 @@ func main() {
 		fileLogger.Error(msg)
 		os.Exit(EXIT_FAILURE)
 	}
+
+	//Test JSON Output
+	testAltimeter()
+	testBattery()
+	testCompute()
 
 	//Exit with a CLEAN (no errors) code
 	fileLogger.Info(SHUTDOWN_MSG)
