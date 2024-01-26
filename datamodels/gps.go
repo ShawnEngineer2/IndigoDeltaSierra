@@ -15,7 +15,7 @@ type GPSPosition struct {
 
 // This struct represents a single GPS sensor reading
 type GPSReading struct {
-	EventState          int         `json:"State"`
+	EventState          int         `json:"EventState"`
 	ExpectedGPSPosition GPSPosition `json:"ExpectedGPSPosition"`
 	ActualGPSPosition   GPSPosition `json:"ActualGPSPosition"`
 	GPSSensorState      int         `json:"GPSSensorState"`

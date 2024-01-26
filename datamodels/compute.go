@@ -2,7 +2,7 @@ package datamodels
 
 // This struct represents a single compute sensor reading
 type ComputeReading struct {
-	EventState             int     `json:"State"`
+	EventState             int     `json:"EventState"`
 	CPUUtilization         int     `json:"CPUUtilization"`
 	MemoryUtilization      int     `json:"MemoryUtilization"`
 	NumCPUCores            int     `json:"NumCPUCores"`

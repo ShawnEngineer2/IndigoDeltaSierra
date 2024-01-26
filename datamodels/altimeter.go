@@ -2,7 +2,7 @@ package datamodels
 
 // This struct represents a single altimeter sensor reading
 type AltimeterReading struct {
-	EventState     int `json:"State"`
+	EventState     int `json:"EventState"`
 	AltimeterState int `json:"AltimeterState"`
 	Altitude       int `json:"Altitude"`
 }
