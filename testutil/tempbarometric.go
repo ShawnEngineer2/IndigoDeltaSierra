@@ -11,10 +11,12 @@ func TempBarometricTestEvent(outputFilePath string) {
 
 	jsondata := datamodels.TempBarometricsEvent{}
 
-	jsondata.EventHeader.EventTimestamp = "XYZ"
+	jsondata.EventHeader.EventTimestamp = "2024-01-26T23:38:14.123Z"
 	jsondata.EventHeader.QubzId = "SunnyRainyJellyfish"
 	jsondata.EventHeader.RouteAssignment = 3
 	jsondata.EventHeader.ShipmentType = 2
+	jsondata.EventHeader.SensorType.SensorTypeId = 12
+	jsondata.EventHeader.SensorType.SensorTypeDescription = "temperature and barometric"
 
 	jsondata.SensorData = make([]datamodels.TempBarometricsReading, 2)
 

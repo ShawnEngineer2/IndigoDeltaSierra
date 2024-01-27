@@ -11,10 +11,12 @@ func ComputeTestEvent(outputFilePath string) {
 
 	jsondata := datamodels.ComputeEvent{}
 
-	jsondata.EventHeader.EventTimestamp = "XYZ"
+	jsondata.EventHeader.EventTimestamp = "2024-01-26T23:38:14.123Z"
 	jsondata.EventHeader.QubzId = "SunnyRainyJellyfish"
 	jsondata.EventHeader.RouteAssignment = 3
 	jsondata.EventHeader.ShipmentType = 2
+	jsondata.EventHeader.SensorType.SensorTypeId = 3
+	jsondata.EventHeader.SensorType.SensorTypeDescription = "compute"
 
 	jsondata.SensorData = make([]datamodels.ComputeReading, 2)
 

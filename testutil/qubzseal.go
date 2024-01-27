@@ -11,10 +11,12 @@ func QubzSealTestEvent(outputFilePath string) {
 
 	jsondata := datamodels.SealEvent{}
 
-	jsondata.EventHeader.EventTimestamp = "XYZ"
+	jsondata.EventHeader.EventTimestamp = "2024-01-26T23:38:14.123Z"
 	jsondata.EventHeader.QubzId = "SunnyRainyJellyfish"
 	jsondata.EventHeader.RouteAssignment = 3
 	jsondata.EventHeader.ShipmentType = 2
+	jsondata.EventHeader.SensorType.SensorTypeId = 9
+	jsondata.EventHeader.SensorType.SensorTypeDescription = "door seal"
 
 	jsondata.SensorData = make([]datamodels.SealReading, 2)
 

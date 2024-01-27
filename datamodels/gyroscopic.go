@@ -6,7 +6,7 @@ type GyroscopeReading struct {
 	XAxisAngle            int `json:"XAxisAngle"`
 	YAxisAngle            int `json:"YAxisAngle"`
 	ZAxisAngle            int `json:"ZAxisAngle"`
-	GyroscopicSensorState int `json:"GeigerReading"`
+	GyroscopicSensorState int `json:"GyroSensorState"`
 }
 
 // This struct represents a single gyroscope event

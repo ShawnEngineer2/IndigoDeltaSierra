@@ -11,10 +11,12 @@ func GPSTestEvent(outputFilePath string) {
 
 	jsondata := datamodels.GPSEvent{}
 
-	jsondata.EventHeader.EventTimestamp = "XYZ"
+	jsondata.EventHeader.EventTimestamp = "2024-01-26T23:38:14.123Z"
 	jsondata.EventHeader.QubzId = "SunnyRainyJellyfish"
 	jsondata.EventHeader.RouteAssignment = 3
 	jsondata.EventHeader.ShipmentType = 2
+	jsondata.EventHeader.SensorType.SensorTypeId = 5
+	jsondata.EventHeader.SensorType.SensorTypeDescription = "gps"
 
 	expectedLatitude := datamodels.GPSCoordinate{
 		Hours:   134,

@@ -10,8 +10,16 @@ type Qubz struct {
 //This struct is used as an identifier header for published Qubz events
 
 type QubzEventHeader struct {
-	QubzId          string `json:"QubzId"`
-	EventTimestamp  string `json:"EventTimestamp"`
-	RouteAssignment int    `json:"RouteAssignment"`
-	ShipmentType    int    `json:"ShipmentType"`
+	QubzId          string     `json:"QubzId"`
+	EventTimestamp  string     `json:"EventTimestamp"`
+	RouteAssignment int        `json:"RouteAssignment"`
+	ShipmentType    int        `json:"ShipmentType"`
+	SensorType      QubzSensor `json:"SensorType"`
+}
+
+//This struc is used to identify sensor types and Ids
+
+type QubzSensor struct {
+	SensorTypeId          int    `json:"SensorTypeId"`
+	SensorTypeDescription string `json:"SensorTypeDescription"`
 }

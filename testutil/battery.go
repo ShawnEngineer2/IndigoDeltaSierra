@@ -11,10 +11,12 @@ func BatteryTestEvent(outputFilePath string) {
 
 	jsondata := datamodels.BatteryEvent{}
 
-	jsondata.EventHeader.EventTimestamp = "XYZ"
+	jsondata.EventHeader.EventTimestamp = "2024-01-26T23:38:14.123Z"
 	jsondata.EventHeader.QubzId = "SunnyRainyJellyfish"
 	jsondata.EventHeader.RouteAssignment = 3
 	jsondata.EventHeader.ShipmentType = 2
+	jsondata.EventHeader.SensorType.SensorTypeId = 2
+	jsondata.EventHeader.SensorType.SensorTypeDescription = "battery"
 
 	jsondata.SensorData = make([]datamodels.BatteryReading, 2)
 
