@@ -11,5 +11,5 @@ type SealReading struct {
 // This struct represents a single motion event
 type SealEvent struct {
 	EventHeader QubzEventHeader `json:"Header"`
-	SensorData  []MotionReading `json:"SensorData"`
+	SensorData  []SealReading   `json:"SensorData"`
 }

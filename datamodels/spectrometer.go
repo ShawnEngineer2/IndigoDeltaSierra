@@ -13,7 +13,7 @@ type SpectrometerReading struct {
 	Elements          []ElementReading `json:"Elements"`
 	Opocs             float64          `json:"Opocs"`
 	Explosives        float64          `json:"Explosives"`
-	Urates            int              `json:"Urates"`
+	Urates            float64          `json:"Urates"`
 }
 
 // This struct represents a single spectrometer event

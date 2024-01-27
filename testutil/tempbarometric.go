@@ -1,0 +1,36 @@
+package testutil
+
+import (
+	"indigodeltasierra/customerror"
+	"indigodeltasierra/datamodels"
+	"indigodeltasierra/eventemitter"
+)
+
+func TempBarometricTestEvent(outputFilePath string) {
+	//This routine is used to test the Temperature & Barometrics JSON
+
+	jsondata := datamodels.TempBarometricsEvent{}
+
+	jsondata.EventHeader.EventTimestamp = "XYZ"
+	jsondata.EventHeader.QubzId = "SunnyRainyJellyfish"
+	jsondata.EventHeader.RouteAssignment = 3
+	jsondata.EventHeader.ShipmentType = 2
+
+	jsondata.SensorData = make([]datamodels.TempBarometricsReading, 2)
+
+	jsondata.SensorData[0].EventState = 0
+	jsondata.SensorData[0].BarometricSensorState = 1
+	jsondata.SensorData[0].HumidityLevel = 33
+	jsondata.SensorData[0].OverallInternalTemperature = 17
+	jsondata.SensorData[0].TemperatureSensorState = 1
+
+	jsondata.SensorData[1].EventState = 1
+	jsondata.SensorData[1].BarometricSensorState = 1
+	jsondata.SensorData[1].HumidityLevel = 33
+	jsondata.SensorData[1].OverallInternalTemperature = 17
+	jsondata.SensorData[1].TemperatureSensorState = 1
+
+	err := eventemitter.EventToFile(jsondata, outputFilePath)
+
+	customerror.CheckAndPanic(err)
+}

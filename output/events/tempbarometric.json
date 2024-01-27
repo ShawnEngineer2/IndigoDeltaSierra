@@ -1,0 +1,1 @@
+{"Header":{"QubzId":"SunnyRainyJellyfish","EventTimestamp":"XYZ","RouteAssignment":3,"ShipmentType":2},"SensorData":[{"EventState":0,"OverallInternalTemperature":17,"TemperatureSensorState":1,"BarometricSensorState":1,"HumidityLevel":33},{"EventState":1,"OverallInternalTemperature":17,"TemperatureSensorState":1,"BarometricSensorState":1,"HumidityLevel":33}]}
