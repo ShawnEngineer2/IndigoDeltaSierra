@@ -27,7 +27,7 @@ func ComputeTestEvent(outputFilePath string) {
 	jsondata.SensorData[0].ComputeFirmwareVersion = 17
 	jsondata.SensorData[0].ComputeSensorState = 1
 	jsondata.SensorData[0].NumCPUCores = 16
-	jsondata.SensorData[0].OSTypeVersion = 2
+	jsondata.SensorData[0].OSTypeVersion = "Alpine Linux 17"
 	jsondata.SensorData[0].RemainingDiskStorage = 2300
 	jsondata.SensorData[0].TotalAmountOfMemory = 3600
 	jsondata.SensorData[0].TotalDiskStorage = 4000
@@ -39,7 +39,7 @@ func ComputeTestEvent(outputFilePath string) {
 	jsondata.SensorData[1].ComputeFirmwareVersion = 17
 	jsondata.SensorData[1].ComputeSensorState = 1
 	jsondata.SensorData[1].NumCPUCores = 16
-	jsondata.SensorData[1].OSTypeVersion = 2
+	jsondata.SensorData[1].OSTypeVersion = "Alpine Linux 17"
 	jsondata.SensorData[1].RemainingDiskStorage = 2300
 	jsondata.SensorData[1].TotalAmountOfMemory = 3600
 	jsondata.SensorData[1].TotalDiskStorage = 4000

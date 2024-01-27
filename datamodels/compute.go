@@ -3,17 +3,17 @@ package datamodels
 // This struct represents a single compute sensor reading
 type ComputeReading struct {
 	EventState             int     `json:"EventState"`
-	CPUUtilization         int     `json:"CPUUtilization"`
-	MemoryUtilization      int     `json:"MemoryUtilization"`
+	CPUUtilization         float64 `json:"CPUUtilization"`
+	MemoryUtilization      float64 `json:"MemoryUtilization"`
 	NumCPUCores            int     `json:"NumCPUCores"`
 	TotalAmountOfMemory    int     `json:"TotalAmountOfMemory"`
 	AmountMemoryUtilized   int     `json:"AmountMemoryUtilized"`
-	TotalDiskStorage       float64 `json:"TotalDiskStorage"`
+	TotalDiskStorage       int     `json:"TotalDiskStorage"`
 	RemainingDiskStorage   int     `json:"RemainingDiskStorage"`
 	ComputeSensorState     int     `json:"ComputeSensorState"`
 	ComputeFirmwareState   int     `json:"ComputeFirmwareState"`
 	ComputeFirmwareVersion int     `json:"ComputeFirmwareVersion"`
-	OSTypeVersion          int     `json:"OSTypeVersion"`
+	OSTypeVersion          string  `json:"OSTypeVersion"`
 }
 
 // This struct represents a single compute event

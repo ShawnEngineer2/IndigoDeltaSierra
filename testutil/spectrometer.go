@@ -219,6 +219,7 @@ func SpectrometerTestEvent(outputFilePath string) {
 	jsondata.SensorData[0].Opocs = 3.514
 	jsondata.SensorData[0].SpectrometerState = 1
 	jsondata.SensorData[0].Urates = 14.3287539
+	jsondata.SensorData[0].WeaponsGradeNuclearMaterial = .00567
 
 	jsondata.SensorData[1].EventState = 1
 	jsondata.SensorData[1].Elements = elementdata
@@ -226,6 +227,7 @@ func SpectrometerTestEvent(outputFilePath string) {
 	jsondata.SensorData[1].Opocs = 3.514
 	jsondata.SensorData[1].SpectrometerState = 1
 	jsondata.SensorData[1].Urates = 14.3287539
+	jsondata.SensorData[1].WeaponsGradeNuclearMaterial = .00567
 
 	err := eventemitter.EventToFile(jsondata, outputFilePath)
 

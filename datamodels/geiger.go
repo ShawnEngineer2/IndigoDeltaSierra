@@ -2,9 +2,9 @@ package datamodels
 
 // This struct represents a single geiger counter sensor reading
 type GeigerReading struct {
-	EventState         int `json:"EventState"`
-	GeigerCounterState int `json:"GeigerCounterState"`
-	GeigerReading      int `json:"GeigerReading"`
+	EventState         int     `json:"EventState"`
+	GeigerCounterState int     `json:"GeigerCounterState"`
+	GeigerReading      float64 `json:"GeigerReading"`
 }
 
 // This struct represents a single geiger counter event
