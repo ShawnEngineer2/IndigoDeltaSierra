@@ -25,12 +25,14 @@ func TempBarometricTestEvent(outputFilePath string) {
 	jsondata.SensorData[0].HumidityLevel = 33
 	jsondata.SensorData[0].OverallInternalTemperature = 17
 	jsondata.SensorData[0].TemperatureSensorState = 1
+	jsondata.SensorData[0].MoistureLevel = 1.23479
 
 	jsondata.SensorData[1].EventState = 1
 	jsondata.SensorData[1].BarometricSensorState = 1
 	jsondata.SensorData[1].HumidityLevel = 33
 	jsondata.SensorData[1].OverallInternalTemperature = 17
 	jsondata.SensorData[1].TemperatureSensorState = 1
+	jsondata.SensorData[1].MoistureLevel = 1.23479
 
 	err := eventemitter.EventToFile(jsondata, outputFilePath)
 

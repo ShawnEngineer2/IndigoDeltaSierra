@@ -87,6 +87,9 @@ func generateTestEvents() {
 	fmt.Println("Spectrometer event ...")
 	testutil.SpectrometerTestEvent("./output/events/spectrometer.json")
 
+	fmt.Println("Internal Fire event ...")
+	testutil.FireTestEvent("./output/events/fire.json")
+
 	fmt.Print("\n")
 	fmt.Println("Test Event File Generation Complete")
 

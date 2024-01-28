@@ -10,6 +10,7 @@ type BatteryReading struct {
 	CapacitanceGelActualVolume   int     `json:"CapacitanceGelActualVolume"`
 	BatteryTemperature           float64 `json:"BatteryTemperature"`
 	BatterySensorState           int     `json:"BatterySensorState"`
+	BatteryChargePct             float64 `json:"BatteryChargePct"`
 }
 
 // This struct represents a single battery sensor event

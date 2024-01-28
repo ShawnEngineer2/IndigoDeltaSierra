@@ -28,6 +28,7 @@ func BatteryTestEvent(outputFilePath string) {
 	jsondata.SensorData[0].MaxAmpHours = 50000
 	jsondata.SensorData[0].RemainingAmpHours = 34000
 	jsondata.SensorData[0].EventState = 0
+	jsondata.SensorData[0].BatteryChargePct = 45.78219
 
 	jsondata.SensorData[1].BatterySensorState = 1
 	jsondata.SensorData[1].BatteryTemperature = 15
@@ -37,6 +38,7 @@ func BatteryTestEvent(outputFilePath string) {
 	jsondata.SensorData[1].MaxAmpHours = 50000
 	jsondata.SensorData[1].RemainingAmpHours = 34000
 	jsondata.SensorData[1].EventState = 1
+	jsondata.SensorData[1].BatteryChargePct = 45.78219
 
 	err := eventemitter.EventToFile(jsondata, outputFilePath)
 
