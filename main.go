@@ -5,6 +5,7 @@ import (
 	"flag"
 	"fmt"
 	"indigodeltasierra/datamodels"
+	"indigodeltasierra/datautil"
 	"indigodeltasierra/svcclient"
 	"indigodeltasierra/sysfile"
 	"indigodeltasierra/testutil"
@@ -219,7 +220,7 @@ func startSimulation() {
 			qubzmatrix[i].QubzName = x.QubzName
 		}
 
-		fmt.Println(qubzmatrix[10])
+		//fmt.Println(qubzmatrix[10])
 
 	} else if config.QubzCount < max_qubz_count {
 		//Grab a random set of numbers of QubzCount between 1 and max qubz count and load those names
@@ -232,6 +233,8 @@ func startSimulation() {
 		consoleLogger.Error(fmt.Sprintf("Not enough names in %s file (%d) to satisfy requested number of Qubz (%d) ... startup terminated", config.QubzNameFile, len(qubznames), config.QubzCount))
 		os.Exit(EXIT_FAILURE)
 	}
+
+	err := datautil.InitializeQubzMatrix(&qubzmatrix)
 
 	//Cooling off wait so we don't overload the random number generator service
 	consoleLogger.Info("Service Cooloff Wait ...")
