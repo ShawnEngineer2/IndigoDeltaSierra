@@ -18,8 +18,12 @@ import (
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 
+// Constants used throughout the application
 const EXIT_FAILURE int = 125
 const EXIT_CLEAN int = 0
+
+// Define data structures used throughout the application
+var config datamodels.Config
 
 func main() {
 
@@ -254,8 +258,43 @@ func startSimulation() {
 		os.Exit(EXIT_FAILURE)
 	}
 
-	//Load the route table into a struct
+	//Load Location information
+	consoleLogger.Info("Loading locations ...")
 
+	locations := make([]datamodels.Location, 1)
+
+	if !sysfile.LoadFileToStruct("./locations.dat", &locations) {
+		consoleLogger.Error("Could not load Locations file ... startup terminated")
+		os.Exit(EXIT_FAILURE)
+	} else {
+		consoleLogger.Info("Location values loaded")
+	}
+
+	//Load Route information
+	consoleLogger.Info("Loading routes ...")
+
+	routes := make([]datamodels.Route, 1)
+
+	if !sysfile.LoadFileToStruct("./routes.dat", &routes) {
+		consoleLogger.Error("Could not load Routes file ... startup terminated")
+		os.Exit(EXIT_FAILURE)
+	} else {
+		consoleLogger.Info("Route values loaded")
+	}
+
+	//Load Sensor Range data
+	consoleLogger.Info("Loading sensor ranges ...")
+
+	sensorRanges := make([]datamodels.SensorRange, 1)
+
+	if !sysfile.LoadFileToStruct("./sensor_ranges02.dat", &sensorRanges) {
+		consoleLogger.Error("Could not load Sensor Ranges file ... startup terminated")
+		os.Exit(EXIT_FAILURE)
+	} else {
+		consoleLogger.Info("Sensor Range values loaded")
+	}
+
+	fmt.Println(sensorRanges)
 	//Randomly assign routes to the Qubz in the Qubz Matrix
 
 	//Cool off wait for random number generator service - then check quota

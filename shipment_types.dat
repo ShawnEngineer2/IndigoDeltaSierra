@@ -1,0 +1,90 @@
+[
+  {
+    "ShipmentType": "Gold & Jewlery",
+    "ShipmentTypeId": 1
+  },
+  {
+    "ShipmentType": "Clothing",
+    "ShipmentTypeId": 2
+  },
+  {
+    "ShipmentType": "Non-Perishable Food",
+    "ShipmentTypeId": 3
+  },
+  {
+    "ShipmentType": "Smoke Detectors",
+    "ShipmentTypeId": 4
+  },
+  {
+    "ShipmentType": "Mining Equipment",
+    "ShipmentTypeId": 5
+  },
+  {
+    "ShipmentType": "Produce",
+    "ShipmentTypeId": 6
+  },
+  {
+    "ShipmentType": "Frozen Meat",
+    "ShipmentTypeId": 7
+  },
+  {
+    "ShipmentType": "Medication",
+    "ShipmentTypeId": 8
+  },
+  {
+    "ShipmentType": "Produce",
+    "ShipmentTypeId": 9
+  },
+  {
+    "ShipmentType": "Medical Supplies and Equipment",
+    "ShipmentTypeId": 10
+  },
+  {
+    "ShipmentType": "Building Materials & Tools",
+    "ShipmentTypeId": 11
+  },
+  {
+    "ShipmentType": "Batteries",
+    "ShipmentTypeId": 12
+  },
+  {
+    "ShipmentType": "Video Games & Consoles",
+    "ShipmentTypeId": 13
+  },
+  {
+    "ShipmentType": "Toys",
+    "ShipmentTypeId": 14
+  },
+  {
+    "ShipmentType": "Scientific Equipment",
+    "ShipmentTypeId": 15
+  },
+  {
+    "ShipmentType": "Industrial Chemicals & Gases",
+    "ShipmentTypeId": 16
+  },
+  {
+    "ShipmentType": "Computer & Networking Hardware",
+    "ShipmentTypeId": 17
+  },
+  {
+    "ShipmentType": "Cellphones & Tablets",
+    "ShipmentTypeId": 18
+  },
+  {
+    "ShipmentType": "Automotive Parts",
+    "ShipmentTypeId": 19
+  },
+  {
+    "ShipmentType": "Petroleum Products",
+    "ShipmentTypeId": 20
+  },
+  {
+    "ShipmentType": "Beauty Products",
+    "ShipmentTypeId": 21
+  },
+  {
+    "ShipmentType": "Electrical & Electronics Parts",
+    "ShipmentTypeId": 22
+  }
+]

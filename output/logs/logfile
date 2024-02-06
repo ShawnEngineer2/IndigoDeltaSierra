@@ -573,3 +573,114 @@
 {"time":"2024-01-28T00:24:32.577768-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
 {"time":"2024-01-28T00:24:32.577805-05:00","level":"INFO","msg":"Making Call"}
 {"time":"2024-01-28T00:24:32.805261-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
+{"time":"2024-02-05T22:30:26.432454-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-05T22:30:26.433661-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-05T22:30:26.433705-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-05T22:30:26.503128-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
+{"time":"2024-02-05T22:30:26.503174-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:30:26.503202-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:30:26.503207-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:30:26.503212-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:30:37.455275-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:30:37.455484-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:30:37.455542-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:30:37.45558-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:30:47.640649-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:30:47.640878-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:30:47.640933-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:30:47.640972-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:30:47.897495-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:30:47.89764-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:30:47.897687-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:30:47.897719-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:30:48.087012-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
+{"time":"2024-02-05T22:33:25.14664-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-05T22:33:25.146864-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-05T22:33:25.146891-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-05T22:33:25.216041-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
+{"time":"2024-02-05T22:33:25.21609-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:33:25.216119-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:33:25.216125-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:33:25.216143-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:33:35.572481-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:33:35.572538-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:33:35.572548-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:33:35.572554-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:33:45.850178-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:33:45.850263-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:33:45.850272-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:33:45.85028-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:33:46.149332-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:33:46.149494-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:33:46.149549-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:33:46.149587-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:33:46.327605-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
+{"time":"2024-02-05T22:35:54.458739-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-05T22:35:54.459017-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-05T22:35:54.459058-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-05T22:35:54.529853-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
+{"time":"2024-02-05T22:35:54.529899-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:35:54.529928-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:35:54.529933-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:35:54.529941-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:36:04.853238-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:36:04.853423-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:36:04.853467-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:36:04.853504-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:37:43.914858-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-05T22:37:43.915111-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-05T22:37:43.915143-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-05T22:37:43.985034-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
+{"time":"2024-02-05T22:37:43.985078-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:37:43.985106-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:37:43.985111-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:37:43.985116-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:37:54.515543-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:37:54.515582-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:37:54.515589-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:37:54.515594-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:38:04.8062-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:38:04.80625-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:38:04.806277-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:38:04.806283-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:38:05.094076-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:38:05.094225-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:38:05.094266-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:38:05.094293-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:38:05.291821-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
+{"time":"2024-02-05T22:42:11.896726-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-05T22:42:11.896804-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-05T22:42:11.896813-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-05T22:42:11.943172-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
+{"time":"2024-02-05T22:42:11.943215-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:42:11.943242-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:42:11.943247-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:42:11.943253-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:42:22.329961-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:42:22.330153-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:42:22.330201-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:42:22.330238-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:45:08.324619-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-05T22:45:08.32489-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-05T22:45:08.324925-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-05T22:45:08.395425-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
+{"time":"2024-02-05T22:45:08.395464-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:45:08.395492-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:45:08.395496-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:45:08.395501-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:45:18.737927-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:45:18.738011-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:45:18.738024-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:45:18.738034-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:46:11.372441-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-05T22:46:11.372712-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-05T22:46:11.372749-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-05T22:46:11.439503-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
+{"time":"2024-02-05T22:46:11.439546-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:46:11.439574-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:46:11.439579-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:46:11.439592-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-05T22:46:21.908355-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-05T22:46:21.908571-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-05T22:46:21.908622-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-05T22:46:21.90866-05:00","level":"INFO","msg":"Making Call"}
