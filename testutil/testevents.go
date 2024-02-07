@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func generateTestEvents() {
+func GenerateTestEvents() {
 	//This function runs the routines in the testutil package to create
 	//example JSON files of the events emitted by this simulator
 
