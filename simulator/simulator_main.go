@@ -5,6 +5,7 @@ import (
 	"indigodeltasierra/appconstants"
 	"indigodeltasierra/customlog"
 	"indigodeltasierra/datamodels"
+	"indigodeltasierra/datautil"
 	"log/slog"
 )
 
@@ -15,109 +16,84 @@ func StartSimulation() {
 	configDS := datamodels.Config{}
 	locationsDS := make([]datamodels.Location, 1)
 	routesDS := make([]datamodels.Route, 1)
+	classOfServiceDS := make([]datamodels.ClassOfService, 1)
+	qubzNameDS := make([]datamodels.Qubz, 1)
+	sensorTypeDS := make([]datamodels.SensorType, 1)
+	shipmentTypeDS := make([]datamodels.ShipmentType, 1)
+	transportModeDS := make([]datamodels.TransportMode, 1)
 
 	//Set up console logger
 	consoleLogger := slog.Default()
-	consoleLogger.Info(appconstants.STARTUP_MSG)
+	customlog.InfoConsole(consoleLogger, appconstants.STARTUP_MSG, true)
 
 	//Load the Config file
-	err := loadConfig(&configDS, consoleLogger)
+	err := datautil.LoadDataFile(&configDS, "Configuration", appconstants.CONFIG_FILE_PATH, consoleLogger, nil)
 
 	if err != nil {
 		return
 	}
 
 	//Setup logfile logger
-	consoleLogger.Info("Configuring File Logger to output path " + configDS.LogLocation + " ...")
+	customlog.InfoConsole(consoleLogger, "Configuring File Logger to output path "+configDS.LogLocation+" ...", true)
+
 	fileLogger := slog.New(slog.NewJSONHandler(customlog.RotatingLog(configDS.LogLocation), nil))
-	fileLogger.Info(appconstants.STARTUP_MSG)
-	fileLogger.Info("Config Values for this run ...")
-	fileLogger.Info(fmt.Sprintf("%+v", configDS))
+
+	customlog.InfoFile(fileLogger, appconstants.STARTUP_MSG)
+	customlog.InfoFile(fileLogger, "Config Values for this run ...")
+	customlog.InfoFile(fileLogger, fmt.Sprintf("%+v", configDS))
 
 	//Load Locations data
-	err = loadLocations(&locationsDS, consoleLogger, fileLogger)
+	err = datautil.LoadDataFile(&locationsDS, "Locations", appconstants.LOCATIONS_FILE_PATH, consoleLogger, fileLogger)
 
 	if err != nil {
 		return
 	}
 
 	//Load Route data
-
-	err = loadRoutes(&routesDS, consoleLogger, fileLogger)
+	err = datautil.LoadDataFile(&routesDS, "Routes", appconstants.ROUTES_FILE_PATH, consoleLogger, fileLogger)
 
 	if err != nil {
 		return
 	}
 
-	/*
-		//Cooling off wait so we don't overload the random number generator service
-		consoleLogger.Info("Service Cooloff Wait ...")
-		time.Sleep(time.Duration(appconstants.DEFAULT_SVC_WAIT) * time.Second)
+	//Load Class of Service data
+	err = datautil.LoadDataFile(&classOfServiceDS, "Class of Service", appconstants.CLASS_OF_SERVICE_FILE_PATH, consoleLogger, fileLogger)
 
-		quotaExceeded, err := svcclient.CheckQuotaExceeded(fileLogger, configDS.EmailAddress)
+	if err != nil {
+		return
+	}
 
-		if err != nil {
-			msg := "Service Abend: Error checking Random Service Quota: " + err.Error()
-			consoleLogger.Error(msg)
-			fileLogger.Error(msg)
-			//return error
-		} else if quotaExceeded {
-			msg := "Service Abend: Random Service Quota exceeded"
-			consoleLogger.Error(msg)
-			fileLogger.Error(msg)
-			//return error
-		}
+	//Load the list of Qubz names
+	err = datautil.LoadDataFile(&qubzNameDS, "Qubz Names", appconstants.QUBZ_NAME_FILE_PATH, consoleLogger, fileLogger)
 
-		//Load Sensor Range data
-		consoleLogger.Info("Loading sensor ranges ...")
+	if err != nil {
+		return
+	}
 
-		sensorRanges := make([]datamodels.SensorRange, 1)
+	//Load the list of Sensor Types
+	err = datautil.LoadDataFile(&sensorTypeDS, "Sensor Types", appconstants.SENSOR_TYPE_FILE_PATH, consoleLogger, fileLogger)
 
-		if !sysfile.LoadFileToStruct("./sensor_ranges02.dat", &sensorRanges) {
-			consoleLogger.Error("Could not load Sensor Ranges file ... startup terminated")
-			//return error
-		} else {
-			consoleLogger.Info("Sensor Range values loaded")
-		}
+	if err != nil {
+		return
+	}
 
-		fmt.Println(sensorRanges)
-		//Randomly assign routes to the Qubz in the Qubz Matrix
+	//Load the list of Shipment Types
+	err = datautil.LoadDataFile(&shipmentTypeDS, "Shipment Types", appconstants.SHIPMENT_TYPES_FILE_PATH, consoleLogger, fileLogger)
 
-		//Cool off wait for random number generator service - then check quota
-		consoleLogger.Info("Service Cooloff Wait ...")
-		time.Sleep(time.Duration(appconstants.DEFAULT_SVC_WAIT) * time.Second)
+	if err != nil {
+		return
+	}
 
-		quotaExceeded, err = svcclient.CheckQuotaExceeded(fileLogger, config.EmailAddress)
+	//Load the list of Transport Modes
+	err = datautil.LoadDataFile(&transportModeDS, "Transport Modes", appconstants.TRANSPORT_MODE_FILE_PATH, consoleLogger, fileLogger)
 
-		if err != nil {
-			msg := "Service Abend: Error checking Random Service Quota: " + err.Error()
-			consoleLogger.Error(msg)
-			fileLogger.Error(msg)
-			//return error
-		} else if quotaExceeded {
-			msg := "Service Abend: Random Service Quota exceeded"
-			consoleLogger.Error(msg)
-			fileLogger.Error(msg)
-			//return error
-		}
+	if err != nil {
+		return
+	}
 
-		//Load the Event Types file into a struct
+	fmt.Println(transportModeDS)
 
-		quotaExceeded, err = svcclient.CheckQuotaExceeded(fileLogger, config.EmailAddress)
-
-		if err != nil {
-			msg := "Service Abend: Error checking Random Service Quota: " + err.Error()
-			consoleLogger.Error(msg)
-			fileLogger.Error(msg)
-			//return error
-		} else if quotaExceeded {
-			msg := "Service Abend: Random Service Quota exceeded"
-			consoleLogger.Error(msg)
-			fileLogger.Error(msg)
-			//return error
-		}
-	*/
 	//Exit with a CLEAN (no errors) code
-	customlog.InfoAllChannels(consoleLogger, fileLogger, appconstants.SIMULATION_COMPLETE_MSG)
+	customlog.InfoAllChannels(consoleLogger, fileLogger, appconstants.SIMULATION_COMPLETE_MSG, true)
 
 }
