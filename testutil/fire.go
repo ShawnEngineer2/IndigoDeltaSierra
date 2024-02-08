@@ -15,6 +15,7 @@ func FireTestEvent(outputFilePath string) {
 	jsondata.EventHeader.QubzId = "SunnyRainyJellyfish"
 	jsondata.EventHeader.RouteAssignment = 3
 	jsondata.EventHeader.ShipmentType = 2
+	jsondata.EventHeader.TransportMode = 6
 	jsondata.EventHeader.SensorType.SensorTypeId = 13
 	jsondata.EventHeader.SensorType.SensorTypeDescription = "fire"
 

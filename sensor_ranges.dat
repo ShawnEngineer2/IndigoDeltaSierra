@@ -7,10 +7,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 0,
-    "NominalMin": "4500",
-    "NominalMax": "5000",
-    "ExceptionMin": "0",
-    "ExceptionMax": "5000"
+    "NominalMin": 4500,
+    "NominalMax": 5000,
+    "ExceptionMin": 0,
+    "ExceptionMax": 5000
   },
   {
     "SensorTypeId": 2,
@@ -20,10 +20,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 3,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 2,
@@ -33,10 +33,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 0,
-    "NominalMin": "25",
-    "NominalMax": "850",
-    "ExceptionMin": "25",
-    "ExceptionMax": "2000"
+    "NominalMin": 25,
+    "NominalMax": 850,
+    "ExceptionMin": 25,
+    "ExceptionMax": 2000
   },
   {
     "SensorTypeId": 2,
@@ -46,10 +46,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 0,
-    "NominalMin": "128",
-    "NominalMax": "136",
-    "ExceptionMin": "128",
-    "ExceptionMax": "136"
+    "NominalMin": 128,
+    "NominalMax": 136,
+    "ExceptionMin": 128,
+    "ExceptionMax": 136
   },
   {
     "SensorTypeId": 2,
@@ -59,10 +59,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 0,
-    "NominalMin": "128",
-    "NominalMax": "136",
-    "ExceptionMin": "0",
-    "ExceptionMax": "136"
+    "NominalMin": 128,
+    "NominalMax": 136,
+    "ExceptionMin": 0,
+    "ExceptionMax": 136
   },
   {
     "SensorTypeId": 2,
@@ -72,10 +72,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 2,
-    "NominalMin": "24",
-    "NominalMax": "43",
-    "ExceptionMin": "3",
-    "ExceptionMax": "204"
+    "NominalMin": 24,
+    "NominalMax": 43,
+    "ExceptionMin": 3,
+    "ExceptionMax": 204
   },
   {
     "SensorTypeId": 2,
@@ -85,10 +85,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 2,
@@ -98,10 +98,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "20",
-    "NominalMax": "100",
-    "ExceptionMin": "0",
-    "ExceptionMax": "100"
+    "NominalMin": 20,
+    "NominalMax": 100,
+    "ExceptionMin": 0,
+    "ExceptionMax": 100
   },
   {
     "SensorTypeId": 10,
@@ -111,10 +111,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 10,
@@ -124,10 +124,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 10,
@@ -137,10 +137,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 10,
@@ -150,10 +150,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 4,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 10,
@@ -163,10 +163,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 2,
-    "NominalMin": "-99",
-    "NominalMax": "0",
-    "ExceptionMin": "-200",
-    "ExceptionMax": "0"
+    "NominalMin": -99,
+    "NominalMax": 0,
+    "ExceptionMin": -200,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 10,
@@ -176,10 +176,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 2,
-    "NominalMin": "-125",
-    "NominalMax": "0",
-    "ExceptionMin": "-210",
-    "ExceptionMax": "0"
+    "NominalMin": -125,
+    "NominalMax": 0,
+    "ExceptionMin": -210,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 10,
@@ -189,10 +189,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 2,
-    "NominalMin": "-99",
-    "NominalMax": "0",
-    "ExceptionMin": "-200",
-    "ExceptionMax": "0"
+    "NominalMin": -99,
+    "NominalMax": 0,
+    "ExceptionMin": -200,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 10,
@@ -202,10 +202,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 10,
@@ -215,10 +215,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 10,
@@ -228,10 +228,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 10,
@@ -241,10 +241,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 10,
@@ -254,10 +254,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 3,
-    "NominalMin": "200",
-    "NominalMax": "1000",
-    "ExceptionMin": "3",
-    "ExceptionMax": "1000"
+    "NominalMin": 200,
+    "NominalMax": 1000,
+    "ExceptionMin": 3,
+    "ExceptionMax": 1000
   },
   {
     "SensorTypeId": 10,
@@ -267,10 +267,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 3,
-    "NominalMin": "7",
-    "NominalMax": "50",
-    "ExceptionMin": "1",
-    "ExceptionMax": "50"
+    "NominalMin": 7,
+    "NominalMax": 50,
+    "ExceptionMin": 1,
+    "ExceptionMax": 50
   },
   {
     "SensorTypeId": 12,
@@ -279,11 +279,11 @@
     "SensorDataPointId": 22,
     "TransportMode": 0,
     "DataPointTypeId": 1,
-    "NumberScale": 0,
-    "NominalMin": "-18",
-    "NominalMax": "48",
-    "ExceptionMin": "-34",
-    "ExceptionMax": "300"
+    "NumberScale": 3,
+    "NominalMin": -18,
+    "NominalMax": 48,
+    "ExceptionMin": -34,
+    "ExceptionMax": 300
   },
   {
     "SensorTypeId": 12,
@@ -293,10 +293,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 12,
@@ -306,10 +306,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 12,
@@ -319,10 +319,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "27",
-    "NominalMax": "79",
-    "ExceptionMin": "0",
-    "ExceptionMax": "100"
+    "NominalMin": 27,
+    "NominalMax": 79,
+    "ExceptionMin": 0,
+    "ExceptionMax": 100
   },
   {
     "SensorTypeId": 6,
@@ -332,10 +332,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "-10",
-    "NominalMax": "10",
-    "ExceptionMin": "-180",
-    "ExceptionMax": "180"
+    "NominalMin": -10,
+    "NominalMax": 10,
+    "ExceptionMin": -180,
+    "ExceptionMax": 180
   },
   {
     "SensorTypeId": 6,
@@ -345,10 +345,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "-10",
-    "NominalMax": "10",
-    "ExceptionMin": "-180",
-    "ExceptionMax": "180"
+    "NominalMin": -10,
+    "NominalMax": 10,
+    "ExceptionMin": -180,
+    "ExceptionMax": 180
   },
   {
     "SensorTypeId": 6,
@@ -358,10 +358,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "-5",
-    "NominalMax": "5",
-    "ExceptionMin": "-180",
-    "ExceptionMax": "180"
+    "NominalMin": -5,
+    "NominalMax": 5,
+    "ExceptionMin": -180,
+    "ExceptionMax": 180
   },
   {
     "SensorTypeId": 6,
@@ -371,10 +371,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 5,
@@ -384,10 +384,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 4,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 5,
@@ -397,10 +397,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 4,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 5,
@@ -410,10 +410,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 3,
@@ -423,10 +423,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "3",
-    "NominalMax": "90",
-    "ExceptionMin": "0",
-    "ExceptionMax": "100"
+    "NominalMin": 3,
+    "NominalMax": 90,
+    "ExceptionMin": 0,
+    "ExceptionMax": 100
   },
   {
     "SensorTypeId": 3,
@@ -436,10 +436,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 4,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 3,
@@ -449,10 +449,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 0,
-    "NominalMin": "24",
-    "NominalMax": "24",
-    "ExceptionMin": "24",
-    "ExceptionMax": "24"
+    "NominalMin": 24,
+    "NominalMax": 24,
+    "ExceptionMin": 24,
+    "ExceptionMax": 24
   },
   {
     "SensorTypeId": 3,
@@ -462,10 +462,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "18",
-    "ExceptionMin": "24",
-    "ExceptionMax": "24"
+    "NominalMin": 0,
+    "NominalMax": 18,
+    "ExceptionMin": 24,
+    "ExceptionMax": 24
   },
   {
     "SensorTypeId": 3,
@@ -475,10 +475,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "3",
-    "NominalMax": "90",
-    "ExceptionMin": "0",
-    "ExceptionMax": "100"
+    "NominalMin": 3,
+    "NominalMax": 90,
+    "ExceptionMin": 0,
+    "ExceptionMax": 100
   },
   {
     "SensorTypeId": 3,
@@ -488,10 +488,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 0,
-    "NominalMin": "1000000",
-    "NominalMax": "1000000",
-    "ExceptionMin": "1000000",
-    "ExceptionMax": "1000000"
+    "NominalMin": 1000000,
+    "NominalMax": 1000000,
+    "ExceptionMin": 1000000,
+    "ExceptionMax": 1000000
   },
   {
     "SensorTypeId": 3,
@@ -501,10 +501,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "900000",
-    "ExceptionMin": "1000000",
-    "ExceptionMax": "1000000"
+    "NominalMin": 0,
+    "NominalMax": 900000,
+    "ExceptionMin": 1000000,
+    "ExceptionMax": 1000000
   },
   {
     "SensorTypeId": 3,
@@ -514,10 +514,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 3,
@@ -527,10 +527,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 3,
@@ -540,10 +540,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 4,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 3,
@@ -553,10 +553,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 4,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 1,
@@ -566,10 +566,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 1,
@@ -579,10 +579,10 @@
     "TransportMode": 3,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "-430",
-    "NominalMax": "3869",
-    "ExceptionMin": "-700",
-    "ExceptionMax": "8848"
+    "NominalMin": -430,
+    "NominalMax": 3869,
+    "ExceptionMin": -700,
+    "ExceptionMax": 8848
   },
   {
     "SensorTypeId": 1,
@@ -592,10 +592,10 @@
     "TransportMode": 6,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "-430",
-    "NominalMax": "3869",
-    "ExceptionMin": "-700",
-    "ExceptionMax": "8848"
+    "NominalMin": -430,
+    "NominalMax": 3869,
+    "ExceptionMin": -700,
+    "ExceptionMax": 8848
   },
   {
     "SensorTypeId": 1,
@@ -605,10 +605,10 @@
     "TransportMode": 1,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0",
-    "NominalMax": "200",
-    "ExceptionMin": "-200",
-    "ExceptionMax": "1000"
+    "NominalMin": 0,
+    "NominalMax": 200,
+    "ExceptionMin": -200,
+    "ExceptionMax": 1000
   },
   {
     "SensorTypeId": 1,
@@ -618,10 +618,10 @@
     "TransportMode": 2,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1524",
-    "NominalMax": "12200",
-    "ExceptionMin": "-700",
-    "ExceptionMax": "13699"
+    "NominalMin": 1524,
+    "NominalMax": 12200,
+    "ExceptionMin": -700,
+    "ExceptionMax": 13699
   },
   {
     "SensorTypeId": 1,
@@ -631,10 +631,10 @@
     "TransportMode": 4,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "-10",
-    "NominalMax": "408432",
-    "ExceptionMin": "-200",
-    "ExceptionMax": "384472282"
+    "NominalMin": -10,
+    "NominalMax": 408432,
+    "ExceptionMin": -200,
+    "ExceptionMax": 384472282
   },
   {
     "SensorTypeId": 1,
@@ -644,10 +644,10 @@
     "TransportMode": 5,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "-10",
-    "NominalMax": "408432",
-    "ExceptionMin": "-200",
-    "ExceptionMax": "384472282"
+    "NominalMin": -10,
+    "NominalMax": 408432,
+    "ExceptionMin": -200,
+    "ExceptionMax": 384472282
   },
   {
     "SensorTypeId": 7,
@@ -657,10 +657,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 7,
@@ -670,10 +670,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 4,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 7,
@@ -683,10 +683,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 4,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 7,
@@ -696,10 +696,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 4,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 11,
@@ -709,10 +709,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 11,
@@ -722,10 +722,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "10",
-    "NominalMax": "100",
-    "ExceptionMin": "10",
-    "ExceptionMax": "200000"
+    "NominalMin": 10,
+    "NominalMax": 100,
+    "ExceptionMin": 10,
+    "ExceptionMax": 200000
   },
   {
     "SensorTypeId": 11,
@@ -735,10 +735,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "2.5",
-    "ExceptionMin": "1",
-    "ExceptionMax": "1000"
+    "NominalMin": 1,
+    "NominalMax": 2.5,
+    "ExceptionMin": 1,
+    "ExceptionMax": 1000
   },
   {
     "SensorTypeId": 11,
@@ -748,10 +748,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "7.4",
-    "ExceptionMin": "1",
-    "ExceptionMax": "100000"
+    "NominalMin": 1,
+    "NominalMax": 7.4,
+    "ExceptionMin": 1,
+    "ExceptionMax": 100000
   },
   {
     "SensorTypeId": 11,
@@ -761,10 +761,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "21",
-    "ExceptionMin": "1",
-    "ExceptionMax": "1000"
+    "NominalMin": 1,
+    "NominalMax": 21,
+    "ExceptionMin": 1,
+    "ExceptionMax": 1000
   },
   {
     "SensorTypeId": 11,
@@ -774,10 +774,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "9600",
-    "ExceptionMin": "1",
-    "ExceptionMax": "200000"
+    "NominalMin": 1,
+    "NominalMax": 9600,
+    "ExceptionMin": 1,
+    "ExceptionMax": 200000
   },
   {
     "SensorTypeId": 11,
@@ -787,10 +787,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "3",
-    "ExceptionMin": "1",
-    "ExceptionMax": "1000"
+    "NominalMin": 1,
+    "NominalMax": 3,
+    "ExceptionMin": 1,
+    "ExceptionMax": 1000
   },
   {
     "SensorTypeId": 11,
@@ -800,10 +800,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.05",
-    "NominalMax": "1",
-    "ExceptionMin": "0.05",
-    "ExceptionMax": "300"
+    "NominalMin": 0.05,
+    "NominalMax": 1,
+    "ExceptionMin": 0.05,
+    "ExceptionMax": 300
   },
   {
     "SensorTypeId": 11,
@@ -813,10 +813,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.5",
-    "NominalMax": "220",
-    "ExceptionMin": "0.5",
-    "ExceptionMax": "475"
+    "NominalMin": 0.5,
+    "NominalMax": 220,
+    "ExceptionMin": 0.5,
+    "ExceptionMax": 475
   },
   {
     "SensorTypeId": 11,
@@ -826,10 +826,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.3",
-    "NominalMax": "1.7",
-    "ExceptionMin": "0.3",
-    "ExceptionMax": "100"
+    "NominalMin": 0.3,
+    "NominalMax": 1.7,
+    "ExceptionMin": 0.3,
+    "ExceptionMax": 100
   },
   {
     "SensorTypeId": 11,
@@ -839,10 +839,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "1000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "6000"
+    "NominalMin": 1,
+    "NominalMax": 1000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 6000
   },
   {
     "SensorTypeId": 11,
@@ -852,10 +852,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "200",
-    "ExceptionMin": "1",
-    "ExceptionMax": "1000"
+    "NominalMin": 1,
+    "NominalMax": 200,
+    "ExceptionMin": 1,
+    "ExceptionMax": 1000
   },
   {
     "SensorTypeId": 11,
@@ -865,10 +865,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "100000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "500000"
+    "NominalMin": 1,
+    "NominalMax": 100000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 500000
   },
   {
     "SensorTypeId": 11,
@@ -878,10 +878,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "100000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "350000"
+    "NominalMin": 1,
+    "NominalMax": 100000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 350000
   },
   {
     "SensorTypeId": 11,
@@ -891,10 +891,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "100",
-    "ExceptionMin": "1",
-    "ExceptionMax": "350000"
+    "NominalMin": 1,
+    "NominalMax": 100,
+    "ExceptionMin": 1,
+    "ExceptionMax": 350000
   },
   {
     "SensorTypeId": 11,
@@ -904,10 +904,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "780000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "900000"
+    "NominalMin": 1,
+    "NominalMax": 780000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 900000
   },
   {
     "SensorTypeId": 11,
@@ -917,10 +917,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "260000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "500000"
+    "NominalMin": 1,
+    "NominalMax": 260000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 500000
   },
   {
     "SensorTypeId": 11,
@@ -930,10 +930,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "480000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "900000"
+    "NominalMin": 1,
+    "NominalMax": 480000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 900000
   },
   {
     "SensorTypeId": 11,
@@ -943,10 +943,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "10000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "500000"
+    "NominalMin": 1,
+    "NominalMax": 10000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 500000
   },
   {
     "SensorTypeId": 11,
@@ -956,10 +956,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "10000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "320000"
+    "NominalMin": 1,
+    "NominalMax": 10000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 320000
   },
   {
     "SensorTypeId": 11,
@@ -969,10 +969,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "10000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "320000"
+    "NominalMin": 1,
+    "NominalMax": 10000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 320000
   },
   {
     "SensorTypeId": 11,
@@ -982,10 +982,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "10000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "320000"
+    "NominalMin": 1,
+    "NominalMax": 10000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 320000
   },
   {
     "SensorTypeId": 11,
@@ -995,10 +995,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "10000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "320000"
+    "NominalMin": 1,
+    "NominalMax": 10000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 320000
   },
   {
     "SensorTypeId": 11,
@@ -1008,10 +1008,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "1000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "6000"
+    "NominalMin": 1,
+    "NominalMax": 1000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 6000
   },
   {
     "SensorTypeId": 11,
@@ -1021,10 +1021,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.03",
-    "NominalMax": "45",
-    "ExceptionMin": "0.03",
-    "ExceptionMax": "11000"
+    "NominalMin": 0.03,
+    "NominalMax": 45,
+    "ExceptionMin": 0.03,
+    "ExceptionMax": 11000
   },
   {
     "SensorTypeId": 11,
@@ -1034,10 +1034,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.001",
-    "NominalMax": "175",
-    "ExceptionMin": "0.001",
-    "ExceptionMax": "1000"
+    "NominalMin": 0.001,
+    "NominalMax": 175,
+    "ExceptionMin": 0.001,
+    "ExceptionMax": 1000
   },
   {
     "SensorTypeId": 11,
@@ -1047,10 +1047,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.001",
-    "NominalMax": "2.8",
-    "ExceptionMin": "0.001",
-    "ExceptionMax": "30"
+    "NominalMin": 0.001,
+    "NominalMax": 2.8,
+    "ExceptionMin": 0.001,
+    "ExceptionMax": 30
   },
   {
     "SensorTypeId": 11,
@@ -1060,10 +1060,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.001",
-    "NominalMax": "1",
-    "ExceptionMin": "0.001",
-    "ExceptionMax": "10"
+    "NominalMin": 0.001,
+    "NominalMax": 1,
+    "ExceptionMin": 0.001,
+    "ExceptionMax": 10
   },
   {
     "SensorTypeId": 11,
@@ -1073,10 +1073,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.001",
-    "NominalMax": "3",
-    "ExceptionMin": "0.001",
-    "ExceptionMax": "7"
+    "NominalMin": 0.001,
+    "NominalMax": 3,
+    "ExceptionMin": 0.001,
+    "ExceptionMax": 7
   },
   {
     "SensorTypeId": 11,
@@ -1086,10 +1086,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "100",
-    "ExceptionMin": "1",
-    "ExceptionMax": "750000"
+    "NominalMin": 1,
+    "NominalMax": 100,
+    "ExceptionMin": 1,
+    "ExceptionMax": 750000
   },
   {
     "SensorTypeId": 11,
@@ -1099,10 +1099,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.05",
-    "NominalMax": "1000",
-    "ExceptionMin": "0.05",
-    "ExceptionMax": "10000"
+    "NominalMin": 0.05,
+    "NominalMax": 1000,
+    "ExceptionMin": 0.05,
+    "ExceptionMax": 10000
   },
   {
     "SensorTypeId": 11,
@@ -1112,10 +1112,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "4000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "115000"
+    "NominalMin": 1,
+    "NominalMax": 4000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 115000
   },
   {
     "SensorTypeId": 11,
@@ -1125,10 +1125,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "135",
-    "ExceptionMin": "1",
-    "ExceptionMax": "30000"
+    "NominalMin": 1,
+    "NominalMax": 135,
+    "ExceptionMin": 1,
+    "ExceptionMax": 30000
   },
   {
     "SensorTypeId": 11,
@@ -1138,10 +1138,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "500000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "900000"
+    "NominalMin": 1,
+    "NominalMax": 500000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 900000
   },
   {
     "SensorTypeId": 11,
@@ -1151,10 +1151,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "1000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "435000"
+    "NominalMin": 1,
+    "NominalMax": 1000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 435000
   },
   {
     "SensorTypeId": 11,
@@ -1164,10 +1164,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "22000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "200000"
+    "NominalMin": 1,
+    "NominalMax": 22000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 200000
   },
   {
     "SensorTypeId": 11,
@@ -1177,10 +1177,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.003",
-    "NominalMax": "10000",
-    "ExceptionMin": "0.003",
-    "ExceptionMax": "100000"
+    "NominalMin": 0.003,
+    "NominalMax": 10000,
+    "ExceptionMin": 0.003,
+    "ExceptionMax": 100000
   },
   {
     "SensorTypeId": 11,
@@ -1190,10 +1190,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.003",
-    "NominalMax": "10000",
-    "ExceptionMin": "0.003",
-    "ExceptionMax": "100000"
+    "NominalMin": 0.003,
+    "NominalMax": 10000,
+    "ExceptionMin": 0.003,
+    "ExceptionMax": 100000
   },
   {
     "SensorTypeId": 11,
@@ -1203,10 +1203,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "300000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "632000"
+    "NominalMin": 1,
+    "NominalMax": 300000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 632000
   },
   {
     "SensorTypeId": 11,
@@ -1216,10 +1216,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.00001",
-    "NominalMax": "200000",
-    "ExceptionMin": "0.00001",
-    "ExceptionMax": "300000"
+    "NominalMin": 0.00001,
+    "NominalMax": 200000,
+    "ExceptionMin": 0.00001,
+    "ExceptionMax": 300000
   },
   {
     "SensorTypeId": 11,
@@ -1229,10 +1229,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "650000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "930000"
+    "NominalMin": 1,
+    "NominalMax": 650000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 930000
   },
   {
     "SensorTypeId": 11,
@@ -1242,10 +1242,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "210000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "300000"
+    "NominalMin": 1,
+    "NominalMax": 210000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 300000
   },
   {
     "SensorTypeId": 11,
@@ -1255,10 +1255,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "40000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "200000"
+    "NominalMin": 1,
+    "NominalMax": 40000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 200000
   },
   {
     "SensorTypeId": 11,
@@ -1268,10 +1268,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.01",
-    "NominalMax": "7000",
-    "ExceptionMin": "0.01",
-    "ExceptionMax": "11000"
+    "NominalMin": 0.01,
+    "NominalMax": 7000,
+    "ExceptionMin": 0.01,
+    "ExceptionMax": 11000
   },
   {
     "SensorTypeId": 11,
@@ -1281,10 +1281,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "650000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "930000"
+    "NominalMin": 1,
+    "NominalMax": 650000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 930000
   },
   {
     "SensorTypeId": 11,
@@ -1294,10 +1294,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.00001",
-    "NominalMax": "200000",
-    "ExceptionMin": "0.00001",
-    "ExceptionMax": "300000"
+    "NominalMin": 0.00001,
+    "NominalMax": 200000,
+    "ExceptionMin": 0.00001,
+    "ExceptionMax": 300000
   },
   {
     "SensorTypeId": 11,
@@ -1307,10 +1307,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "650000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "930000"
+    "NominalMin": 1,
+    "NominalMax": 650000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 930000
   },
   {
     "SensorTypeId": 11,
@@ -1320,10 +1320,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "650000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "930000"
+    "NominalMin": 1,
+    "NominalMax": 650000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 930000
   },
   {
     "SensorTypeId": 11,
@@ -1333,10 +1333,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "650000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "930000"
+    "NominalMin": 1,
+    "NominalMax": 650000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 930000
   },
   {
     "SensorTypeId": 11,
@@ -1346,10 +1346,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.00001",
-    "NominalMax": "200000",
-    "ExceptionMin": "0.00001",
-    "ExceptionMax": "300000"
+    "NominalMin": 0.00001,
+    "NominalMax": 200000,
+    "ExceptionMin": 0.00001,
+    "ExceptionMax": 300000
   },
   {
     "SensorTypeId": 11,
@@ -1359,10 +1359,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.00001",
-    "NominalMax": "200000",
-    "ExceptionMin": "0.00001",
-    "ExceptionMax": "300000"
+    "NominalMin": 0.00001,
+    "NominalMax": 200000,
+    "ExceptionMin": 0.00001,
+    "ExceptionMax": 300000
   },
   {
     "SensorTypeId": 11,
@@ -1372,10 +1372,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.05",
-    "NominalMax": "1000",
-    "ExceptionMin": "0.05",
-    "ExceptionMax": "10000"
+    "NominalMin": 0.05,
+    "NominalMax": 1000,
+    "ExceptionMin": 0.05,
+    "ExceptionMax": 10000
   },
   {
     "SensorTypeId": 11,
@@ -1385,10 +1385,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.05",
-    "NominalMax": "1000",
-    "ExceptionMin": "0.05",
-    "ExceptionMax": "10000"
+    "NominalMin": 0.05,
+    "NominalMax": 1000,
+    "ExceptionMin": 0.05,
+    "ExceptionMax": 10000
   },
   {
     "SensorTypeId": 11,
@@ -1398,10 +1398,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "300000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "750000"
+    "NominalMin": 1,
+    "NominalMax": 300000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 750000
   },
   {
     "SensorTypeId": 11,
@@ -1411,10 +1411,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.05",
-    "NominalMax": "1000",
-    "ExceptionMin": "0.05",
-    "ExceptionMax": "10000"
+    "NominalMin": 0.05,
+    "NominalMax": 1000,
+    "ExceptionMin": 0.05,
+    "ExceptionMax": 10000
   },
   {
     "SensorTypeId": 11,
@@ -1424,10 +1424,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.05",
-    "NominalMax": "1000",
-    "ExceptionMin": "0.05",
-    "ExceptionMax": "10000"
+    "NominalMin": 0.05,
+    "NominalMax": 1000,
+    "ExceptionMin": 0.05,
+    "ExceptionMax": 10000
   },
   {
     "SensorTypeId": 11,
@@ -1437,10 +1437,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.05",
-    "NominalMax": "1000",
-    "ExceptionMin": "0.05",
-    "ExceptionMax": "10000"
+    "NominalMin": 0.05,
+    "NominalMax": 1000,
+    "ExceptionMin": 0.05,
+    "ExceptionMax": 10000
   },
   {
     "SensorTypeId": 11,
@@ -1450,10 +1450,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.05",
-    "NominalMax": "1000",
-    "ExceptionMin": "0.05",
-    "ExceptionMax": "10000"
+    "NominalMin": 0.05,
+    "NominalMax": 1000,
+    "ExceptionMin": 0.05,
+    "ExceptionMax": 10000
   },
   {
     "SensorTypeId": 11,
@@ -1463,10 +1463,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "650000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "930000"
+    "NominalMin": 1,
+    "NominalMax": 650000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 930000
   },
   {
     "SensorTypeId": 11,
@@ -1476,10 +1476,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1",
-    "NominalMax": "335000",
-    "ExceptionMin": "1",
-    "ExceptionMax": "500000"
+    "NominalMin": 1,
+    "NominalMax": 335000,
+    "ExceptionMin": 1,
+    "ExceptionMax": 500000
   },
   {
     "SensorTypeId": 11,
@@ -1489,10 +1489,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.05",
-    "NominalMax": "1000",
-    "ExceptionMin": "0.05",
-    "ExceptionMax": "10000"
+    "NominalMin": 0.05,
+    "NominalMax": 1000,
+    "ExceptionMin": 0.05,
+    "ExceptionMax": 10000
   },
   {
     "SensorTypeId": 11,
@@ -1502,10 +1502,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.001",
-    "NominalMax": "10",
-    "ExceptionMin": "0.001",
-    "ExceptionMax": "100000"
+    "NominalMin": 0.001,
+    "NominalMax": 10,
+    "ExceptionMin": 0.001,
+    "ExceptionMax": 100000
   },
   {
     "SensorTypeId": 11,
@@ -1515,10 +1515,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.001",
-    "NominalMax": "13000",
-    "ExceptionMin": "0.001",
-    "ExceptionMax": "100000"
+    "NominalMin": 0.001,
+    "NominalMax": 13000,
+    "ExceptionMin": 0.001,
+    "ExceptionMax": 100000
   },
   {
     "SensorTypeId": 11,
@@ -1528,10 +1528,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "1.765",
-    "NominalMax": "750",
-    "ExceptionMin": "1.765",
-    "ExceptionMax": "140000"
+    "NominalMin": 1.765,
+    "NominalMax": 750,
+    "ExceptionMin": 1.765,
+    "ExceptionMax": 140000
   },
   {
     "SensorTypeId": 11,
@@ -1541,10 +1541,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.0001",
-    "NominalMax": "0.05",
-    "ExceptionMin": "0.0001",
-    "ExceptionMax": "65000"
+    "NominalMin": 0.0001,
+    "NominalMax": 0.05,
+    "ExceptionMin": 0.0001,
+    "ExceptionMax": 65000
   },
   {
     "SensorTypeId": 8,
@@ -1554,10 +1554,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 8,
@@ -1567,10 +1567,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "2",
-    "ExceptionMin": "0",
-    "ExceptionMax": "20"
+    "NominalMin": 0,
+    "NominalMax": 2,
+    "ExceptionMin": 0,
+    "ExceptionMax": 20
   },
   {
     "SensorTypeId": 8,
@@ -1580,10 +1580,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0",
-    "NominalMax": "0.1",
-    "ExceptionMin": "0",
-    "ExceptionMax": "3"
+    "NominalMin": 0,
+    "NominalMax": 0.1,
+    "ExceptionMin": 0,
+    "ExceptionMax": 3
   },
   {
     "SensorTypeId": 4,
@@ -1593,10 +1593,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 4,
@@ -1606,10 +1606,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 1,
     "NumberScale": 5,
-    "NominalMin": "0.001",
-    "NominalMax": "25000",
-    "ExceptionMin": "0.001",
-    "ExceptionMax": "600000"
+    "NominalMin": 0.001,
+    "NominalMax": 25000,
+    "ExceptionMin": 0.001,
+    "ExceptionMax": 600000
   },
   {
     "SensorTypeId": 9,
@@ -1619,10 +1619,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 9,
@@ -1632,10 +1632,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 13,
@@ -1645,10 +1645,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 13,
@@ -1658,10 +1658,10 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   },
   {
     "SensorTypeId": 13,
@@ -1671,9 +1671,9 @@
     "TransportMode": 0,
     "DataPointTypeId": 2,
     "NumberScale": 0,
-    "NominalMin": "0",
-    "NominalMax": "0",
-    "ExceptionMin": "0",
-    "ExceptionMax": "0"
+    "NominalMin": 0,
+    "NominalMax": 0,
+    "ExceptionMin": 0,
+    "ExceptionMax": 0
   }
 ]

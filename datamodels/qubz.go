@@ -14,6 +14,7 @@ type QubzEventHeader struct {
 	EventTimestamp  string     `json:"EventTimestamp"`
 	RouteAssignment int        `json:"RouteAssignment"`
 	ShipmentType    int        `json:"ShipmentType"`
+	TransportMode   int        `json:"TransportMode"`
 	SensorType      QubzSensor `json:"SensorType"`
 }
 

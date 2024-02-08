@@ -15,6 +15,7 @@ func QubzSealTestEvent(outputFilePath string) {
 	jsondata.EventHeader.QubzId = "SunnyRainyJellyfish"
 	jsondata.EventHeader.RouteAssignment = 3
 	jsondata.EventHeader.ShipmentType = 2
+	jsondata.EventHeader.TransportMode = 6
 	jsondata.EventHeader.SensorType.SensorTypeId = 9
 	jsondata.EventHeader.SensorType.SensorTypeDescription = "door seal"
 

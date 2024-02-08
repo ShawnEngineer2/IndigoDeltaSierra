@@ -16,6 +16,7 @@ func AltimeterTestEvent(outputFilePath string) {
 	jsondata.EventHeader.RouteAssignment = 3
 	jsondata.EventHeader.ShipmentType = 2
 	jsondata.EventHeader.SensorType.SensorTypeId = 1
+	jsondata.EventHeader.TransportMode = 6
 	jsondata.EventHeader.SensorType.SensorTypeDescription = "altimeter"
 
 	jsondata.SensorData = make([]datamodels.AltimeterReading, 2)

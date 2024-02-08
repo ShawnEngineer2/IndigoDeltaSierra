@@ -15,6 +15,7 @@ func LockTestEvent(outputFilePath string) {
 	jsondata.EventHeader.QubzId = "SunnyRainyJellyfish"
 	jsondata.EventHeader.RouteAssignment = 3
 	jsondata.EventHeader.ShipmentType = 2
+	jsondata.EventHeader.TransportMode = 6
 	jsondata.EventHeader.SensorType.SensorTypeId = 7
 	jsondata.EventHeader.SensorType.SensorTypeDescription = "lock state"
 

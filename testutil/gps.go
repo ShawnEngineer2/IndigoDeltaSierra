@@ -15,6 +15,7 @@ func GPSTestEvent(outputFilePath string) {
 	jsondata.EventHeader.QubzId = "SunnyRainyJellyfish"
 	jsondata.EventHeader.RouteAssignment = 3
 	jsondata.EventHeader.ShipmentType = 2
+	jsondata.EventHeader.TransportMode = 6
 	jsondata.EventHeader.SensorType.SensorTypeId = 5
 	jsondata.EventHeader.SensorType.SensorTypeDescription = "gps"
 

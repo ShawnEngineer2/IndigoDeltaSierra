@@ -21,6 +21,7 @@ func StartSimulation() {
 	sensorTypeDS := make([]datamodels.SensorType, 1)
 	shipmentTypeDS := make([]datamodels.ShipmentType, 1)
 	transportModeDS := make([]datamodels.TransportMode, 1)
+	sensorRangeDS := make([]datamodels.SensorRange, 1)
 
 	//Set up console logger
 	consoleLogger := slog.Default()
@@ -42,58 +43,18 @@ func StartSimulation() {
 	customlog.InfoFile(fileLogger, "Config Values for this run ...")
 	customlog.InfoFile(fileLogger, fmt.Sprintf("%+v", configDS))
 
-	//Load Locations data
-	err = datautil.LoadDataFile(&locationsDS, "Locations", appconstants.LOCATIONS_FILE_PATH, consoleLogger, fileLogger)
+	//Load simulator configuration data
+	err = fileLoader(&locationsDS, &routesDS, &classOfServiceDS, &qubzNameDS, &sensorTypeDS, &shipmentTypeDS, &transportModeDS, &sensorRangeDS, consoleLogger, fileLogger)
 
 	if err != nil {
+		//Exit with Failure message
+		customlog.ErrorAllChannels(consoleLogger, fileLogger, appconstants.SIMULATION_FAILED_MSG)
 		return
 	}
 
-	//Load Route data
-	err = datautil.LoadDataFile(&routesDS, "Routes", appconstants.ROUTES_FILE_PATH, consoleLogger, fileLogger)
+	fmt.Println(sensorRangeDS)
 
-	if err != nil {
-		return
-	}
-
-	//Load Class of Service data
-	err = datautil.LoadDataFile(&classOfServiceDS, "Class of Service", appconstants.CLASS_OF_SERVICE_FILE_PATH, consoleLogger, fileLogger)
-
-	if err != nil {
-		return
-	}
-
-	//Load the list of Qubz names
-	err = datautil.LoadDataFile(&qubzNameDS, "Qubz Names", appconstants.QUBZ_NAME_FILE_PATH, consoleLogger, fileLogger)
-
-	if err != nil {
-		return
-	}
-
-	//Load the list of Sensor Types
-	err = datautil.LoadDataFile(&sensorTypeDS, "Sensor Types", appconstants.SENSOR_TYPE_FILE_PATH, consoleLogger, fileLogger)
-
-	if err != nil {
-		return
-	}
-
-	//Load the list of Shipment Types
-	err = datautil.LoadDataFile(&shipmentTypeDS, "Shipment Types", appconstants.SHIPMENT_TYPES_FILE_PATH, consoleLogger, fileLogger)
-
-	if err != nil {
-		return
-	}
-
-	//Load the list of Transport Modes
-	err = datautil.LoadDataFile(&transportModeDS, "Transport Modes", appconstants.TRANSPORT_MODE_FILE_PATH, consoleLogger, fileLogger)
-
-	if err != nil {
-		return
-	}
-
-	fmt.Println(transportModeDS)
-
-	//Exit with a CLEAN (no errors) code
+	//Exit with a success message
 	customlog.InfoAllChannels(consoleLogger, fileLogger, appconstants.SIMULATION_COMPLETE_MSG, true)
 
 }
