@@ -1,5 +1,5 @@
 {
-    "qubzCount":100,
+    "qubzCount":10000,
     "eventInterval":15,
     "eventCycleCount":5,
     "emailAddress":"shawn.engineer2@gmail.com",

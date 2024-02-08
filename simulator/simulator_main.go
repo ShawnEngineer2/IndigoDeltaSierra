@@ -52,7 +52,72 @@ func StartSimulation() {
 		return
 	}
 
-	fmt.Println(sensorRangeDS)
+	//Determine the number of Qubz to simulate
+	var qubz_simulation_count int = 0
+
+	if configDS.QubzCount > len(qubzNameDS) || configDS.QubzCount == 0 {
+		//Not enough Qubz names - adjust the count of Qubz to the max available OR no limit specified so just load all available QUBZ names
+		qubz_simulation_count = len(qubzNameDS)
+
+	} else if configDS.QubzCount < 0 {
+		//Invalid value - notify and bail out
+		customlog.ErrorAllChannels(consoleLogger, fileLogger, "Invalid qubzCount config value - cannot configure simulation")
+		customlog.ErrorAllChannels(consoleLogger, fileLogger, appconstants.SIMULATION_FAILED_MSG)
+		return
+
+	} else {
+		//Set number of Qubz to simulate to the number in the Config file
+		qubz_simulation_count = configDS.QubzCount
+	}
+
+	//Allocate and initialize the Qubz Matrix
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Initializing Qubz Matrix ...", true)
+	currentQubzMatrix := make([]datamodels.QubzMatrix, qubz_simulation_count)
+
+	err = initializeQubzMatrix(qubz_simulation_count, &qubzNameDS, &currentQubzMatrix, consoleLogger, fileLogger, &configDS)
+
+	if err != nil {
+		customlog.ErrorAllChannels(consoleLogger, fileLogger, err.Error())
+		return
+	}
+
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Qubz Matrix Initialized", true)
+
+	//Assign routes to Qubz in the Qubz Matrix
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Assigning Routes to Qubz in Qubz Matrix ...", true)
+
+	err = assignQubzRoutes(qubz_simulation_count, &routesDS, &currentQubzMatrix, consoleLogger, fileLogger, &configDS)
+
+	if err != nil {
+		customlog.ErrorAllChannels(consoleLogger, fileLogger, err.Error())
+		return
+	}
+
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Route Assignment Complete", true)
+
+	//Assign shipment types to Qubz in the Qubz Matrix
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Assigning Shipment Types to Qubz in Qubz Matrix ...", true)
+
+	err = assignQubzShipmentTypes(qubz_simulation_count, &shipmentTypeDS, &currentQubzMatrix, consoleLogger, fileLogger, &configDS)
+
+	if err != nil {
+		customlog.ErrorAllChannels(consoleLogger, fileLogger, err.Error())
+		return
+	}
+
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Shipment Type Assignment Complete", true)
+
+	//Configure initial exception levels in the Qubz Matrix
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Configuring Initial Exceptions in Qubz Matrix ...", true)
+
+	initializeQubzMatrixExceptions(&currentQubzMatrix, consoleLogger, fileLogger)
+
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Exception Configuration Complete", true)
+
+	//Configure initial sensor values in the Qubz Matrix
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Configuring Initial Sensor Values in Qubz Matrix ...", true)
+
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Qubz Matrix Sensor Configuration Complete", true)
 
 	//Exit with a success message
 	customlog.InfoAllChannels(consoleLogger, fileLogger, appconstants.SIMULATION_COMPLETE_MSG, true)

@@ -1,1036 +1,547 @@
-{"time":"2024-01-16T23:14:08.424279-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-16T23:14:11.425159-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-16T23:24:08.919111-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-16T23:24:08.919612-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-16T23:24:14.920859-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-16T23:25:13.268099-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-16T23:25:13.268595-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-16T23:25:19.269426-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-16T23:32:28.949624-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-16T23:32:28.950334-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-16T23:32:28.950356-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile}"}
-{"time":"2024-01-16T23:32:28.950368-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-16T23:32:34.952363-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-16T23:56:47.993125-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-16T23:56:47.998265-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-16T23:56:47.998284-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile}"}
-{"time":"2024-01-16T23:56:47.998294-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-16T23:56:54.000567-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-16T23:56:54.000834-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-16T23:56:54.000874-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-16T23:56:54.000931-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-16T23:56:56.732788-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-16T23:57:58.342431-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-16T23:57:58.34276-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-16T23:57:58.342778-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile}"}
-{"time":"2024-01-16T23:57:58.342787-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-16T23:58:04.345029-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-16T23:58:04.345431-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-16T23:58:04.345495-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-16T23:58:04.345614-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-16T23:58:04.600497-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-16T23:58:37.341073-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-16T23:58:37.34154-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-16T23:58:37.341549-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile}"}
-{"time":"2024-01-16T23:58:37.341553-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-16T23:58:43.343732-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-16T23:58:43.344042-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-16T23:58:43.344085-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-16T23:58:43.344166-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-16T23:58:43.635966-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-17T00:00:01.532906-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-17T00:00:01.533269-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-17T00:00:01.533281-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile}"}
-{"time":"2024-01-17T00:00:01.533285-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-17T00:00:07.535652-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-17T00:00:07.535993-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-17T00:00:07.536021-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-17T00:00:07.536055-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-17T00:00:07.842657-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-17T00:03:22.703552-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-17T00:03:22.704016-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-17T00:03:22.704025-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile}"}
-{"time":"2024-01-17T00:03:22.70403-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-17T00:03:28.705448-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-17T00:03:28.705965-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-17T00:03:28.705995-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-17T00:03:28.706035-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-17T00:03:30.868834-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-17T00:09:50.860373-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-17T00:09:50.86605-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-17T00:09:50.866071-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile}"}
-{"time":"2024-01-17T00:09:50.866082-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-17T00:09:56.868289-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-17T00:09:56.868622-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-17T00:09:56.868664-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-17T00:09:56.868772-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-17T00:09:58.697729-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-17T00:16:37.362627-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-17T00:16:37.363056-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-17T00:16:37.36308-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile}"}
-{"time":"2024-01-17T00:16:37.363085-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-17T00:16:40.36417-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-17T00:16:40.364509-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-17T00:16:40.364548-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-17T00:16:40.364594-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-17T00:16:45.459657-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-17T00:16:45.459845-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-17T00:16:45.459921-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-17T00:16:45.460022-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-17T00:16:45.981593-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-17T00:16:45.981746-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-17T00:16:45.981782-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-17T00:16:45.981806-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-17T00:16:46.430693-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-17T00:20:19.897901-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-17T00:20:19.898507-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-17T00:20:19.898517-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile}"}
-{"time":"2024-01-17T00:20:19.898523-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-17T00:20:22.899678-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-17T00:20:22.900087-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-17T00:20:22.900161-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-17T00:20:22.900243-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-17T00:20:26.23658-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-17T00:20:26.236733-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-17T00:20:26.236783-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-17T00:20:26.236797-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-17T00:20:26.452181-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-17T00:20:26.452367-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-17T00:20:26.452403-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-17T00:20:26.452427-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-17T00:20:26.6488-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-19T22:18:28.722877-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-19T22:18:28.723183-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-19T22:18:28.723215-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile}"}
-{"time":"2024-01-19T22:18:28.723237-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-19T22:18:31.724431-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T22:18:31.724755-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T22:18:31.724807-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T22:18:31.724891-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T22:18:35.148076-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T22:18:35.148176-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T22:18:35.148217-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T22:18:35.14823-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T22:18:35.690012-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T22:18:35.69014-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T22:18:35.690189-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T22:18:35.690226-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T22:18:36.210704-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-19T22:33:54.99118-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-19T22:33:54.991415-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-19T22:33:54.99144-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-19T22:33:55.360778-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-19T22:33:58.361924-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T22:33:58.362396-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T22:33:58.36245-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T22:33:58.362534-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T22:34:02.030438-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T22:34:02.030654-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T22:34:02.030702-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T22:34:02.030733-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T22:34:02.211121-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T22:34:02.211228-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T22:34:02.211256-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T22:34:02.211279-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T22:34:02.385787-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-19T22:34:28.586395-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-19T22:34:28.586556-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-19T22:34:28.586578-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-19T22:34:28.652016-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-19T22:34:31.653154-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T22:34:31.653433-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T22:34:31.653478-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T22:34:31.653561-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T22:34:34.933079-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T22:34:34.933241-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T22:34:34.933332-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T22:34:34.933368-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T22:34:35.1207-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T22:34:35.120829-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T22:34:35.120871-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T22:34:35.120903-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T22:34:35.295568-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-19T22:35:33.454252-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-19T22:35:33.454402-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-19T22:35:33.454419-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-19T22:35:33.519502-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-19T22:35:36.520627-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T22:35:36.52085-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T22:35:36.52096-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T22:35:36.521034-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T22:35:39.802519-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T22:35:39.802784-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T22:35:39.802848-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T22:35:39.802885-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T22:35:39.97195-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T22:35:39.972064-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T22:35:39.972102-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T22:35:39.972133-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T22:35:40.135057-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-19T23:14:22.296809-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-19T23:14:22.29697-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-19T23:14:22.296985-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-19T23:14:22.357647-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-19T23:14:25.358769-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T23:14:25.359096-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T23:14:25.359152-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T23:14:25.359246-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T23:14:28.688785-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T23:14:28.688937-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T23:14:28.689036-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T23:14:28.689074-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T23:14:28.925027-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T23:14:28.925179-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T23:14:28.925223-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T23:14:28.925261-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T23:14:29.45093-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-19T23:14:52.007744-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-19T23:14:52.007869-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-19T23:14:52.007882-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-19T23:14:52.065882-05:00","level":"INFO","msg":"Loading Qubz"}
-{"time":"2024-01-19T23:14:55.067021-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T23:14:55.06734-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T23:14:55.067392-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T23:14:55.067488-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T23:14:58.390683-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T23:14:58.390933-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T23:14:58.39099-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T23:14:58.391049-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T23:14:58.862669-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T23:14:58.8629-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T23:14:58.862944-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T23:14:58.862974-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T23:14:59.036486-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-19T23:22:59.499217-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-19T23:22:59.499427-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-19T23:22:59.499446-05:00","level":"INFO","msg":"{QubzCount:0 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-19T23:22:59.565516-05:00","level":"INFO","msg":"Loading All Qubz Names ..."}
-{"time":"2024-01-19T23:23:02.566752-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T23:23:02.56707-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T23:23:02.567124-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T23:23:02.567209-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T23:23:06.491925-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T23:23:06.492097-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T23:23:06.492203-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T23:23:06.492239-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T23:23:06.677208-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T23:23:06.677377-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T23:23:06.677425-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T23:23:06.677461-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T23:23:07.14119-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-19T23:30:48.47831-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-19T23:30:48.478531-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-19T23:30:48.478556-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-19T23:30:48.545393-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-19T23:30:48.545429-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T23:30:48.545468-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T23:30:48.545473-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T23:30:48.545488-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T23:30:52.080785-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T23:30:52.080996-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T23:30:52.081042-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T23:30:52.081077-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T23:30:55.25847-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T23:30:55.258697-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T23:30:55.258748-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T23:30:55.258787-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T23:30:55.640865-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-19T23:30:55.640985-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-19T23:30:55.641028-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-19T23:30:55.641161-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-19T23:30:55.804358-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-25T20:52:27.487756-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-25T20:52:27.488196-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-25T20:52:27.488246-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-25T20:52:27.55368-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-25T20:52:27.55371-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T20:52:27.553832-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T20:52:27.553843-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T20:52:27.553858-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T20:52:31.474549-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T20:52:31.474836-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T20:52:31.474897-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T20:52:31.47494-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T20:52:35.074189-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T20:52:35.074425-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T20:52:35.074483-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T20:52:35.07453-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T20:52:35.743387-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T20:52:35.743538-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T20:52:35.743582-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T20:52:35.743616-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T20:52:36.269263-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-25T20:53:15.301466-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-25T20:53:15.301606-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-25T20:53:15.301619-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-25T20:53:15.361079-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-25T20:53:15.361108-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T20:53:15.361147-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T20:53:15.361152-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T20:53:15.361206-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T20:53:18.822781-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T20:53:18.822972-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T20:53:18.823027-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T20:53:18.823066-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T20:53:21.993685-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T20:53:21.993915-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T20:53:21.993966-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T20:53:21.994008-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T20:53:22.167887-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T20:53:22.168035-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T20:53:22.168117-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T20:53:22.168144-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T20:54:14.518975-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-25T20:54:14.519202-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-25T20:54:14.519234-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-25T20:54:14.58409-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-25T20:54:14.584126-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T20:54:14.584161-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T20:54:14.584166-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T20:54:14.58418-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T20:54:18.047641-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T20:54:18.047868-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T20:54:18.047917-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T20:54:18.047958-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T20:54:21.225057-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T20:54:21.225266-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T20:54:21.225314-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T20:54:21.225352-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T20:54:21.694481-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T20:54:21.694585-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T20:54:21.69462-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T20:54:21.694648-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T20:54:21.885924-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-25T21:02:06.89979-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-25T21:02:06.90001-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-25T21:02:06.900048-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-25T21:02:06.965688-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-25T21:02:06.965717-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:02:06.965758-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:02:06.965764-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:02:06.965778-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:02:10.491004-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:02:10.491141-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:02:10.49115-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:02:10.491159-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:02:13.66472-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:02:13.665004-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:02:13.665067-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:02:13.665108-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:02:13.998392-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:02:13.998607-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:02:13.998642-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:02:13.998668-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:02:14.202258-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-25T21:04:24.789511-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-25T21:04:24.789658-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-25T21:04:24.789681-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-25T21:04:24.853673-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-25T21:04:24.853704-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:04:24.853742-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:04:24.853747-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:04:24.853761-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:04:28.332453-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:04:28.33277-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:04:28.332829-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:04:28.332873-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:04:31.735907-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:04:31.736135-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:04:31.736191-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:04:31.736232-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:04:32.068486-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:04:32.068645-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:04:32.068689-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:04:32.068724-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:14:52.114956-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-25T21:14:52.115129-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-25T21:14:52.115144-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-25T21:14:52.180821-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-25T21:14:52.180857-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:14:52.180898-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:14:52.180902-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:14:52.180917-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:14:55.65692-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:14:55.6571-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:14:55.657191-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:14:55.657232-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:14:58.925279-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:14:58.925527-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:14:58.92558-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:14:58.92562-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:14:59.107861-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:14:59.108009-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:14:59.10805-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:14:59.108083-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:14:59.561892-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-25T21:24:55.714126-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-25T21:24:55.714291-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-25T21:24:55.714312-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-25T21:24:55.776814-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-25T21:24:55.776845-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:24:55.776882-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:24:55.776888-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:24:55.776903-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:24:56.307776-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:24:56.307853-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:24:56.307862-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:24:56.307869-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:24:56.551355-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:24:56.551555-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:24:56.551609-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:24:56.551655-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:24:56.736725-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:24:56.73685-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:24:56.736891-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:24:56.736924-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:24:56.927656-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-25T21:25:15.537074-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-25T21:25:15.537255-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-25T21:25:15.537273-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-25T21:25:15.598079-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-25T21:25:15.598112-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:25:15.598149-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:25:15.598154-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:25:15.59817-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:25:15.949407-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:25:15.94955-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:25:15.949599-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:25:15.949635-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:25:16.130488-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:25:16.130646-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:25:16.130691-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:25:16.13077-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:25:16.340827-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:25:16.340953-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:25:16.340988-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:25:16.341017-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:25:16.521282-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-25T21:25:29.603954-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-25T21:25:29.60413-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-25T21:25:29.604154-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-25T21:25:29.669236-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-25T21:25:29.669263-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:25:29.6693-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:25:29.669304-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:25:29.669318-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:25:30.288496-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:25:30.288563-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:25:30.288574-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:25:30.288582-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:25:30.773036-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:25:30.773185-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:25:30.773231-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:25:30.773264-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:25:31.244145-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:25:31.244297-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:25:31.244347-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:25:31.244387-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:25:31.701164-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-25T21:33:58.811845-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-25T21:33:58.812049-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-25T21:33:58.812081-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-25T21:33:58.87747-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-25T21:33:58.8775-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:33:58.877539-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:33:58.877544-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:33:58.877559-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:33:59.383639-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:33:59.383803-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:33:59.383859-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:33:59.383898-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:33:59.550038-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:33:59.550296-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:33:59.550351-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:33:59.550383-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:33:59.728492-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-25T21:33:59.728618-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-25T21:33:59.728655-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-25T21:33:59.728681-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-25T21:33:59.9232-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-26T23:00:14.351521-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-26T23:00:14.351815-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-26T23:00:14.351849-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-26T23:00:14.419498-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-26T23:00:14.419545-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-26T23:00:14.419573-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-26T23:00:14.419578-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-26T23:00:14.419592-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-26T23:00:18.198379-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-26T23:00:18.198607-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-26T23:00:18.198657-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-26T23:00:18.198697-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-26T23:00:21.716164-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-26T23:00:21.716348-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-26T23:00:21.716394-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-26T23:00:21.716428-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-26T23:00:22.267245-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-26T23:00:22.267371-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-26T23:00:22.26741-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-26T23:00:22.26744-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-26T23:00:22.787549-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-26T23:02:05.778762-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-26T23:02:05.77905-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-26T23:02:05.779089-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-26T23:02:05.848899-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-26T23:02:05.84894-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-26T23:02:05.848967-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-26T23:02:05.848972-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-26T23:02:05.848986-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-26T23:02:17.13553-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-26T23:02:17.135753-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-26T23:02:17.135811-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-26T23:02:17.135914-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-26T23:02:27.598072-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-26T23:02:27.598262-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-26T23:02:27.598308-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-26T23:02:27.598343-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-26T23:02:28.128812-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-26T23:02:28.128961-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-26T23:02:28.129006-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-26T23:02:28.129045-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-26T23:02:28.651978-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-26T23:05:33.888819-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-26T23:05:33.889098-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-26T23:05:33.889143-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-26T23:05:33.959255-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-26T23:05:33.959302-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-26T23:05:33.959329-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-26T23:05:33.959334-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-26T23:05:33.959348-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-26T23:05:45.306911-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-26T23:05:45.307132-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-26T23:05:45.307189-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-26T23:05:45.307227-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-26T23:05:55.770924-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-26T23:05:55.771152-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-26T23:05:55.771201-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-26T23:05:55.771238-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-26T23:05:56.301281-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-26T23:05:56.301419-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-26T23:05:56.301468-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-26T23:05:56.301505-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-26T23:05:56.821858-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-28T00:11:00.697716-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-28T00:11:00.698281-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-28T00:11:00.69833-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-28T00:11:00.769866-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-28T00:11:00.769907-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-28T00:11:00.769936-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-28T00:11:00.769942-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-28T00:11:00.769947-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-28T00:11:11.492394-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-28T00:11:11.49258-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-28T00:11:11.492724-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-28T00:11:11.492755-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-28T00:11:21.802802-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-28T00:11:21.803003-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-28T00:11:21.803046-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-28T00:11:21.803076-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-28T00:11:22.034461-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-28T00:11:22.034582-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-28T00:11:22.034617-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-28T00:11:22.034645-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-28T00:11:22.246356-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-28T00:22:13.508756-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-28T00:22:13.509018-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-28T00:22:13.509054-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-28T00:22:13.572043-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-28T00:22:13.572104-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-28T00:22:13.572133-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-28T00:22:13.572138-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-28T00:22:13.572142-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-28T00:22:23.959967-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-28T00:22:23.960203-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-28T00:22:23.960268-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-28T00:22:23.960316-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-28T00:22:34.206587-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-28T00:22:34.206797-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-28T00:22:34.206847-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-28T00:22:34.206881-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-28T00:22:34.563063-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-28T00:22:34.56319-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-28T00:22:34.563232-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-28T00:22:34.563266-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-28T00:22:34.788464-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-01-28T00:24:11.705035-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-01-28T00:24:11.705381-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-01-28T00:24:11.70542-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-01-28T00:24:11.775598-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-01-28T00:24:11.775661-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-28T00:24:11.77569-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-28T00:24:11.775695-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-28T00:24:11.7757-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-28T00:24:22.120616-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-28T00:24:22.12079-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-28T00:24:22.120831-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-28T00:24:22.120863-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-28T00:24:32.348204-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-28T00:24:32.348429-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-28T00:24:32.348482-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-28T00:24:32.348519-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-28T00:24:32.577568-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-01-28T00:24:32.577718-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-01-28T00:24:32.577768-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-01-28T00:24:32.577805-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-01-28T00:24:32.805261-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-02-05T22:30:26.432454-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-05T22:30:26.433661-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-05T22:30:26.433705-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-05T22:30:26.503128-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-02-05T22:30:26.503174-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:30:26.503202-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:30:26.503207-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:30:26.503212-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:30:37.455275-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:30:37.455484-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:30:37.455542-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:30:37.45558-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:30:47.640649-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:30:47.640878-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:30:47.640933-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:30:47.640972-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:30:47.897495-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:30:47.89764-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:30:47.897687-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:30:47.897719-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:30:48.087012-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-02-05T22:33:25.14664-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-05T22:33:25.146864-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-05T22:33:25.146891-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-05T22:33:25.216041-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-02-05T22:33:25.21609-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:33:25.216119-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:33:25.216125-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:33:25.216143-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:33:35.572481-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:33:35.572538-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:33:35.572548-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:33:35.572554-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:33:45.850178-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:33:45.850263-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:33:45.850272-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:33:45.85028-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:33:46.149332-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:33:46.149494-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:33:46.149549-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:33:46.149587-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:33:46.327605-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-02-05T22:35:54.458739-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-05T22:35:54.459017-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-05T22:35:54.459058-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-05T22:35:54.529853-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-02-05T22:35:54.529899-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:35:54.529928-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:35:54.529933-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:35:54.529941-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:36:04.853238-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:36:04.853423-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:36:04.853467-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:36:04.853504-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:37:43.914858-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-05T22:37:43.915111-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-05T22:37:43.915143-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-05T22:37:43.985034-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-02-05T22:37:43.985078-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:37:43.985106-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:37:43.985111-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:37:43.985116-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:37:54.515543-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:37:54.515582-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:37:54.515589-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:37:54.515594-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:38:04.8062-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:38:04.80625-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:38:04.806277-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:38:04.806283-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:38:05.094076-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:38:05.094225-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:38:05.094266-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:38:05.094293-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:38:05.291821-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-02-05T22:42:11.896726-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-05T22:42:11.896804-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-05T22:42:11.896813-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-05T22:42:11.943172-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-02-05T22:42:11.943215-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:42:11.943242-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:42:11.943247-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:42:11.943253-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:42:22.329961-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:42:22.330153-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:42:22.330201-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:42:22.330238-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:45:08.324619-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-05T22:45:08.32489-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-05T22:45:08.324925-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-05T22:45:08.395425-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-02-05T22:45:08.395464-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:45:08.395492-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:45:08.395496-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:45:08.395501-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:45:18.737927-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:45:18.738011-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:45:18.738024-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:45:18.738034-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:46:11.372441-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-05T22:46:11.372712-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-05T22:46:11.372749-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-05T22:46:11.439503-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-02-05T22:46:11.439546-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:46:11.439574-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:46:11.439579-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:46:11.439592-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-05T22:46:21.908355-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-05T22:46:21.908571-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-05T22:46:21.908622-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-05T22:46:21.90866-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-06T22:34:29.078268-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-06T22:34:29.078645-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-06T22:34:29.078686-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-06T22:34:29.145743-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-02-06T22:34:29.145787-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-06T22:34:29.145816-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-06T22:34:29.145821-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-06T22:34:29.145834-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-06T22:34:39.627597-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-06T22:34:39.627882-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-06T22:34:39.627952-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-06T22:34:39.628002-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-06T22:34:49.824792-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-06T22:34:49.825086-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-06T22:34:49.825153-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-06T22:34:49.825194-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-06T22:34:50.002313-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-06T22:34:50.002487-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-06T22:34:50.002546-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-06T22:34:50.002589-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-06T22:34:50.163972-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-02-06T22:50:23.050173-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-06T22:50:23.050542-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-06T22:50:23.050591-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-06T22:50:23.121889-05:00","level":"INFO","msg":"Loading Random Qubz Names ..."}
-{"time":"2024-02-06T22:50:23.121924-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-06T22:50:23.121966-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-06T22:50:23.121971-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-06T22:50:23.121976-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-06T22:50:33.462358-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-06T22:50:33.462589-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-06T22:50:33.462645-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-06T22:50:33.462698-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-06T22:50:43.642663-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-06T22:50:43.64291-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-06T22:50:43.64297-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-06T22:50:43.643086-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-06T22:50:43.820224-05:00","level":"INFO","msg":"Configuring Call"}
-{"time":"2024-02-06T22:50:43.820326-05:00","level":"INFO","msg":"Adding Headers"}
-{"time":"2024-02-06T22:50:43.820351-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
-{"time":"2024-02-06T22:50:43.820381-05:00","level":"INFO","msg":"Making Call"}
-{"time":"2024-02-06T22:50:43.988925-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-02-07T00:22:11.605592-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T00:22:11.605687-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T00:22:11.605698-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T00:22:11.605709-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T00:22:11.60572-05:00","level":"INFO","msg":"Loading Locations data ..."}
-{"time":"2024-02-07T00:22:11.605896-05:00","level":"INFO","msg":"Location values loaded"}
-{"time":"2024-02-07T00:22:11.605906-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T00:22:11.605917-05:00","level":"INFO","msg":"Loading Routes data ..."}
-{"time":"2024-02-07T00:22:11.606928-05:00","level":"INFO","msg":"Routes values loaded"}
-{"time":"2024-02-07T00:22:11.606936-05:00","level":"INFO","msg":"Run Complete ... Shutting Down"}
-{"time":"2024-02-07T00:24:15.762593-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T00:24:15.76288-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T00:24:15.762916-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T00:24:15.762957-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T00:24:15.76301-05:00","level":"INFO","msg":"Loading Locations data ..."}
-{"time":"2024-02-07T00:24:15.763467-05:00","level":"INFO","msg":"Location values loaded"}
-{"time":"2024-02-07T00:24:15.763514-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T00:24:15.763565-05:00","level":"INFO","msg":"Loading Routes data ..."}
-{"time":"2024-02-07T00:24:15.765793-05:00","level":"INFO","msg":"Routes values loaded"}
-{"time":"2024-02-07T00:24:15.765839-05:00","level":"INFO","msg":"Simulation Complete"}
-{"time":"2024-02-07T13:17:06.083402-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T13:17:06.084252-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T13:17:06.084273-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T13:17:06.084289-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T13:17:06.084313-05:00","level":"INFO","msg":"Loading Locations data ..."}
-{"time":"2024-02-07T13:17:06.089225-05:00","level":"INFO","msg":"Location values loaded"}
-{"time":"2024-02-07T13:17:06.089279-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T13:17:06.089318-05:00","level":"INFO","msg":"Loading Routes data ..."}
-{"time":"2024-02-07T13:17:06.094472-05:00","level":"INFO","msg":"Routes values loaded"}
-{"time":"2024-02-07T13:17:06.094498-05:00","level":"INFO","msg":"Simulation Complete"}
-{"time":"2024-02-07T13:49:22.579719-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T13:49:22.589213-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T13:49:22.589278-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T13:49:22.589318-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T13:49:22.589385-05:00","level":"INFO","msg":"Loading Locations data ..."}
-{"time":"2024-02-07T13:49:22.597867-05:00","level":"INFO","msg":"Location values loaded"}
-{"time":"2024-02-07T13:49:22.597908-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T13:49:22.597952-05:00","level":"INFO","msg":"Loading Routes data ..."}
-{"time":"2024-02-07T13:49:22.610151-05:00","level":"INFO","msg":"Routes values loaded"}
-{"time":"2024-02-07T13:49:22.610187-05:00","level":"INFO","msg":"Simulation Complete"}
-{"time":"2024-02-07T14:34:10.990297-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T14:34:10.995857-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T14:34:10.995892-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T14:34:10.995945-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T14:34:10.996019-05:00","level":"INFO","msg":"Loading Locations data ..."}
-{"time":"2024-02-07T14:34:11.002016-05:00","level":"INFO","msg":"Location values loaded"}
-{"time":"2024-02-07T14:34:11.002071-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T14:34:11.002121-05:00","level":"INFO","msg":"Loading Routes data ..."}
-{"time":"2024-02-07T14:34:11.010173-05:00","level":"INFO","msg":"Routes values loaded"}
-{"time":"2024-02-07T14:34:11.010203-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
-{"time":"2024-02-07T14:34:11.01024-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
-{"time":"2024-02-07T14:34:11.014373-05:00","level":"INFO","msg":"Class of Service file loaded"}
-{"time":"2024-02-07T14:34:11.014402-05:00","level":"INFO","msg":"Simulation Complete"}
-{"time":"2024-02-07T14:35:03.639046-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T14:35:03.639587-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T14:35:03.639618-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T14:35:03.639646-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T14:35:03.639683-05:00","level":"INFO","msg":"Loading Locations data ..."}
-{"time":"2024-02-07T14:35:03.64017-05:00","level":"INFO","msg":"Location values loaded"}
-{"time":"2024-02-07T14:35:03.640204-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T14:35:03.640235-05:00","level":"INFO","msg":"Loading Routes data ..."}
-{"time":"2024-02-07T14:35:03.64236-05:00","level":"INFO","msg":"Routes values loaded"}
-{"time":"2024-02-07T14:35:03.642392-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
-{"time":"2024-02-07T14:35:03.642425-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
-{"time":"2024-02-07T14:35:03.642784-05:00","level":"INFO","msg":"Class of Service file loaded"}
-{"time":"2024-02-07T14:35:03.642836-05:00","level":"INFO","msg":"Simulation Complete"}
-{"time":"2024-02-07T15:22:45.573397-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T15:22:45.580931-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T15:22:45.580958-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T15:22:45.581009-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T15:22:45.581039-05:00","level":"INFO","msg":"Loading Locations file ..."}
-{"time":"2024-02-07T15:22:45.589838-05:00","level":"INFO","msg":"Locations file loaded"}
-{"time":"2024-02-07T15:22:45.589898-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T15:22:45.589943-05:00","level":"INFO","msg":"Loading Routes file ..."}
-{"time":"2024-02-07T15:22:45.600296-05:00","level":"INFO","msg":"Routes file loaded"}
-{"time":"2024-02-07T15:22:45.600321-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
-{"time":"2024-02-07T15:22:45.600354-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
-{"time":"2024-02-07T15:22:45.605125-05:00","level":"INFO","msg":"Class of Service file loaded"}
-{"time":"2024-02-07T15:22:45.605162-05:00","level":"INFO","msg":"Simulation Complete"}
-{"time":"2024-02-07T15:23:39.992475-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T15:23:39.992918-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T15:23:39.992943-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T15:23:39.992963-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T15:23:39.992998-05:00","level":"INFO","msg":"Loading Locations file ..."}
-{"time":"2024-02-07T15:23:39.993365-05:00","level":"INFO","msg":"Locations file loaded"}
-{"time":"2024-02-07T15:23:39.993399-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T15:23:39.993423-05:00","level":"INFO","msg":"Loading Routes file ..."}
-{"time":"2024-02-07T15:23:39.995025-05:00","level":"INFO","msg":"Routes file loaded"}
-{"time":"2024-02-07T15:23:39.995051-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
-{"time":"2024-02-07T15:23:39.995079-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
-{"time":"2024-02-07T15:23:39.995271-05:00","level":"INFO","msg":"Class of Service file loaded"}
-{"time":"2024-02-07T15:23:39.995302-05:00","level":"INFO","msg":"Simulation Complete"}
-{"time":"2024-02-07T17:32:57.193033-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T17:32:57.200536-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T17:32:57.200585-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T17:32:57.200629-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T17:32:57.200664-05:00","level":"INFO","msg":"Loading Locations file ..."}
-{"time":"2024-02-07T17:32:57.209325-05:00","level":"INFO","msg":"Locations file loaded"}
-{"time":"2024-02-07T17:32:57.209368-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T17:32:57.209405-05:00","level":"INFO","msg":"Loading Routes file ..."}
-{"time":"2024-02-07T17:32:57.218411-05:00","level":"INFO","msg":"Routes file loaded"}
-{"time":"2024-02-07T17:32:57.218437-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
-{"time":"2024-02-07T17:32:57.21847-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
-{"time":"2024-02-07T17:32:57.223008-05:00","level":"INFO","msg":"Class of Service file loaded"}
-{"time":"2024-02-07T17:32:57.22303-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
-{"time":"2024-02-07T17:32:57.223058-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
-{"time":"2024-02-07T17:32:57.290041-05:00","level":"INFO","msg":"Qubz Names file loaded"}
-{"time":"2024-02-07T17:32:57.629169-05:00","level":"INFO","msg":"Simulation Complete"}
-{"time":"2024-02-07T17:38:29.508845-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T17:38:29.509341-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T17:38:29.509372-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T17:38:29.509407-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T17:38:29.50946-05:00","level":"INFO","msg":"Loading Locations file ..."}
-{"time":"2024-02-07T17:38:29.510015-05:00","level":"INFO","msg":"Locations file loaded"}
-{"time":"2024-02-07T17:38:29.510039-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T17:38:29.510072-05:00","level":"INFO","msg":"Loading Routes file ..."}
-{"time":"2024-02-07T17:38:29.511841-05:00","level":"INFO","msg":"Routes file loaded"}
-{"time":"2024-02-07T17:38:29.511856-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
-{"time":"2024-02-07T17:38:29.511882-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
-{"time":"2024-02-07T17:38:29.512098-05:00","level":"INFO","msg":"Class of Service file loaded"}
-{"time":"2024-02-07T17:38:29.512113-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
-{"time":"2024-02-07T17:38:29.512137-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
-{"time":"2024-02-07T17:38:29.577169-05:00","level":"INFO","msg":"Qubz Names file loaded"}
-{"time":"2024-02-07T17:38:29.577196-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensortype.dat ..."}
-{"time":"2024-02-07T17:38:29.57722-05:00","level":"INFO","msg":"Cannot find Sensor Types file in boot directory ... startup terminated!"}
-{"time":"2024-02-07T17:38:57.815618-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T17:38:57.823726-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T17:38:57.823804-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T17:38:57.823878-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T17:38:57.823988-05:00","level":"INFO","msg":"Loading Locations file ..."}
-{"time":"2024-02-07T17:38:57.824829-05:00","level":"INFO","msg":"Locations file loaded"}
-{"time":"2024-02-07T17:38:57.824877-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T17:38:57.824924-05:00","level":"INFO","msg":"Loading Routes file ..."}
-{"time":"2024-02-07T17:38:57.826903-05:00","level":"INFO","msg":"Routes file loaded"}
-{"time":"2024-02-07T17:38:57.826977-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
-{"time":"2024-02-07T17:38:57.827038-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
-{"time":"2024-02-07T17:38:57.827459-05:00","level":"INFO","msg":"Class of Service file loaded"}
-{"time":"2024-02-07T17:38:57.827495-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
-{"time":"2024-02-07T17:38:57.827532-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
-{"time":"2024-02-07T17:38:57.899871-05:00","level":"INFO","msg":"Qubz Names file loaded"}
-{"time":"2024-02-07T17:38:57.899919-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensortype.dat ..."}
-{"time":"2024-02-07T17:38:57.899943-05:00","level":"INFO","msg":"Cannot find Sensor Types file in boot directory ... startup terminated!"}
-{"time":"2024-02-07T17:39:30.045843-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T17:39:30.046193-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T17:39:30.046222-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T17:39:30.046242-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T17:39:30.046273-05:00","level":"INFO","msg":"Loading Locations file ..."}
-{"time":"2024-02-07T17:39:30.046714-05:00","level":"INFO","msg":"Locations file loaded"}
-{"time":"2024-02-07T17:39:30.04674-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T17:39:30.04677-05:00","level":"INFO","msg":"Loading Routes file ..."}
-{"time":"2024-02-07T17:39:30.0485-05:00","level":"INFO","msg":"Routes file loaded"}
-{"time":"2024-02-07T17:39:30.048518-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
-{"time":"2024-02-07T17:39:30.048545-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
-{"time":"2024-02-07T17:39:30.048872-05:00","level":"INFO","msg":"Class of Service file loaded"}
-{"time":"2024-02-07T17:39:30.048887-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
-{"time":"2024-02-07T17:39:30.048912-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
-{"time":"2024-02-07T17:39:30.115701-05:00","level":"INFO","msg":"Qubz Names file loaded"}
-{"time":"2024-02-07T17:39:30.115722-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
-{"time":"2024-02-07T17:39:30.115745-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
-{"time":"2024-02-07T17:39:30.12109-05:00","level":"INFO","msg":"Sensor Types file loaded"}
-{"time":"2024-02-07T17:39:30.121114-05:00","level":"INFO","msg":"Simulation Complete"}
-{"time":"2024-02-07T17:45:04.979806-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T17:45:04.985025-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T17:45:04.98506-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T17:45:04.985101-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T17:45:04.98517-05:00","level":"INFO","msg":"Loading Locations file ..."}
-{"time":"2024-02-07T17:45:04.990425-05:00","level":"INFO","msg":"Locations file loaded"}
-{"time":"2024-02-07T17:45:04.990465-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T17:45:04.990511-05:00","level":"INFO","msg":"Loading Routes file ..."}
-{"time":"2024-02-07T17:45:04.99551-05:00","level":"INFO","msg":"Routes file loaded"}
-{"time":"2024-02-07T17:45:04.995532-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
-{"time":"2024-02-07T17:45:04.995563-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
-{"time":"2024-02-07T17:45:05.000838-05:00","level":"INFO","msg":"Class of Service file loaded"}
-{"time":"2024-02-07T17:45:05.000882-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
-{"time":"2024-02-07T17:45:05.000912-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
-{"time":"2024-02-07T17:45:05.07449-05:00","level":"INFO","msg":"Qubz Names file loaded"}
-{"time":"2024-02-07T17:45:05.074518-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
-{"time":"2024-02-07T17:45:05.074547-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
-{"time":"2024-02-07T17:45:05.079632-05:00","level":"INFO","msg":"Sensor Types file loaded"}
-{"time":"2024-02-07T17:45:05.079644-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
-{"time":"2024-02-07T17:45:05.079661-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
-{"time":"2024-02-07T17:45:05.085837-05:00","level":"INFO","msg":"Shipment Types file loaded"}
-{"time":"2024-02-07T17:45:05.085863-05:00","level":"INFO","msg":"Simulation Complete"}
-{"time":"2024-02-07T17:49:57.489528-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T17:49:57.490023-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T17:49:57.490055-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T17:49:57.490077-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T17:49:57.49011-05:00","level":"INFO","msg":"Loading Locations file ..."}
-{"time":"2024-02-07T17:49:57.490551-05:00","level":"INFO","msg":"Locations file loaded"}
-{"time":"2024-02-07T17:49:57.490581-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T17:49:57.490608-05:00","level":"INFO","msg":"Loading Routes file ..."}
-{"time":"2024-02-07T17:49:57.492575-05:00","level":"INFO","msg":"Routes file loaded"}
-{"time":"2024-02-07T17:49:57.492656-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
-{"time":"2024-02-07T17:49:57.492723-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
-{"time":"2024-02-07T17:49:57.493066-05:00","level":"INFO","msg":"Class of Service file loaded"}
-{"time":"2024-02-07T17:49:57.493088-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
-{"time":"2024-02-07T17:49:57.49312-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
-{"time":"2024-02-07T17:49:57.563078-05:00","level":"INFO","msg":"Qubz Names file loaded"}
-{"time":"2024-02-07T17:49:57.563118-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
-{"time":"2024-02-07T17:49:57.563149-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
-{"time":"2024-02-07T17:49:57.563726-05:00","level":"INFO","msg":"Sensor Types file loaded"}
-{"time":"2024-02-07T17:49:57.563747-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
-{"time":"2024-02-07T17:49:57.563771-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
-{"time":"2024-02-07T17:49:57.564102-05:00","level":"INFO","msg":"Shipment Types file loaded"}
-{"time":"2024-02-07T17:49:57.564111-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transport_mode.dat ..."}
-{"time":"2024-02-07T17:49:57.56414-05:00","level":"INFO","msg":"Cannot find Transport Modes file in boot directory ... startup terminated!"}
-{"time":"2024-02-07T17:50:28.300441-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T17:50:28.301016-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T17:50:28.301064-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T17:50:28.301092-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T17:50:28.301127-05:00","level":"INFO","msg":"Loading Locations file ..."}
-{"time":"2024-02-07T17:50:28.301621-05:00","level":"INFO","msg":"Locations file loaded"}
-{"time":"2024-02-07T17:50:28.301659-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T17:50:28.301688-05:00","level":"INFO","msg":"Loading Routes file ..."}
-{"time":"2024-02-07T17:50:28.303344-05:00","level":"INFO","msg":"Routes file loaded"}
-{"time":"2024-02-07T17:50:28.303372-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
-{"time":"2024-02-07T17:50:28.3034-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
-{"time":"2024-02-07T17:50:28.303685-05:00","level":"INFO","msg":"Class of Service file loaded"}
-{"time":"2024-02-07T17:50:28.303789-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
-{"time":"2024-02-07T17:50:28.303865-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
-{"time":"2024-02-07T17:50:28.374434-05:00","level":"INFO","msg":"Qubz Names file loaded"}
-{"time":"2024-02-07T17:50:28.374484-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
-{"time":"2024-02-07T17:50:28.374522-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
-{"time":"2024-02-07T17:50:28.374998-05:00","level":"INFO","msg":"Sensor Types file loaded"}
-{"time":"2024-02-07T17:50:28.37501-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
-{"time":"2024-02-07T17:50:28.375027-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
-{"time":"2024-02-07T17:50:28.375365-05:00","level":"INFO","msg":"Shipment Types file loaded"}
-{"time":"2024-02-07T17:50:28.375376-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
-{"time":"2024-02-07T17:50:28.37539-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
-{"time":"2024-02-07T17:50:28.381742-05:00","level":"INFO","msg":"Transport Modes file loaded"}
-{"time":"2024-02-07T17:50:28.381767-05:00","level":"INFO","msg":"Simulation Complete"}
-{"time":"2024-02-07T19:56:36.096717-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T19:56:36.103036-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T19:56:36.103087-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T19:56:36.103117-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T19:56:36.103149-05:00","level":"INFO","msg":"Loading Locations file ..."}
-{"time":"2024-02-07T19:56:36.109037-05:00","level":"INFO","msg":"Locations file loaded"}
-{"time":"2024-02-07T19:56:36.10907-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T19:56:36.109101-05:00","level":"INFO","msg":"Loading Routes file ..."}
-{"time":"2024-02-07T19:56:36.118185-05:00","level":"INFO","msg":"Routes file loaded"}
-{"time":"2024-02-07T19:56:36.118216-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
-{"time":"2024-02-07T19:56:36.118246-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
-{"time":"2024-02-07T19:56:36.122925-05:00","level":"INFO","msg":"Class of Service file loaded"}
-{"time":"2024-02-07T19:56:36.122942-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
-{"time":"2024-02-07T19:56:36.122963-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
-{"time":"2024-02-07T19:56:36.18881-05:00","level":"INFO","msg":"Qubz Names file loaded"}
-{"time":"2024-02-07T19:56:36.188842-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
-{"time":"2024-02-07T19:56:36.188871-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
-{"time":"2024-02-07T19:56:36.193493-05:00","level":"INFO","msg":"Sensor Types file loaded"}
-{"time":"2024-02-07T19:56:36.193503-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
-{"time":"2024-02-07T19:56:36.193517-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
-{"time":"2024-02-07T19:56:36.197583-05:00","level":"INFO","msg":"Shipment Types file loaded"}
-{"time":"2024-02-07T19:56:36.197595-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
-{"time":"2024-02-07T19:56:36.19761-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
-{"time":"2024-02-07T19:56:36.199889-05:00","level":"INFO","msg":"Transport Modes file loaded"}
-{"time":"2024-02-07T19:56:36.199899-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
-{"time":"2024-02-07T19:56:36.199921-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
-{"time":"2024-02-07T19:56:36.204985-05:00","level":"INFO","msg":"Sensor Range file loaded"}
-{"time":"2024-02-07T19:56:36.205321-05:00","level":"INFO","msg":"Simulation Complete"}
-{"time":"2024-02-07T20:56:07.93814-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T20:56:07.944594-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T20:56:07.944632-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T20:56:07.944671-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
-{"time":"2024-02-07T20:56:07.944691-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T20:56:07.944756-05:00","level":"INFO","msg":"Loading Locations file ..."}
-{"time":"2024-02-07T20:56:07.94868-05:00","level":"INFO","msg":"Locations file loaded"}
-{"time":"2024-02-07T20:56:07.948702-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T20:56:07.948729-05:00","level":"INFO","msg":"Loading Routes file ..."}
-{"time":"2024-02-07T20:56:07.95627-05:00","level":"INFO","msg":"Routes file loaded"}
-{"time":"2024-02-07T20:56:07.956286-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
-{"time":"2024-02-07T20:56:07.956311-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
-{"time":"2024-02-07T20:56:07.961205-05:00","level":"INFO","msg":"Class of Service file loaded"}
-{"time":"2024-02-07T20:56:07.961219-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
-{"time":"2024-02-07T20:56:07.961246-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
-{"time":"2024-02-07T20:56:08.028448-05:00","level":"INFO","msg":"Qubz Names file loaded"}
-{"time":"2024-02-07T20:56:08.028488-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
-{"time":"2024-02-07T20:56:08.02852-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
-{"time":"2024-02-07T20:56:08.034053-05:00","level":"INFO","msg":"Sensor Types file loaded"}
-{"time":"2024-02-07T20:56:08.034072-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
-{"time":"2024-02-07T20:56:08.034093-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
-{"time":"2024-02-07T20:56:08.037911-05:00","level":"INFO","msg":"Shipment Types file loaded"}
-{"time":"2024-02-07T20:56:08.037927-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
-{"time":"2024-02-07T20:56:08.037944-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
-{"time":"2024-02-07T20:56:08.040544-05:00","level":"INFO","msg":"Transport Modes file loaded"}
-{"time":"2024-02-07T20:56:08.040559-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
-{"time":"2024-02-07T20:56:08.04059-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
-{"time":"2024-02-07T20:56:08.04576-05:00","level":"INFO","msg":"Sensor Range file loaded"}
-{"time":"2024-02-07T20:56:08.04577-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
-{"time":"2024-02-07T20:56:08.046072-05:00","level":"INFO","msg":"Simulation Complete"}
-{"time":"2024-02-07T20:56:43.041567-05:00","level":"INFO","msg":"System Starting"}
-{"time":"2024-02-07T20:56:43.042026-05:00","level":"INFO","msg":"Config Values for this run ..."}
-{"time":"2024-02-07T20:56:43.04206-05:00","level":"INFO","msg":"{QubzCount:100 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
-{"time":"2024-02-07T20:56:43.042086-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
-{"time":"2024-02-07T20:56:43.042106-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
-{"time":"2024-02-07T20:56:43.042136-05:00","level":"INFO","msg":"Loading Locations file ..."}
-{"time":"2024-02-07T20:56:43.04263-05:00","level":"INFO","msg":"Locations file loaded"}
-{"time":"2024-02-07T20:56:43.042655-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
-{"time":"2024-02-07T20:56:43.042681-05:00","level":"INFO","msg":"Loading Routes file ..."}
-{"time":"2024-02-07T20:56:43.044942-05:00","level":"INFO","msg":"Routes file loaded"}
-{"time":"2024-02-07T20:56:43.044979-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
-{"time":"2024-02-07T20:56:43.045017-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
-{"time":"2024-02-07T20:56:43.045264-05:00","level":"INFO","msg":"Class of Service file loaded"}
-{"time":"2024-02-07T20:56:43.045282-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
-{"time":"2024-02-07T20:56:43.04532-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
-{"time":"2024-02-07T20:56:43.114888-05:00","level":"INFO","msg":"Qubz Names file loaded"}
-{"time":"2024-02-07T20:56:43.114918-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_typess.dat ..."}
-{"time":"2024-02-07T20:56:43.114945-05:00","level":"INFO","msg":"Cannot find Sensor Types file in boot directory ... startup terminated!"}
-{"time":"2024-02-07T20:56:43.114953-05:00","level":"INFO","msg":"Simulation Failed - Please see log for details!"}
+{"time":"2024-02-08T00:28:35.194241-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-08T00:28:35.194879-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-08T00:28:35.194915-05:00","level":"INFO","msg":"{QubzCount:1000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-08T00:28:35.194941-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-08T00:28:35.194959-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-08T00:28:35.194991-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-08T00:28:35.195483-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-08T00:28:35.195513-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-08T00:28:35.195544-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-08T00:28:35.197154-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-08T00:28:35.197185-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-08T00:28:35.197221-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-08T00:28:35.197482-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-08T00:28:35.197501-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-08T00:28:35.197527-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-08T00:28:35.269881-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-08T00:28:35.26992-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-08T00:28:35.26995-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-08T00:28:35.270446-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-08T00:28:35.270464-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-08T00:28:35.270482-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-08T00:28:35.27075-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-08T00:28:35.27076-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-08T00:28:35.27079-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-08T00:28:35.270995-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-08T00:28:35.271003-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-08T00:28:35.271025-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-08T00:28:35.271631-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-08T00:28:35.27164-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-08T00:28:35.271647-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-08T00:28:35.271674-05:00","level":"INFO","msg":"Selecting 1000 QubzIds to map into Qubz Matrix ..."}
+{"time":"2024-02-08T00:28:35.271679-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-08T00:28:35.271737-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-08T00:28:35.271742-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-08T00:28:35.271746-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-08T00:28:35.921165-05:00","level":"INFO","msg":"Mapping Selected QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-08T00:28:35.921326-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 1000 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-08T00:28:35.921351-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-08T00:28:35.921373-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-08T00:28:35.921414-05:00","level":"INFO","msg":"Selecting Route Assignments ..."}
+{"time":"2024-02-08T00:28:35.921425-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-08T00:28:35.921441-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-08T00:28:35.921448-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-08T00:28:35.921457-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-08T00:28:36.267322-05:00","level":"INFO","msg":"Mapping Routes to Qubz Matrix ..."}
+{"time":"2024-02-08T00:28:36.267366-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-08T00:28:36.267375-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-08T00:28:36.267382-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-08T00:28:36.267388-05:00","level":"INFO","msg":"Selecting Shipment Type Assignments ..."}
+{"time":"2024-02-08T00:28:36.267393-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-08T00:28:36.267401-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-08T00:28:36.267405-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-08T00:28:36.267409-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-08T00:28:36.51532-05:00","level":"INFO","msg":"Mapping Shipment Types to Qubz Matrix ..."}
+{"time":"2024-02-08T00:28:36.515394-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-08T00:28:36.515413-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-08T00:28:36.515426-05:00","level":"INFO","msg":"Configuring Qubz Matrix ..."}
+{"time":"2024-02-08T00:28:36.515437-05:00","level":"INFO","msg":"Qubz Matrix Configuration Complete"}
+{"time":"2024-02-08T00:28:36.515449-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-08T00:29:37.571737-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-08T00:29:37.573508-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-08T00:29:37.573595-05:00","level":"INFO","msg":"{QubzCount:3000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-08T00:29:37.573642-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-08T00:29:37.573664-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-08T00:29:37.573741-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-08T00:29:37.5747-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-08T00:29:37.57473-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-08T00:29:37.57477-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-08T00:29:37.577372-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-08T00:29:37.577389-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-08T00:29:37.57743-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-08T00:29:37.57791-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-08T00:29:37.577932-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-08T00:29:37.577958-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-08T00:29:37.647767-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-08T00:29:37.647809-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-08T00:29:37.647845-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-08T00:29:37.64908-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-08T00:29:37.649095-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-08T00:29:37.649136-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-08T00:29:37.649586-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-08T00:29:37.649594-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-08T00:29:37.64961-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-08T00:29:37.650099-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-08T00:29:37.650105-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-08T00:29:37.650131-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-08T00:29:37.651524-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-08T00:29:37.651532-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-08T00:29:37.651538-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-08T00:29:37.651608-05:00","level":"INFO","msg":"Selecting 3000 QubzIds to map into Qubz Matrix ..."}
+{"time":"2024-02-08T00:29:37.651629-05:00","level":"ERROR","msg":"Cannot request more than 1000 numbers per service call"}
+{"time":"2024-02-08T00:29:37.651636-05:00","level":"INFO","msg":"call to random number service failed"}
+{"time":"2024-02-08T00:45:26.087905-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-08T00:45:26.090546-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-08T00:45:26.090564-05:00","level":"INFO","msg":"{QubzCount:1000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-08T00:45:26.090579-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-08T00:45:26.09059-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-08T00:45:26.09061-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-08T00:45:26.093328-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-08T00:45:26.093346-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-08T00:45:26.093368-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-08T00:45:26.097429-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-08T00:45:26.09745-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-08T00:45:26.097472-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-08T00:45:26.099082-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-08T00:45:26.099094-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-08T00:45:26.099117-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-08T00:45:26.15768-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-08T00:45:26.157717-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-08T00:45:26.15774-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-08T00:45:26.163237-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-08T00:45:26.163247-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-08T00:45:26.163263-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-08T00:45:26.167037-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-08T00:45:26.167049-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-08T00:45:26.167069-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-08T00:45:26.169427-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-08T00:45:26.169448-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-08T00:45:26.16947-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-08T00:45:26.176792-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-08T00:45:26.1768-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-08T00:45:26.176807-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-08T00:45:26.176831-05:00","level":"INFO","msg":"Selecting 1000 QubzIds to map into Qubz Matrix ..."}
+{"time":"2024-02-08T00:45:26.176836-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-08T00:45:26.176888-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-08T00:45:26.176892-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-08T00:45:26.176896-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-08T00:45:27.304666-05:00","level":"INFO","msg":"Mapping Selected QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-08T00:45:27.305093-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 1000 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-08T00:45:27.305143-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-08T00:45:27.305171-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-08T00:45:27.305199-05:00","level":"INFO","msg":"Selecting Route Assignments ..."}
+{"time":"2024-02-08T00:45:27.30522-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-08T00:45:27.305253-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-08T00:45:27.305271-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-08T00:45:27.305287-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-08T00:45:27.660204-05:00","level":"INFO","msg":"Mapping Routes to Qubz Matrix ..."}
+{"time":"2024-02-08T00:45:27.660421-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-08T00:45:27.660465-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-08T00:45:27.660495-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-08T00:45:27.660523-05:00","level":"INFO","msg":"Selecting Shipment Type Assignments ..."}
+{"time":"2024-02-08T00:45:27.660543-05:00","level":"INFO","msg":"Configuring Call"}
+{"time":"2024-02-08T00:45:27.660571-05:00","level":"INFO","msg":"Adding Headers"}
+{"time":"2024-02-08T00:45:27.660589-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com"}
+{"time":"2024-02-08T00:45:27.660606-05:00","level":"INFO","msg":"Making Call"}
+{"time":"2024-02-08T00:45:28.067796-05:00","level":"INFO","msg":"Mapping Shipment Types to Qubz Matrix ..."}
+{"time":"2024-02-08T00:45:28.067829-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-08T00:45:28.06784-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-08T00:45:28.06785-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-08T00:45:28.067859-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-08T00:45:28.067866-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-08T00:45:28.067873-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-08T00:45:28.06788-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-08T00:45:28.067886-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-08T00:45:28.067893-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-08T01:15:21.957857-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-08T01:15:21.964769-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-08T01:15:21.964831-05:00","level":"INFO","msg":"{QubzCount:1000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-08T01:15:21.964868-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-08T01:15:21.96489-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-08T01:15:21.964953-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-08T01:15:21.971112-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-08T01:15:21.971163-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-08T01:15:21.971214-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-08T01:15:21.980813-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-08T01:15:21.980843-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-08T01:15:21.980877-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-08T01:15:21.986036-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-08T01:15:21.986056-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-08T01:15:21.986079-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-08T01:15:22.054057-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-08T01:15:22.054089-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-08T01:15:22.054121-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-08T01:15:22.058704-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-08T01:15:22.058716-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-08T01:15:22.058735-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-08T01:15:22.062243-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-08T01:15:22.062263-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-08T01:15:22.062283-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-08T01:15:22.06555-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-08T01:15:22.065564-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-08T01:15:22.065588-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-08T01:15:22.072125-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-08T01:15:22.072135-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-08T01:15:22.072141-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-08T01:15:22.072167-05:00","level":"INFO","msg":"Selecting 1000 QubzIds to map into Qubz Matrix ..."}
+{"time":"2024-02-08T01:15:22.072174-05:00","level":"INFO","msg":"Configuring Service Call"}
+{"time":"2024-02-08T01:15:22.072226-05:00","level":"INFO","msg":"Adding Service Request Headers ..."}
+{"time":"2024-02-08T01:15:22.072232-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com ..."}
+{"time":"2024-02-08T01:15:22.072237-05:00","level":"INFO","msg":"Making Service Call ..."}
+{"time":"2024-02-08T01:15:23.538995-05:00","level":"INFO","msg":"Mapping Selected QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-08T01:15:23.539382-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 1000 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-08T01:15:23.539431-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-08T01:15:23.539462-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-08T01:15:23.539489-05:00","level":"INFO","msg":"Selecting Route Assignments ..."}
+{"time":"2024-02-08T01:15:23.539568-05:00","level":"INFO","msg":"Configuring Service Call"}
+{"time":"2024-02-08T01:15:23.539606-05:00","level":"INFO","msg":"Adding Service Request Headers ..."}
+{"time":"2024-02-08T01:15:23.539636-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com ..."}
+{"time":"2024-02-08T01:15:23.539664-05:00","level":"INFO","msg":"Making Service Call ..."}
+{"time":"2024-02-08T01:15:23.844773-05:00","level":"INFO","msg":"Mapping Routes to Qubz Matrix ..."}
+{"time":"2024-02-08T01:15:23.845024-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-08T01:15:23.845069-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-08T01:15:23.845099-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-08T01:15:23.845128-05:00","level":"INFO","msg":"Selecting Shipment Type Assignments ..."}
+{"time":"2024-02-08T01:15:23.845159-05:00","level":"INFO","msg":"Configuring Service Call"}
+{"time":"2024-02-08T01:15:23.845204-05:00","level":"INFO","msg":"Adding Service Request Headers ..."}
+{"time":"2024-02-08T01:15:23.845236-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com ..."}
+{"time":"2024-02-08T01:15:23.845265-05:00","level":"INFO","msg":"Making Service Call ..."}
+{"time":"2024-02-08T01:15:24.151811-05:00","level":"INFO","msg":"Mapping Shipment Types to Qubz Matrix ..."}
+{"time":"2024-02-08T01:15:24.152045-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-08T01:15:24.152093-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-08T01:15:24.152124-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-08T01:15:24.152151-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-08T01:15:24.152178-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-08T01:15:24.152203-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-08T01:15:24.152228-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-08T01:15:24.152254-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-08T01:15:24.152282-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-08T01:16:12.145468-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-08T01:16:12.146197-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-08T01:16:12.146247-05:00","level":"INFO","msg":"{QubzCount:5000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-08T01:16:12.146292-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-08T01:16:12.146317-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-08T01:16:12.146361-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-08T01:16:12.146956-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-08T01:16:12.146989-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-08T01:16:12.147026-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-08T01:16:12.149066-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-08T01:16:12.149146-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-08T01:16:12.149232-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-08T01:16:12.149664-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-08T01:16:12.149692-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-08T01:16:12.149727-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-08T01:16:12.221767-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-08T01:16:12.221804-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-08T01:16:12.221846-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-08T01:16:12.22239-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-08T01:16:12.222406-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-08T01:16:12.222427-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-08T01:16:12.222692-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-08T01:16:12.2227-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-08T01:16:12.222713-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-08T01:16:12.222896-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-08T01:16:12.222903-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-08T01:16:12.22293-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-08T01:16:12.223526-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-08T01:16:12.223536-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-08T01:16:12.223542-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:12.223697-05:00","level":"INFO","msg":"Selecting 5000 QubzIds to map into Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:12.223705-05:00","level":"INFO","msg":"Configuring Service Call"}
+{"time":"2024-02-08T01:16:12.223759-05:00","level":"INFO","msg":"Adding Service Request Headers ..."}
+{"time":"2024-02-08T01:16:12.223766-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com ..."}
+{"time":"2024-02-08T01:16:12.223771-05:00","level":"INFO","msg":"Making Service Call ..."}
+{"time":"2024-02-08T01:16:13.32037-05:00","level":"INFO","msg":"Mapping Selected QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:13.320776-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 5000 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-08T01:16:13.320801-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-08T01:16:13.320817-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:13.32083-05:00","level":"INFO","msg":"Selecting Route Assignments ..."}
+{"time":"2024-02-08T01:16:13.320845-05:00","level":"INFO","msg":"Configuring Service Call"}
+{"time":"2024-02-08T01:16:13.320868-05:00","level":"INFO","msg":"Adding Service Request Headers ..."}
+{"time":"2024-02-08T01:16:13.320881-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com ..."}
+{"time":"2024-02-08T01:16:13.320894-05:00","level":"INFO","msg":"Making Service Call ..."}
+{"time":"2024-02-08T01:16:14.022014-05:00","level":"INFO","msg":"Mapping Routes to Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:14.022771-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-08T01:16:14.022824-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-08T01:16:14.022855-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:14.022883-05:00","level":"INFO","msg":"Selecting Shipment Type Assignments ..."}
+{"time":"2024-02-08T01:16:14.022916-05:00","level":"INFO","msg":"Configuring Service Call"}
+{"time":"2024-02-08T01:16:14.022962-05:00","level":"INFO","msg":"Adding Service Request Headers ..."}
+{"time":"2024-02-08T01:16:14.022992-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com ..."}
+{"time":"2024-02-08T01:16:14.023021-05:00","level":"INFO","msg":"Making Service Call ..."}
+{"time":"2024-02-08T01:16:14.432231-05:00","level":"INFO","msg":"Mapping Shipment Types to Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:14.432335-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-08T01:16:14.432348-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-08T01:16:14.432356-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:14.432363-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:14.432372-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-08T01:16:14.432378-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-08T01:16:14.432385-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:14.432391-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-08T01:16:14.432397-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-08T01:16:51.560626-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-08T01:16:51.560858-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-08T01:16:51.560881-05:00","level":"INFO","msg":"{QubzCount:5000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-08T01:16:51.560898-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-08T01:16:51.56091-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-08T01:16:51.560928-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-08T01:16:51.561236-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-08T01:16:51.561255-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-08T01:16:51.561279-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-08T01:16:51.562334-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-08T01:16:51.562346-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-08T01:16:51.56236-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-08T01:16:51.562512-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-08T01:16:51.562523-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-08T01:16:51.562536-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-08T01:16:51.617385-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-08T01:16:51.617414-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-08T01:16:51.617436-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-08T01:16:51.617765-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-08T01:16:51.61778-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-08T01:16:51.617796-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-08T01:16:51.618013-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-08T01:16:51.618021-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-08T01:16:51.618034-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-08T01:16:51.618204-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-08T01:16:51.618211-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-08T01:16:51.61823-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-08T01:16:51.618749-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-08T01:16:51.618756-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-08T01:16:51.618778-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:51.618873-05:00","level":"INFO","msg":"Selecting 5000 QubzIds to map into Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:51.618879-05:00","level":"INFO","msg":"Configuring Service Call"}
+{"time":"2024-02-08T01:16:51.618942-05:00","level":"INFO","msg":"Adding Service Request Headers ..."}
+{"time":"2024-02-08T01:16:51.618947-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com ..."}
+{"time":"2024-02-08T01:16:51.618952-05:00","level":"INFO","msg":"Making Service Call ..."}
+{"time":"2024-02-08T01:16:52.358696-05:00","level":"INFO","msg":"Mapping Selected QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:52.360272-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 5000 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-08T01:16:52.360323-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-08T01:16:52.360353-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:52.360381-05:00","level":"INFO","msg":"Selecting Route Assignments ..."}
+{"time":"2024-02-08T01:16:52.360414-05:00","level":"INFO","msg":"Configuring Service Call"}
+{"time":"2024-02-08T01:16:52.360456-05:00","level":"INFO","msg":"Adding Service Request Headers ..."}
+{"time":"2024-02-08T01:16:52.360485-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com ..."}
+{"time":"2024-02-08T01:16:52.360513-05:00","level":"INFO","msg":"Making Service Call ..."}
+{"time":"2024-02-08T01:16:52.672227-05:00","level":"INFO","msg":"Mapping Routes to Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:52.672368-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-08T01:16:52.672382-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-08T01:16:52.67239-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:52.672396-05:00","level":"INFO","msg":"Selecting Shipment Type Assignments ..."}
+{"time":"2024-02-08T01:16:52.672405-05:00","level":"INFO","msg":"Configuring Service Call"}
+{"time":"2024-02-08T01:16:52.672415-05:00","level":"INFO","msg":"Adding Service Request Headers ..."}
+{"time":"2024-02-08T01:16:52.672423-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com ..."}
+{"time":"2024-02-08T01:16:52.67243-05:00","level":"INFO","msg":"Making Service Call ..."}
+{"time":"2024-02-08T01:16:52.96427-05:00","level":"INFO","msg":"Mapping Shipment Types to Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:52.964982-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-08T01:16:52.965039-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-08T01:16:52.965073-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:52.965106-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:52.965137-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-08T01:16:52.965162-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-08T01:16:52.96519-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-08T01:16:52.965217-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-08T01:16:52.965243-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-08T01:17:28.298338-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-08T01:17:28.298985-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-08T01:17:28.29903-05:00","level":"INFO","msg":"{QubzCount:100000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-08T01:17:28.299063-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-08T01:17:28.299113-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-08T01:17:28.299148-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-08T01:17:28.299645-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-08T01:17:28.29968-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-08T01:17:28.299714-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-08T01:17:28.301452-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-08T01:17:28.30151-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-08T01:17:28.301573-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-08T01:17:28.301932-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-08T01:17:28.301955-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-08T01:17:28.301983-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-08T01:17:28.372923-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-08T01:17:28.372974-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-08T01:17:28.373033-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-08T01:17:28.373438-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-08T01:17:28.373452-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-08T01:17:28.373475-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-08T01:17:28.373693-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-08T01:17:28.373701-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-08T01:17:28.373715-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-08T01:17:28.373873-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-08T01:17:28.373883-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-08T01:17:28.373908-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-08T01:17:28.374454-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-08T01:17:28.374461-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-08T01:17:28.374467-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-08T01:17:28.375707-05:00","level":"INFO","msg":"Selecting 100000 QubzIds to map into Qubz Matrix ..."}
+{"time":"2024-02-08T01:17:28.375726-05:00","level":"INFO","msg":"Configuring Service Call"}
+{"time":"2024-02-08T01:17:28.375785-05:00","level":"INFO","msg":"Adding Service Request Headers ..."}
+{"time":"2024-02-08T01:17:28.375793-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com ..."}
+{"time":"2024-02-08T01:17:28.375799-05:00","level":"INFO","msg":"Making Service Call ..."}
+{"time":"2024-02-08T01:17:29.176791-05:00","level":"INFO","msg":"Service Error Occurred : Status Code : 503 Error Message : Error: The number of requested integers must be an integer in the [1,10000] interval\n"}
+{"time":"2024-02-08T01:17:29.176902-05:00","level":"INFO","msg":"call to random number service failed"}
+{"time":"2024-02-08T01:18:20.12809-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-08T01:18:20.128822-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-08T01:18:20.12889-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-08T01:18:20.128922-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-08T01:18:20.128971-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-08T01:18:20.129006-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-08T01:18:20.129544-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-08T01:18:20.129576-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-08T01:18:20.129612-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-08T01:18:20.131478-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-08T01:18:20.1315-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-08T01:18:20.131529-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-08T01:18:20.131728-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-08T01:18:20.131744-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-08T01:18:20.131768-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-08T01:18:20.203781-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-08T01:18:20.20381-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-08T01:18:20.203839-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-08T01:18:20.20421-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-08T01:18:20.204221-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-08T01:18:20.204235-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-08T01:18:20.20523-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-08T01:18:20.20524-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-08T01:18:20.205252-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-08T01:18:20.206666-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-08T01:18:20.206675-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-08T01:18:20.206694-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-08T01:18:20.207829-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-08T01:18:20.207838-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-08T01:18:20.207845-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-08T01:18:20.207981-05:00","level":"INFO","msg":"Selecting 10000 QubzIds to map into Qubz Matrix ..."}
+{"time":"2024-02-08T01:18:20.207989-05:00","level":"INFO","msg":"Configuring Service Call"}
+{"time":"2024-02-08T01:18:20.208034-05:00","level":"INFO","msg":"Adding Service Request Headers ..."}
+{"time":"2024-02-08T01:18:20.208046-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com ..."}
+{"time":"2024-02-08T01:18:20.208052-05:00","level":"INFO","msg":"Making Service Call ..."}
+{"time":"2024-02-08T01:18:20.841713-05:00","level":"INFO","msg":"Mapping Selected QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-08T01:18:20.846024-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 10000 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-08T01:18:20.8461-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-08T01:18:20.84613-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-08T01:18:20.846143-05:00","level":"INFO","msg":"Selecting Route Assignments ..."}
+{"time":"2024-02-08T01:18:20.846157-05:00","level":"INFO","msg":"Configuring Service Call"}
+{"time":"2024-02-08T01:18:20.84618-05:00","level":"INFO","msg":"Adding Service Request Headers ..."}
+{"time":"2024-02-08T01:18:20.846193-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com ..."}
+{"time":"2024-02-08T01:18:20.846231-05:00","level":"INFO","msg":"Making Service Call ..."}
+{"time":"2024-02-08T01:18:21.210487-05:00","level":"INFO","msg":"Mapping Routes to Qubz Matrix ..."}
+{"time":"2024-02-08T01:18:21.210667-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-08T01:18:21.210683-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-08T01:18:21.210691-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-08T01:18:21.210703-05:00","level":"INFO","msg":"Selecting Shipment Type Assignments ..."}
+{"time":"2024-02-08T01:18:21.210711-05:00","level":"INFO","msg":"Configuring Service Call"}
+{"time":"2024-02-08T01:18:21.210721-05:00","level":"INFO","msg":"Adding Service Request Headers ..."}
+{"time":"2024-02-08T01:18:21.210729-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com ..."}
+{"time":"2024-02-08T01:18:21.210738-05:00","level":"INFO","msg":"Making Service Call ..."}
+{"time":"2024-02-08T01:18:21.920117-05:00","level":"INFO","msg":"Mapping Shipment Types to Qubz Matrix ..."}
+{"time":"2024-02-08T01:18:21.921342-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-08T01:18:21.921388-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-08T01:18:21.92142-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-08T01:18:21.92145-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-08T01:18:21.921488-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-08T01:18:21.921519-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-08T01:18:21.921547-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-08T01:18:21.921573-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-08T01:18:21.921598-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-08T01:19:38.611448-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-08T01:19:38.611666-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-08T01:19:38.611679-05:00","level":"INFO","msg":"{QubzCount:100000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-08T01:19:38.611691-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-08T01:19:38.611699-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-08T01:19:38.611718-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-08T01:19:38.612022-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-08T01:19:38.612033-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-08T01:19:38.612049-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-08T01:19:38.613093-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-08T01:19:38.613103-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-08T01:19:38.613117-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-08T01:19:38.613656-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-08T01:19:38.613677-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-08T01:19:38.613698-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-08T01:19:38.667951-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-08T01:19:38.667987-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-08T01:19:38.668005-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-08T01:19:38.668435-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-08T01:19:38.668456-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-08T01:19:38.668468-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-08T01:19:38.668686-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-08T01:19:38.668693-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-08T01:19:38.668704-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-08T01:19:38.668877-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-08T01:19:38.668883-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-08T01:19:38.668901-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-08T01:19:38.669406-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-08T01:19:38.669413-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-08T01:19:38.669418-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-08T01:19:38.6705-05:00","level":"INFO","msg":"Selecting 100000 QubzIds to map into Qubz Matrix ..."}
+{"time":"2024-02-08T01:19:38.67051-05:00","level":"INFO","msg":"Cannot request more than 10000 numbers per service call"}
+{"time":"2024-02-08T01:19:38.670518-05:00","level":"INFO","msg":"call to random number service failed"}
+{"time":"2024-02-08T01:29:02.847591-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-08T01:29:02.850531-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-08T01:29:02.850551-05:00","level":"INFO","msg":"{QubzCount:100000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-08T01:29:02.850573-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-08T01:29:02.850585-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-08T01:29:02.850607-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-08T01:29:02.854476-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-08T01:29:02.854502-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-08T01:29:02.854525-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-08T01:29:02.859276-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-08T01:29:02.859297-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-08T01:29:02.859325-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-08T01:29:02.860764-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-08T01:29:02.86078-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-08T01:29:02.860801-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-08T01:29:02.919078-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-08T01:29:02.919128-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-08T01:29:02.919163-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-08T01:29:02.922586-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-08T01:29:02.922607-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-08T01:29:02.922626-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-08T01:29:02.926924-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-08T01:29:02.926937-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-08T01:29:02.926955-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-08T01:29:02.929019-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-08T01:29:02.92903-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-08T01:29:02.929052-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-08T01:29:02.933419-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-08T01:29:02.933425-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-08T01:29:02.933431-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-08T01:29:02.934566-05:00","level":"INFO","msg":"Selecting 100000 QubzIds to map into Qubz Matrix ..."}
+{"time":"2024-02-08T01:29:02.934609-05:00","level":"INFO","msg":"Cannot request more than 10000 numbers per service call"}
+{"time":"2024-02-08T01:29:02.934618-05:00","level":"INFO","msg":"call to random number service failed"}
+{"time":"2024-02-08T01:29:23.303371-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-08T01:29:23.313067-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-08T01:29:23.313104-05:00","level":"INFO","msg":"{QubzCount:10000 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat}"}
+{"time":"2024-02-08T01:29:23.313148-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-08T01:29:23.313173-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-08T01:29:23.313243-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-08T01:29:23.31388-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-08T01:29:23.3139-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-08T01:29:23.313939-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-08T01:29:23.315779-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-08T01:29:23.315836-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-08T01:29:23.315898-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-08T01:29:23.31613-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-08T01:29:23.316156-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-08T01:29:23.31619-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-08T01:29:23.381807-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-08T01:29:23.381853-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-08T01:29:23.381892-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-08T01:29:23.382318-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-08T01:29:23.382331-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-08T01:29:23.382349-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-08T01:29:23.382575-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-08T01:29:23.382585-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-08T01:29:23.3826-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-08T01:29:23.382799-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-08T01:29:23.382807-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-08T01:29:23.382836-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-08T01:29:23.383424-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-08T01:29:23.383434-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-08T01:29:23.383456-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-08T01:29:23.383601-05:00","level":"INFO","msg":"Selecting 10000 QubzIds to map into Qubz Matrix ..."}
+{"time":"2024-02-08T01:29:23.383611-05:00","level":"INFO","msg":"Configuring Service Call"}
+{"time":"2024-02-08T01:29:23.383663-05:00","level":"INFO","msg":"Adding Service Request Headers ..."}
+{"time":"2024-02-08T01:29:23.383671-05:00","level":"INFO","msg":"Adding Header User-Agent with Value shawn.engineer2@gmail.com ..."}
+{"time":"2024-02-08T01:29:23.383677-05:00","level":"INFO","msg":"Making Service Call ..."}
+{"time":"2024-02-08T01:29:24.670479-05:00","level":"INFO","msg":"Service Error Occurred : Status Code : 503 Error Message : Error: You have used your quota of random bits for today.  See the quota page for details.\n"}
+{"time":"2024-02-08T01:29:24.670606-05:00","level":"INFO","msg":"call to random number service failed"}

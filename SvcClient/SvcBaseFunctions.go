@@ -1,6 +1,8 @@
 package svcclient
 
 import (
+	"fmt"
+	"indigodeltasierra/customlog"
 	"io"
 	"log/slog"
 	"net/http"
@@ -11,47 +13,46 @@ type header struct {
 	headerValue string
 }
 
-func Get(svcEndpoint string, body string, headers []header, logger *slog.Logger) (int, []byte) {
+func Get(svcEndpoint string, body string, headers []header, consoleLogger *slog.Logger, fileLogger *slog.Logger) (int, []byte) {
 
-	logger.Info("Configuring Call")
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Configuring Service Call", false)
 
 	client := &http.Client{}
 
 	//Add Body
 	if len(body) > 0 {
-		logger.Info("Adding Body")
+		customlog.InfoAllChannels(consoleLogger, fileLogger, "Adding Service Request Body ...", false)
 	}
 
 	req, err := http.NewRequest("GET", svcEndpoint, nil)
 
 	if err != nil {
-		logger.Error(err.Error())
+		customlog.ErrorAllChannels(consoleLogger, fileLogger, err.Error())
 	}
 
 	//Add headers here
 	if headers != nil {
-		logger.Info("Adding Headers")
+		customlog.InfoAllChannels(consoleLogger, fileLogger, "Adding Service Request Headers ...", false)
 
 		for _, currHeader := range headers {
-			msg := "Adding Header " + currHeader.headerName + " with Value " + currHeader.headerValue
-			logger.Info(msg)
+			customlog.InfoAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Adding Header %s with Value %s ...", currHeader.headerName, currHeader.headerValue), false)
 			req.Header.Add(currHeader.headerName, currHeader.headerValue)
 		}
 	}
 
-	logger.Info("Making Call")
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Making Service Call ...", false)
 
 	resp, err := client.Do(req)
 
 	if err != nil {
-		logger.Error(err.Error())
+		customlog.ErrorAllChannels(consoleLogger, fileLogger, err.Error())
 	}
 
 	defer resp.Body.Close()
 	bodyBytes, err := io.ReadAll(resp.Body)
 
 	if err != nil {
-		logger.Error(err.Error())
+		customlog.ErrorAllChannels(consoleLogger, fileLogger, err.Error())
 	}
 
 	return resp.StatusCode, bodyBytes
