@@ -61,3 +61,29 @@ func ErrorFile(fileLogger *slog.Logger, msg string) {
 	fileLogger.Info(msg)
 
 }
+
+func CalloutAllChannels(consoleLogger *slog.Logger, fileLogger *slog.Logger, msg string) {
+
+	//Send out an INFO style message to both console and log file
+	CalloutConsole(consoleLogger, msg)
+	InfoFile(fileLogger, msg)
+}
+
+func CalloutConsole(consoleLogger *slog.Logger, msg string) {
+
+	//Send out INFO style messages to console only
+	consoleLogger.Info(cyan.Style(msg))
+}
+
+func GreenlighAllChannels(consoleLogger *slog.Logger, fileLogger *slog.Logger, msg string) {
+
+	//Send out an INFO style message to both console and log file
+	GreenlightConsole(consoleLogger, msg)
+	InfoFile(fileLogger, msg)
+}
+
+func GreenlightConsole(consoleLogger *slog.Logger, msg string) {
+
+	//Send out INFO style messages to console only
+	consoleLogger.Info(green.Style(msg))
+}

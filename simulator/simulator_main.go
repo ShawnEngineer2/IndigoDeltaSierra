@@ -35,7 +35,7 @@ func StartSimulation() {
 	}
 
 	//Setup logfile logger
-	customlog.InfoConsole(consoleLogger, "Configuring File Logger to output path "+configDS.LogLocation+" ...", true)
+	customlog.InfoConsole(consoleLogger, fmt.Sprintf("Configuring File Logger to output path %s ...", configDS.LogLocation), true)
 
 	fileLogger := slog.New(slog.NewJSONHandler(customlog.RotatingLog(configDS.LogLocation), nil))
 
@@ -43,8 +43,17 @@ func StartSimulation() {
 	customlog.InfoFile(fileLogger, "Config Values for this run ...")
 	customlog.InfoFile(fileLogger, fmt.Sprintf("%+v", configDS))
 
+	//Setup PANIC trap
+	defer func() {
+		r := recover()
+
+		if r != nil {
+			customlog.ErrorConsole(consoleLogger, r.(error).Error())
+		}
+	}()
+
 	//Load simulator configuration data
-	err = fileLoader(&locationsDS, &routesDS, &classOfServiceDS, &qubzNameDS, &sensorTypeDS, &shipmentTypeDS, &transportModeDS, &sensorRangeDS, consoleLogger, fileLogger)
+	err = fileLoader(&configDS, &locationsDS, &routesDS, &classOfServiceDS, &qubzNameDS, &sensorTypeDS, &shipmentTypeDS, &transportModeDS, &sensorRangeDS, consoleLogger, fileLogger)
 
 	if err != nil {
 		//Exit with Failure message
@@ -116,6 +125,8 @@ func StartSimulation() {
 
 	//Configure initial sensor values in the Qubz Matrix
 	customlog.InfoAllChannels(consoleLogger, fileLogger, "Configuring Initial Sensor Values in Qubz Matrix ...", true)
+
+	initializeQubzMatrixSensors(&currentQubzMatrix, consoleLogger, fileLogger)
 
 	customlog.InfoAllChannels(consoleLogger, fileLogger, "Qubz Matrix Sensor Configuration Complete", true)
 

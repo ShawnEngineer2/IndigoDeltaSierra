@@ -1,10 +1,18 @@
 {
-    "qubzCount":10000,
+    "qubzCount":100001,
+    "useInternalRandomizer":1,
     "eventInterval":15,
     "eventCycleCount":5,
     "emailAddress":"shawn.engineer2@gmail.com",
     "queueEndpoint":"127.0.0.1",
     "queueTopic":"topic",
     "logLocation":"./output/logs/logfile",
-    "qubzNameFile":"./qubz.dat"
+    "qubzNameFile":"./qubz.dat",
+    "locationsFile":"./locations.dat",
+    "routesFile":"./routes.dat",
+    "classOfServiceFile":"./classofservice.dat",
+    "sensorTypesFile":"./sensor_types.dat",
+    "shipmentTypesFile":"./shipment_types.dat",
+    "transportModesFile":"./transportmodes.dat",
+    "sensorRangesFile":"./sensor_ranges.dat"
 }
