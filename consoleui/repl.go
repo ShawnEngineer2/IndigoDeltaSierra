@@ -36,6 +36,12 @@ func RunInteractive() {
 			testutil.GenerateTestEvents()
 			pressEnterToContinue()
 
+		case '3':
+			//Test random number generation
+			fmt.Println("")
+			testutil.TestRandomNumbers02()
+			pressEnterToContinue()
+
 		case '9':
 			goByeBye()
 		}

@@ -126,6 +126,146 @@ func SpectrometerInit(qubzMatrix *[]datamodels.QubzMatrix) {
 			case 24:
 				elementName = "KNO3"
 				partsPerMillion = 1.13245
+
+			case 25:
+				elementName = "U"
+				partsPerMillion = 1.13245
+
+			case 26:
+				elementName = "Pu"
+				partsPerMillion = .00345
+
+			case 27:
+				elementName = "Be"
+				partsPerMillion = 2.67500
+
+			case 28:
+				elementName = "B"
+				partsPerMillion = 35.98723
+
+			case 29:
+				elementName = "F"
+				partsPerMillion = 35.98723
+
+			case 30:
+				elementName = "Na"
+				partsPerMillion = 2097.72846
+
+			case 31:
+				elementName = "Mg"
+				partsPerMillion = 97.87263
+
+			case 32:
+				elementName = "Al"
+				partsPerMillion = 393827.74628
+
+			case 33:
+				elementName = "Si"
+				partsPerMillion = 35.98723
+
+			case 34:
+				elementName = "P"
+				partsPerMillion = 11876.92738
+
+			case 35:
+				elementName = "Cl"
+				partsPerMillion = 7892.98263
+
+			case 36:
+				elementName = "K"
+				partsPerMillion = 841.72638
+
+			case 37:
+				elementName = "Ca"
+				partsPerMillion = 219726.82736
+
+			case 38:
+				elementName = "Sc"
+				partsPerMillion = 90726.72169
+
+			case 39:
+				elementName = "Ti"
+				partsPerMillion = 479328.18374
+
+			case 40:
+				elementName = "V"
+				partsPerMillion = 76917.01739
+
+			case 41:
+				elementName = "Cr"
+				partsPerMillion = 23718.00928
+
+			case 42:
+				elementName = "Mn"
+				partsPerMillion = 3287.08901
+
+			case 43:
+				elementName = "Fe"
+				partsPerMillion = 621076.46275
+
+			case 44:
+				elementName = "Co"
+				partsPerMillion = 76823.91728
+
+			case 45:
+				elementName = "Ni"
+				partsPerMillion = 276982.47262
+
+			case 46:
+				elementName = "Cu"
+				partsPerMillion = 189726.92702
+
+			case 47:
+				elementName = "Zn"
+				partsPerMillion = 315927.27380
+
+			case 48:
+				elementName = "Ga"
+				partsPerMillion = 1378.98428
+
+			case 49:
+				elementName = "Ge"
+				partsPerMillion = 6529.273629
+
+			case 50:
+				elementName = "As"
+				partsPerMillion = 0.78920
+
+			case 51:
+				elementName = "Se"
+				partsPerMillion = .92736
+
+			case 52:
+				elementName = "Br"
+				partsPerMillion = 5.82791
+
+			case 53:
+				elementName = "Rb"
+				partsPerMillion = 12.72638
+
+			case 54:
+				elementName = "Sr"
+				partsPerMillion = 23.72695
+
+			case 55:
+				elementName = "Y"
+				partsPerMillion = 35.98723
+
+			case 56:
+				elementName = "Pd"
+				partsPerMillion = 35.98723
+
+			case 57:
+				elementName = "Ag"
+				partsPerMillion = 15872.92846
+
+			case 58:
+				elementName = "Pb"
+				partsPerMillion = 287927.75283
+
+			case 59:
+				elementName = "Th"
+				partsPerMillion = 35.98723
 			}
 
 			(*qubzMatrix)[i].Spectrometer.Elements[elindex].ElementName = elementName

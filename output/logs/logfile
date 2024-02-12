@@ -2084,3 +2084,149 @@
 {"time":"2024-02-09T09:10:28.068301-05:00","level":"INFO","msg":"Initialization Complete"}
 {"time":"2024-02-09T09:10:28.068308-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
 {"time":"2024-02-09T09:10:28.068313-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-11T14:39:01.816585-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-11T14:39:01.823138-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-11T14:39:01.823193-05:00","level":"INFO","msg":"{QubzCount:100001 InternalRandomizer:1 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat}"}
+{"time":"2024-02-11T14:39:01.823264-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-11T14:39:01.82328-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-11T14:39:01.823331-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-11T14:39:01.82826-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-11T14:39:01.828307-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-11T14:39:01.828356-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-11T14:39:01.835649-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-11T14:39:01.835676-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-11T14:39:01.835709-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-11T14:39:01.841705-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-11T14:39:01.841738-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-11T14:39:01.841766-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-11T14:39:01.910636-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-11T14:39:01.910683-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-11T14:39:01.910719-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-11T14:39:01.915729-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-11T14:39:01.915752-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-11T14:39:01.915794-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-11T14:39:01.919274-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-11T14:39:01.919295-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-11T14:39:01.91933-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-11T14:39:01.92282-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-11T14:39:01.922834-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-11T14:39:01.922865-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-11T14:39:01.928021-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-11T14:39:01.928031-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-11T14:39:01.928036-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-11T14:39:01.929312-05:00","level":"INFO","msg":"Mapping All QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-11T14:39:01.940893-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 100001 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-11T14:39:01.940924-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-11T14:39:01.940932-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-11T14:39:01.940939-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-11T14:39:01.94276-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-11T14:39:01.942771-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-11T14:39:01.942776-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-11T14:39:01.942782-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-11T14:39:01.943034-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-11T14:39:01.943042-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-11T14:39:01.943047-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-11T14:39:01.943052-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-11T14:39:01.943091-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-11T14:39:01.943095-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-11T14:39:01.9431-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-11T14:39:01.943107-05:00","level":"INFO","msg":"Initializing Sensor :  Altimeter ..."}
+{"time":"2024-02-11T14:39:01.944041-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:39:01.94405-05:00","level":"INFO","msg":"Initializing Sensor :  Battery ..."}
+{"time":"2024-02-11T14:39:01.945777-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:39:01.945785-05:00","level":"INFO","msg":"Initializing Sensor :  Onboard Compute ..."}
+{"time":"2024-02-11T14:39:01.948373-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:39:01.948382-05:00","level":"INFO","msg":"Initializing Sensor :  Fire ..."}
+{"time":"2024-02-11T14:39:01.949164-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:39:01.949171-05:00","level":"INFO","msg":"Initializing Sensor :  Geiger ..."}
+{"time":"2024-02-11T14:39:01.949644-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:39:01.949654-05:00","level":"INFO","msg":"Initializing Sensor :  GPS ..."}
+{"time":"2024-02-11T14:39:01.951337-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:39:01.951343-05:00","level":"INFO","msg":"Initializing Sensor :  Gyroscopic ..."}
+{"time":"2024-02-11T14:39:01.952383-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:39:01.95239-05:00","level":"INFO","msg":"Initializing Sensor :  Lock ..."}
+{"time":"2024-02-11T14:39:01.953499-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:39:01.953504-05:00","level":"INFO","msg":"Initializing Sensor :  Motion ..."}
+{"time":"2024-02-11T14:39:01.954243-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:39:01.95425-05:00","level":"INFO","msg":"Initializing Sensor :  Qubz Seal State ..."}
+{"time":"2024-02-11T14:39:01.955118-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:39:01.955136-05:00","level":"INFO","msg":"Initializing Sensor :  Radio ..."}
+{"time":"2024-02-11T14:39:01.958301-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:39:01.958326-05:00","level":"INFO","msg":"Initializing Sensor :  Temperature and Barometric ..."}
+{"time":"2024-02-11T14:39:01.959578-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:39:01.959599-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-11T14:39:01.959604-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-11T14:41:11.048814-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-11T14:41:11.060459-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-11T14:41:11.060527-05:00","level":"INFO","msg":"{QubzCount:100001 InternalRandomizer:1 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat}"}
+{"time":"2024-02-11T14:41:11.060608-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-11T14:41:11.060628-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-11T14:41:11.060681-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-11T14:41:11.067852-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-11T14:41:11.067896-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-11T14:41:11.067938-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-11T14:41:11.078307-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-11T14:41:11.07835-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-11T14:41:11.07839-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-11T14:41:11.083056-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-11T14:41:11.083077-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-11T14:41:11.083104-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-11T14:41:11.153111-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-11T14:41:11.153149-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-11T14:41:11.153181-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-11T14:41:11.160429-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-11T14:41:11.160445-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-11T14:41:11.160465-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-11T14:41:11.16473-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-11T14:41:11.164754-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-11T14:41:11.16477-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-11T14:41:11.167809-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-11T14:41:11.167824-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-11T14:41:11.167854-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-11T14:41:11.175134-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-11T14:41:11.175147-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-11T14:41:11.175156-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-11T14:41:11.176402-05:00","level":"INFO","msg":"Mapping All QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-11T14:41:11.186842-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 100001 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-11T14:41:11.186866-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-11T14:41:11.186874-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-11T14:41:11.186891-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-11T14:41:11.187735-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-11T14:41:11.18775-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-11T14:41:11.187757-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-11T14:41:11.187764-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-11T14:41:11.187996-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-11T14:41:11.188005-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-11T14:41:11.188012-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-11T14:41:11.188019-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-11T14:41:11.188062-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-11T14:41:11.188068-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-11T14:41:11.188075-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-11T14:41:11.188082-05:00","level":"INFO","msg":"Initializing Sensor :  Altimeter ..."}
+{"time":"2024-02-11T14:41:11.188991-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:41:11.189-05:00","level":"INFO","msg":"Initializing Sensor :  Battery ..."}
+{"time":"2024-02-11T14:41:11.190836-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:41:11.190846-05:00","level":"INFO","msg":"Initializing Sensor :  Onboard Compute ..."}
+{"time":"2024-02-11T14:41:11.193481-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:41:11.193492-05:00","level":"INFO","msg":"Initializing Sensor :  Fire ..."}
+{"time":"2024-02-11T14:41:11.194346-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:41:11.194355-05:00","level":"INFO","msg":"Initializing Sensor :  Geiger ..."}
+{"time":"2024-02-11T14:41:11.194856-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:41:11.194864-05:00","level":"INFO","msg":"Initializing Sensor :  GPS ..."}
+{"time":"2024-02-11T14:41:11.19662-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:41:11.196629-05:00","level":"INFO","msg":"Initializing Sensor :  Gyroscopic ..."}
+{"time":"2024-02-11T14:41:11.197625-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:41:11.197636-05:00","level":"INFO","msg":"Initializing Sensor :  Lock ..."}
+{"time":"2024-02-11T14:41:11.198906-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:41:11.198913-05:00","level":"INFO","msg":"Initializing Sensor :  Motion ..."}
+{"time":"2024-02-11T14:41:11.199696-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:41:11.199717-05:00","level":"INFO","msg":"Initializing Sensor :  Qubz Seal State ..."}
+{"time":"2024-02-11T14:41:11.20063-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:41:11.200639-05:00","level":"INFO","msg":"Initializing Sensor :  Radio ..."}
+{"time":"2024-02-11T14:41:11.203672-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:41:11.203682-05:00","level":"INFO","msg":"Initializing Sensor :  Spectrometer ..."}
+{"time":"2024-02-11T14:41:11.247907-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:41:11.247949-05:00","level":"INFO","msg":"Initializing Sensor :  Temperature and Barometric ..."}
+{"time":"2024-02-11T14:41:11.250888-05:00","level":"INFO","msg":"Initialization Complete"}
+{"time":"2024-02-11T14:41:11.250902-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-11T14:41:11.250909-05:00","level":"INFO","msg":"Simulation Complete"}

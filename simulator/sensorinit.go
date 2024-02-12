@@ -77,6 +77,11 @@ func initializeQubzMatrixSensors(qubzMatrix *[]datamodels.QubzMatrix, consoleLog
 	sensors.RadioInit(qubzMatrix)
 	endMessage(consoleLogger, fileLogger)
 
+	//Initialize Spectrometer
+	startMessage("Spectrometer", consoleLogger, fileLogger)
+	sensors.SpectrometerInit(qubzMatrix)
+	endMessage(consoleLogger, fileLogger)
+
 	//Initialize Temperature and Barometric Sensors
 	startMessage("Temperature and Barometric", consoleLogger, fileLogger)
 	sensors.TempBarometricInit(qubzMatrix)
