@@ -135,7 +135,6 @@ func StartSimulation() {
 	//Start simulation run
 	//Allocate and initialize the Qubz Matrix
 	customlog.InfoAllChannels(consoleLogger, fileLogger, "Creating Qubz Matrix Prior Values Buffer ...", true)
-	priorQubzMatrix := make([]datamodels.QubzMatrix, qubz_simulation_count)
 
 	customlog.InfoAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Begin Simulation (%d cycles)", configDS.EventCycleCount), true)
 
@@ -143,17 +142,23 @@ func StartSimulation() {
 
 		cycleNumber := i + 1
 
-		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d) Capture Current Sensor State to Prior State Buffer", cycleNumber))
-		priorQubzMatrix = make([]datamodels.QubzMatrix, len(currentQubzMatrix))
+		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d of %d) Capture Current Sensor State to Prior State Buffer", cycleNumber, configDS.EventCycleCount))
+		priorQubzMatrix := make([]datamodels.QubzMatrix, len(currentQubzMatrix))
 		copy(priorQubzMatrix, currentQubzMatrix)
+		//TODO: Update Event State from Current to Prior
 
-		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d) Calculate New Sensor State", cycleNumber))
+		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d of %d) Calculate New Sensor State", cycleNumber, configDS.EventCycleCount))
 		runSimulationCycle(&currentQubzMatrix, &sensorRangeDS, consoleLogger, fileLogger)
 
-		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d) Transmitting events to output channel", cycleNumber))
-		eventemitter.TransmitEvents(consoleLogger, fileLogger)
+		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d of %d) Transmitting events to output channel", cycleNumber, configDS.EventCycleCount))
+		err = eventemitter.TransmitEvents(&currentQubzMatrix, &priorQubzMatrix, &configDS, consoleLogger, fileLogger)
 
-		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d) Complete!", cycleNumber))
+		if err != nil {
+			customlog.ErrorAllChannels(consoleLogger, fileLogger, "Simulation Run Terminated!")
+			return
+		}
+
+		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d of %d) Complete!", cycleNumber, configDS.EventCycleCount))
 
 		//Check to see if there is a pause before the next cycle
 		if configDS.EventInterval > 0 && i != (configDS.EventCycleCount-1) {

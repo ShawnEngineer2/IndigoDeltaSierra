@@ -19,3 +19,14 @@ func TempBarometricInit(qubzMatrix *[]datamodels.QubzMatrix, matrixIndex int, qu
 	(*qubzMatrix)[matrixIndex].TempBarometrics.TemperatureSensorState = 1
 
 }
+
+func TempBarometricSet(qubzMatrix *[]datamodels.QubzMatrix, matrixIndex int, qubzStateDS *datamodels.QubzState, consoleLogger *slog.Logger, fileLogger *slog.Logger) {
+
+	//Call the Init routine to set most values
+	TempBarometricInit(qubzMatrix, matrixIndex, qubzStateDS, consoleLogger, fileLogger)
+
+	//Set the data points not treated as variable-value by INIT
+	(*qubzMatrix)[matrixIndex].TempBarometrics.BarometricSensorState = int(datautil.GetSensorStateValue(appconstants.SENSOR_DATA_POINT_TEMPANDHUMIDITY_BAROMETRIC_SENSOR_STATE, qubzStateDS, consoleLogger, fileLogger))
+	(*qubzMatrix)[matrixIndex].TempBarometrics.TemperatureSensorState = int(datautil.GetSensorStateValue(appconstants.SENSOR_DATA_POINT_TEMPANDHUMIDITY_TEMPERATURE_SENSOR_STATE, qubzStateDS, consoleLogger, fileLogger))
+
+}

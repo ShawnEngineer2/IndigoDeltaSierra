@@ -25,8 +25,8 @@ const DATA_POINT_TYPE_CALCULATED int = 3
 const DATA_POINT_TYPE_INFORMATIONAL int = 4
 
 // Sensor constants
-const SENSOR_STATE_PREVIOUS int = 0
-const SENSOR_STATE_CURRENT int = 1
+const SENSOR_STATE_CURRENT int = 0
+const SENSOR_STATE_PREVIOUS int = 1
 
 // Tranportation Mode Constants
 const TRANSPORT_MODE_SHIP int = 1
@@ -35,6 +35,36 @@ const TRANSPORT_MODE_TRUCK int = 3
 const TRANSPORT_MODE_FALCON int = 4
 const TRANSPORT_MODE_DRAGON int = 5
 const TRANSPORT_MODE_TRAIN int = 6
+
+// Sensor Type Description Contants
+const SENSOR_TYPE_ALTIMETER string = "altimeter"
+const SENSOR_TYPE_BATTERY string = "battery"
+const SENSOR_TYPE_COMPUTE string = "compute"
+const SENSOR_TYPE_GEIGER string = "geiger counter"
+const SENSOR_TYPE_GPS string = "gps"
+const SENSOR_TYPE_GYRO string = "gyroscopic positioning"
+const SENSOR_TYPE_LOCK string = "lock state"
+const SENSOR_TYPE_MOTION string = "motion sensor"
+const SENSOR_TYPE_RADIO string = "radio"
+const SENSOR_TYPE_SEAL string = "door seal"
+const SENSOR_TYPE_SPECTROMETER string = "spectrometer"
+const SENSOR_TYPE_TEMPHUMIDITY string = "temperature and barometric"
+const SENSOR_TYPE_FIRE string = "fire"
+
+// Sensor Type ID Contants
+const SENSOR_TYPE_ID_ALTIMETER int = 1
+const SENSOR_TYPE_ID_BATTERY int = 2
+const SENSOR_TYPE_ID_COMPUTE int = 3
+const SENSOR_TYPE_ID_GEIGER int = 4
+const SENSOR_TYPE_ID_GPS int = 5
+const SENSOR_TYPE_ID_GYRO int = 6
+const SENSOR_TYPE_ID_LOCK int = 7
+const SENSOR_TYPE_ID_MOTION int = 8
+const SENSOR_TYPE_ID_RADIO int = 9
+const SENSOR_TYPE_ID_SEAL int = 10
+const SENSOR_TYPE_ID_SPECTROMETER int = 11
+const SENSOR_TYPE_ID_TEMPHUMIDITY int = 12
+const SENSOR_TYPE_ID_FIRE int = 13
 
 // Sensor Data Point Constants
 const SENSOR_DATA_POINT_BATTERY_MAX_AMP_HOURS int = 1

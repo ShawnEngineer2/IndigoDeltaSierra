@@ -1,1 +1,0 @@
-{"Header":{"QubzId":"SunnyRainyJellyfish","EventTimestamp":"2024-01-26T23:38:14.123Z","RouteAssignment":3,"ShipmentType":2,"TransportMode":6,"SensorType":{"SensorTypeId":13,"SensorTypeDescription":"fire"}},"SensorData":[{"EventState":0,"FireSensorState":1,"FireDetected":0,"FireSuppressionState":0},{"EventState":1,"FireSensorState":1,"FireDetected":0,"FireSuppressionState":0}]}

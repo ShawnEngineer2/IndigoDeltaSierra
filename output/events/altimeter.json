@@ -1,1 +1,0 @@
-{"Header":{"QubzId":"SunnyRainyJellyfish","EventTimestamp":"2024-01-26T23:38:14.123Z","RouteAssignment":3,"ShipmentType":2,"TransportMode":6,"SensorType":{"SensorTypeId":1,"SensorTypeDescription":"altimeter"}},"SensorData":[{"EventState":0,"AltimeterState":1,"Altitude":2000.265},{"EventState":1,"AltimeterState":1,"Altitude":2330.365}]}

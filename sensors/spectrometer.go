@@ -273,3 +273,13 @@ func SpectrometerInit(qubzMatrix *[]datamodels.QubzMatrix, matrixIndex int, qubz
 	}
 
 }
+
+func SpectrometerSet(qubzMatrix *[]datamodels.QubzMatrix, matrixIndex int, qubzStateDS *datamodels.QubzState, consoleLogger *slog.Logger, fileLogger *slog.Logger) {
+
+	//Call the init routine to set values that are done there
+	SpectrometerInit(qubzMatrix, matrixIndex, qubzStateDS, consoleLogger, fileLogger)
+
+	//Set the remaining state elements not treated as variable-value in the INIT routine
+	(*qubzMatrix)[matrixIndex].Spectrometer.SpectrometerState = int(datautil.GetSensorStateValue(appconstants.SENSOR_DATA_POINT_SPECTROMETER_SPECTROMETER_STATE, qubzStateDS, consoleLogger, fileLogger))
+
+}

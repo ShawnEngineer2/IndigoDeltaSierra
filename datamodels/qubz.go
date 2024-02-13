@@ -11,6 +11,7 @@ type Qubz struct {
 
 type QubzEventHeader struct {
 	QubzId          string     `json:"QubzId"`
+	EventUUID       string     `json:"EventUUID"`
 	EventTimestamp  string     `json:"EventTimestamp"`
 	RouteAssignment int        `json:"RouteAssignment"`
 	ShipmentType    int        `json:"ShipmentType"`

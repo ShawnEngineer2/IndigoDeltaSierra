@@ -1,1 +1,0 @@
-{"Header":{"QubzId":"SunnyRainyJellyfish","EventTimestamp":"2024-01-26T23:38:14.123Z","RouteAssignment":3,"ShipmentType":2,"TransportMode":6,"SensorType":{"SensorTypeId":4,"SensorTypeDescription":"geiger counter"}},"SensorData":[{"EventState":0,"GeigerCounterState":1,"GeigerReading":435},{"EventState":1,"GeigerCounterState":1,"GeigerReading":435}]}

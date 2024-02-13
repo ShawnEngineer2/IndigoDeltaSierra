@@ -10,11 +10,10 @@ func runSimulationCycle(qubzMatrix *[]datamodels.QubzMatrix, sensorRangeDS *[]da
 
 	//This routine runs the simulation cycle
 
-	customlog.InfoAllChannels(consoleLogger, fileLogger, "Calculating New Sensor State Values ...", false)
-
 	customlog.InfoAllChannels(consoleLogger, fileLogger, "Assigning Exceptions ...", false)
 
-	customlog.InfoAllChannels(consoleLogger, fileLogger, "Calculating Exception States ...", false)
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Calculating New Sensor State Values ...", false)
+	updateQubzMatrixSensors(qubzMatrix, sensorRangeDS, consoleLogger, fileLogger)
 
 	customlog.InfoAllChannels(consoleLogger, fileLogger, "Cycle Complete ... Ready for Event Transmission", false)
 
