@@ -42,6 +42,12 @@ func RunInteractive() {
 			testutil.TestRandomNumbers02()
 			pressEnterToContinue()
 
+		case '4':
+			//Test sensor value assignment
+			fmt.Println("")
+			testutil.TestSensorStateUpdate()
+			pressEnterToContinue()
+
 		case '9':
 			goByeBye()
 		}

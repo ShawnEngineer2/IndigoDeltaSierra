@@ -11,6 +11,7 @@ type QubzMatrix struct {
 	ExceptionAssignment   int
 	ExceptionSeverity     int
 	ExceptionIntermittent bool
+	ExceptionInterval     int //Note: Only applies if Exception is Intermitten. If Exception Interval is -1, the error occurs randomly (0 /1 type stuff)
 	Altimeter             AltimeterReading
 	Battery               BatteryReading
 	Compute               ComputeReading

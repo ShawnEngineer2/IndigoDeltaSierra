@@ -19,6 +19,7 @@ func mainMenu() {
 	fmt.Println(green.Style("1 : Begin Simulation"))
 	fmt.Println(green.Style("2 : Generate Example Events"))
 	fmt.Println(green.Style("3 : Test Number Generation"))
+	fmt.Println(green.Style("4 : Test Sensor Value Assignment"))
 	fmt.Println(green.Style("9 : Exit"))
 	fmt.Println("")
 }

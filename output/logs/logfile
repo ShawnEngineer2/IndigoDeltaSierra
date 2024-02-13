@@ -2230,3 +2230,45 @@
 {"time":"2024-02-11T14:41:11.250888-05:00","level":"INFO","msg":"Initialization Complete"}
 {"time":"2024-02-11T14:41:11.250902-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
 {"time":"2024-02-11T14:41:11.250909-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-12T14:24:45.332821-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-12T14:24:45.341417-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-12T14:24:45.341502-05:00","level":"INFO","msg":"{QubzCount:100001 InternalRandomizer:1 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat}"}
+{"time":"2024-02-12T14:24:45.341536-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-12T14:24:45.341612-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-12T14:24:45.347212-05:00","level":"INFO","msg":"Could not load Sensor Range file ... startup terminated!"}
+{"time":"2024-02-12T14:25:53.416245-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-12T14:25:53.416671-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-12T14:25:53.416735-05:00","level":"INFO","msg":"{QubzCount:100001 InternalRandomizer:1 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat}"}
+{"time":"2024-02-12T14:25:53.416768-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-12T14:25:53.416826-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-12T14:25:53.418862-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-12T14:48:06.707305-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-12T14:48:06.713764-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-12T14:48:06.71383-05:00","level":"INFO","msg":"{QubzCount:100001 InternalRandomizer:1 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat}"}
+{"time":"2024-02-12T14:48:06.71387-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-12T14:48:06.713955-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-12T14:48:06.722385-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-12T16:03:17.69561-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-12T16:03:17.700549-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-12T16:03:17.700618-05:00","level":"INFO","msg":"{QubzCount:100001 InternalRandomizer:1 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat}"}
+{"time":"2024-02-12T16:03:17.700671-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-12T16:03:17.70073-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-12T16:03:17.706019-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-12T16:06:35.94373-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-12T16:06:35.944623-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-12T16:06:35.944675-05:00","level":"INFO","msg":"{QubzCount:100001 InternalRandomizer:1 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat}"}
+{"time":"2024-02-12T16:06:35.944701-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-12T16:06:35.944763-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-12T16:06:35.946226-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-12T16:07:29.5652-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-12T16:07:29.565752-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-12T16:07:29.565793-05:00","level":"INFO","msg":"{QubzCount:100001 InternalRandomizer:1 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat}"}
+{"time":"2024-02-12T16:07:29.565816-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-12T16:07:29.565862-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-12T16:07:29.567025-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-12T16:09:59.380045-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-12T16:09:59.380452-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-12T16:09:59.380478-05:00","level":"INFO","msg":"{QubzCount:100001 InternalRandomizer:1 EventInterval:15 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1 QueueTopic:topic LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat}"}
+{"time":"2024-02-12T16:09:59.380492-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-12T16:09:59.380519-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-12T16:09:59.396334-05:00","level":"INFO","msg":"Sensor Range file loaded"}

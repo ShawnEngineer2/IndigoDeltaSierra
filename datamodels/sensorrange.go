@@ -9,8 +9,8 @@ type SensorRange struct {
 	TransportMode     int     `json:"TransportMode"`
 	DataPointTypeId   int     `json:"DataPointTypeId"`
 	NumberScale       int     `json:"NumberScale"`
-	NominalMin        float32 `json:"NominalMin"`
-	NominalMax        float32 `json:"NominalMax"`
-	ExceptionMin      float32 `json:"ExceptionMin"`
-	ExceptionMax      float32 `json:"ExceptionMax"`
+	NominalMin        float64 `json:"NominalMin"`
+	NominalMax        float64 `json:"NominalMax"`
+	ExceptionMin      float64 `json:"ExceptionMin"`
+	ExceptionMax      float64 `json:"ExceptionMax"`
 }
