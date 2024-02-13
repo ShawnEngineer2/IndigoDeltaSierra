@@ -13,80 +13,56 @@ const init_complete_MSG string = "Initialization Complete"
 
 //This set of functions initializes the sensors in the Qubz matrix
 
-func initializeQubzMatrixSensors(qubzMatrix *[]datamodels.QubzMatrix, consoleLogger *slog.Logger, fileLogger *slog.Logger) {
+func initializeQubzMatrixSensors(qubzMatrix *[]datamodels.QubzMatrix, sensorRangeDS *[]datamodels.SensorRange, consoleLogger *slog.Logger, fileLogger *slog.Logger) error {
 	//Walk through and set all sensors to initial nominal values - no sensors should start in
 	//an exception state
 
-	//Note: You'll see that we're making multiple passes through the same dataset which is highly inefficient. This is a DELIBERATE
-	//action for a very impractical reason - I want to be able to show messages like "Initializing Sensor: Altimeter" so the user
-	//can see progress and it's easier for a developer to identify where something blew up. Since this whole initialization process
-	//only occurs once I see it as acceptable so as to satisfy my vanity LOL
+	customlog.InfoConsole(consoleLogger, "Start Initialization ....", false)
 
-	//Initialize Altimeter
-	startMessage("Altimeter", consoleLogger, fileLogger)
-	sensors.AltimeterInit(qubzMatrix)
-	endMessage(consoleLogger, fileLogger)
+	var loopCounter int = 0
+	var counterResetBoundary int = 1000
+	var numQubzProcessed int = 0
+	var totalQubzToProcess int = len(*qubzMatrix)
 
-	//Initialize Battery Sensor
-	startMessage("Battery", consoleLogger, fileLogger)
-	sensors.BatteryInit(qubzMatrix)
-	endMessage(consoleLogger, fileLogger)
+	for i, x := range *qubzMatrix {
 
-	//Initialize Compute Sensors
-	startMessage("Onboard Compute", consoleLogger, fileLogger)
-	sensors.ComputeInit(qubzMatrix)
-	endMessage(consoleLogger, fileLogger)
+		//Create a new sensor state of nominal values
+		sensorState, err := CreateSensorState(x, sensorRangeDS, consoleLogger, fileLogger)
 
-	//Initialize Fire Sensors
-	startMessage("Fire", consoleLogger, fileLogger)
-	sensors.FireInit(qubzMatrix)
-	endMessage(consoleLogger, fileLogger)
+		if err != nil {
+			return err
+		}
 
-	//Initialize Geiger Counter Sensors
-	startMessage("Geiger", consoleLogger, fileLogger)
-	sensors.GeigerInit(qubzMatrix)
-	endMessage(consoleLogger, fileLogger)
+		//Use the Sensor State as input into the various sensor init routines
+		//Initialize Altimeter
+		sensors.AltimeterInit(qubzMatrix, i, &sensorState, consoleLogger, fileLogger)
+		sensors.BatteryInit(qubzMatrix, i, &sensorState, consoleLogger, fileLogger)
+		sensors.ComputeInit(qubzMatrix, i, &sensorState, consoleLogger, fileLogger)
+		sensors.FireInit(qubzMatrix, i)
+		sensors.GeigerInit(qubzMatrix, i, &sensorState, consoleLogger, fileLogger)
+		//Skip GPS for now
+		sensors.GyroInit(qubzMatrix, i, &sensorState, consoleLogger, fileLogger)
+		sensors.LockInit(qubzMatrix, i)
+		sensors.MotionInit(qubzMatrix, i)
+		sensors.QubzSealInit(qubzMatrix, i)
+		sensors.RadioInit(qubzMatrix, i, &sensorState, consoleLogger, fileLogger)
+		sensors.SpectrometerInit(qubzMatrix, i, &sensorState, consoleLogger, fileLogger)
+		sensors.TempBarometricInit(qubzMatrix, i, &sensorState, consoleLogger, fileLogger)
 
-	//Initialize GPS Counter Sensors
-	startMessage("GPS", consoleLogger, fileLogger)
-	sensors.GPSInit(qubzMatrix)
-	endMessage(consoleLogger, fileLogger)
+		//Increment the counters
+		loopCounter++
+		numQubzProcessed++
 
-	//Initialize Gyroscopic Sensors
-	startMessage("Gyroscopic", consoleLogger, fileLogger)
-	sensors.GyroInit(qubzMatrix)
-	endMessage(consoleLogger, fileLogger)
+		if loopCounter == counterResetBoundary {
+			loopCounter = 0
+			customlog.InfoConsole(consoleLogger, fmt.Sprintf("%d of %d Qubz Initialized ...", numQubzProcessed, totalQubzToProcess), false)
+		}
 
-	//Initialize Lock Sensors
-	startMessage("Lock", consoleLogger, fileLogger)
-	sensors.LockInit(qubzMatrix)
-	endMessage(consoleLogger, fileLogger)
+	}
 
-	//Initialize Motion Sensors
-	startMessage("Motion", consoleLogger, fileLogger)
-	sensors.MotionInit(qubzMatrix)
-	endMessage(consoleLogger, fileLogger)
+	customlog.InfoConsole(consoleLogger, "End Initialization ....", false)
 
-	//Initialize Qubz Seal Detectors
-	startMessage("Qubz Seal State", consoleLogger, fileLogger)
-	sensors.QubzSealInit(qubzMatrix)
-	endMessage(consoleLogger, fileLogger)
-
-	//Initialize Radio Detectors
-	startMessage("Radio", consoleLogger, fileLogger)
-	sensors.RadioInit(qubzMatrix)
-	endMessage(consoleLogger, fileLogger)
-
-	//Initialize Spectrometer
-	startMessage("Spectrometer", consoleLogger, fileLogger)
-	sensors.SpectrometerInit(qubzMatrix)
-	endMessage(consoleLogger, fileLogger)
-
-	//Initialize Temperature and Barometric Sensors
-	startMessage("Temperature and Barometric", consoleLogger, fileLogger)
-	sensors.TempBarometricInit(qubzMatrix)
-	endMessage(consoleLogger, fileLogger)
-
+	return nil
 }
 
 func startMessage(sensorName string, consoleLogger *slog.Logger, fileLogger *slog.Logger) {

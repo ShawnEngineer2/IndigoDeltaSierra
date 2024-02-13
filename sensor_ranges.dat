@@ -1675,5 +1675,18 @@
     "NominalMax": 0,
     "ExceptionMin": 1,
     "ExceptionMax": 1
+  },
+  {
+    "SensorTypeId": 12,
+    "SensorType": "TempAndHumidity",
+    "SensorDataPoint": "MoistureLevel",
+    "SensorDataPointId": 130,
+    "TransportMode": 0,
+    "DataPointTypeId": 1,
+    "NumberScale": 5,
+    "NominalMin": 0.005,
+    "NominalMax": 15.000,
+    "ExceptionMin": 0.005,
+    "ExceptionMax": 100
   }
 ]

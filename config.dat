@@ -1,8 +1,8 @@
 {
-    "qubzCount":100001,
+    "qubzCount":1000001,
     "useInternalRandomizer":1,
-    "eventInterval":15,
-    "eventCycleCount":5,
+    "eventInterval":10,
+    "eventCycleCount":3,
     "emailAddress":"shawn.engineer2@gmail.com",
     "queueEndpoint":"127.0.0.1",
     "queueTopic":"topic",

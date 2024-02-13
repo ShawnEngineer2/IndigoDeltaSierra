@@ -5,17 +5,14 @@ import (
 	"indigodeltasierra/datamodels"
 )
 
-func LockInit(qubzMatrix *[]datamodels.QubzMatrix) {
+func LockInit(qubzMatrix *[]datamodels.QubzMatrix, matrixIndex int) {
 	//This routine initializes the Lock sensor
 
-	for i := range *qubzMatrix {
-
-		//Assign values to the passed sensor
-		(*qubzMatrix)[i].Lock.EventState = appconstants.SENSOR_STATE_CURRENT
-		(*qubzMatrix)[i].Lock.LockEventTime = "02/08/2024 21:37:10.093"
-		(*qubzMatrix)[i].Lock.LockEventMethod = 3
-		(*qubzMatrix)[i].Lock.LockEventType = 1
-		(*qubzMatrix)[i].Lock.LockState = 1
-	}
+	//Assign values to the passed sensor
+	(*qubzMatrix)[matrixIndex].Lock.EventState = appconstants.SENSOR_STATE_CURRENT
+	(*qubzMatrix)[matrixIndex].Lock.LockEventTime = "02/08/2024 21:37:10.093"
+	(*qubzMatrix)[matrixIndex].Lock.LockEventMethod = 3
+	(*qubzMatrix)[matrixIndex].Lock.LockEventType = 1
+	(*qubzMatrix)[matrixIndex].Lock.LockState = 1
 
 }

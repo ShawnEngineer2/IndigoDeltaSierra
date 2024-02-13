@@ -3,45 +3,36 @@ package sensors
 import (
 	"indigodeltasierra/appconstants"
 	"indigodeltasierra/datamodels"
+	"indigodeltasierra/datautil"
+	"log/slog"
 )
 
-const altimeterState_DPCode int = 44
-const altitude_ship_DPCode int = 47
-const altitude_plane_DPCode int = 48
-const altitude_truck_DPCode int = 45
-const altitude_falcon_DPCode int = 49
-const altitude_dragon_DPCode int = 50
-const altitude_train_DPCode int = 46
-
-func AltimeterInit(qubzMatrix *[]datamodels.QubzMatrix) {
+func AltimeterInit(qubzMatrix *[]datamodels.QubzMatrix, matrixIndex int, qubzStateDS *datamodels.QubzState, consoleLogger *slog.Logger, fileLogger *slog.Logger) {
 	//This routine initializes the Altimeter sensor
 
 	var altitudeValue float64 = 0
 
-	for i := range *qubzMatrix {
-
-		//Generate an appropriate value based on the passed transport mode
-		switch (*qubzMatrix)[i].TransportMode {
-		case appconstants.TRANSPORT_MODE_DRAGON:
-			altitudeValue = 15
-		case appconstants.TRANSPORT_MODE_FALCON:
-			altitudeValue = 15
-		case appconstants.TRANSPORT_MODE_PLANE:
-			altitudeValue = 15
-		case appconstants.TRANSPORT_MODE_SHIP:
-			altitudeValue = 15
-		case appconstants.TRANSPORT_MODE_TRAIN:
-			altitudeValue = 15
-		case appconstants.TRANSPORT_MODE_TRUCK:
-			altitudeValue = 15
-		default:
-			altitudeValue = 0
-		}
-
-		//Assign values to the passed sensor
-		(*qubzMatrix)[i].Altimeter.AltimeterState = 1
-		(*qubzMatrix)[i].Altimeter.Altitude = altitudeValue
-		(*qubzMatrix)[i].Altimeter.EventState = appconstants.SENSOR_STATE_CURRENT
+	//Generate an appropriate value based on the passed transport mode
+	switch (*qubzMatrix)[matrixIndex].TransportMode {
+	case appconstants.TRANSPORT_MODE_DRAGON:
+		altitudeValue = datautil.GetSensorStateValue(appconstants.SENSOR_DATA_POINT_ALTIMETER_ALTITUDE_DRAGON, qubzStateDS, consoleLogger, fileLogger)
+	case appconstants.TRANSPORT_MODE_FALCON:
+		altitudeValue = datautil.GetSensorStateValue(appconstants.SENSOR_DATA_POINT_ALTIMETER_ALTITUDE_FALCON, qubzStateDS, consoleLogger, fileLogger)
+	case appconstants.TRANSPORT_MODE_PLANE:
+		altitudeValue = datautil.GetSensorStateValue(appconstants.SENSOR_DATA_POINT_ALTIMETER_ALTITUDE_PLANE, qubzStateDS, consoleLogger, fileLogger)
+	case appconstants.TRANSPORT_MODE_SHIP:
+		altitudeValue = datautil.GetSensorStateValue(appconstants.SENSOR_DATA_POINT_ALTIMETER_ALTITUDE_SHIP, qubzStateDS, consoleLogger, fileLogger)
+	case appconstants.TRANSPORT_MODE_TRAIN:
+		altitudeValue = datautil.GetSensorStateValue(appconstants.SENSOR_DATA_POINT_ALTIMETER_ALTITUDE_TRAIN, qubzStateDS, consoleLogger, fileLogger)
+	case appconstants.TRANSPORT_MODE_TRUCK:
+		altitudeValue = datautil.GetSensorStateValue(appconstants.SENSOR_DATA_POINT_ALTIMETER_ALTITUDE_TRUCK, qubzStateDS, consoleLogger, fileLogger)
+	default:
+		altitudeValue = 0
 	}
+
+	//Assign values to the passed sensor
+	(*qubzMatrix)[matrixIndex].Altimeter.AltimeterState = 1
+	(*qubzMatrix)[matrixIndex].Altimeter.Altitude = altitudeValue
+	(*qubzMatrix)[matrixIndex].Altimeter.EventState = appconstants.SENSOR_STATE_CURRENT
 
 }

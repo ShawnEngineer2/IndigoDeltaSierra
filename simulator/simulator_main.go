@@ -6,7 +6,9 @@ import (
 	"indigodeltasierra/customlog"
 	"indigodeltasierra/datamodels"
 	"indigodeltasierra/datautil"
+	"indigodeltasierra/eventemitter"
 	"log/slog"
+	"time"
 )
 
 func StartSimulation() {
@@ -126,9 +128,42 @@ func StartSimulation() {
 	//Configure initial sensor values in the Qubz Matrix
 	customlog.InfoAllChannels(consoleLogger, fileLogger, "Configuring Initial Sensor Values in Qubz Matrix ...", true)
 
-	initializeQubzMatrixSensors(&currentQubzMatrix, consoleLogger, fileLogger)
+	initializeQubzMatrixSensors(&currentQubzMatrix, &sensorRangeDS, consoleLogger, fileLogger)
 
 	customlog.InfoAllChannels(consoleLogger, fileLogger, "Qubz Matrix Sensor Configuration Complete", true)
+
+	//Start simulation run
+	//Allocate and initialize the Qubz Matrix
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Creating Qubz Matrix Prior Values Buffer ...", true)
+	priorQubzMatrix := make([]datamodels.QubzMatrix, qubz_simulation_count)
+
+	customlog.InfoAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Begin Simulation (%d cycles)", configDS.EventCycleCount), true)
+
+	for i := 0; i < configDS.EventCycleCount; i++ {
+
+		cycleNumber := i + 1
+
+		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d) Capture Current Sensor State to Prior State Buffer", cycleNumber))
+		priorQubzMatrix = make([]datamodels.QubzMatrix, len(currentQubzMatrix))
+		copy(priorQubzMatrix, currentQubzMatrix)
+
+		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d) Calculate New Sensor State", cycleNumber))
+		runSimulationCycle(&currentQubzMatrix, &sensorRangeDS, consoleLogger, fileLogger)
+
+		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d) Transmitting events to output channel", cycleNumber))
+		eventemitter.TransmitEvents(consoleLogger, fileLogger)
+
+		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d) Complete!", cycleNumber))
+
+		//Check to see if there is a pause before the next cycle
+		if configDS.EventInterval > 0 && i != (configDS.EventCycleCount-1) {
+			customlog.InfoAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Pausing for %d seconds before next cycle ...", configDS.EventInterval), false)
+			time.Sleep(time.Duration(configDS.EventInterval) * time.Second)
+		}
+
+	}
+
+	customlog.InfoAllChannels(consoleLogger, fileLogger, fmt.Sprintf("%d cycles Complete ... Shutting Down", configDS.EventCycleCount), true)
 
 	//Exit with a success message
 	customlog.InfoAllChannels(consoleLogger, fileLogger, appconstants.SIMULATION_COMPLETE_MSG, true)
