@@ -1,8 +1,8 @@
 {
-    "qubzCount":2,
+    "qubzCount":1200,
     "useInternalRandomizer":1,
     "eventInterval":0,
-    "eventCycleCount":1,
+    "eventCycleCount":5,
     "emailAddress":"shawn.engineer2@gmail.com",
     "outputChannel":"filesystem",
     "eventOutputLocation":"/Users/shawn.nance/outputdata/IndigoDeltaSierra/events",

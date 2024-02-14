@@ -51,14 +51,14 @@ func ErrorAllChannels(consoleLogger *slog.Logger, fileLogger *slog.Logger, msg s
 func ErrorConsole(consoleLogger *slog.Logger, msg string) {
 
 	//Send out ERROR style messages to console only
-	consoleLogger.Info(red.Style(msg))
+	consoleLogger.Error(red.Style(msg))
 
 }
 
 func ErrorFile(fileLogger *slog.Logger, msg string) {
 
 	//Send out ERROR style messages to log file only
-	fileLogger.Info(msg)
+	fileLogger.Error(msg)
 
 }
 
