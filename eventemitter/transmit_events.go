@@ -7,9 +7,12 @@ import (
 	"indigodeltasierra/customlog"
 	"indigodeltasierra/datamodels"
 	"indigodeltasierra/sensors"
+	"indigodeltasierra/svcclient"
+	"indigodeltasierra/svcclient/models"
 	"log/slog"
 	"strings"
 
+	"encoding/json"
 	"indigodeltasierra/customerror"
 	"indigodeltasierra/datautil"
 )
@@ -86,7 +89,23 @@ func transmitEvent(eventStruct any, configDS *datamodels.Config, qubzName string
 
 	//Transmits the event to the appropriate output channel as indicated by Config
 	if strings.ToLower(configDS.OutputChannel) == "kafka" {
-		customerror.CheckAndPanic(fmt.Errorf("output Channel \"%s\" not implemented", configDS.OutputChannel))
+
+		//Convert the event struct to a JSON string
+		jsonbytes, err := json.Marshal(eventStruct)
+
+		if err != nil {
+			fmt.Println(err.Error())
+		}
+
+		//Create an event structure
+		eventData := models.EventData{
+			EventKey:        "Test",
+			EventData:       string(jsonbytes),
+			TargetPartition: 0,
+		}
+
+		//Send the message
+		svcclient.ProduceSingleKafkaMessage(&eventData, configDS.QueueTopic, configDS.QueueEndpoint)
 
 	} else if strings.ToLower(configDS.OutputChannel) == "filesystem" {
 		err := EventToFile(eventStruct, (configDS.EventOutputLocation + "/" + eventUUID))
