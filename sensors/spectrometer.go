@@ -283,3 +283,62 @@ func SpectrometerSet(qubzMatrix *[]datamodels.QubzMatrix, matrixIndex int, qubzS
 	(*qubzMatrix)[matrixIndex].Spectrometer.SpectrometerState = int(datautil.GetSensorStateValue(appconstants.SENSOR_DATA_POINT_SPECTROMETER_SPECTROMETER_STATE, qubzStateDS, consoleLogger, fileLogger))
 
 }
+
+func SpectrometerGetEvent(qubzMatrixCurrent *[]datamodels.QubzMatrix, qubzMatrixPrevious *[]datamodels.QubzMatrix, matrixIndex int, eventHeader *datamodels.QubzEventHeader, consoleLogger *slog.Logger, fileLogger *slog.Logger) datamodels.SpectrometerEvent {
+
+	//Create Event Instance
+	eventInstance := datamodels.SpectrometerEvent{}
+
+	//Fill in Header
+	eventInstance.EventHeader.EventTimestamp = datautil.GetRFC3339TimeString()
+	eventInstance.EventHeader.QubzId = eventHeader.QubzId
+	eventInstance.EventHeader.RouteAssignment = eventHeader.RouteAssignment
+	eventInstance.EventHeader.ShipmentType = eventHeader.ShipmentType
+	eventInstance.EventHeader.TransportMode = eventHeader.TransportMode
+	eventInstance.EventHeader.SensorType.SensorTypeId = appconstants.SENSOR_TYPE_ID_SPECTROMETER
+	eventInstance.EventHeader.SensorType.SensorTypeDescription = appconstants.SENSOR_TYPE_SPECTROMETER
+	eventInstance.EventHeader.EventUUID = datautil.GetUUID()
+
+	//Initialize Sensor Data
+	eventInstance.SensorData = make([]datamodels.SpectrometerReading, 2)
+
+	//Set current State data
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].EventState = (*qubzMatrixCurrent)[matrixIndex].Spectrometer.EventState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].Explosives = (*qubzMatrixCurrent)[matrixIndex].Spectrometer.Explosives
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].Opocs = (*qubzMatrixCurrent)[matrixIndex].Spectrometer.Opocs
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].SpectrometerState = (*qubzMatrixCurrent)[matrixIndex].Spectrometer.SpectrometerState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].Urates = (*qubzMatrixCurrent)[matrixIndex].Spectrometer.Urates
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].WeaponsGradeNuclearMaterial = (*qubzMatrixCurrent)[matrixIndex].Spectrometer.WeaponsGradeNuclearMaterial
+
+	//Set previous State data
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].EventState = (*qubzMatrixPrevious)[matrixIndex].Spectrometer.EventState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].Explosives = (*qubzMatrixPrevious)[matrixIndex].Spectrometer.Explosives
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].Opocs = (*qubzMatrixPrevious)[matrixIndex].Spectrometer.Opocs
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].SpectrometerState = (*qubzMatrixPrevious)[matrixIndex].Spectrometer.SpectrometerState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].Urates = (*qubzMatrixPrevious)[matrixIndex].Spectrometer.Urates
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].WeaponsGradeNuclearMaterial = (*qubzMatrixPrevious)[matrixIndex].Spectrometer.WeaponsGradeNuclearMaterial
+
+	//Set Current Element data
+	setElementData(&eventInstance, qubzMatrixCurrent, matrixIndex, appconstants.SENSOR_STATE_CURRENT)
+
+	//Set Previous Element data
+	setElementData(&eventInstance, qubzMatrixPrevious, matrixIndex, appconstants.SENSOR_STATE_PREVIOUS)
+
+	//Return the completed event
+	return eventInstance
+
+}
+
+func setElementData(eventInstance *datamodels.SpectrometerEvent, qubzMatrix *[]datamodels.QubzMatrix, matrixIndex int, sensorStateFlag int) {
+
+	//This routine transfers the element settings from the passed Qubz Matrix to the Event Instance
+	elementCount := len((*qubzMatrix)[matrixIndex].Spectrometer.Elements)
+	eventInstance.SensorData[sensorStateFlag].Elements = make([]datamodels.ElementReading, elementCount)
+
+	for i, x := range (*qubzMatrix)[matrixIndex].Spectrometer.Elements {
+
+		eventInstance.SensorData[sensorStateFlag].Elements[i].ElementName = x.ElementName
+		eventInstance.SensorData[sensorStateFlag].Elements[i].PartsPerMillion = x.PartsPerMillion
+
+	}
+}

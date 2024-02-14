@@ -46,6 +46,36 @@ func TransmitEvents(qubzMatrixCurrent *[]datamodels.QubzMatrix, qubzMatrixPrevio
 		altimeterEvent := sensors.AltimeterGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
 		transmitEvent(altimeterEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_ALTIMETER, altimeterEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
 
+		batteryEvent := sensors.BatteryGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
+		transmitEvent(batteryEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_BATTERY, batteryEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+
+		computeEvent := sensors.ComputeGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
+		transmitEvent(computeEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_COMPUTE, computeEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+
+		fireEvent := sensors.FireGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
+		transmitEvent(fireEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_FIRE, fireEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+
+		geigerEvent := sensors.GeigerGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
+		transmitEvent(geigerEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_GEIGER, geigerEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+
+		gyroEvent := sensors.GyroGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
+		transmitEvent(gyroEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_GYRO, gyroEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+
+		lockEvent := sensors.LockGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
+		transmitEvent(lockEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_LOCK, lockEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+
+		qubzSealEvent := sensors.QubzSealGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
+		transmitEvent(qubzSealEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_SEAL, qubzSealEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+
+		radioEvent := sensors.RadioGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
+		transmitEvent(radioEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_RADIO, radioEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+
+		spectrometerEvent := sensors.SpectrometerGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
+		transmitEvent(spectrometerEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_SPECTROMETER, spectrometerEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+
+		tempBarometricEvent := sensors.TempBarometricGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
+		transmitEvent(tempBarometricEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_TEMPHUMIDITY, tempBarometricEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+
 	}
 
 	return nil
@@ -55,21 +85,19 @@ func TransmitEvents(qubzMatrixCurrent *[]datamodels.QubzMatrix, qubzMatrixPrevio
 func transmitEvent(eventStruct any, configDS *datamodels.Config, qubzName string, sensorType string, eventUUID string, consoleLogger *slog.Logger, fileLogger *slog.Logger) {
 
 	//Transmits the event to the appropriate output channel as indicated by Config
-	customlog.CalloutConsole(consoleLogger, (configDS.EventOutputLocation + "/" + eventUUID + ".json"))
-
 	if strings.ToLower(configDS.OutputChannel) == "kafka" {
-		customerror.CheckAndPanic(fmt.Errorf("Output Channel \"%s\" not implemented", configDS.OutputChannel))
+		customerror.CheckAndPanic(fmt.Errorf("output Channel \"%s\" not implemented", configDS.OutputChannel))
 
 	} else if strings.ToLower(configDS.OutputChannel) == "filesystem" {
 		err := EventToFile(eventStruct, (configDS.EventOutputLocation + "/" + eventUUID))
 
 		if err != nil {
 			customlog.ErrorAllChannels(consoleLogger, fileLogger, err.Error())
-			customlog.ErrorAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Transmission Error : QubzUnit %s / Sensor %s / UUID %s"))
+			customlog.ErrorAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Transmission Error : QubzUnit \"%s\" / Sensor \"%s\" / UUID \"%s\"", qubzName, sensorType, eventUUID))
 		}
 	} else {
 		//Invalid output channel - throw error
-		customerror.CheckAndPanic(fmt.Errorf("Invalid Output Channel: %s - Cannot Emit Events", configDS.OutputChannel))
+		customerror.CheckAndPanic(fmt.Errorf("invalid Output Channel: %s - Cannot Emit Events", configDS.OutputChannel))
 
 	}
 }

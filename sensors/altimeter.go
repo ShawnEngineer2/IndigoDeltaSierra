@@ -77,6 +77,7 @@ func AltimeterGetEvent(qubzMatrixCurrent *[]datamodels.QubzMatrix, qubzMatrixPre
 	eventInstance.EventHeader.QubzId = eventHeader.QubzId
 	eventInstance.EventHeader.RouteAssignment = eventHeader.RouteAssignment
 	eventInstance.EventHeader.ShipmentType = eventHeader.ShipmentType
+	eventInstance.EventHeader.TransportMode = eventHeader.TransportMode
 	eventInstance.EventHeader.SensorType.SensorTypeId = appconstants.SENSOR_TYPE_ID_ALTIMETER
 	eventInstance.EventHeader.SensorType.SensorTypeDescription = appconstants.SENSOR_TYPE_ALTIMETER
 	eventInstance.EventHeader.EventUUID = datautil.GetUUID()

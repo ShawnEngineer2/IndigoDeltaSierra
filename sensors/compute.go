@@ -44,3 +44,54 @@ func ComputeSet(qubzMatrix *[]datamodels.QubzMatrix, matrixIndex int, qubzStateD
 	(*qubzMatrix)[matrixIndex].Compute.TotalDiskStorage = int(datautil.GetSensorStateValue(appconstants.SENSOR_DATA_POINT_COMPUTE_TOTAL_DISK_STORAGE, qubzStateDS, consoleLogger, fileLogger))
 
 }
+
+func ComputeGetEvent(qubzMatrixCurrent *[]datamodels.QubzMatrix, qubzMatrixPrevious *[]datamodels.QubzMatrix, matrixIndex int, eventHeader *datamodels.QubzEventHeader, consoleLogger *slog.Logger, fileLogger *slog.Logger) datamodels.ComputeEvent {
+
+	//Create Event Instance
+	eventInstance := datamodels.ComputeEvent{}
+
+	//Fill in Header
+	eventInstance.EventHeader.EventTimestamp = datautil.GetRFC3339TimeString()
+	eventInstance.EventHeader.QubzId = eventHeader.QubzId
+	eventInstance.EventHeader.RouteAssignment = eventHeader.RouteAssignment
+	eventInstance.EventHeader.ShipmentType = eventHeader.ShipmentType
+	eventInstance.EventHeader.TransportMode = eventHeader.TransportMode
+	eventInstance.EventHeader.SensorType.SensorTypeId = appconstants.SENSOR_TYPE_ID_COMPUTE
+	eventInstance.EventHeader.SensorType.SensorTypeDescription = appconstants.SENSOR_TYPE_COMPUTE
+	eventInstance.EventHeader.EventUUID = datautil.GetUUID()
+
+	//Initialize Sensor Data
+	eventInstance.SensorData = make([]datamodels.ComputeReading, 2)
+
+	//Set current State data
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].AmountMemoryUtilized = (*qubzMatrixCurrent)[matrixIndex].Compute.AmountMemoryUtilized
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].CPUUtilization = (*qubzMatrixCurrent)[matrixIndex].Compute.CPUUtilization
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].EventState = (*qubzMatrixCurrent)[matrixIndex].Compute.EventState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].ComputeFirmwareState = (*qubzMatrixCurrent)[matrixIndex].Compute.ComputeFirmwareState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].ComputeFirmwareVersion = (*qubzMatrixCurrent)[matrixIndex].Compute.ComputeFirmwareVersion
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].ComputeSensorState = (*qubzMatrixCurrent)[matrixIndex].Compute.ComputeSensorState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].MemoryUtilization = (*qubzMatrixCurrent)[matrixIndex].Compute.MemoryUtilization
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].NumCPUCores = (*qubzMatrixCurrent)[matrixIndex].Compute.NumCPUCores
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].OSTypeVersion = (*qubzMatrixCurrent)[matrixIndex].Compute.OSTypeVersion
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].RemainingDiskStorage = (*qubzMatrixCurrent)[matrixIndex].Compute.RemainingDiskStorage
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].TotalAmountOfMemory = (*qubzMatrixCurrent)[matrixIndex].Compute.TotalAmountOfMemory
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].TotalDiskStorage = (*qubzMatrixCurrent)[matrixIndex].Compute.TotalDiskStorage
+
+	//Set previous State data
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].AmountMemoryUtilized = (*qubzMatrixPrevious)[matrixIndex].Compute.AmountMemoryUtilized
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].CPUUtilization = (*qubzMatrixPrevious)[matrixIndex].Compute.CPUUtilization
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].EventState = (*qubzMatrixPrevious)[matrixIndex].Compute.EventState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].ComputeFirmwareState = (*qubzMatrixPrevious)[matrixIndex].Compute.ComputeFirmwareState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].ComputeFirmwareVersion = (*qubzMatrixPrevious)[matrixIndex].Compute.ComputeFirmwareVersion
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].ComputeSensorState = (*qubzMatrixPrevious)[matrixIndex].Compute.ComputeSensorState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].MemoryUtilization = (*qubzMatrixPrevious)[matrixIndex].Compute.MemoryUtilization
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].NumCPUCores = (*qubzMatrixPrevious)[matrixIndex].Compute.NumCPUCores
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].OSTypeVersion = (*qubzMatrixPrevious)[matrixIndex].Compute.OSTypeVersion
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].RemainingDiskStorage = (*qubzMatrixPrevious)[matrixIndex].Compute.RemainingDiskStorage
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].TotalAmountOfMemory = (*qubzMatrixPrevious)[matrixIndex].Compute.TotalAmountOfMemory
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].TotalDiskStorage = (*qubzMatrixPrevious)[matrixIndex].Compute.TotalDiskStorage
+
+	//Return the completed event
+	return eventInstance
+
+}

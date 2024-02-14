@@ -48,3 +48,58 @@ func RadioSet(qubzMatrix *[]datamodels.QubzMatrix, matrixIndex int, qubzStateDS 
 	(*qubzMatrix)[matrixIndex].Radio.WiFiUploadSpeed = datautil.GetSensorStateValue(appconstants.SENSOR_DATA_POINT_RADIO_WIFI_UPLOAD_SPEED, qubzStateDS, consoleLogger, fileLogger)
 
 }
+
+func RadioGetEvent(qubzMatrixCurrent *[]datamodels.QubzMatrix, qubzMatrixPrevious *[]datamodels.QubzMatrix, matrixIndex int, eventHeader *datamodels.QubzEventHeader, consoleLogger *slog.Logger, fileLogger *slog.Logger) datamodels.RadioEvent {
+
+	//Create Event Instance
+	eventInstance := datamodels.RadioEvent{}
+
+	//Fill in Header
+	eventInstance.EventHeader.EventTimestamp = datautil.GetRFC3339TimeString()
+	eventInstance.EventHeader.QubzId = eventHeader.QubzId
+	eventInstance.EventHeader.RouteAssignment = eventHeader.RouteAssignment
+	eventInstance.EventHeader.ShipmentType = eventHeader.ShipmentType
+	eventInstance.EventHeader.TransportMode = eventHeader.TransportMode
+	eventInstance.EventHeader.SensorType.SensorTypeId = appconstants.SENSOR_TYPE_ID_RADIO
+	eventInstance.EventHeader.SensorType.SensorTypeDescription = appconstants.SENSOR_TYPE_RADIO
+	eventInstance.EventHeader.EventUUID = datautil.GetUUID()
+
+	//Initialize Sensor Data
+	eventInstance.SensorData = make([]datamodels.RadioReading, 2)
+
+	//Set current State data
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].EventState = (*qubzMatrixCurrent)[matrixIndex].Radio.EventState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].GPSHandshakeStable = (*qubzMatrixCurrent)[matrixIndex].Radio.GPSHandshakeStable
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].GPSSignalStrength = (*qubzMatrixCurrent)[matrixIndex].Radio.GPSSignalStrength
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].LocalWiFiHandshake = (*qubzMatrixCurrent)[matrixIndex].Radio.LocalWiFiHandshake
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].LocalWiFiSignalStrength = (*qubzMatrixCurrent)[matrixIndex].Radio.LocalWiFiSignalStrength
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].RadioFirmwareState = (*qubzMatrixCurrent)[matrixIndex].Radio.RadioFirmwareState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].RadioFirmwareVersion = (*qubzMatrixCurrent)[matrixIndex].Radio.RadioFirmwareVersion
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].RadioPowerState = (*qubzMatrixCurrent)[matrixIndex].Radio.RadioPowerState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].RadioSensorState = (*qubzMatrixCurrent)[matrixIndex].Radio.RadioSensorState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].RadioSignalStrength = (*qubzMatrixCurrent)[matrixIndex].Radio.RadioSignalStrength
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].WiFiDownlinkState = (*qubzMatrixCurrent)[matrixIndex].Radio.WiFiDownlinkState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].WiFiDownloadSpeed = (*qubzMatrixCurrent)[matrixIndex].Radio.WiFiDownloadSpeed
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].WiFiUplinkState = (*qubzMatrixCurrent)[matrixIndex].Radio.WiFiUplinkState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_CURRENT].WiFiUploadSpeed = (*qubzMatrixCurrent)[matrixIndex].Radio.WiFiUploadSpeed
+
+	//Set previous State data
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].EventState = (*qubzMatrixPrevious)[matrixIndex].Radio.EventState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].GPSHandshakeStable = (*qubzMatrixPrevious)[matrixIndex].Radio.GPSHandshakeStable
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].GPSSignalStrength = (*qubzMatrixPrevious)[matrixIndex].Radio.GPSSignalStrength
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].LocalWiFiHandshake = (*qubzMatrixPrevious)[matrixIndex].Radio.LocalWiFiHandshake
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].LocalWiFiSignalStrength = (*qubzMatrixPrevious)[matrixIndex].Radio.LocalWiFiSignalStrength
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].RadioFirmwareState = (*qubzMatrixPrevious)[matrixIndex].Radio.RadioFirmwareState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].RadioFirmwareVersion = (*qubzMatrixPrevious)[matrixIndex].Radio.RadioFirmwareVersion
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].RadioPowerState = (*qubzMatrixPrevious)[matrixIndex].Radio.RadioPowerState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].RadioSensorState = (*qubzMatrixPrevious)[matrixIndex].Radio.RadioSensorState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].RadioSignalStrength = (*qubzMatrixPrevious)[matrixIndex].Radio.RadioSignalStrength
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].WiFiDownlinkState = (*qubzMatrixPrevious)[matrixIndex].Radio.WiFiDownlinkState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].WiFiDownloadSpeed = (*qubzMatrixPrevious)[matrixIndex].Radio.WiFiDownloadSpeed
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].WiFiUplinkState = (*qubzMatrixPrevious)[matrixIndex].Radio.WiFiUplinkState
+	eventInstance.SensorData[appconstants.SENSOR_STATE_PREVIOUS].WiFiUploadSpeed = (*qubzMatrixPrevious)[matrixIndex].Radio.WiFiUploadSpeed
+
+	//Return the completed event
+	return eventInstance
+
+}

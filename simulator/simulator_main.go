@@ -134,8 +134,6 @@ func StartSimulation() {
 
 	//Start simulation run
 	//Allocate and initialize the Qubz Matrix
-	customlog.InfoAllChannels(consoleLogger, fileLogger, "Creating Qubz Matrix Prior Values Buffer ...", true)
-
 	customlog.InfoAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Begin Simulation (%d cycles)", configDS.EventCycleCount), true)
 
 	for i := 0; i < configDS.EventCycleCount; i++ {
@@ -145,7 +143,7 @@ func StartSimulation() {
 		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d of %d) Capture Current Sensor State to Prior State Buffer", cycleNumber, configDS.EventCycleCount))
 		priorQubzMatrix := make([]datamodels.QubzMatrix, len(currentQubzMatrix))
 		copy(priorQubzMatrix, currentQubzMatrix)
-		//TODO: Update Event State from Current to Prior
+		datautil.AssignEventStatesAll(&priorQubzMatrix, appconstants.SENSOR_STATE_PREVIOUS)
 
 		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d of %d) Calculate New Sensor State", cycleNumber, configDS.EventCycleCount))
 		runSimulationCycle(&currentQubzMatrix, &sensorRangeDS, consoleLogger, fileLogger)
