@@ -79,6 +79,9 @@ func TransmitEvents(qubzMatrixCurrent *[]datamodels.QubzMatrix, qubzMatrixPrevio
 		tempBarometricEvent := sensors.TempBarometricGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
 		transmitEvent(tempBarometricEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_TEMPHUMIDITY, tempBarometricEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
 
+		motionEvent := sensors.MotionGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
+		transmitEvent(motionEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_MOTION, motionEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+
 	}
 
 	return nil
