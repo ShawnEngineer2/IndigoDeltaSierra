@@ -102,7 +102,7 @@ func transmitEvent(eventStruct any, configDS *datamodels.Config, qubzName string
 
 		//Create an event structure
 		eventData := models.EventData{
-			EventKey:        "Test",
+			EventKey:        sensorType,
 			EventData:       string(jsonbytes),
 			TargetPartition: 0,
 		}

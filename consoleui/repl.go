@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"indigodeltasierra/appconstants"
 	"indigodeltasierra/simulator"
-	"indigodeltasierra/testutil"
 	"os"
 )
 
@@ -30,7 +29,7 @@ func RunInteractive() {
 			simulator.StartSimulation()
 			pressEnterToContinue()
 
-		case '2':
+		/* case '2':
 			//generateTestEvents()
 			fmt.Println("")
 			testutil.GenerateTestEvents()
@@ -46,7 +45,7 @@ func RunInteractive() {
 			//Test sensor value assignment
 			fmt.Println("")
 			testutil.TestSensorStateUpdate()
-			pressEnterToContinue()
+			pressEnterToContinue() */
 
 		case '9':
 			goByeBye()

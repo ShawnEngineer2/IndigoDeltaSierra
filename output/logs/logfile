@@ -1361,3 +1361,926 @@
 {"time":"2024-02-15T15:08:19.005418-05:00","level":"INFO","msg":"(Cycle 2 of 2) Complete!"}
 {"time":"2024-02-15T15:08:19.005471-05:00","level":"INFO","msg":"2 cycles Complete ... Shutting Down"}
 {"time":"2024-02-15T15:08:19.005488-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-16T11:09:39.084922-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-16T11:09:39.0934-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-16T11:09:39.093454-05:00","level":"INFO","msg":"{QubzCount:10 InternalRandomizer:1 EventInterval:0 EventCycleCount:2 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat OutputChannel:kafka EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-16T11:09:39.093491-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-16T11:09:39.093507-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-16T11:09:39.09357-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-16T11:09:39.09951-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-16T11:09:39.099562-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-16T11:09:39.099609-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-16T11:09:39.10536-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-16T11:09:39.105392-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-16T11:09:39.105427-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-16T11:09:39.110616-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-16T11:09:39.110649-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-16T11:09:39.110681-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-16T11:09:39.178519-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-16T11:09:39.178554-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-16T11:09:39.178588-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-16T11:09:39.184921-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-16T11:09:39.18494-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-16T11:09:39.184959-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-16T11:09:39.191883-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-16T11:09:39.191952-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-16T11:09:39.191982-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-16T11:09:39.195358-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-16T11:09:39.195369-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-16T11:09:39.195392-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-16T11:09:39.201708-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-16T11:09:39.201724-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-16T11:09:39.201732-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-16T11:09:39.201742-05:00","level":"INFO","msg":"Mapping first 10 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-16T11:09:39.201748-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 10 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-16T11:09:39.201753-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-16T11:09:39.201758-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-16T11:09:39.201763-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-16T11:09:39.201768-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-16T11:09:39.201773-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-16T11:09:39.201778-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-16T11:09:39.201782-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-16T11:09:39.201787-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-16T11:09:39.201791-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-16T11:09:39.201795-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-16T11:09:39.2018-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-16T11:09:39.201805-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-16T11:09:39.201809-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-16T11:09:39.201813-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-16T11:09:39.212855-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-16T11:09:39.212865-05:00","level":"INFO","msg":"Begin Simulation (2 cycles)"}
+{"time":"2024-02-16T11:09:39.212872-05:00","level":"INFO","msg":"(Cycle 1 of 2) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:09:39.212879-05:00","level":"INFO","msg":"(Cycle 1 of 2) Calculate New Sensor State"}
+{"time":"2024-02-16T11:09:39.212883-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:09:39.212887-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:09:39.223553-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:09:39.223575-05:00","level":"INFO","msg":"(Cycle 1 of 2) Transmitting events to output channel"}
+{"time":"2024-02-16T11:09:39.223589-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:09:40.325158-05:00","level":"INFO","msg":"(Cycle 1 of 2) Complete!"}
+{"time":"2024-02-16T11:09:40.325206-05:00","level":"INFO","msg":"(Cycle 2 of 2) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:09:40.325219-05:00","level":"INFO","msg":"(Cycle 2 of 2) Calculate New Sensor State"}
+{"time":"2024-02-16T11:09:40.325226-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:09:40.325307-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:09:40.360118-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:09:40.360152-05:00","level":"INFO","msg":"(Cycle 2 of 2) Transmitting events to output channel"}
+{"time":"2024-02-16T11:09:40.360168-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:09:41.333012-05:00","level":"INFO","msg":"(Cycle 2 of 2) Complete!"}
+{"time":"2024-02-16T11:09:41.333071-05:00","level":"INFO","msg":"2 cycles Complete ... Shutting Down"}
+{"time":"2024-02-16T11:09:41.333081-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-16T11:11:44.919312-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-16T11:11:44.925123-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-16T11:11:44.925162-05:00","level":"INFO","msg":"{QubzCount:2 InternalRandomizer:1 EventInterval:0 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat OutputChannel:kafka EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-16T11:11:44.925206-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-16T11:11:44.925225-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-16T11:11:44.925279-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-16T11:11:44.925993-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-16T11:11:44.926029-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-16T11:11:44.926071-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-16T11:11:44.928386-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-16T11:11:44.928439-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-16T11:11:44.928489-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-16T11:11:44.928853-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-16T11:11:44.92889-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-16T11:11:44.928926-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-16T11:11:44.999664-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-16T11:11:44.999701-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-16T11:11:44.99974-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-16T11:11:45.000553-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-16T11:11:45.000567-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-16T11:11:45.000585-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-16T11:11:45.000746-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-16T11:11:45.000755-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-16T11:11:45.000768-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-16T11:11:45.001415-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-16T11:11:45.001427-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-16T11:11:45.001449-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-16T11:11:45.002687-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-16T11:11:45.002697-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-16T11:11:45.002705-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-16T11:11:45.002714-05:00","level":"INFO","msg":"Mapping first 2 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-16T11:11:45.002722-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 2 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-16T11:11:45.002727-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-16T11:11:45.002732-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-16T11:11:45.002737-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-16T11:11:45.002743-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-16T11:11:45.002748-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-16T11:11:45.002753-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-16T11:11:45.002758-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-16T11:11:45.002763-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-16T11:11:45.002767-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-16T11:11:45.002773-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-16T11:11:45.002777-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-16T11:11:45.002782-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-16T11:11:45.002787-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-16T11:11:45.002792-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-16T11:11:45.004954-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-16T11:11:45.004964-05:00","level":"INFO","msg":"Begin Simulation (5 cycles)"}
+{"time":"2024-02-16T11:11:45.004974-05:00","level":"INFO","msg":"(Cycle 1 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:11:45.004981-05:00","level":"INFO","msg":"(Cycle 1 of 5) Calculate New Sensor State"}
+{"time":"2024-02-16T11:11:45.004987-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:11:45.004992-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:11:45.007203-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:11:45.007214-05:00","level":"INFO","msg":"(Cycle 1 of 5) Transmitting events to output channel"}
+{"time":"2024-02-16T11:11:45.007222-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:11:45.178626-05:00","level":"INFO","msg":"(Cycle 1 of 5) Complete!"}
+{"time":"2024-02-16T11:11:45.178669-05:00","level":"INFO","msg":"(Cycle 2 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:11:45.178693-05:00","level":"INFO","msg":"(Cycle 2 of 5) Calculate New Sensor State"}
+{"time":"2024-02-16T11:11:45.178702-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:11:45.178708-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:11:45.181008-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:11:45.18102-05:00","level":"INFO","msg":"(Cycle 2 of 5) Transmitting events to output channel"}
+{"time":"2024-02-16T11:11:45.181028-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:11:45.352494-05:00","level":"INFO","msg":"(Cycle 2 of 5) Complete!"}
+{"time":"2024-02-16T11:11:45.352533-05:00","level":"INFO","msg":"(Cycle 3 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:11:45.352546-05:00","level":"INFO","msg":"(Cycle 3 of 5) Calculate New Sensor State"}
+{"time":"2024-02-16T11:11:45.352554-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:11:45.35256-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:11:45.355034-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:11:45.355048-05:00","level":"INFO","msg":"(Cycle 3 of 5) Transmitting events to output channel"}
+{"time":"2024-02-16T11:11:45.355058-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:11:45.530135-05:00","level":"INFO","msg":"(Cycle 3 of 5) Complete!"}
+{"time":"2024-02-16T11:11:45.530181-05:00","level":"INFO","msg":"(Cycle 4 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:11:45.530195-05:00","level":"INFO","msg":"(Cycle 4 of 5) Calculate New Sensor State"}
+{"time":"2024-02-16T11:11:45.530202-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:11:45.530208-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:11:45.532629-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:11:45.532643-05:00","level":"INFO","msg":"(Cycle 4 of 5) Transmitting events to output channel"}
+{"time":"2024-02-16T11:11:45.532651-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:11:45.710771-05:00","level":"INFO","msg":"(Cycle 4 of 5) Complete!"}
+{"time":"2024-02-16T11:11:45.710807-05:00","level":"INFO","msg":"(Cycle 5 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:11:45.710834-05:00","level":"INFO","msg":"(Cycle 5 of 5) Calculate New Sensor State"}
+{"time":"2024-02-16T11:11:45.710843-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:11:45.710849-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:11:45.713016-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:11:45.713028-05:00","level":"INFO","msg":"(Cycle 5 of 5) Transmitting events to output channel"}
+{"time":"2024-02-16T11:11:45.713035-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:11:45.87611-05:00","level":"INFO","msg":"(Cycle 5 of 5) Complete!"}
+{"time":"2024-02-16T11:11:45.876145-05:00","level":"INFO","msg":"5 cycles Complete ... Shutting Down"}
+{"time":"2024-02-16T11:11:45.876152-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-16T11:13:55.907871-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-16T11:13:55.91333-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-16T11:13:55.913349-05:00","level":"INFO","msg":"{QubzCount:2 InternalRandomizer:1 EventInterval:0 EventCycleCount:10 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat OutputChannel:kafka EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-16T11:13:55.913365-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-16T11:13:55.913376-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-16T11:13:55.913395-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-16T11:13:55.913822-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-16T11:13:55.913844-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-16T11:13:55.913861-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-16T11:13:55.915368-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-16T11:13:55.91538-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-16T11:13:55.915397-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-16T11:13:55.915612-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-16T11:13:55.915621-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-16T11:13:55.915634-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-16T11:13:55.972252-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-16T11:13:55.97228-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-16T11:13:55.972304-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-16T11:13:55.972559-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-16T11:13:55.972575-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-16T11:13:55.972592-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-16T11:13:55.972746-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-16T11:13:55.972758-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-16T11:13:55.972772-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-16T11:13:55.973327-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-16T11:13:55.973335-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-16T11:13:55.973356-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-16T11:13:55.97432-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-16T11:13:55.974327-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-16T11:13:55.974333-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-16T11:13:55.97434-05:00","level":"INFO","msg":"Mapping first 2 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-16T11:13:55.974346-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 2 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-16T11:13:55.974352-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-16T11:13:55.974357-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-16T11:13:55.974362-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-16T11:13:55.974367-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-16T11:13:55.974372-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-16T11:13:55.974377-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-16T11:13:55.974382-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-16T11:13:55.974386-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-16T11:13:55.974391-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-16T11:13:55.974396-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-16T11:13:55.974401-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-16T11:13:55.974405-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-16T11:13:55.97441-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-16T11:13:55.974415-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-16T11:13:55.97657-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-16T11:13:55.976577-05:00","level":"INFO","msg":"Begin Simulation (10 cycles)"}
+{"time":"2024-02-16T11:13:55.976584-05:00","level":"INFO","msg":"(Cycle 1 of 10) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:13:55.97659-05:00","level":"INFO","msg":"(Cycle 1 of 10) Calculate New Sensor State"}
+{"time":"2024-02-16T11:13:55.976595-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:13:55.9766-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:13:55.97877-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:13:55.978779-05:00","level":"INFO","msg":"(Cycle 1 of 10) Transmitting events to output channel"}
+{"time":"2024-02-16T11:13:55.978786-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:13:56.162065-05:00","level":"INFO","msg":"(Cycle 1 of 10) Complete!"}
+{"time":"2024-02-16T11:13:56.162116-05:00","level":"INFO","msg":"(Cycle 2 of 10) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:13:56.162144-05:00","level":"INFO","msg":"(Cycle 2 of 10) Calculate New Sensor State"}
+{"time":"2024-02-16T11:13:56.162155-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:13:56.162162-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:13:56.164369-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:13:56.164381-05:00","level":"INFO","msg":"(Cycle 2 of 10) Transmitting events to output channel"}
+{"time":"2024-02-16T11:13:56.16439-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:13:56.344167-05:00","level":"INFO","msg":"(Cycle 2 of 10) Complete!"}
+{"time":"2024-02-16T11:13:56.344203-05:00","level":"INFO","msg":"(Cycle 3 of 10) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:13:56.344213-05:00","level":"INFO","msg":"(Cycle 3 of 10) Calculate New Sensor State"}
+{"time":"2024-02-16T11:13:56.344219-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:13:56.344224-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:13:56.346475-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:13:56.346488-05:00","level":"INFO","msg":"(Cycle 3 of 10) Transmitting events to output channel"}
+{"time":"2024-02-16T11:13:56.346496-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:13:56.52802-05:00","level":"INFO","msg":"(Cycle 3 of 10) Complete!"}
+{"time":"2024-02-16T11:13:56.528092-05:00","level":"INFO","msg":"(Cycle 4 of 10) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:13:56.528107-05:00","level":"INFO","msg":"(Cycle 4 of 10) Calculate New Sensor State"}
+{"time":"2024-02-16T11:13:56.528116-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:13:56.528121-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:13:56.530649-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:13:56.530664-05:00","level":"INFO","msg":"(Cycle 4 of 10) Transmitting events to output channel"}
+{"time":"2024-02-16T11:13:56.530672-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:13:56.709392-05:00","level":"INFO","msg":"(Cycle 4 of 10) Complete!"}
+{"time":"2024-02-16T11:13:56.709432-05:00","level":"INFO","msg":"(Cycle 5 of 10) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:13:56.709449-05:00","level":"INFO","msg":"(Cycle 5 of 10) Calculate New Sensor State"}
+{"time":"2024-02-16T11:13:56.709458-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:13:56.709463-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:13:56.711725-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:13:56.71174-05:00","level":"INFO","msg":"(Cycle 5 of 10) Transmitting events to output channel"}
+{"time":"2024-02-16T11:13:56.711752-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:13:56.869668-05:00","level":"INFO","msg":"(Cycle 5 of 10) Complete!"}
+{"time":"2024-02-16T11:13:56.869698-05:00","level":"INFO","msg":"(Cycle 6 of 10) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:13:56.869712-05:00","level":"INFO","msg":"(Cycle 6 of 10) Calculate New Sensor State"}
+{"time":"2024-02-16T11:13:56.86972-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:13:56.869726-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:13:56.871877-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:13:56.871885-05:00","level":"INFO","msg":"(Cycle 6 of 10) Transmitting events to output channel"}
+{"time":"2024-02-16T11:13:56.871893-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:13:57.054769-05:00","level":"INFO","msg":"(Cycle 6 of 10) Complete!"}
+{"time":"2024-02-16T11:13:57.054802-05:00","level":"INFO","msg":"(Cycle 7 of 10) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:13:57.054813-05:00","level":"INFO","msg":"(Cycle 7 of 10) Calculate New Sensor State"}
+{"time":"2024-02-16T11:13:57.05482-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:13:57.054826-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:13:57.057144-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:13:57.057155-05:00","level":"INFO","msg":"(Cycle 7 of 10) Transmitting events to output channel"}
+{"time":"2024-02-16T11:13:57.057162-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:13:57.234634-05:00","level":"INFO","msg":"(Cycle 7 of 10) Complete!"}
+{"time":"2024-02-16T11:13:57.234668-05:00","level":"INFO","msg":"(Cycle 8 of 10) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:13:57.234679-05:00","level":"INFO","msg":"(Cycle 8 of 10) Calculate New Sensor State"}
+{"time":"2024-02-16T11:13:57.234685-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:13:57.23469-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:13:57.236835-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:13:57.236847-05:00","level":"INFO","msg":"(Cycle 8 of 10) Transmitting events to output channel"}
+{"time":"2024-02-16T11:13:57.236854-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:13:57.417359-05:00","level":"INFO","msg":"(Cycle 8 of 10) Complete!"}
+{"time":"2024-02-16T11:13:57.41739-05:00","level":"INFO","msg":"(Cycle 9 of 10) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:13:57.4174-05:00","level":"INFO","msg":"(Cycle 9 of 10) Calculate New Sensor State"}
+{"time":"2024-02-16T11:13:57.417407-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:13:57.417412-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:13:57.419512-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:13:57.419523-05:00","level":"INFO","msg":"(Cycle 9 of 10) Transmitting events to output channel"}
+{"time":"2024-02-16T11:13:57.419529-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:13:57.600444-05:00","level":"INFO","msg":"(Cycle 9 of 10) Complete!"}
+{"time":"2024-02-16T11:13:57.601122-05:00","level":"INFO","msg":"(Cycle 10 of 10) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:13:57.601136-05:00","level":"INFO","msg":"(Cycle 10 of 10) Calculate New Sensor State"}
+{"time":"2024-02-16T11:13:57.601144-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:13:57.601151-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:13:57.603505-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:13:57.604472-05:00","level":"INFO","msg":"(Cycle 10 of 10) Transmitting events to output channel"}
+{"time":"2024-02-16T11:13:57.604481-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:13:57.779396-05:00","level":"INFO","msg":"(Cycle 10 of 10) Complete!"}
+{"time":"2024-02-16T11:13:57.779437-05:00","level":"INFO","msg":"10 cycles Complete ... Shutting Down"}
+{"time":"2024-02-16T11:13:57.779451-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-16T11:16:00.082875-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-16T11:16:00.088532-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-16T11:16:00.088575-05:00","level":"INFO","msg":"{QubzCount:2 InternalRandomizer:1 EventInterval:0 EventCycleCount:30 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat OutputChannel:kafka EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-16T11:16:00.088603-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-16T11:16:00.088614-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-16T11:16:00.08864-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-16T11:16:00.089211-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-16T11:16:00.089231-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-16T11:16:00.089253-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-16T11:16:00.090939-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-16T11:16:00.090954-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-16T11:16:00.090973-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-16T11:16:00.091205-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-16T11:16:00.091215-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-16T11:16:00.091229-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-16T11:16:00.155065-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-16T11:16:00.1551-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-16T11:16:00.155128-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-16T11:16:00.155409-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-16T11:16:00.155421-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-16T11:16:00.155437-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-16T11:16:00.155593-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-16T11:16:00.155602-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-16T11:16:00.155616-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-16T11:16:00.156186-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-16T11:16:00.156193-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-16T11:16:00.156216-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-16T11:16:00.157452-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-16T11:16:00.157461-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-16T11:16:00.157468-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-16T11:16:00.157476-05:00","level":"INFO","msg":"Mapping first 2 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-16T11:16:00.157483-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 2 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-16T11:16:00.157489-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-16T11:16:00.157496-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-16T11:16:00.157502-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-16T11:16:00.157508-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-16T11:16:00.157513-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-16T11:16:00.157518-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-16T11:16:00.157523-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-16T11:16:00.157528-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-16T11:16:00.157534-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-16T11:16:00.157543-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-16T11:16:00.157549-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-16T11:16:00.157555-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-16T11:16:00.15756-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-16T11:16:00.157566-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-16T11:16:00.15978-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-16T11:16:00.159788-05:00","level":"INFO","msg":"Begin Simulation (30 cycles)"}
+{"time":"2024-02-16T11:16:00.159795-05:00","level":"INFO","msg":"(Cycle 1 of 30) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:16:00.1598-05:00","level":"INFO","msg":"(Cycle 1 of 30) Calculate New Sensor State"}
+{"time":"2024-02-16T11:16:00.159805-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:16:00.15981-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:16:00.161995-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:16:00.162005-05:00","level":"INFO","msg":"(Cycle 1 of 30) Transmitting events to output channel"}
+{"time":"2024-02-16T11:16:00.162012-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:16:00.342833-05:00","level":"INFO","msg":"(Cycle 1 of 30) Complete!"}
+{"time":"2024-02-16T11:16:00.342871-05:00","level":"INFO","msg":"(Cycle 2 of 30) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:16:00.342891-05:00","level":"INFO","msg":"(Cycle 2 of 30) Calculate New Sensor State"}
+{"time":"2024-02-16T11:16:00.342902-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:16:00.342912-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:16:00.345142-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:16:00.345152-05:00","level":"INFO","msg":"(Cycle 2 of 30) Transmitting events to output channel"}
+{"time":"2024-02-16T11:16:00.345159-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:16:00.526168-05:00","level":"INFO","msg":"(Cycle 2 of 30) Complete!"}
+{"time":"2024-02-16T11:16:00.526212-05:00","level":"INFO","msg":"(Cycle 3 of 30) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:16:00.526226-05:00","level":"INFO","msg":"(Cycle 3 of 30) Calculate New Sensor State"}
+{"time":"2024-02-16T11:16:00.526233-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:16:00.526239-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:16:00.528551-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:16:00.528561-05:00","level":"INFO","msg":"(Cycle 3 of 30) Transmitting events to output channel"}
+{"time":"2024-02-16T11:16:00.528569-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:16:00.706041-05:00","level":"INFO","msg":"(Cycle 3 of 30) Complete!"}
+{"time":"2024-02-16T11:16:00.706077-05:00","level":"INFO","msg":"(Cycle 4 of 30) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:16:00.706091-05:00","level":"INFO","msg":"(Cycle 4 of 30) Calculate New Sensor State"}
+{"time":"2024-02-16T11:16:00.706099-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:16:00.706104-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:16:00.708302-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:16:00.708313-05:00","level":"INFO","msg":"(Cycle 4 of 30) Transmitting events to output channel"}
+{"time":"2024-02-16T11:16:00.708322-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:16:00.889823-05:00","level":"INFO","msg":"(Cycle 4 of 30) Complete!"}
+{"time":"2024-02-16T11:16:00.889855-05:00","level":"INFO","msg":"(Cycle 5 of 30) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:16:00.889865-05:00","level":"INFO","msg":"(Cycle 5 of 30) Calculate New Sensor State"}
+{"time":"2024-02-16T11:16:00.889872-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:16:00.889877-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:16:00.892001-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:16:00.892012-05:00","level":"INFO","msg":"(Cycle 5 of 30) Transmitting events to output channel"}
+{"time":"2024-02-16T11:16:00.89202-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:16:01.068125-05:00","level":"INFO","msg":"(Cycle 5 of 30) Complete!"}
+{"time":"2024-02-16T11:16:01.068154-05:00","level":"INFO","msg":"(Cycle 6 of 30) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:16:01.068164-05:00","level":"INFO","msg":"(Cycle 6 of 30) Calculate New Sensor State"}
+{"time":"2024-02-16T11:16:01.068173-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:16:01.06818-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:16:01.070552-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:16:01.070564-05:00","level":"INFO","msg":"(Cycle 6 of 30) Transmitting events to output channel"}
+{"time":"2024-02-16T11:16:01.070572-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:16:01.250838-05:00","level":"INFO","msg":"(Cycle 6 of 30) Complete!"}
+{"time":"2024-02-16T11:16:01.250876-05:00","level":"INFO","msg":"(Cycle 7 of 30) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:16:01.250886-05:00","level":"INFO","msg":"(Cycle 7 of 30) Calculate New Sensor State"}
+{"time":"2024-02-16T11:16:01.250893-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:16:01.250898-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:16:01.253329-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:16:01.253341-05:00","level":"INFO","msg":"(Cycle 7 of 30) Transmitting events to output channel"}
+{"time":"2024-02-16T11:16:01.253351-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:16:01.432983-05:00","level":"INFO","msg":"(Cycle 7 of 30) Complete!"}
+{"time":"2024-02-16T11:16:01.433016-05:00","level":"INFO","msg":"(Cycle 8 of 30) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:16:01.433026-05:00","level":"INFO","msg":"(Cycle 8 of 30) Calculate New Sensor State"}
+{"time":"2024-02-16T11:16:01.433032-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:16:01.433038-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:16:01.43553-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:16:01.435546-05:00","level":"INFO","msg":"(Cycle 8 of 30) Transmitting events to output channel"}
+{"time":"2024-02-16T11:16:01.435552-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:16:01.612557-05:00","level":"INFO","msg":"(Cycle 8 of 30) Complete!"}
+{"time":"2024-02-16T11:16:01.612593-05:00","level":"INFO","msg":"(Cycle 9 of 30) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:16:01.61261-05:00","level":"INFO","msg":"(Cycle 9 of 30) Calculate New Sensor State"}
+{"time":"2024-02-16T11:16:01.612618-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:16:01.612624-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:16:01.61479-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:16:01.614801-05:00","level":"INFO","msg":"(Cycle 9 of 30) Transmitting events to output channel"}
+{"time":"2024-02-16T11:16:01.614809-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:16:01.79042-05:00","level":"INFO","msg":"(Cycle 9 of 30) Complete!"}
+{"time":"2024-02-16T11:16:01.790455-05:00","level":"INFO","msg":"(Cycle 10 of 30) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:16:01.790465-05:00","level":"INFO","msg":"(Cycle 10 of 30) Calculate New Sensor State"}
+{"time":"2024-02-16T11:16:01.790471-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:16:01.790477-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:16:01.792658-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:16:01.792671-05:00","level":"INFO","msg":"(Cycle 10 of 30) Transmitting events to output channel"}
+{"time":"2024-02-16T11:16:01.792677-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:39.934833-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-16T11:20:39.935787-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-16T11:20:39.935863-05:00","level":"INFO","msg":"{QubzCount:2 InternalRandomizer:1 EventInterval:0 EventCycleCount:15 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat OutputChannel:kafka EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-16T11:20:39.935917-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-16T11:20:39.935941-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-16T11:20:39.936016-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-16T11:20:39.945014-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-16T11:20:39.945072-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-16T11:20:39.945126-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-16T11:20:39.955641-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-16T11:20:39.955674-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-16T11:20:39.955712-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-16T11:20:39.960171-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-16T11:20:39.960209-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-16T11:20:39.960247-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-16T11:20:40.032444-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-16T11:20:40.032491-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-16T11:20:40.032526-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-16T11:20:40.039246-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-16T11:20:40.039269-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-16T11:20:40.039288-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-16T11:20:40.046708-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-16T11:20:40.04673-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-16T11:20:40.046752-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-16T11:20:40.053492-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-16T11:20:40.053505-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-16T11:20:40.053534-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-16T11:20:40.061964-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-16T11:20:40.061981-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-16T11:20:40.061989-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-16T11:20:40.062-05:00","level":"INFO","msg":"Mapping first 2 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-16T11:20:40.062008-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 2 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-16T11:20:40.062014-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-16T11:20:40.062021-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-16T11:20:40.062027-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-16T11:20:40.062034-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-16T11:20:40.06204-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-16T11:20:40.062046-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-16T11:20:40.062053-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-16T11:20:40.062058-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-16T11:20:40.062064-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-16T11:20:40.06207-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-16T11:20:40.062077-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-16T11:20:40.062083-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-16T11:20:40.062089-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-16T11:20:40.062095-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-16T11:20:40.064498-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-16T11:20:40.064508-05:00","level":"INFO","msg":"Begin Simulation (15 cycles)"}
+{"time":"2024-02-16T11:20:40.064517-05:00","level":"INFO","msg":"(Cycle 1 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:20:40.064528-05:00","level":"INFO","msg":"(Cycle 1 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:20:40.064535-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:20:40.06454-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:20:40.066947-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:20:40.066956-05:00","level":"INFO","msg":"(Cycle 1 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:20:40.066964-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:40.341798-05:00","level":"INFO","msg":"(Cycle 1 of 15) Complete!"}
+{"time":"2024-02-16T11:20:40.341908-05:00","level":"INFO","msg":"(Cycle 2 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:20:40.341929-05:00","level":"INFO","msg":"(Cycle 2 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:20:40.341938-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:20:40.341946-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:20:40.344717-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:20:40.344733-05:00","level":"INFO","msg":"(Cycle 2 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:20:40.344742-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:40.53328-05:00","level":"INFO","msg":"(Cycle 2 of 15) Complete!"}
+{"time":"2024-02-16T11:20:40.53331-05:00","level":"INFO","msg":"(Cycle 3 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:20:40.53332-05:00","level":"INFO","msg":"(Cycle 3 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:20:40.533327-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:20:40.533333-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:20:40.535542-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:20:40.535554-05:00","level":"INFO","msg":"(Cycle 3 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:20:40.535562-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:40.71708-05:00","level":"INFO","msg":"(Cycle 3 of 15) Complete!"}
+{"time":"2024-02-16T11:20:40.717135-05:00","level":"INFO","msg":"(Cycle 4 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:20:40.717154-05:00","level":"INFO","msg":"(Cycle 4 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:20:40.717163-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:20:40.71717-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:20:40.719632-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:20:40.719647-05:00","level":"INFO","msg":"(Cycle 4 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:20:40.719659-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:40.916054-05:00","level":"INFO","msg":"(Cycle 4 of 15) Complete!"}
+{"time":"2024-02-16T11:20:40.916102-05:00","level":"INFO","msg":"(Cycle 5 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:20:40.916115-05:00","level":"INFO","msg":"(Cycle 5 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:20:40.916122-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:20:40.916128-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:20:40.918554-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:20:40.918568-05:00","level":"INFO","msg":"(Cycle 5 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:20:40.918578-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:41.093123-05:00","level":"INFO","msg":"(Cycle 5 of 15) Complete!"}
+{"time":"2024-02-16T11:20:41.093167-05:00","level":"INFO","msg":"(Cycle 6 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:20:41.093179-05:00","level":"INFO","msg":"(Cycle 6 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:20:41.093186-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:20:41.093194-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:20:41.095817-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:20:41.09583-05:00","level":"INFO","msg":"(Cycle 6 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:20:41.095838-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:41.27698-05:00","level":"INFO","msg":"(Cycle 6 of 15) Complete!"}
+{"time":"2024-02-16T11:20:41.277036-05:00","level":"INFO","msg":"(Cycle 7 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:20:41.277048-05:00","level":"INFO","msg":"(Cycle 7 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:20:41.277056-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:20:41.277063-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:20:41.27959-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:20:41.279608-05:00","level":"INFO","msg":"(Cycle 7 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:20:41.279617-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:41.53435-05:00","level":"INFO","msg":"(Cycle 7 of 15) Complete!"}
+{"time":"2024-02-16T11:20:41.534383-05:00","level":"INFO","msg":"(Cycle 8 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:20:41.534393-05:00","level":"INFO","msg":"(Cycle 8 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:20:41.534401-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:20:41.534406-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:20:41.536526-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:20:41.536539-05:00","level":"INFO","msg":"(Cycle 8 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:20:41.536546-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:41.713482-05:00","level":"INFO","msg":"(Cycle 8 of 15) Complete!"}
+{"time":"2024-02-16T11:20:41.713529-05:00","level":"INFO","msg":"(Cycle 9 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:20:41.713544-05:00","level":"INFO","msg":"(Cycle 9 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:20:41.713553-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:20:41.713559-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:20:41.715722-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:20:41.715735-05:00","level":"INFO","msg":"(Cycle 9 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:20:41.715745-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:41.8994-05:00","level":"INFO","msg":"(Cycle 9 of 15) Complete!"}
+{"time":"2024-02-16T11:20:41.899472-05:00","level":"INFO","msg":"(Cycle 10 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:20:41.899488-05:00","level":"INFO","msg":"(Cycle 10 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:20:41.899496-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:20:41.899503-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:20:41.901841-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:20:41.901852-05:00","level":"INFO","msg":"(Cycle 10 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:20:41.901859-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:42.080021-05:00","level":"INFO","msg":"(Cycle 10 of 15) Complete!"}
+{"time":"2024-02-16T11:20:42.080082-05:00","level":"INFO","msg":"(Cycle 11 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:20:42.080097-05:00","level":"INFO","msg":"(Cycle 11 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:20:42.080106-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:20:42.080113-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:20:42.08238-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:20:42.082394-05:00","level":"INFO","msg":"(Cycle 11 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:20:42.082403-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:42.259953-05:00","level":"INFO","msg":"(Cycle 11 of 15) Complete!"}
+{"time":"2024-02-16T11:20:42.259982-05:00","level":"INFO","msg":"(Cycle 12 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:20:42.259993-05:00","level":"INFO","msg":"(Cycle 12 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:20:42.26-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:20:42.260006-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:20:42.262205-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:20:42.262215-05:00","level":"INFO","msg":"(Cycle 12 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:20:42.262223-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:42.468426-05:00","level":"INFO","msg":"(Cycle 12 of 15) Complete!"}
+{"time":"2024-02-16T11:20:42.469716-05:00","level":"INFO","msg":"(Cycle 13 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:20:42.469761-05:00","level":"INFO","msg":"(Cycle 13 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:20:42.469772-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:20:42.469779-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:20:42.473781-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:20:42.473804-05:00","level":"INFO","msg":"(Cycle 13 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:20:42.473812-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:42.711971-05:00","level":"INFO","msg":"(Cycle 13 of 15) Complete!"}
+{"time":"2024-02-16T11:20:42.712013-05:00","level":"INFO","msg":"(Cycle 14 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:20:42.712031-05:00","level":"INFO","msg":"(Cycle 14 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:20:42.712043-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:20:42.712051-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:20:42.716778-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:20:42.716802-05:00","level":"INFO","msg":"(Cycle 14 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:20:42.716813-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:42.966465-05:00","level":"INFO","msg":"(Cycle 14 of 15) Complete!"}
+{"time":"2024-02-16T11:20:42.966517-05:00","level":"INFO","msg":"(Cycle 15 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:20:42.966533-05:00","level":"INFO","msg":"(Cycle 15 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:20:42.966541-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:20:42.966547-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:20:42.971416-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:20:42.971438-05:00","level":"INFO","msg":"(Cycle 15 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:20:42.971449-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:20:43.211914-05:00","level":"INFO","msg":"(Cycle 15 of 15) Complete!"}
+{"time":"2024-02-16T11:20:43.212006-05:00","level":"INFO","msg":"15 cycles Complete ... Shutting Down"}
+{"time":"2024-02-16T11:20:43.212041-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-16T11:30:58.623681-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-16T11:30:58.624457-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-16T11:30:58.624524-05:00","level":"INFO","msg":"{QubzCount:2 InternalRandomizer:1 EventInterval:0 EventCycleCount:15 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat OutputChannel:kafka EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-16T11:30:58.624592-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-16T11:30:58.624619-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-16T11:30:58.624663-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-16T11:30:58.63136-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-16T11:30:58.631416-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-16T11:30:58.63146-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-16T11:30:58.639692-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-16T11:30:58.639736-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-16T11:30:58.639791-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-16T11:30:58.645791-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-16T11:30:58.645811-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-16T11:30:58.645836-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-16T11:30:58.720137-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-16T11:30:58.720166-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-16T11:30:58.7202-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-16T11:30:58.722016-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-16T11:30:58.722031-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-16T11:30:58.722045-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-16T11:30:58.723613-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-16T11:30:58.723622-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-16T11:30:58.723635-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-16T11:30:58.724651-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-16T11:30:58.724661-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-16T11:30:58.724679-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-16T11:30:58.72799-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-16T11:30:58.728002-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-16T11:30:58.728007-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-16T11:30:58.728014-05:00","level":"INFO","msg":"Mapping first 2 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-16T11:30:58.72802-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 2 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-16T11:30:58.728024-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-16T11:30:58.728028-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-16T11:30:58.728033-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-16T11:30:58.728037-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-16T11:30:58.728041-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-16T11:30:58.728046-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-16T11:30:58.728746-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-16T11:30:58.728755-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-16T11:30:58.72876-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-16T11:30:58.728765-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-16T11:30:58.72877-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-16T11:30:58.728775-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-16T11:30:58.72878-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-16T11:30:58.728786-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-16T11:30:58.731064-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-16T11:30:58.731072-05:00","level":"INFO","msg":"Begin Simulation (15 cycles)"}
+{"time":"2024-02-16T11:30:58.731079-05:00","level":"INFO","msg":"(Cycle 1 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:30:58.731085-05:00","level":"INFO","msg":"(Cycle 1 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:30:58.73109-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:30:58.731098-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:30:58.733257-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:30:58.733264-05:00","level":"INFO","msg":"(Cycle 1 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:30:58.73327-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:30:59.002173-05:00","level":"INFO","msg":"(Cycle 1 of 15) Complete!"}
+{"time":"2024-02-16T11:30:59.002215-05:00","level":"INFO","msg":"(Cycle 2 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:30:59.002228-05:00","level":"INFO","msg":"(Cycle 2 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:30:59.002237-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:30:59.002244-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:30:59.005701-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:30:59.005714-05:00","level":"INFO","msg":"(Cycle 2 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:30:59.005725-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:30:59.195942-05:00","level":"INFO","msg":"(Cycle 2 of 15) Complete!"}
+{"time":"2024-02-16T11:30:59.196025-05:00","level":"INFO","msg":"(Cycle 3 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:30:59.196064-05:00","level":"INFO","msg":"(Cycle 3 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:30:59.196079-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:30:59.196096-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:30:59.198818-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:30:59.198882-05:00","level":"INFO","msg":"(Cycle 3 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:30:59.198906-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:30:59.376105-05:00","level":"INFO","msg":"(Cycle 3 of 15) Complete!"}
+{"time":"2024-02-16T11:30:59.376139-05:00","level":"INFO","msg":"(Cycle 4 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:30:59.376156-05:00","level":"INFO","msg":"(Cycle 4 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:30:59.376163-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:30:59.376169-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:30:59.379094-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:30:59.379105-05:00","level":"INFO","msg":"(Cycle 4 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:30:59.379116-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:30:59.58792-05:00","level":"INFO","msg":"(Cycle 4 of 15) Complete!"}
+{"time":"2024-02-16T11:30:59.587952-05:00","level":"INFO","msg":"(Cycle 5 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:30:59.587961-05:00","level":"INFO","msg":"(Cycle 5 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:30:59.587967-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:30:59.587972-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:30:59.590463-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:30:59.590474-05:00","level":"INFO","msg":"(Cycle 5 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:30:59.590482-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:30:59.768953-05:00","level":"INFO","msg":"(Cycle 5 of 15) Complete!"}
+{"time":"2024-02-16T11:30:59.769008-05:00","level":"INFO","msg":"(Cycle 6 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:30:59.769018-05:00","level":"INFO","msg":"(Cycle 6 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:30:59.769026-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:30:59.769032-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:30:59.771412-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:30:59.771424-05:00","level":"INFO","msg":"(Cycle 6 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:30:59.771431-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:30:59.947672-05:00","level":"INFO","msg":"(Cycle 6 of 15) Complete!"}
+{"time":"2024-02-16T11:30:59.947698-05:00","level":"INFO","msg":"(Cycle 7 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:30:59.947711-05:00","level":"INFO","msg":"(Cycle 7 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:30:59.947718-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:30:59.947724-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:30:59.950239-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:30:59.950248-05:00","level":"INFO","msg":"(Cycle 7 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:30:59.950254-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:31:00.181497-05:00","level":"INFO","msg":"(Cycle 7 of 15) Complete!"}
+{"time":"2024-02-16T11:31:00.181526-05:00","level":"INFO","msg":"(Cycle 8 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:31:00.181543-05:00","level":"INFO","msg":"(Cycle 8 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:31:00.18155-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:31:00.181556-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:31:00.183789-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:31:00.183798-05:00","level":"INFO","msg":"(Cycle 8 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:31:00.183804-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:31:00.352746-05:00","level":"INFO","msg":"(Cycle 8 of 15) Complete!"}
+{"time":"2024-02-16T11:31:00.352787-05:00","level":"INFO","msg":"(Cycle 9 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:31:00.352802-05:00","level":"INFO","msg":"(Cycle 9 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:31:00.352808-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:31:00.352813-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:31:00.355304-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:31:00.355319-05:00","level":"INFO","msg":"(Cycle 9 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:31:00.355326-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:31:00.528271-05:00","level":"INFO","msg":"(Cycle 9 of 15) Complete!"}
+{"time":"2024-02-16T11:31:00.528301-05:00","level":"INFO","msg":"(Cycle 10 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:31:00.528317-05:00","level":"INFO","msg":"(Cycle 10 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:31:00.528324-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:31:00.528329-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:31:00.530668-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:31:00.530678-05:00","level":"INFO","msg":"(Cycle 10 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:31:00.530684-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:31:00.714705-05:00","level":"INFO","msg":"(Cycle 10 of 15) Complete!"}
+{"time":"2024-02-16T11:31:00.714739-05:00","level":"INFO","msg":"(Cycle 11 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:31:00.714751-05:00","level":"INFO","msg":"(Cycle 11 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:31:00.714758-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:31:00.714763-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:31:00.717144-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:31:00.717158-05:00","level":"INFO","msg":"(Cycle 11 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:31:00.717169-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:31:00.89268-05:00","level":"INFO","msg":"(Cycle 11 of 15) Complete!"}
+{"time":"2024-02-16T11:31:00.892714-05:00","level":"INFO","msg":"(Cycle 12 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:31:00.892727-05:00","level":"INFO","msg":"(Cycle 12 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:31:00.892734-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:31:00.892738-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:31:00.895365-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:31:00.895373-05:00","level":"INFO","msg":"(Cycle 12 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:31:00.895381-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:31:01.093925-05:00","level":"INFO","msg":"(Cycle 12 of 15) Complete!"}
+{"time":"2024-02-16T11:31:01.093964-05:00","level":"INFO","msg":"(Cycle 13 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:31:01.095258-05:00","level":"INFO","msg":"(Cycle 13 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:31:01.095293-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:31:01.095301-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:31:01.098774-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:31:01.098804-05:00","level":"INFO","msg":"(Cycle 13 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:31:01.098814-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:31:01.33125-05:00","level":"INFO","msg":"(Cycle 13 of 15) Complete!"}
+{"time":"2024-02-16T11:31:01.3313-05:00","level":"INFO","msg":"(Cycle 14 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:31:01.331364-05:00","level":"INFO","msg":"(Cycle 14 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:31:01.331389-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:31:01.331396-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:31:01.335746-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:31:01.335768-05:00","level":"INFO","msg":"(Cycle 14 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:31:01.335781-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:31:01.558452-05:00","level":"INFO","msg":"(Cycle 14 of 15) Complete!"}
+{"time":"2024-02-16T11:31:01.558485-05:00","level":"INFO","msg":"(Cycle 15 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:31:01.558502-05:00","level":"INFO","msg":"(Cycle 15 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:31:01.558509-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:31:01.558514-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:31:01.561273-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:31:01.561288-05:00","level":"INFO","msg":"(Cycle 15 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:31:01.561316-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:31:01.878114-05:00","level":"INFO","msg":"(Cycle 15 of 15) Complete!"}
+{"time":"2024-02-16T11:31:01.878172-05:00","level":"INFO","msg":"15 cycles Complete ... Shutting Down"}
+{"time":"2024-02-16T11:31:01.878276-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-16T11:40:43.732313-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-16T11:40:43.732991-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-16T11:40:43.733057-05:00","level":"INFO","msg":"{QubzCount:2 InternalRandomizer:1 EventInterval:0 EventCycleCount:15 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat OutputChannel:kafka EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-16T11:40:43.733124-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-16T11:40:43.733148-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-16T11:40:43.733185-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-16T11:40:43.734269-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-16T11:40:43.73433-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-16T11:40:43.734392-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-16T11:40:43.737643-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-16T11:40:43.737697-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-16T11:40:43.737762-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-16T11:40:43.738333-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-16T11:40:43.738368-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-16T11:40:43.738413-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-16T11:40:43.810027-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-16T11:40:43.81007-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-16T11:40:43.810112-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-16T11:40:43.811489-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-16T11:40:43.811506-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-16T11:40:43.81153-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-16T11:40:43.811972-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-16T11:40:43.811982-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-16T11:40:43.811998-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-16T11:40:43.812623-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-16T11:40:43.812632-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-16T11:40:43.812659-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-16T11:40:43.814313-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-16T11:40:43.814322-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-16T11:40:43.814329-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-16T11:40:43.814337-05:00","level":"INFO","msg":"Mapping first 2 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-16T11:40:43.814344-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 2 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-16T11:40:43.814351-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-16T11:40:43.814357-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-16T11:40:43.814364-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-16T11:40:43.81437-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-16T11:40:43.814375-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-16T11:40:43.814382-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-16T11:40:43.814388-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-16T11:40:43.814393-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-16T11:40:43.814399-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-16T11:40:43.814405-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-16T11:40:43.814411-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-16T11:40:43.814416-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-16T11:40:43.814421-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-16T11:40:43.814428-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-16T11:40:43.816669-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-16T11:40:43.81668-05:00","level":"INFO","msg":"Begin Simulation (15 cycles)"}
+{"time":"2024-02-16T11:40:43.816687-05:00","level":"INFO","msg":"(Cycle 1 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:40:43.816696-05:00","level":"INFO","msg":"(Cycle 1 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:40:43.816701-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:40:43.816707-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:40:43.818905-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:40:43.818914-05:00","level":"INFO","msg":"(Cycle 1 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:40:43.818925-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:40:44.030134-05:00","level":"INFO","msg":"(Cycle 1 of 15) Complete!"}
+{"time":"2024-02-16T11:40:44.030176-05:00","level":"INFO","msg":"(Cycle 2 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:40:44.030187-05:00","level":"INFO","msg":"(Cycle 2 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:40:44.030195-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:40:44.030204-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:40:44.032842-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:40:44.032854-05:00","level":"INFO","msg":"(Cycle 2 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:40:44.032867-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:40:44.209924-05:00","level":"INFO","msg":"(Cycle 2 of 15) Complete!"}
+{"time":"2024-02-16T11:40:44.209971-05:00","level":"INFO","msg":"(Cycle 3 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:40:44.209984-05:00","level":"INFO","msg":"(Cycle 3 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:40:44.209992-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:40:44.210001-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:40:44.212502-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:40:44.212516-05:00","level":"INFO","msg":"(Cycle 3 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:40:44.212524-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:40:44.388865-05:00","level":"INFO","msg":"(Cycle 3 of 15) Complete!"}
+{"time":"2024-02-16T11:40:44.388916-05:00","level":"INFO","msg":"(Cycle 4 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:40:44.388927-05:00","level":"INFO","msg":"(Cycle 4 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:40:44.388935-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:40:44.388943-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:40:44.391725-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:40:44.39174-05:00","level":"INFO","msg":"(Cycle 4 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:40:44.391749-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:40:44.588005-05:00","level":"INFO","msg":"(Cycle 4 of 15) Complete!"}
+{"time":"2024-02-16T11:40:44.588046-05:00","level":"INFO","msg":"(Cycle 5 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:40:44.588056-05:00","level":"INFO","msg":"(Cycle 5 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:40:44.588065-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:40:44.588072-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:40:44.590403-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:40:44.590417-05:00","level":"INFO","msg":"(Cycle 5 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:40:44.590426-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:40:44.767764-05:00","level":"INFO","msg":"(Cycle 5 of 15) Complete!"}
+{"time":"2024-02-16T11:40:44.767804-05:00","level":"INFO","msg":"(Cycle 6 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:40:44.767816-05:00","level":"INFO","msg":"(Cycle 6 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:40:44.767823-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:40:44.767829-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:40:44.769978-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:40:44.769993-05:00","level":"INFO","msg":"(Cycle 6 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:40:44.770002-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:40:45.007204-05:00","level":"INFO","msg":"(Cycle 6 of 15) Complete!"}
+{"time":"2024-02-16T11:40:45.007252-05:00","level":"INFO","msg":"(Cycle 7 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:40:45.007266-05:00","level":"INFO","msg":"(Cycle 7 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:40:45.007277-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:40:45.007283-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:40:45.010205-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:40:45.010235-05:00","level":"INFO","msg":"(Cycle 7 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:40:45.010247-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:40:45.200631-05:00","level":"INFO","msg":"(Cycle 7 of 15) Complete!"}
+{"time":"2024-02-16T11:40:45.200666-05:00","level":"INFO","msg":"(Cycle 8 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:40:45.200678-05:00","level":"INFO","msg":"(Cycle 8 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:40:45.200688-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:40:45.200698-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:40:45.20284-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:40:45.202853-05:00","level":"INFO","msg":"(Cycle 8 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:40:45.20286-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:40:45.376024-05:00","level":"INFO","msg":"(Cycle 8 of 15) Complete!"}
+{"time":"2024-02-16T11:40:45.376095-05:00","level":"INFO","msg":"(Cycle 9 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:40:45.376108-05:00","level":"INFO","msg":"(Cycle 9 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:40:45.376115-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:40:45.376121-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:40:45.379063-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:40:45.379078-05:00","level":"INFO","msg":"(Cycle 9 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:40:45.379089-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:40:45.566146-05:00","level":"INFO","msg":"(Cycle 9 of 15) Complete!"}
+{"time":"2024-02-16T11:40:45.566196-05:00","level":"INFO","msg":"(Cycle 10 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:40:45.56621-05:00","level":"INFO","msg":"(Cycle 10 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:40:45.566217-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:40:45.566223-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:40:45.568426-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:40:45.56844-05:00","level":"INFO","msg":"(Cycle 10 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:40:45.568449-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:40:45.749938-05:00","level":"INFO","msg":"(Cycle 10 of 15) Complete!"}
+{"time":"2024-02-16T11:40:45.749993-05:00","level":"INFO","msg":"(Cycle 11 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:40:45.750005-05:00","level":"INFO","msg":"(Cycle 11 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:40:45.750014-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:40:45.75002-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:40:45.752522-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:40:45.752539-05:00","level":"INFO","msg":"(Cycle 11 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:40:45.752547-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:40:45.952569-05:00","level":"INFO","msg":"(Cycle 11 of 15) Complete!"}
+{"time":"2024-02-16T11:40:45.952854-05:00","level":"INFO","msg":"(Cycle 12 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:40:45.952878-05:00","level":"INFO","msg":"(Cycle 12 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:40:45.95289-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:40:45.952898-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:40:45.956637-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:40:45.956666-05:00","level":"INFO","msg":"(Cycle 12 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:40:45.956677-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:40:46.200956-05:00","level":"INFO","msg":"(Cycle 12 of 15) Complete!"}
+{"time":"2024-02-16T11:40:46.201005-05:00","level":"INFO","msg":"(Cycle 13 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:40:46.201023-05:00","level":"INFO","msg":"(Cycle 13 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:40:46.201033-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:40:46.201043-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:40:46.20579-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:40:46.205817-05:00","level":"INFO","msg":"(Cycle 13 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:40:46.205841-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:40:46.428803-05:00","level":"INFO","msg":"(Cycle 13 of 15) Complete!"}
+{"time":"2024-02-16T11:40:46.428842-05:00","level":"INFO","msg":"(Cycle 14 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:40:46.428859-05:00","level":"INFO","msg":"(Cycle 14 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:40:46.428867-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:40:46.428873-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:40:46.432633-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:40:46.43265-05:00","level":"INFO","msg":"(Cycle 14 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:40:46.432663-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:40:46.652554-05:00","level":"INFO","msg":"(Cycle 14 of 15) Complete!"}
+{"time":"2024-02-16T11:40:46.652594-05:00","level":"INFO","msg":"(Cycle 15 of 15) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-16T11:40:46.652609-05:00","level":"INFO","msg":"(Cycle 15 of 15) Calculate New Sensor State"}
+{"time":"2024-02-16T11:40:46.65262-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-16T11:40:46.652626-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-16T11:40:46.655622-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-16T11:40:46.655648-05:00","level":"INFO","msg":"(Cycle 15 of 15) Transmitting events to output channel"}
+{"time":"2024-02-16T11:40:46.65566-05:00","level":"INFO","msg":"Event Output Channel is kafka : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-16T11:40:46.84222-05:00","level":"INFO","msg":"(Cycle 15 of 15) Complete!"}
+{"time":"2024-02-16T11:40:46.842255-05:00","level":"INFO","msg":"15 cycles Complete ... Shutting Down"}
+{"time":"2024-02-16T11:40:46.842263-05:00","level":"INFO","msg":"Simulation Complete"}

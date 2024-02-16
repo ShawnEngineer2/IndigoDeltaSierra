@@ -1,8 +1,8 @@
 {
-    "qubzCount":10,
+    "qubzCount":2,
     "useInternalRandomizer":1,
     "eventInterval":0,
-    "eventCycleCount":2,
+    "eventCycleCount":15,
     "emailAddress":"shawn.engineer2@gmail.com",
     "outputChannel":"kafka",
     "eventOutputLocation":"/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz",
