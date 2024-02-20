@@ -19,7 +19,7 @@ GOOS=darwin GOARCH=amd64 go build -o ./bin/iotsim-amd64 .
 
 # Build the Windows version
 echo "Building for Windows Intel ..."
-GOOS=windows GOARCH=amd64 go build -o ./bin/iotsim-win .
+GOOS=windows GOARCH=amd64 go build -o ./bin/iotsim-win.exe .
 
 # Copy the config file
 echo "Copying config file ..."
