@@ -1,0 +1,54 @@
+[
+  {
+    "SensorType": "Altimeter",
+    "SensorTypeId": 1
+  },
+  {
+    "SensorType": "Battery",
+    "SensorTypeId": 2
+  },
+  {
+    "SensorType": "Compute",
+    "SensorTypeId": 3
+  },
+  {
+    "SensorType": "Geiger Counter",
+    "SensorTypeId": 4
+  },
+  {
+    "SensorType": "GPS",
+    "SensorTypeId": 5
+  },
+  {
+    "SensorType": "Gyroscopic / Attitude",
+    "SensorTypeId": 6
+  },
+  {
+    "SensorType": "Qubz Lock State",
+    "SensorTypeId": 7
+  },
+  {
+    "SensorType": "Motion Sensor",
+    "SensorTypeId": 8
+  },
+  {
+    "SensorType": "Radio & WiFi",
+    "SensorTypeId": 10
+  },
+  {
+    "SensorType": "Qubz Seal State",
+    "SensorTypeId": 9
+  },
+  {
+    "SensorType": "Spectrometer",
+    "SensorTypeId": 11
+  },
+  {
+    "SensorType": "Temperature & Humidity",
+    "SensorTypeId": 12
+  },
+  {
+    "SensorType": "Fire & Fire Suppression",
+    "SensorTypeId": 13
+  }
+]

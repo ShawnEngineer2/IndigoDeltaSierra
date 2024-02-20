@@ -22,6 +22,9 @@ func TransmitEvents(qubzMatrixCurrent *[]datamodels.QubzMatrix, qubzMatrixPrevio
 
 	//Validate the output channel
 	switch strings.ToLower(configDS.OutputChannel) {
+	case "segmentio":
+		customlog.InfoAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Event Output Channel is %s : Broker Endpoint %s : Topic Name \"%s\"", configDS.OutputChannel, configDS.QueueEndpoint, configDS.QueueTopic), false)
+
 	case "kafka":
 		customlog.InfoAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Event Output Channel is %s : Broker Endpoint %s : Topic Name \"%s\"", configDS.OutputChannel, configDS.QueueEndpoint, configDS.QueueTopic), false)
 
@@ -91,7 +94,35 @@ func TransmitEvents(qubzMatrixCurrent *[]datamodels.QubzMatrix, qubzMatrixPrevio
 func transmitEvent(eventStruct any, configDS *datamodels.Config, qubzName string, sensorType string, eventUUID string, consoleLogger *slog.Logger, fileLogger *slog.Logger) {
 
 	//Transmits the event to the appropriate output channel as indicated by Config
-	if strings.ToLower(configDS.OutputChannel) == "kafka" {
+	if strings.ToLower(configDS.OutputChannel) == "segmentio" {
+
+		//Convert the event struct to a JSON string
+		jsonbytes, err := json.Marshal(eventStruct)
+
+		if err != nil {
+			fmt.Println(err.Error())
+		}
+
+		//Use the passed Sensor Type string and the Sensor ID to determine the target partition
+		sensorID := datautil.GetSensorIDForSensorDesc(sensorType)
+		partitionID := sensorID - 1
+
+		if partitionID < 0 || partitionID > 12 {
+			customlog.ErrorAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Transmission Error : Could not identify target partition for Sensor Type %s. Data Not Transmitted for this sensor.", sensorType))
+			return
+		}
+
+		//Create an event structure
+		eventData := models.EventData{
+			EventKey:        sensorType,
+			EventData:       string(jsonbytes),
+			TargetPartition: partitionID,
+		}
+
+		//Send the message
+		svcclient.S_produceKafkaMessage(&eventData, configDS.QueueTopic, configDS.QueueEndpoint)
+
+	} else if strings.ToLower(configDS.OutputChannel) == "kafka" {
 
 		//Convert the event struct to a JSON string
 		jsonbytes, err := json.Marshal(eventStruct)
