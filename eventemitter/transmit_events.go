@@ -124,31 +124,33 @@ func transmitEvent(eventStruct any, configDS *datamodels.Config, qubzName string
 
 	} else if strings.ToLower(configDS.OutputChannel) == "kafka" {
 
-		//Convert the event struct to a JSON string
-		jsonbytes, err := json.Marshal(eventStruct)
+		/*
+			//Convert the event struct to a JSON string
+			jsonbytes, err := json.Marshal(eventStruct)
 
-		if err != nil {
-			fmt.Println(err.Error())
-		}
+			if err != nil {
+				fmt.Println(err.Error())
+			}
 
-		//Use the passed Sensor Type string and the Sensor ID to determine the target partition
-		sensorID := datautil.GetSensorIDForSensorDesc(sensorType)
-		partitionID := sensorID - 1
+			//Use the passed Sensor Type string and the Sensor ID to determine the target partition
+			sensorID := datautil.GetSensorIDForSensorDesc(sensorType)
+			partitionID := sensorID - 1
 
-		if partitionID < 0 || partitionID > 12 {
-			customlog.ErrorAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Transmission Error : Could not identify target partition for Sensor Type %s. Data Not Transmitted for this sensor.", sensorType))
-			return
-		}
+			if partitionID < 0 || partitionID > 12 {
+				customlog.ErrorAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Transmission Error : Could not identify target partition for Sensor Type %s. Data Not Transmitted for this sensor.", sensorType))
+				return
+			}
 
-		//Create an event structure
-		eventData := models.EventData{
-			EventKey:        sensorType,
-			EventData:       string(jsonbytes),
-			TargetPartition: partitionID,
-		}
+			//Create an event structure
+			eventData := models.EventData{
+				EventKey:        sensorType,
+				EventData:       string(jsonbytes),
+				TargetPartition: partitionID,
+			}
 
-		//Send the message
-		svcclient.ProduceSingleKafkaMessage(&eventData, configDS.QueueTopic, configDS.QueueEndpoint)
+			//Send the message
+			svcclient.ProduceSingleKafkaMessage(&eventData, configDS.QueueTopic, configDS.QueueEndpoint)
+		*/
 
 	} else if strings.ToLower(configDS.OutputChannel) == "filesystem" {
 		err := EventToFile(eventStruct, (configDS.EventOutputLocation + "/" + eventUUID))
