@@ -13,7 +13,7 @@ const CONFIG_FILE_PATH string = "./config.dat"
 const STARTUP_MSG string = "System Starting"
 const SIMULATION_COMPLETE_MSG string = "Simulation Complete"
 const SIMULATION_FAILED_MSG string = "Simulation Failed - Please see log for details!"
-const ITEM_NOT_FOUND string = "Item Not Found"
+const ITEM_NOT_FOUND string = "item Not Found"
 
 // Simulator constants
 const DEFAULT_SVC_WAIT int = 10

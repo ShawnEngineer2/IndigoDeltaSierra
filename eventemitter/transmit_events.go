@@ -100,11 +100,20 @@ func transmitEvent(eventStruct any, configDS *datamodels.Config, qubzName string
 			fmt.Println(err.Error())
 		}
 
+		//Use the passed Sensor Type string and the Sensor ID to determine the target partition
+		sensorID := datautil.GetSensorIDForSensorDesc(sensorType)
+		partitionID := sensorID - 1
+
+		if partitionID < 0 || partitionID > 12 {
+			customlog.ErrorAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Transmission Error : Could not identify target partition for Sensor Type %s. Data Not Transmitted for this sensor.", sensorType))
+			return
+		}
+
 		//Create an event structure
 		eventData := models.EventData{
 			EventKey:        sensorType,
 			EventData:       string(jsonbytes),
-			TargetPartition: 0,
+			TargetPartition: partitionID,
 		}
 
 		//Send the message
