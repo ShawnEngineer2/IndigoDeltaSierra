@@ -1,7 +1,7 @@
 {
     "qubzCount":30,
     "useInternalRandomizer":1,
-    "eventInterval":0,
+    "eventInterval":5,
     "eventCycleCount":20,
     "emailAddress":"",
     "outputChannel":"segmentio",
