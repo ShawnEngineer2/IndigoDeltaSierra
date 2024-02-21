@@ -38,9 +38,9 @@ After opening the config.dat file located in your *iotsim* folder, modify the fo
 
 ## Running the IOT Data Simulator
 To run the IOT Data Simulator do the following actions:
-* Ensure the Kafka endpoint is up and running. If you are running Kafka or Redpanda in Docker, ensure that both Docker and the container are running.
-* If running on MacOS with Apple Silicon : Open a terminal window, navigate to the _iotsim_ folder, and enter _./iotsim_arm64_ , then click on Menu Option 1 and press _Enter_
-* If running on MacOS with Intel : Open a terminal window, navigate to the _iotsim_ folder, and enter _./iotsim_amd64_ , then click on Menu Option 1 and press _Enter_
-* If running on Windows with PowerShell : Open a terminal window, navigate to the _iotsim_ folder, and enter _./iotsim_win_ , then click on Menu Option 1 and press _Enter_
-* If running on Windows from File Explorer: Open File Explorer, navigate to the _iotsim_ folder, and doubleclick the _./iotsim_win_ file, then click on Menu Option 1 and press _Enter_
+* **Ensure the Kafka endpoint is up and running.** If you are running Kafka or Redpanda in Docker, ensure that both Docker and the container are running.
+* **If running on MacOS with Apple Silicon :** Open a terminal window, navigate to the _iotsim_ folder, and enter _./iotsim_arm64_ , then click on Menu Option 1 and press _Enter_
+* **If running on MacOS with Intel :** Open a terminal window, navigate to the _iotsim_ folder, and enter _./iotsim_amd64_ , then click on Menu Option 1 and press _Enter_
+* **If running on Windows with PowerShell :** Open a terminal window, navigate to the _iotsim_ folder, and enter _./iotsim_win_ , then click on Menu Option 1 and press _Enter_
+* **If running on Windows from File Explorer:** Open File Explorer, navigate to the _iotsim_ folder, and doubleclick the _./iotsim_win_ file, then click on Menu Option 1 and press _Enter_
  
