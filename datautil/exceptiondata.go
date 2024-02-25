@@ -37,9 +37,13 @@ func GetRandomException(exceptionDS *[]datamodels.QubzException) datamodels.Qubz
 	//This routine returns a single random exception from the passed list
 
 	newException := datamodels.QubzException{}
+	exceptionIndexBoundary := len(*exceptionDS)
 
-	if len(*exceptionDS) > 0 {
-		randomindex := randomgen.RandomInt(1, len(*exceptionDS))
+	if exceptionIndexBoundary == 1 {
+		//Only one exception - just return it as the new exception
+		newException = (*exceptionDS)[0]
+	} else if exceptionIndexBoundary > 0 {
+		randomindex := randomgen.RandomInt(1, exceptionIndexBoundary)
 		newException = (*exceptionDS)[randomindex-1]
 	} else {
 		//Empty list passed - throw error

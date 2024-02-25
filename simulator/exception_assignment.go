@@ -30,29 +30,47 @@ func assignExceptions(qubzMatrix *[]datamodels.QubzMatrix, exceptionDS *[]datamo
 	for i, x := range *qubzMatrix {
 
 		//Check to see if an exception is to be assigned for the current Qubz unit
-		customlog.CalloutConsole(consoleLogger, "New Exception Severity")
+		customlog.CalloutConsole(consoleLogger, "Get New Exception Severity Index")
 		randomIndex := randomgen.RandomInt(1, len(distroMatrix))
-		newExceptionSeverity := distroMatrix[randomIndex-1]
+		customlog.CalloutConsole(consoleLogger, fmt.Sprintf("Distro Matrix Len : %d | Severity Index: %d", len(distroMatrix), randomIndex))
+		newExceptionSeverity := distroMatrix[randomIndex]
 
 		if newExceptionSeverity != appconstants.SENSOR_EXCEPTION_SEVERITY_NONE {
 
-			customlog.CalloutConsole(consoleLogger, "Check Severity Level on Qubz Unit")
-			//Compare the returned exception severity to what is currently assigned
-			//for the current Qubz unit
-			if x.ExceptionSeverity == appconstants.SENSOR_EXCEPTION_SEVERITY_NONE || x.ExceptionSeverity < newExceptionSeverity {
-				//Assign a new exception to this Qubz unit
-				customlog.CalloutConsole(consoleLogger, "Get New Exception")
-				newException := getException(&sevCritical, &sevHigh, &sevLow, newExceptionSeverity)
+			customlog.CalloutConsole(consoleLogger, "Get New Exception")
+			newException := getException(&sevCritical, &sevHigh, &sevLow, newExceptionSeverity)
 
-				(*qubzMatrix)[i].ExceptionAssignment = newException.ExceptionId
-				(*qubzMatrix)[i].ExceptionSeverity = newException.SeverityLevel
-				(*qubzMatrix)[i].ExceptionType = newException.ExceptionType
-				(*qubzMatrix)[i].ExceptionIntervalBoundary = newException.IntermittencyInterval
-				(*qubzMatrix)[i].CurrentExceptionInterval = 1
+			//Compare the returned exception severity to what is currently assigned
+			//for the current Qubz unit and assign a new Exception as needed
+			customlog.CalloutConsole(consoleLogger, "Check Severity Level on Qubz Unit")
+
+			if x.ExceptionSeverity == appconstants.SENSOR_EXCEPTION_SEVERITY_NONE {
+				//Assign a new exception to this Qubz unit
+				customlog.GreenlighAllChannels(consoleLogger, fileLogger, fmt.Sprintf("New Exception Assigned to Qubz Unit %s : Exception %s : Severity %d", x.QubzName, newException.ExceptionDesc, newException.SeverityLevel))
+				assignException(qubzMatrix, newException, i)
+
+			} else if x.ExceptionSeverity < newExceptionSeverity {
+				//Upgrade this Qubz unit to a higher Severity
+				customlog.GreenlighAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Exception level upgraded for Qubz Unit %s : Exception %s : Severity %d", x.QubzName, newException.ExceptionDesc, newException.SeverityLevel))
+				assignException(qubzMatrix, newException, i)
+
+			} else {
+				//Notify that an exception was generated but not assigned
+				customlog.InfoAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Exception generated but not assigned to Qubz Unit %s : Exception Severity was %d : Qubz Unit Existing Exception Severity %d", x.QubzName, x.ExceptionSeverity, newException.SeverityLevel), true)
 
 			}
 		}
 	}
+
+}
+
+func assignException(qubzMatrix *[]datamodels.QubzMatrix, newException datamodels.QubzException, matrixIndex int) {
+	//Assign the passed exception to the passed index in the Qubz Matrix
+	(*qubzMatrix)[matrixIndex].ExceptionAssignment = newException.ExceptionId
+	(*qubzMatrix)[matrixIndex].ExceptionSeverity = newException.SeverityLevel
+	(*qubzMatrix)[matrixIndex].ExceptionType = newException.ExceptionType
+	(*qubzMatrix)[matrixIndex].ExceptionIntervalBoundary = newException.IntermittencyInterval
+	(*qubzMatrix)[matrixIndex].CurrentExceptionInterval = 1
 
 }
 
