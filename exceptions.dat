@@ -1,0 +1,53 @@
+[
+    {
+      "exceptionId": 1,
+      "exceptionDesc": "Radio Signal Weak",
+      "severityLevel": 3,
+      "exceptionType": 1,
+      "intermittencyInterval": 0,
+      "affectedSensors": [
+        {
+          "sensorDataPointId": 13,
+          "sensorDataPointDesc": "Radio Signal Strength",
+          "valueModType": 1,
+          "fixedModValue": 0
+        }
+      ]
+    },
+    {
+      "exceptionId": 2,
+      "exceptionDesc": "Local Wi-Fi Down",
+      "severityLevel": 2,
+      "exceptionType": 1,
+      "intermittencyInterval": 0,
+      "affectedSensors": [
+        {
+          "sensorDataPointId": 17,
+          "sensorDataPointDesc": "Local Wi-Fi Handshake",
+          "valueModType": 6,
+          "fixedModValue": 0
+        }
+      ]
+    },
+    {
+      "exceptionId": 3,
+      "exceptionDesc": "Fire Suppression Failure",
+      "severityLevel": 1,
+      "exceptionType": 1,
+      "intermittencyInterval": 0,
+      "affectedSensors": [
+        {
+          "sensorDataPointId": 128,
+          "sensorDataPointDesc": "Fire Detected",
+          "valueModType": 6,
+          "fixedModValue": 1
+        },
+        {
+          "sensorDataPointId": 143,
+          "sensorDataPointDesc": "Fire Suppression State",
+          "valueModType": 6,
+          "fixedModValue": 2
+        }
+      ]
+    }
+  ]

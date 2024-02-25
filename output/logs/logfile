@@ -4688,3 +4688,1074 @@
 {"time":"2024-02-20T13:17:45.122185-05:00","level":"INFO","msg":"(Cycle 20 of 20) Complete!"}
 {"time":"2024-02-20T13:17:45.122202-05:00","level":"INFO","msg":"20 cycles Complete ... Shutting Down"}
 {"time":"2024-02-20T13:17:45.122207-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-24T17:37:14.958128-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-24T17:37:14.958407-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-24T17:37:14.958476-05:00","level":"INFO","msg":"{QubzCount:30 InternalRandomizer:1 EventInterval:0 EventCycleCount:20 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./example_exception.json OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-24T17:37:14.958517-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-24T17:37:14.958553-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-24T17:37:14.958589-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-24T17:37:14.959865-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-24T17:37:14.959916-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-24T17:37:14.95997-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-24T17:37:14.961298-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-24T17:37:14.961416-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-24T17:37:14.961493-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-24T17:37:14.962068-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-24T17:37:14.962145-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-24T17:37:14.962236-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-24T17:37:15.031887-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-24T17:37:15.03192-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-24T17:37:15.031941-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-24T17:37:15.032121-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-24T17:37:15.032129-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-24T17:37:15.032137-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-24T17:37:15.033054-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-24T17:37:15.03306-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-24T17:37:15.033068-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-24T17:37:15.03329-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-24T17:37:15.033302-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-24T17:37:15.033314-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-24T17:37:15.033703-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-24T17:37:15.033709-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./example_exception.json ..."}
+{"time":"2024-02-24T17:37:15.033718-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-02-24T17:37:15.033827-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-02-24T17:37:15.033832-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-24T17:37:15.033848-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-24T17:37:15.033858-05:00","level":"INFO","msg":"Mapping first 30 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-24T17:37:15.033863-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 30 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-24T17:37:15.033867-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-24T17:37:15.033871-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T17:37:15.033875-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-24T17:37:15.033879-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-24T17:37:15.033883-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-24T17:37:15.033887-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T17:37:15.033892-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-24T17:37:15.033896-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-24T17:37:15.0339-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-24T17:37:15.033903-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-24T17:37:15.033907-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-24T17:37:15.033911-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-24T17:37:15.033915-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-24T17:37:15.033919-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-24T17:37:15.060765-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-24T17:37:15.060797-05:00","level":"INFO","msg":"Begin Simulation (20 cycles)"}
+{"time":"2024-02-24T17:37:15.060804-05:00","level":"INFO","msg":"(Cycle 1 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:37:15.060811-05:00","level":"INFO","msg":"(Cycle 1 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:37:15.060816-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:37:15.06082-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:37:15.086534-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:37:15.086554-05:00","level":"INFO","msg":"(Cycle 1 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:37:15.086561-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:40:55.757154-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-24T17:40:55.757517-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-24T17:40:55.757614-05:00","level":"INFO","msg":"{QubzCount:30 InternalRandomizer:1 EventInterval:0 EventCycleCount:20 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./example_exception.json OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-24T17:40:55.757686-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-24T17:40:55.757731-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-24T17:40:55.757807-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-24T17:40:55.758381-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-24T17:40:55.758444-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-24T17:40:55.758515-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-24T17:40:55.760747-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-24T17:40:55.760809-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-24T17:40:55.760876-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-24T17:40:55.761037-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-24T17:40:55.76108-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-24T17:40:55.761144-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-24T17:40:55.83031-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-24T17:40:55.830345-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-24T17:40:55.830366-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-24T17:40:55.830429-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-24T17:40:55.830436-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-24T17:40:55.830445-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-24T17:40:55.830492-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-24T17:40:55.830498-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-24T17:40:55.830507-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-24T17:40:55.830536-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-24T17:40:55.830542-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-24T17:40:55.830549-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-24T17:40:55.830905-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-24T17:40:55.830911-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./example_exception.json ..."}
+{"time":"2024-02-24T17:40:55.83092-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-02-24T17:40:55.83102-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-02-24T17:40:55.831025-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-24T17:40:55.831039-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-24T17:40:55.831047-05:00","level":"INFO","msg":"Mapping first 30 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-24T17:40:55.831053-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 30 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-24T17:40:55.831059-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-24T17:40:55.831064-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T17:40:55.831068-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-24T17:40:55.831073-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-24T17:40:55.831079-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-24T17:40:55.831085-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T17:40:55.83109-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-24T17:40:55.831095-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-24T17:40:55.831101-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-24T17:40:55.831107-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-24T17:40:55.831112-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-24T17:40:55.831118-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-24T17:40:55.831123-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-24T17:40:55.831129-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-24T17:40:55.858675-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-24T17:40:55.85871-05:00","level":"INFO","msg":"Begin Simulation (20 cycles)"}
+{"time":"2024-02-24T17:40:55.858717-05:00","level":"INFO","msg":"(Cycle 1 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:40:55.858726-05:00","level":"INFO","msg":"(Cycle 1 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:40:55.858731-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:40:55.858735-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:40:55.884469-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:40:55.884502-05:00","level":"INFO","msg":"(Cycle 1 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:40:55.884514-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:40:56.466989-05:00","level":"INFO","msg":"(Cycle 1 of 20) Complete!"}
+{"time":"2024-02-24T17:40:56.46701-05:00","level":"INFO","msg":"(Cycle 2 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:40:56.467019-05:00","level":"INFO","msg":"(Cycle 2 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:40:56.467026-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:40:56.467031-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:40:56.493338-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:40:56.493372-05:00","level":"INFO","msg":"(Cycle 2 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:40:56.49338-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:40:57.00801-05:00","level":"INFO","msg":"(Cycle 2 of 20) Complete!"}
+{"time":"2024-02-24T17:40:57.008032-05:00","level":"INFO","msg":"(Cycle 3 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:40:57.008043-05:00","level":"INFO","msg":"(Cycle 3 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:40:57.008051-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:40:57.008057-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:40:57.034101-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:40:57.034127-05:00","level":"INFO","msg":"(Cycle 3 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:40:57.034136-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:40:57.570417-05:00","level":"INFO","msg":"(Cycle 3 of 20) Complete!"}
+{"time":"2024-02-24T17:40:57.570437-05:00","level":"INFO","msg":"(Cycle 4 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:40:57.570447-05:00","level":"INFO","msg":"(Cycle 4 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:40:57.570453-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:40:57.570458-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:40:57.597645-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:40:57.597676-05:00","level":"INFO","msg":"(Cycle 4 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:40:57.597685-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:40:58.153758-05:00","level":"INFO","msg":"(Cycle 4 of 20) Complete!"}
+{"time":"2024-02-24T17:40:58.153778-05:00","level":"INFO","msg":"(Cycle 5 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:40:58.153787-05:00","level":"INFO","msg":"(Cycle 5 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:40:58.153793-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:40:58.153798-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:40:58.179871-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:40:58.179907-05:00","level":"INFO","msg":"(Cycle 5 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:40:58.179919-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:40:58.698461-05:00","level":"INFO","msg":"(Cycle 5 of 20) Complete!"}
+{"time":"2024-02-24T17:40:58.698484-05:00","level":"INFO","msg":"(Cycle 6 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:40:58.698494-05:00","level":"INFO","msg":"(Cycle 6 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:40:58.6985-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:40:58.698505-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:40:58.72494-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:40:58.724971-05:00","level":"INFO","msg":"(Cycle 6 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:40:58.724981-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:40:59.25964-05:00","level":"INFO","msg":"(Cycle 6 of 20) Complete!"}
+{"time":"2024-02-24T17:40:59.259663-05:00","level":"INFO","msg":"(Cycle 7 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:40:59.259673-05:00","level":"INFO","msg":"(Cycle 7 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:40:59.259679-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:40:59.259686-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:40:59.285891-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:40:59.285922-05:00","level":"INFO","msg":"(Cycle 7 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:40:59.28593-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:40:59.788259-05:00","level":"INFO","msg":"(Cycle 7 of 20) Complete!"}
+{"time":"2024-02-24T17:40:59.788281-05:00","level":"INFO","msg":"(Cycle 8 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:40:59.788292-05:00","level":"INFO","msg":"(Cycle 8 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:40:59.788298-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:40:59.788303-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:40:59.815152-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:40:59.815181-05:00","level":"INFO","msg":"(Cycle 8 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:40:59.815193-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:41:00.376987-05:00","level":"INFO","msg":"(Cycle 8 of 20) Complete!"}
+{"time":"2024-02-24T17:41:00.377009-05:00","level":"INFO","msg":"(Cycle 9 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:41:00.377019-05:00","level":"INFO","msg":"(Cycle 9 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:41:00.377026-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:41:00.377032-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:41:00.403231-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:41:00.403262-05:00","level":"INFO","msg":"(Cycle 9 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:41:00.40327-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:41:00.94949-05:00","level":"INFO","msg":"(Cycle 9 of 20) Complete!"}
+{"time":"2024-02-24T17:41:00.949515-05:00","level":"INFO","msg":"(Cycle 10 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:41:00.949525-05:00","level":"INFO","msg":"(Cycle 10 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:41:00.949531-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:41:00.949536-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:41:00.976096-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:41:00.976128-05:00","level":"INFO","msg":"(Cycle 10 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:41:00.976135-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:41:01.51767-05:00","level":"INFO","msg":"(Cycle 10 of 20) Complete!"}
+{"time":"2024-02-24T17:41:01.517691-05:00","level":"INFO","msg":"(Cycle 11 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:41:01.51777-05:00","level":"INFO","msg":"(Cycle 11 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:41:01.517778-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:41:01.517786-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:41:01.544006-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:41:01.544035-05:00","level":"INFO","msg":"(Cycle 11 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:41:01.544044-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:41:02.086392-05:00","level":"INFO","msg":"(Cycle 11 of 20) Complete!"}
+{"time":"2024-02-24T17:41:02.086414-05:00","level":"INFO","msg":"(Cycle 12 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:41:02.086423-05:00","level":"INFO","msg":"(Cycle 12 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:41:02.08643-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:41:02.086436-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:41:02.112502-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:41:02.112538-05:00","level":"INFO","msg":"(Cycle 12 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:41:02.112567-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:41:02.649387-05:00","level":"INFO","msg":"(Cycle 12 of 20) Complete!"}
+{"time":"2024-02-24T17:41:02.649411-05:00","level":"INFO","msg":"(Cycle 13 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:41:02.649421-05:00","level":"INFO","msg":"(Cycle 13 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:41:02.649427-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:41:02.649432-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:41:02.675673-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:41:02.675711-05:00","level":"INFO","msg":"(Cycle 13 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:41:02.67572-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:41:03.232007-05:00","level":"INFO","msg":"(Cycle 13 of 20) Complete!"}
+{"time":"2024-02-24T17:41:03.232029-05:00","level":"INFO","msg":"(Cycle 14 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:41:03.23204-05:00","level":"INFO","msg":"(Cycle 14 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:41:03.232047-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:41:03.232053-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:41:03.258367-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:41:03.258405-05:00","level":"INFO","msg":"(Cycle 14 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:41:03.258414-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:41:03.736725-05:00","level":"INFO","msg":"(Cycle 14 of 20) Complete!"}
+{"time":"2024-02-24T17:41:03.736756-05:00","level":"INFO","msg":"(Cycle 15 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:41:03.736767-05:00","level":"INFO","msg":"(Cycle 15 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:41:03.736774-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:41:03.73678-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:41:03.763023-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:41:03.763051-05:00","level":"INFO","msg":"(Cycle 15 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:41:03.763061-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:41:04.299021-05:00","level":"INFO","msg":"(Cycle 15 of 20) Complete!"}
+{"time":"2024-02-24T17:41:04.299041-05:00","level":"INFO","msg":"(Cycle 16 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:41:04.299052-05:00","level":"INFO","msg":"(Cycle 16 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:41:04.299059-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:41:04.299065-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:41:04.325217-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:41:04.325242-05:00","level":"INFO","msg":"(Cycle 16 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:41:04.32525-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:41:04.819833-05:00","level":"INFO","msg":"(Cycle 16 of 20) Complete!"}
+{"time":"2024-02-24T17:41:04.819854-05:00","level":"INFO","msg":"(Cycle 17 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:41:04.819865-05:00","level":"INFO","msg":"(Cycle 17 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:41:04.819873-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:41:04.819879-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:41:04.846249-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:41:04.846282-05:00","level":"INFO","msg":"(Cycle 17 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:41:04.846291-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:41:05.390955-05:00","level":"INFO","msg":"(Cycle 17 of 20) Complete!"}
+{"time":"2024-02-24T17:41:05.39098-05:00","level":"INFO","msg":"(Cycle 18 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:41:05.390992-05:00","level":"INFO","msg":"(Cycle 18 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:41:05.390999-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:41:05.391005-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:41:05.416882-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:41:05.416907-05:00","level":"INFO","msg":"(Cycle 18 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:41:05.416915-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:41:05.911112-05:00","level":"INFO","msg":"(Cycle 18 of 20) Complete!"}
+{"time":"2024-02-24T17:41:05.911132-05:00","level":"INFO","msg":"(Cycle 19 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:41:05.911141-05:00","level":"INFO","msg":"(Cycle 19 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:41:05.911147-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:41:05.911153-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:41:05.937262-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:41:05.937291-05:00","level":"INFO","msg":"(Cycle 19 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:41:05.937301-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:41:06.476422-05:00","level":"INFO","msg":"(Cycle 19 of 20) Complete!"}
+{"time":"2024-02-24T17:41:06.476443-05:00","level":"INFO","msg":"(Cycle 20 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:41:06.476452-05:00","level":"INFO","msg":"(Cycle 20 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:41:06.476458-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:41:06.476463-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:41:06.502313-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:41:06.502345-05:00","level":"INFO","msg":"(Cycle 20 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:41:06.502352-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:41:07.007142-05:00","level":"INFO","msg":"(Cycle 20 of 20) Complete!"}
+{"time":"2024-02-24T17:41:07.007163-05:00","level":"INFO","msg":"20 cycles Complete ... Shutting Down"}
+{"time":"2024-02-24T17:41:07.007171-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-24T17:59:19.763368-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-24T17:59:19.763691-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-24T17:59:19.763765-05:00","level":"INFO","msg":"{QubzCount:30 InternalRandomizer:1 EventInterval:0 EventCycleCount:20 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./example_exception.json OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-24T17:59:19.763817-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-24T17:59:19.763859-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-24T17:59:19.76391-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-24T17:59:19.764376-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-24T17:59:19.764421-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-24T17:59:19.764478-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-24T17:59:19.76638-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-24T17:59:19.76642-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-24T17:59:19.766465-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-24T17:59:19.766578-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-24T17:59:19.766609-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-24T17:59:19.766644-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-24T17:59:19.832219-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-24T17:59:19.832251-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-24T17:59:19.832273-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-24T17:59:19.832338-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-24T17:59:19.832348-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-24T17:59:19.832357-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-24T17:59:19.832404-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-24T17:59:19.83241-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-24T17:59:19.832417-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-24T17:59:19.832445-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-24T17:59:19.832451-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-24T17:59:19.832458-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-24T17:59:19.83281-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-24T17:59:19.832816-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./example_exception.json ..."}
+{"time":"2024-02-24T17:59:19.832823-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-02-24T17:59:19.83292-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-02-24T17:59:19.832925-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-24T17:59:19.832941-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-24T17:59:19.832949-05:00","level":"INFO","msg":"Mapping first 30 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-24T17:59:19.832954-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 30 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-24T17:59:19.832959-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-24T17:59:19.832964-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T17:59:19.832969-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-24T17:59:19.832974-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-24T17:59:19.832979-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-24T17:59:19.832983-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T17:59:19.832988-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-24T17:59:19.832992-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-24T17:59:19.832997-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-24T17:59:19.833001-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-24T17:59:19.833006-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-24T17:59:19.833011-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-24T17:59:19.833015-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-24T17:59:19.83302-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-24T17:59:19.860428-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-24T17:59:19.860461-05:00","level":"INFO","msg":"Begin Simulation (20 cycles)"}
+{"time":"2024-02-24T17:59:19.860472-05:00","level":"INFO","msg":"(Cycle 1 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:19.860479-05:00","level":"INFO","msg":"(Cycle 1 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:19.860484-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:19.860489-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:19.886241-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:19.886271-05:00","level":"INFO","msg":"(Cycle 1 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:19.886279-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:20.451513-05:00","level":"INFO","msg":"(Cycle 1 of 20) Complete!"}
+{"time":"2024-02-24T17:59:20.451531-05:00","level":"INFO","msg":"(Cycle 2 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:20.451541-05:00","level":"INFO","msg":"(Cycle 2 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:20.451547-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:20.451552-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:20.477617-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:20.477645-05:00","level":"INFO","msg":"(Cycle 2 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:20.477653-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:20.966725-05:00","level":"INFO","msg":"(Cycle 2 of 20) Complete!"}
+{"time":"2024-02-24T17:59:20.966746-05:00","level":"INFO","msg":"(Cycle 3 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:20.966756-05:00","level":"INFO","msg":"(Cycle 3 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:20.966762-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:20.966767-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:20.992652-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:20.992685-05:00","level":"INFO","msg":"(Cycle 3 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:20.992697-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:21.534606-05:00","level":"INFO","msg":"(Cycle 3 of 20) Complete!"}
+{"time":"2024-02-24T17:59:21.534627-05:00","level":"INFO","msg":"(Cycle 4 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:21.534639-05:00","level":"INFO","msg":"(Cycle 4 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:21.534646-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:21.534651-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:21.560711-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:21.560739-05:00","level":"INFO","msg":"(Cycle 4 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:21.560748-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:22.070302-05:00","level":"INFO","msg":"(Cycle 4 of 20) Complete!"}
+{"time":"2024-02-24T17:59:22.070321-05:00","level":"INFO","msg":"(Cycle 5 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:22.070333-05:00","level":"INFO","msg":"(Cycle 5 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:22.070339-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:22.070344-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:22.096678-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:22.096711-05:00","level":"INFO","msg":"(Cycle 5 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:22.096719-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:22.570514-05:00","level":"INFO","msg":"(Cycle 5 of 20) Complete!"}
+{"time":"2024-02-24T17:59:22.570538-05:00","level":"INFO","msg":"(Cycle 6 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:22.570548-05:00","level":"INFO","msg":"(Cycle 6 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:22.570553-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:22.570558-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:22.596856-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:22.596879-05:00","level":"INFO","msg":"(Cycle 6 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:22.596888-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:23.099427-05:00","level":"INFO","msg":"(Cycle 6 of 20) Complete!"}
+{"time":"2024-02-24T17:59:23.099448-05:00","level":"INFO","msg":"(Cycle 7 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:23.099457-05:00","level":"INFO","msg":"(Cycle 7 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:23.099464-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:23.09947-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:23.125438-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:23.125466-05:00","level":"INFO","msg":"(Cycle 7 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:23.125478-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:23.651228-05:00","level":"INFO","msg":"(Cycle 7 of 20) Complete!"}
+{"time":"2024-02-24T17:59:23.651251-05:00","level":"INFO","msg":"(Cycle 8 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:23.651263-05:00","level":"INFO","msg":"(Cycle 8 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:23.651269-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:23.651275-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:23.677515-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:23.677547-05:00","level":"INFO","msg":"(Cycle 8 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:23.677555-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:24.189909-05:00","level":"INFO","msg":"(Cycle 8 of 20) Complete!"}
+{"time":"2024-02-24T17:59:24.18993-05:00","level":"INFO","msg":"(Cycle 9 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:24.189939-05:00","level":"INFO","msg":"(Cycle 9 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:24.189945-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:24.18995-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:24.216285-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:24.216315-05:00","level":"INFO","msg":"(Cycle 9 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:24.216328-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:24.76041-05:00","level":"INFO","msg":"(Cycle 9 of 20) Complete!"}
+{"time":"2024-02-24T17:59:24.76043-05:00","level":"INFO","msg":"(Cycle 10 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:24.760439-05:00","level":"INFO","msg":"(Cycle 10 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:24.760445-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:24.76045-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:24.786712-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:24.786742-05:00","level":"INFO","msg":"(Cycle 10 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:24.786751-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:25.31191-05:00","level":"INFO","msg":"(Cycle 10 of 20) Complete!"}
+{"time":"2024-02-24T17:59:25.31193-05:00","level":"INFO","msg":"(Cycle 11 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:25.311941-05:00","level":"INFO","msg":"(Cycle 11 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:25.311947-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:25.311953-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:25.337998-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:25.338031-05:00","level":"INFO","msg":"(Cycle 11 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:25.338041-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:25.886934-05:00","level":"INFO","msg":"(Cycle 11 of 20) Complete!"}
+{"time":"2024-02-24T17:59:25.886955-05:00","level":"INFO","msg":"(Cycle 12 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:25.886965-05:00","level":"INFO","msg":"(Cycle 12 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:25.886971-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:25.886976-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:25.912941-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:25.912971-05:00","level":"INFO","msg":"(Cycle 12 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:25.912981-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:26.477041-05:00","level":"INFO","msg":"(Cycle 12 of 20) Complete!"}
+{"time":"2024-02-24T17:59:26.477071-05:00","level":"INFO","msg":"(Cycle 13 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:26.477082-05:00","level":"INFO","msg":"(Cycle 13 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:26.477088-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:26.477093-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:26.503165-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:26.503197-05:00","level":"INFO","msg":"(Cycle 13 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:26.503205-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:27.046616-05:00","level":"INFO","msg":"(Cycle 13 of 20) Complete!"}
+{"time":"2024-02-24T17:59:27.046641-05:00","level":"INFO","msg":"(Cycle 14 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:27.046651-05:00","level":"INFO","msg":"(Cycle 14 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:27.046659-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:27.046664-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:27.072927-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:27.072959-05:00","level":"INFO","msg":"(Cycle 14 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:27.072969-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:27.525834-05:00","level":"INFO","msg":"(Cycle 14 of 20) Complete!"}
+{"time":"2024-02-24T17:59:27.525856-05:00","level":"INFO","msg":"(Cycle 15 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:27.525866-05:00","level":"INFO","msg":"(Cycle 15 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:27.525873-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:27.525879-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:27.551667-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:27.551696-05:00","level":"INFO","msg":"(Cycle 15 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:27.551708-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:28.061943-05:00","level":"INFO","msg":"(Cycle 15 of 20) Complete!"}
+{"time":"2024-02-24T17:59:28.061964-05:00","level":"INFO","msg":"(Cycle 16 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:28.061973-05:00","level":"INFO","msg":"(Cycle 16 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:28.061981-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:28.061987-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:28.088132-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:28.088163-05:00","level":"INFO","msg":"(Cycle 16 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:28.088175-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:28.542841-05:00","level":"INFO","msg":"(Cycle 16 of 20) Complete!"}
+{"time":"2024-02-24T17:59:28.542866-05:00","level":"INFO","msg":"(Cycle 17 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:28.542877-05:00","level":"INFO","msg":"(Cycle 17 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:28.542887-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:28.542894-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:28.570064-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:28.570096-05:00","level":"INFO","msg":"(Cycle 17 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:28.570104-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:29.060553-05:00","level":"INFO","msg":"(Cycle 17 of 20) Complete!"}
+{"time":"2024-02-24T17:59:29.060574-05:00","level":"INFO","msg":"(Cycle 18 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:29.060584-05:00","level":"INFO","msg":"(Cycle 18 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:29.06059-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:29.060595-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:29.086392-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:29.086423-05:00","level":"INFO","msg":"(Cycle 18 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:29.086432-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:29.610189-05:00","level":"INFO","msg":"(Cycle 18 of 20) Complete!"}
+{"time":"2024-02-24T17:59:29.610209-05:00","level":"INFO","msg":"(Cycle 19 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:29.610221-05:00","level":"INFO","msg":"(Cycle 19 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:29.610228-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:29.610233-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:29.635969-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:29.636002-05:00","level":"INFO","msg":"(Cycle 19 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:29.636012-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:30.141455-05:00","level":"INFO","msg":"(Cycle 19 of 20) Complete!"}
+{"time":"2024-02-24T17:59:30.141476-05:00","level":"INFO","msg":"(Cycle 20 of 20) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T17:59:30.141486-05:00","level":"INFO","msg":"(Cycle 20 of 20) Calculate New Sensor State"}
+{"time":"2024-02-24T17:59:30.141492-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T17:59:30.141498-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T17:59:30.167205-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T17:59:30.167233-05:00","level":"INFO","msg":"(Cycle 20 of 20) Transmitting events to output channel"}
+{"time":"2024-02-24T17:59:30.167242-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T17:59:30.684856-05:00","level":"INFO","msg":"(Cycle 20 of 20) Complete!"}
+{"time":"2024-02-24T17:59:30.687089-05:00","level":"INFO","msg":"20 cycles Complete ... Shutting Down"}
+{"time":"2024-02-24T17:59:30.687099-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-24T18:05:52.141946-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-24T18:05:52.142262-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-24T18:05:52.142339-05:00","level":"INFO","msg":"{QubzCount:1 InternalRandomizer:1 EventInterval:0 EventCycleCount:1 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./exceptions.dat OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-24T18:05:52.142394-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-24T18:05:52.142434-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-24T18:05:52.142486-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-24T18:05:52.142966-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-24T18:05:52.143011-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-24T18:05:52.143068-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-24T18:05:52.145272-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-24T18:05:52.145323-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-24T18:05:52.145375-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-24T18:05:52.145488-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-24T18:05:52.145523-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-24T18:05:52.145566-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-24T18:05:52.21479-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-24T18:05:52.214829-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-24T18:05:52.214852-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-24T18:05:52.21494-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-24T18:05:52.214954-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-24T18:05:52.214967-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-24T18:05:52.215025-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-24T18:05:52.215032-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-24T18:05:52.215041-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-24T18:05:52.215063-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-24T18:05:52.215069-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-24T18:05:52.215076-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-24T18:05:52.215446-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-24T18:05:52.215452-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./exceptions.dat ..."}
+{"time":"2024-02-24T18:05:52.21546-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-02-24T18:05:52.215551-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-02-24T18:05:52.215557-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-24T18:05:52.215572-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-24T18:05:52.215578-05:00","level":"INFO","msg":"Mapping first 1 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-24T18:05:52.215583-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 1 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-24T18:05:52.215589-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-24T18:05:52.215593-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T18:05:52.215598-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-24T18:05:52.215603-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-24T18:05:52.215608-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-24T18:05:52.215613-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T18:05:52.215617-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-24T18:05:52.215622-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-24T18:05:52.215626-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-24T18:05:52.215631-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-24T18:05:52.215636-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-24T18:05:52.215641-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-24T18:05:52.215646-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-24T18:05:52.215651-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-24T18:05:52.216633-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-24T18:05:52.216638-05:00","level":"INFO","msg":"Begin Simulation (1 cycles)"}
+{"time":"2024-02-24T18:05:52.216644-05:00","level":"INFO","msg":"(Cycle 1 of 1) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T18:05:52.216649-05:00","level":"INFO","msg":"(Cycle 1 of 1) Calculate New Sensor State"}
+{"time":"2024-02-24T18:05:52.216654-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T18:05:52.216658-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T18:05:52.217637-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T18:05:52.217642-05:00","level":"INFO","msg":"(Cycle 1 of 1) Transmitting events to output channel"}
+{"time":"2024-02-24T18:05:52.217649-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T18:05:52.256975-05:00","level":"INFO","msg":"(Cycle 1 of 1) Complete!"}
+{"time":"2024-02-24T18:05:52.256999-05:00","level":"INFO","msg":"1 cycles Complete ... Shutting Down"}
+{"time":"2024-02-24T18:05:52.257007-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-24T19:54:18.451912-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-24T19:54:18.452279-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-24T19:54:18.452355-05:00","level":"INFO","msg":"{QubzCount:1 InternalRandomizer:1 EventInterval:0 EventCycleCount:1 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./exceptions.dat OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-24T19:54:18.452412-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-24T19:54:18.452451-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-24T19:54:18.452509-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-24T19:54:18.452996-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-24T19:54:18.453044-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-24T19:54:18.453101-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-24T19:54:18.455296-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-24T19:54:18.455347-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-24T19:54:18.455406-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-24T19:54:18.455553-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-24T19:54:18.4556-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-24T19:54:18.455663-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-24T19:54:18.525004-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-24T19:54:18.52504-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-24T19:54:18.525059-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-24T19:54:18.525119-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-24T19:54:18.525126-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-24T19:54:18.525135-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-24T19:54:18.525179-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-24T19:54:18.525186-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-24T19:54:18.525194-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-24T19:54:18.525222-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-24T19:54:18.525228-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-24T19:54:18.525235-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-24T19:54:18.525597-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-24T19:54:18.525603-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./exceptions.dat ..."}
+{"time":"2024-02-24T19:54:18.525611-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-02-24T19:54:18.525703-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-02-24T19:54:18.525709-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-24T19:54:18.525738-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-24T19:54:18.525744-05:00","level":"INFO","msg":"Mapping first 1 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-24T19:54:18.525748-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 1 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-24T19:54:18.525752-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-24T19:54:18.525756-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T19:54:18.52576-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-24T19:54:18.525764-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-24T19:54:18.525768-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-24T19:54:18.525771-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T19:54:18.525775-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-24T19:54:18.525779-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-24T19:54:18.525783-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-24T19:54:18.525787-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-24T19:54:18.525791-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-24T19:54:18.525795-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-24T19:54:18.525799-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-24T19:54:18.525803-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-24T19:54:18.526818-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-24T19:54:18.526822-05:00","level":"INFO","msg":"Begin Simulation (1 cycles)"}
+{"time":"2024-02-24T19:54:18.526827-05:00","level":"INFO","msg":"(Cycle 1 of 1) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T19:54:18.526832-05:00","level":"INFO","msg":"(Cycle 1 of 1) Calculate New Sensor State"}
+{"time":"2024-02-24T19:54:18.526836-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T19:54:18.526839-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T19:54:18.527795-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T19:54:18.527799-05:00","level":"INFO","msg":"(Cycle 1 of 1) Transmitting events to output channel"}
+{"time":"2024-02-24T19:54:18.527804-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T19:54:18.566486-05:00","level":"INFO","msg":"(Cycle 1 of 1) Complete!"}
+{"time":"2024-02-24T19:54:18.566508-05:00","level":"INFO","msg":"1 cycles Complete ... Shutting Down"}
+{"time":"2024-02-24T19:54:18.566516-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-24T20:02:42.726866-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-24T20:02:42.727194-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-24T20:02:42.727264-05:00","level":"INFO","msg":"{QubzCount:1 InternalRandomizer:1 EventInterval:0 EventCycleCount:1 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./exceptions.dat OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-24T20:02:42.727311-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-24T20:02:42.727341-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-24T20:02:42.727385-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-24T20:02:42.727768-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-24T20:02:42.72781-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-24T20:02:42.727853-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-24T20:02:42.729477-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-24T20:02:42.729516-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-24T20:02:42.729558-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-24T20:02:42.729659-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-24T20:02:42.729685-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-24T20:02:42.729718-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-24T20:02:42.79631-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-24T20:02:42.796327-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-24T20:02:42.796339-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-24T20:02:42.796402-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-24T20:02:42.79641-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-24T20:02:42.796418-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-24T20:02:42.796459-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-24T20:02:42.796465-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-24T20:02:42.796473-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-24T20:02:42.796499-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-24T20:02:42.796505-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-24T20:02:42.796511-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-24T20:02:42.79688-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-24T20:02:42.796887-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./exceptions.dat ..."}
+{"time":"2024-02-24T20:02:42.796895-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-02-24T20:02:42.797003-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-02-24T20:02:42.797009-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-24T20:02:42.797022-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-24T20:02:42.797029-05:00","level":"INFO","msg":"Mapping first 1 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-24T20:02:42.797036-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 1 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-24T20:02:42.797041-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-24T20:02:42.797045-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T20:02:42.79705-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-24T20:02:42.797055-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-24T20:02:42.797061-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-24T20:02:42.797066-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T20:02:42.797071-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-24T20:02:42.797077-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-24T20:02:42.797085-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-24T20:02:42.797091-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-24T20:02:42.797097-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-24T20:02:42.797102-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-24T20:02:42.797108-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-24T20:02:42.797113-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-24T20:02:42.79812-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-24T20:02:42.798126-05:00","level":"INFO","msg":"Begin Simulation (1 cycles)"}
+{"time":"2024-02-24T20:02:42.798132-05:00","level":"INFO","msg":"(Cycle 1 of 1) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T20:02:42.798137-05:00","level":"INFO","msg":"(Cycle 1 of 1) Calculate New Sensor State"}
+{"time":"2024-02-24T20:02:42.798142-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T20:02:42.798146-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T20:02:42.799112-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T20:02:42.799117-05:00","level":"INFO","msg":"(Cycle 1 of 1) Transmitting events to output channel"}
+{"time":"2024-02-24T20:02:42.799124-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T20:02:42.817874-05:00","level":"INFO","msg":"(Cycle 1 of 1) Complete!"}
+{"time":"2024-02-24T20:02:42.817899-05:00","level":"INFO","msg":"1 cycles Complete ... Shutting Down"}
+{"time":"2024-02-24T20:02:42.817906-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-24T20:48:11.317309-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-24T20:48:11.317672-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-24T20:48:11.317772-05:00","level":"INFO","msg":"{QubzCount:1 InternalRandomizer:1 EventInterval:0 EventCycleCount:1 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./exceptions.dat OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-24T20:48:11.317925-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-24T20:48:11.317982-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-24T20:48:11.318064-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-24T20:48:11.318612-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-24T20:48:11.31867-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-24T20:48:11.318739-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-24T20:48:11.320942-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-24T20:48:11.321005-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-24T20:48:11.321079-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-24T20:48:11.321273-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-24T20:48:11.321342-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-24T20:48:11.321432-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-24T20:48:11.390371-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-24T20:48:11.390411-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-24T20:48:11.390432-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-24T20:48:11.390502-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-24T20:48:11.390509-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-24T20:48:11.390518-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-24T20:48:11.390562-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-24T20:48:11.390568-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-24T20:48:11.390576-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-24T20:48:11.390606-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-24T20:48:11.390611-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-24T20:48:11.390619-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-24T20:48:11.390977-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-24T20:48:11.390984-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./exceptions.dat ..."}
+{"time":"2024-02-24T20:48:11.390993-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-02-24T20:48:11.391088-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-02-24T20:48:11.391093-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-24T20:48:11.391107-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-24T20:48:11.391113-05:00","level":"INFO","msg":"Mapping first 1 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-24T20:48:11.391119-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 1 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-24T20:48:11.391123-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-24T20:48:11.391128-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T20:48:11.391133-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-24T20:48:11.391138-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-24T20:48:11.391143-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-24T20:48:11.391149-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T20:48:11.391154-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-24T20:48:11.391158-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-24T20:48:11.391163-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-24T20:48:11.391168-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-24T20:48:11.391174-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-24T20:48:11.391179-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-24T20:48:11.391184-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-24T20:48:11.391188-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-24T20:48:11.392169-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-24T20:48:11.392175-05:00","level":"INFO","msg":"Begin Simulation (1 cycles)"}
+{"time":"2024-02-24T20:48:11.39218-05:00","level":"INFO","msg":"(Cycle 1 of 1) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T20:48:11.392186-05:00","level":"INFO","msg":"(Cycle 1 of 1) Calculate New Sensor State"}
+{"time":"2024-02-24T20:48:11.392191-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T20:48:11.392196-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T20:48:11.393142-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T20:48:11.393147-05:00","level":"INFO","msg":"(Cycle 1 of 1) Transmitting events to output channel"}
+{"time":"2024-02-24T20:48:11.393153-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T20:48:11.42918-05:00","level":"INFO","msg":"(Cycle 1 of 1) Complete!"}
+{"time":"2024-02-24T20:48:11.429199-05:00","level":"INFO","msg":"1 cycles Complete ... Shutting Down"}
+{"time":"2024-02-24T20:48:11.429206-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-24T20:48:54.018655-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-24T20:48:54.018836-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-24T20:48:54.018886-05:00","level":"INFO","msg":"{QubzCount:1 InternalRandomizer:1 EventInterval:0 EventCycleCount:1 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./exceptions.dat OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-24T20:48:54.018917-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-24T20:48:54.018939-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-24T20:48:54.018983-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-24T20:48:54.019364-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-24T20:48:54.019389-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-24T20:48:54.019415-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-24T20:48:54.021571-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-24T20:48:54.021624-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-24T20:48:54.021674-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-24T20:48:54.021793-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-24T20:48:54.021815-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-24T20:48:54.021849-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-24T20:48:54.087224-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-24T20:48:54.087253-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-24T20:48:54.08727-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-24T20:48:54.087343-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-24T20:48:54.087351-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-24T20:48:54.087361-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-24T20:48:54.087411-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-24T20:48:54.087418-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-24T20:48:54.087428-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-24T20:48:54.087455-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-24T20:48:54.087462-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-24T20:48:54.08747-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-24T20:48:54.087849-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-24T20:48:54.087856-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./exceptions.dat ..."}
+{"time":"2024-02-24T20:48:54.087864-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-02-24T20:48:54.08796-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-02-24T20:48:54.087966-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-24T20:48:54.087981-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-24T20:48:54.087988-05:00","level":"INFO","msg":"Mapping first 1 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-24T20:48:54.087995-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 1 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-24T20:48:54.088001-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-24T20:48:54.088006-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T20:48:54.088011-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-24T20:48:54.088016-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-24T20:48:54.088021-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-24T20:48:54.088026-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T20:48:54.088031-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-24T20:48:54.088036-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-24T20:48:54.088042-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-24T20:48:54.088046-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-24T20:48:54.088052-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-24T20:48:54.088057-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-24T20:48:54.088062-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-24T20:48:54.088067-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-24T20:48:54.089129-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-24T20:48:54.089134-05:00","level":"INFO","msg":"Begin Simulation (1 cycles)"}
+{"time":"2024-02-24T20:48:54.089141-05:00","level":"INFO","msg":"(Cycle 1 of 1) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T20:48:54.089146-05:00","level":"INFO","msg":"(Cycle 1 of 1) Calculate New Sensor State"}
+{"time":"2024-02-24T20:48:54.089151-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T20:48:54.089156-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T20:48:54.090171-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T20:48:54.090177-05:00","level":"INFO","msg":"(Cycle 1 of 1) Transmitting events to output channel"}
+{"time":"2024-02-24T20:48:54.090182-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T20:48:54.110654-05:00","level":"INFO","msg":"(Cycle 1 of 1) Complete!"}
+{"time":"2024-02-24T20:48:54.110684-05:00","level":"INFO","msg":"1 cycles Complete ... Shutting Down"}
+{"time":"2024-02-24T20:48:54.110691-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-24T21:04:06.047207-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-24T21:04:06.047343-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-24T21:04:06.047367-05:00","level":"INFO","msg":"{QubzCount:1 InternalRandomizer:1 EventInterval:0 EventCycleCount:1 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./exceptions.dat OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-24T21:04:06.047383-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-24T21:04:06.047396-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-24T21:04:06.047418-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-24T21:04:06.047636-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-24T21:04:06.047645-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-24T21:04:06.04766-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-24T21:04:06.048727-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-24T21:04:06.048737-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-24T21:04:06.048751-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-24T21:04:06.048797-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-24T21:04:06.048807-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-24T21:04:06.048821-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-24T21:04:06.101057-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-24T21:04:06.101094-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-24T21:04:06.101113-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-24T21:04:06.101178-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-24T21:04:06.101186-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-24T21:04:06.101196-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-24T21:04:06.101238-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-24T21:04:06.101244-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-24T21:04:06.101253-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-24T21:04:06.101281-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-24T21:04:06.101286-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-24T21:04:06.101292-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-24T21:04:06.101622-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-24T21:04:06.101627-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./exceptions.dat ..."}
+{"time":"2024-02-24T21:04:06.101636-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-02-24T21:04:06.101733-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-02-24T21:04:06.101739-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-24T21:04:06.101755-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-24T21:04:06.101762-05:00","level":"INFO","msg":"Mapping first 1 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-24T21:04:06.101768-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 1 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-24T21:04:06.101774-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-24T21:04:06.10178-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T21:04:06.101786-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-24T21:04:06.101792-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-24T21:04:06.101797-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-24T21:04:06.101801-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-24T21:04:06.101806-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-24T21:04:06.101812-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-24T21:04:06.101817-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-24T21:04:06.101821-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-24T21:04:06.101827-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-24T21:04:06.101832-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-24T21:04:06.101838-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-24T21:04:06.101843-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-24T21:04:06.102798-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-24T21:04:06.102803-05:00","level":"INFO","msg":"Begin Simulation (1 cycles)"}
+{"time":"2024-02-24T21:04:06.10281-05:00","level":"INFO","msg":"(Cycle 1 of 1) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-24T21:04:06.102815-05:00","level":"INFO","msg":"(Cycle 1 of 1) Assign New Exception States"}
+{"time":"2024-02-24T21:04:06.10282-05:00","level":"INFO","msg":"(Cycle 1 of 1) Calculate New Sensor State"}
+{"time":"2024-02-24T21:04:06.102826-05:00","level":"INFO","msg":"Assigning Exceptions ..."}
+{"time":"2024-02-24T21:04:06.102831-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-24T21:04:06.103747-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-24T21:04:06.103752-05:00","level":"INFO","msg":"(Cycle 1 of 1) Transmitting events to output channel"}
+{"time":"2024-02-24T21:04:06.103759-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-24T21:04:06.143587-05:00","level":"INFO","msg":"(Cycle 1 of 1) Complete!"}
+{"time":"2024-02-24T21:04:06.143609-05:00","level":"INFO","msg":"1 cycles Complete ... Shutting Down"}
+{"time":"2024-02-24T21:04:06.143617-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-02-25T00:15:54.766923-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-25T00:15:54.767254-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-25T00:15:54.767337-05:00","level":"INFO","msg":"{QubzCount:1 InternalRandomizer:1 EventInterval:0 EventCycleCount:1 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./exceptions.dat OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-25T00:15:54.767397-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-25T00:15:54.767437-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-25T00:15:54.767496-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-25T00:15:54.767989-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-25T00:15:54.768045-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-25T00:15:54.768104-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-25T00:15:54.770257-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-25T00:15:54.770307-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-25T00:15:54.770361-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-25T00:15:54.770505-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-25T00:15:54.770548-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-25T00:15:54.77061-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-25T00:15:54.837943-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-25T00:15:54.837977-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-25T00:15:54.837998-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-25T00:15:54.838064-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-25T00:15:54.838071-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-25T00:15:54.83808-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-25T00:15:54.83812-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-25T00:15:54.838126-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-25T00:15:54.838135-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-25T00:15:54.838161-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-25T00:15:54.838166-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-25T00:15:54.838173-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-25T00:15:54.838533-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-25T00:15:54.838539-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./exceptions.dat ..."}
+{"time":"2024-02-25T00:15:54.838547-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-02-25T00:15:54.838648-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-02-25T00:15:54.838654-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-25T00:15:54.838666-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-25T00:15:54.838675-05:00","level":"INFO","msg":"Mapping first 1 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-25T00:15:54.838681-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 1 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-25T00:15:54.838686-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-25T00:15:54.83869-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-25T00:15:54.838695-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-25T00:15:54.8387-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-25T00:15:54.838704-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-25T00:15:54.838709-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-25T00:15:54.838714-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-25T00:15:54.838718-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-25T00:15:54.838723-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-25T00:15:54.838728-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-25T00:15:54.838732-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-25T00:15:54.838737-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-25T00:15:54.838741-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-25T00:15:54.838746-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-25T00:15:54.839757-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-25T00:15:54.839762-05:00","level":"INFO","msg":"Begin Simulation (1 cycles)"}
+{"time":"2024-02-25T00:15:54.839768-05:00","level":"INFO","msg":"(Cycle 1 of 1) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-25T00:15:54.839773-05:00","level":"INFO","msg":"(Cycle 1 of 1) Assign New Exception States"}
+{"time":"2024-02-25T00:18:15.32439-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-25T00:18:15.32474-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-25T00:18:15.32482-05:00","level":"INFO","msg":"{QubzCount:1 InternalRandomizer:1 EventInterval:0 EventCycleCount:1 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./exceptions.dat OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-25T00:18:15.32488-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-25T00:18:15.324921-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-25T00:18:15.324977-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-25T00:18:15.325484-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-25T00:18:15.325533-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-25T00:18:15.325594-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-25T00:18:15.327834-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-25T00:18:15.327883-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-25T00:18:15.327942-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-25T00:18:15.32811-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-25T00:18:15.328158-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-25T00:18:15.328224-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-25T00:18:15.397334-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-25T00:18:15.397364-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-25T00:18:15.397385-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-25T00:18:15.397484-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-25T00:18:15.397502-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-25T00:18:15.397554-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-25T00:18:15.39764-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-25T00:18:15.397649-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-25T00:18:15.397659-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-25T00:18:15.39769-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-25T00:18:15.397696-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-25T00:18:15.397704-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-25T00:18:15.398062-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-25T00:18:15.398068-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./exceptions.dat ..."}
+{"time":"2024-02-25T00:18:15.398079-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-02-25T00:18:15.398179-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-02-25T00:18:15.398185-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-25T00:18:15.3982-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-25T00:18:15.398206-05:00","level":"INFO","msg":"Mapping first 1 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-25T00:18:15.398212-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 1 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-25T00:18:15.398217-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-25T00:18:15.398221-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-25T00:18:15.398227-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-25T00:18:15.398231-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-25T00:18:15.398236-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-25T00:18:15.398241-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-25T00:18:15.398245-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-25T00:18:15.39825-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-25T00:18:15.398254-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-25T00:18:15.398259-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-25T00:18:15.398263-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-25T00:18:15.398268-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-25T00:18:15.398272-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-25T00:18:15.398277-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-25T00:18:15.39928-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-25T00:18:15.399285-05:00","level":"INFO","msg":"Begin Simulation (1 cycles)"}
+{"time":"2024-02-25T00:18:15.399291-05:00","level":"INFO","msg":"(Cycle 1 of 1) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-25T00:18:15.399296-05:00","level":"INFO","msg":"(Cycle 1 of 1) Assign New Exception States"}
+{"time":"2024-02-25T00:25:06.954371-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-25T00:25:06.95446-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-25T00:25:06.954475-05:00","level":"INFO","msg":"{QubzCount:1 InternalRandomizer:1 EventInterval:0 EventCycleCount:1 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./exceptions.dat OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-25T00:25:06.954485-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-25T00:25:06.954492-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-25T00:25:06.954504-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-25T00:25:06.954653-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-25T00:25:06.954661-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-25T00:25:06.95467-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-25T00:25:06.955469-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-25T00:25:06.955477-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-25T00:25:06.955485-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-25T00:25:06.955514-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-25T00:25:06.955521-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-25T00:25:06.955529-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-25T00:25:07.001995-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-25T00:25:07.002029-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-25T00:25:07.00205-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-25T00:25:07.002118-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-25T00:25:07.002127-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-25T00:25:07.002136-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-25T00:25:07.002187-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-25T00:25:07.002194-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-25T00:25:07.002203-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-25T00:25:07.002231-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-25T00:25:07.002237-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-25T00:25:07.002244-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-25T00:25:07.002585-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-25T00:25:07.002591-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./exceptions.dat ..."}
+{"time":"2024-02-25T00:25:07.0026-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-02-25T00:25:07.002708-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-02-25T00:25:07.002714-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-25T00:25:07.002728-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-25T00:25:07.002735-05:00","level":"INFO","msg":"Mapping first 1 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-25T00:25:07.002741-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 1 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-25T00:25:07.002747-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-25T00:25:07.002752-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-25T00:25:07.002758-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-25T00:25:07.002763-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-25T00:25:07.002769-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-25T00:25:07.002788-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-25T00:25:07.002793-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-25T00:25:07.002799-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-25T00:25:07.002804-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-25T00:25:07.002809-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-25T00:25:07.002814-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-25T00:25:07.002818-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-25T00:25:07.002822-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-25T00:25:07.002827-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-25T00:25:07.003759-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-25T00:25:07.003765-05:00","level":"INFO","msg":"Begin Simulation (1 cycles)"}
+{"time":"2024-02-25T00:25:07.003771-05:00","level":"INFO","msg":"(Cycle 1 of 1) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-25T00:25:07.003777-05:00","level":"INFO","msg":"(Cycle 1 of 1) Assign New Exception States"}
+{"time":"2024-02-25T00:25:57.649646-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-02-25T00:25:57.64992-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-02-25T00:25:57.649989-05:00","level":"INFO","msg":"{QubzCount:1 InternalRandomizer:1 EventInterval:0 EventCycleCount:1 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./exceptions.dat OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-02-25T00:25:57.65004-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-02-25T00:25:57.650076-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-02-25T00:25:57.650124-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-02-25T00:25:57.650561-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-02-25T00:25:57.650601-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-02-25T00:25:57.650646-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-02-25T00:25:57.652747-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-02-25T00:25:57.652788-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-02-25T00:25:57.652834-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-02-25T00:25:57.652958-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-02-25T00:25:57.652994-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-02-25T00:25:57.653047-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-02-25T00:25:57.722665-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-02-25T00:25:57.722699-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-02-25T00:25:57.722712-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-02-25T00:25:57.722775-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-02-25T00:25:57.722783-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-02-25T00:25:57.722791-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-02-25T00:25:57.722832-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-02-25T00:25:57.722838-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-02-25T00:25:57.722847-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-02-25T00:25:57.722876-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-02-25T00:25:57.722882-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-02-25T00:25:57.722888-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-02-25T00:25:57.723248-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-02-25T00:25:57.723254-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./exceptions.dat ..."}
+{"time":"2024-02-25T00:25:57.723265-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-02-25T00:25:57.723369-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-02-25T00:25:57.723375-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-02-25T00:25:57.723389-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-02-25T00:25:57.723395-05:00","level":"INFO","msg":"Mapping first 1 QubzIds into Qubz Matrix ..."}
+{"time":"2024-02-25T00:25:57.7234-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 1 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-02-25T00:25:57.723405-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-02-25T00:25:57.72341-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-25T00:25:57.723415-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-02-25T00:25:57.72342-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-02-25T00:25:57.723424-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-02-25T00:25:57.723439-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-02-25T00:25:57.723444-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-02-25T00:25:57.723449-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-02-25T00:25:57.723453-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-02-25T00:25:57.723458-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-02-25T00:25:57.723462-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-02-25T00:25:57.723467-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-02-25T00:25:57.723472-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-02-25T00:25:57.723476-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-02-25T00:25:57.724451-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-02-25T00:25:57.724456-05:00","level":"INFO","msg":"Begin Simulation (1 cycles)"}
+{"time":"2024-02-25T00:25:57.724462-05:00","level":"INFO","msg":"(Cycle 1 of 1) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-02-25T00:25:57.724467-05:00","level":"INFO","msg":"(Cycle 1 of 1) Assign New Exception States"}
+{"time":"2024-02-25T00:25:57.724489-05:00","level":"INFO","msg":"(Cycle 1 of 1) Calculate New Sensor State"}
+{"time":"2024-02-25T00:25:57.724494-05:00","level":"INFO","msg":"Calculating New Sensor State Values ..."}
+{"time":"2024-02-25T00:25:57.725443-05:00","level":"INFO","msg":"Cycle Complete ... Ready for Event Transmission"}
+{"time":"2024-02-25T00:25:57.725448-05:00","level":"INFO","msg":"(Cycle 1 of 1) Transmitting events to output channel"}
+{"time":"2024-02-25T00:25:57.725453-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-02-25T00:25:57.765492-05:00","level":"INFO","msg":"(Cycle 1 of 1) Complete!"}
+{"time":"2024-02-25T00:25:57.765518-05:00","level":"INFO","msg":"1 cycles Complete ... Shutting Down"}
+{"time":"2024-02-25T00:25:57.765525-05:00","level":"INFO","msg":"Simulation Complete"}

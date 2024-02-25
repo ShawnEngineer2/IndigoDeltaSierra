@@ -8,7 +8,7 @@ import (
 	"log/slog"
 )
 
-func fileLoader(config *datamodels.Config, locationsDS *[]datamodels.Location, routesDS *[]datamodels.Route, classOfServiceDS *[]datamodels.ClassOfService, qubzNameDS *[]datamodels.Qubz, sensorTypeDS *[]datamodels.SensorType, shipmentTypeDS *[]datamodels.ShipmentType, transportModeDS *[]datamodels.TransportMode, sensorRangeDS *[]datamodels.SensorRange, consoleLogger *slog.Logger, fileLogger *slog.Logger) error {
+func fileLoader(config *datamodels.Config, locationsDS *[]datamodels.Location, routesDS *[]datamodels.Route, classOfServiceDS *[]datamodels.ClassOfService, qubzNameDS *[]datamodels.Qubz, sensorTypeDS *[]datamodels.SensorType, shipmentTypeDS *[]datamodels.ShipmentType, transportModeDS *[]datamodels.TransportMode, sensorRangeDS *[]datamodels.SensorRange, sensorExceptionDS *[]datamodels.QubzException, consoleLogger *slog.Logger, fileLogger *slog.Logger) error {
 	//This routine handles loading simulator data structs with information from data files
 
 	const config_FAILED_MSG string = "simulator data configuration failed"
@@ -66,6 +66,13 @@ func fileLoader(config *datamodels.Config, locationsDS *[]datamodels.Location, r
 
 	//Load the list of Sensor Range values
 	err = datautil.LoadDataFile(sensorRangeDS, "Sensor Range", config.SensorRangesFile, consoleLogger, fileLogger)
+
+	if err != nil {
+		return errors.New(config_FAILED_MSG)
+	}
+
+	//Load the list of Sensor Exceptions
+	err = datautil.LoadDataFile(sensorExceptionDS, "Sensor Exceptions", config.SensorExceptionsFile, consoleLogger, fileLogger)
 
 	if err != nil {
 		return errors.New(config_FAILED_MSG)

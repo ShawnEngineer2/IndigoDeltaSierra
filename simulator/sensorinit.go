@@ -13,7 +13,7 @@ const init_complete_MSG string = "Initialization Complete"
 
 //This set of functions initializes the sensors in the Qubz matrix
 
-func initializeQubzMatrixSensors(qubzMatrix *[]datamodels.QubzMatrix, sensorRangeDS *[]datamodels.SensorRange, consoleLogger *slog.Logger, fileLogger *slog.Logger) error {
+func initializeQubzMatrixSensors(qubzMatrix *[]datamodels.QubzMatrix, sensorRangeDS *[]datamodels.SensorRange, exceptionDS *[]datamodels.QubzException, consoleLogger *slog.Logger, fileLogger *slog.Logger) error {
 	//Walk through and set all sensors to initial nominal values - no sensors should start in
 	//an exception state
 
@@ -27,7 +27,7 @@ func initializeQubzMatrixSensors(qubzMatrix *[]datamodels.QubzMatrix, sensorRang
 	for i, x := range *qubzMatrix {
 
 		//Create a new sensor state of nominal values
-		sensorState, err := CreateSensorState(x, sensorRangeDS, consoleLogger, fileLogger)
+		sensorState, err := CreateSensorState(x, sensorRangeDS, exceptionDS, consoleLogger, fileLogger)
 
 		if err != nil {
 			return err

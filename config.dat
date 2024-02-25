@@ -1,8 +1,8 @@
 {
-    "qubzCount":30,
+    "qubzCount":1,
     "useInternalRandomizer":1,
     "eventInterval":0,
-    "eventCycleCount":20,
+    "eventCycleCount":1,
     "emailAddress":"shawn.engineer2@gmail.com",
     "outputChannel":"segmentio",
     "eventOutputLocation":"/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz",
@@ -16,5 +16,6 @@
     "sensorTypesFile":"./sensor_types.dat",
     "shipmentTypesFile":"./shipment_types.dat",
     "transportModesFile":"./transportmodes.dat",
-    "sensorRangesFile":"./sensor_ranges.dat"
+    "sensorRangesFile":"./sensor_ranges.dat",
+    "sensorExceptionsFile":"./exceptions.dat"
 }

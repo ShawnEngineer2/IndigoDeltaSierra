@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"indigodeltasierra/appconstants"
 	"indigodeltasierra/simulator"
+	"indigodeltasierra/testutil"
 	"os"
 )
 
@@ -29,23 +30,29 @@ func RunInteractive() {
 			simulator.StartSimulation()
 			pressEnterToContinue()
 
-		/* case '2':
-			//generateTestEvents()
+		case '2':
+			//startSimulation()
 			fmt.Println("")
-			testutil.GenerateTestEvents()
+			testutil.CreateTestException()
 			pressEnterToContinue()
 
-		case '3':
-			//Test random number generation
-			fmt.Println("")
-			testutil.TestRandomNumbers02()
-			pressEnterToContinue()
+			/* case '2':
+				//generateTestEvents()
+				fmt.Println("")
+				testutil.GenerateTestEvents()
+				pressEnterToContinue()
 
-		case '4':
-			//Test sensor value assignment
-			fmt.Println("")
-			testutil.TestSensorStateUpdate()
-			pressEnterToContinue() */
+			case '3':
+				//Test random number generation
+				fmt.Println("")
+				testutil.TestRandomNumbers02()
+				pressEnterToContinue()
+
+			case '4':
+				//Test sensor value assignment
+				fmt.Println("")
+				testutil.TestSensorStateUpdate()
+				pressEnterToContinue() */
 
 		case '9':
 			goByeBye()
