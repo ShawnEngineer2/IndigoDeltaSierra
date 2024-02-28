@@ -77,6 +77,8 @@ func generateRangedSensorValue(sensorInfo datamodels.SensorRange, exceptionDS *[
 		newValue = randomgen.RandomIFloat(sensorInfo.NominalMin, sensorInfo.NominalMax, sensorInfo.NumberScale)
 
 	} else {
+		//Painted myself into a corner - need to pull the exception definition, find out if the passed sensor data point
+		//is part of the exception, then either generate an exception value or a regular value accordingly
 		newValue, err = generateSensorExceptionValue(sensorInfo, exceptionDS, exceptionId, exceptionType, currentExceptionInterval)
 
 		if err != nil {
@@ -95,13 +97,16 @@ func generateBooleanSensorValue(sensorInfo datamodels.SensorRange, exceptionDS *
 	var err error = nil
 
 	if exceptionType == appconstants.SENSOR_EXCEPTION_TYPE_NONE {
+		//Since this is boolean, we simply return the sensor Nominal Min which represents the "happy state"
 		newValue = sensorInfo.NominalMin
-	} else {
-		newValue, err = generateSensorExceptionValue(sensorInfo, exceptionDS, exceptionId, exceptionType, currentExceptionInterval)
+		return newValue, nil
+	}
 
-		if err != nil {
-			return 0, err
-		}
+	//If we get here, we have to create a new sensor exception value
+	newValue, err = generateSensorExceptionValue(sensorInfo, exceptionDS, exceptionId, exceptionType, currentExceptionInterval)
+
+	if err != nil {
+		return 0, err
 	}
 
 	return newValue, nil
@@ -111,5 +116,18 @@ func generateSensorExceptionValue(sensorInfo datamodels.SensorRange, exceptionDS
 
 	//Generate a value for the passed exception based on the information provided.
 	//First, get the definition for the exception
+
+	// exceptionDef, exceptionDefErr := datautil.GetSingleException(exceptionDS, exceptionId)
+
+	// if exceptionDefErr != nil {
+	// 	return 0, exceptionDefErr
+	// }
+
+	//Try to locate the datapoint represented by the passed SensorRange struct in the exception definition. If it's there, update the
+	//the sensor value - otherwise return
+
+	//Generate a new value based on the type and value mod settings of the exception //TODO - make this work right at a later date. For now
+	//we're only doing continuous so don't accomodate type and just work off the value mod settings we'll be using
+
 	return 0, nil
 }

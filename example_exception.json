@@ -79,5 +79,13 @@
           "fixedModValue": 0
         }
       ]
+    },
+    {
+      "exceptionId": 4,
+      "exceptionDesc": "Qubz Unit Blackout",
+      "severityLevel": 1,
+      "exceptionType": 4,
+      "intermittencyInterval": 0,
+      "affectedSensors": []
     }
   ]

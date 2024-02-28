@@ -52,3 +52,22 @@ func GetRandomException(exceptionDS *[]datamodels.QubzException) datamodels.Qubz
 
 	return newException
 }
+
+func GetSingleException(exceptionDS *[]datamodels.QubzException, exceptionId int) (datamodels.QubzException, error) {
+	//This routine returns the exception in the passed list matching the passed exception Id
+
+	for _, x := range *exceptionDS {
+
+		//Compare the passed exception id to the exception id of the qubz exception
+		//and if match pass back to the caller
+		if x.ExceptionId == exceptionId {
+			return x, nil
+		}
+	}
+
+	//If you get this far, you didn't find anything - return an error
+	err := fmt.Errorf("cannot locate an exception defintion for exception id %d", exceptionId)
+	emptyException := datamodels.QubzException{}
+
+	return emptyException, err
+}
