@@ -24,7 +24,7 @@ func initializeQubzMatrixSensors(qubzMatrix *[]datamodels.QubzMatrix, sensorRang
 	for i, x := range *qubzMatrix {
 
 		//Create a new sensor state of nominal values
-		sensorState, err := createSensorState(x, sensorRangeDS, consoleLogger, fileLogger)
+		sensorState, err := createSensorState(x, sensorRangeDS, fileLogger)
 
 		if err != nil {
 			return err

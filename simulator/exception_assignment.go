@@ -70,7 +70,16 @@ func assignException(qubzMatrix *[]datamodels.QubzMatrix, newException datamodel
 	(*qubzMatrix)[matrixIndex].ExceptionSeverity = newException.SeverityLevel
 	(*qubzMatrix)[matrixIndex].ExceptionType = newException.ExceptionType
 	(*qubzMatrix)[matrixIndex].ExceptionIntervalBoundary = newException.IntermittencyInterval
-	(*qubzMatrix)[matrixIndex].CurrentExceptionInterval = 1
+
+	//Initialize Exception Interval based on the type of Exception
+	switch newException.ExceptionType {
+	case appconstants.SENSOR_EXCEPTION_TYPE_INTERMITTENT_CONTINUOUS:
+		(*qubzMatrix)[matrixIndex].CurrentExceptionInterval = 1
+	case appconstants.SENSOR_EXCEPTION_TYPE_INTERMITTENT_RANDOM:
+		(*qubzMatrix)[matrixIndex].CurrentExceptionInterval = 1
+	default:
+		(*qubzMatrix)[matrixIndex].CurrentExceptionInterval = 0
+	}
 
 }
 
