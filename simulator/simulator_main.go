@@ -131,7 +131,7 @@ func StartSimulation() {
 	//Configure initial sensor values in the Qubz Matrix
 	customlog.InfoAllChannels(consoleLogger, fileLogger, "Configuring Initial Sensor Values in Qubz Matrix ...", true)
 
-	initializeQubzMatrixSensors(&currentQubzMatrix, &sensorRangeDS, &sensorExceptionDS, consoleLogger, fileLogger)
+	initializeQubzMatrixSensors(&currentQubzMatrix, &sensorRangeDS, consoleLogger, fileLogger)
 
 	customlog.InfoAllChannels(consoleLogger, fileLogger, "Qubz Matrix Sensor Configuration Complete", true)
 
@@ -152,7 +152,10 @@ func StartSimulation() {
 		assignExceptions(&currentQubzMatrix, &sensorExceptionDS, consoleLogger, fileLogger)
 
 		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d of %d) Calculate New Sensor State", cycleNumber, configDS.EventCycleCount))
-		runSimulationCycle(&currentQubzMatrix, &sensorRangeDS, &sensorExceptionDS, consoleLogger, fileLogger)
+		updateQubzMatrixSensors(&currentQubzMatrix, &sensorRangeDS, &sensorExceptionDS, consoleLogger, fileLogger)
+		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d of %d) Sensor State Updated ... Ready for Transmission", cycleNumber, configDS.EventCycleCount))
+
+		//fmt.Println(currentQubzMatrix)
 
 		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d of %d) Transmitting events to output channel", cycleNumber, configDS.EventCycleCount))
 		err = eventemitter.TransmitEvents(&currentQubzMatrix, &priorQubzMatrix, &configDS, consoleLogger, fileLogger)

@@ -2,10 +2,10 @@ package datamodels
 
 // This struct holds data for a Qubz sensor exception
 type QubzSensorDataPointException struct {
-	SensorDataPointId   int    `json:"sensorDataPointId"`
-	SensorDataPointDesc string `json:"sensorDataPointDesc"`
-	ValueModType        int    `json:"valueModType"`
-	FixedModValue       int    `json:"fixedModValue"`
+	SensorDataPointId   int     `json:"sensorDataPointId"`
+	SensorDataPointDesc string  `json:"sensorDataPointDesc"`
+	ValueModType        int     `json:"valueModType"`
+	FixedModValue       float64 `json:"fixedModValue"`
 }
 
 // This struct represents a single Qubz exception made up of one or more sensor data exceptions

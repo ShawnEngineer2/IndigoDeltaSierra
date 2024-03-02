@@ -15,7 +15,7 @@ import (
 func assignExceptions(qubzMatrix *[]datamodels.QubzMatrix, exceptionDS *[]datamodels.QubzException, consoleLogger *slog.Logger, fileLogger *slog.Logger) {
 
 	//Create individual exception lists by Exception Severity
-	customlog.CalloutConsole(consoleLogger, "Divide Exceptions")
+	//customlog.CalloutConsole(consoleLogger, "Divide Exceptions")
 	sevCritical, sevHigh, sevLow, err := divideExceptionsBySeverity(exceptionDS, consoleLogger, fileLogger)
 
 	if err != nil {
@@ -23,26 +23,26 @@ func assignExceptions(qubzMatrix *[]datamodels.QubzMatrix, exceptionDS *[]datamo
 	}
 
 	//Prepare a distribution matrix that can be used for assigning exceptions to Qubz units
-	customlog.CalloutConsole(consoleLogger, "Get Distro Matrix")
+	//customlog.CalloutConsole(consoleLogger, "Get Distro Matrix")
 	distroMatrix := randomgen.CreateDistributionMatrix()
 
 	//Walk through the Qubz Matrix and assign random exceptions
 	for i, x := range *qubzMatrix {
 
 		//Check to see if an exception is to be assigned for the current Qubz unit
-		customlog.CalloutConsole(consoleLogger, "Get New Exception Severity Index")
+		//customlog.CalloutConsole(consoleLogger, "Get New Exception Severity Index")
 		randomIndex := randomgen.RandomInt(1, len(distroMatrix))
-		customlog.CalloutConsole(consoleLogger, fmt.Sprintf("Distro Matrix Len : %d | Severity Index: %d", len(distroMatrix), randomIndex))
+		//customlog.CalloutConsole(consoleLogger, fmt.Sprintf("Distro Matrix Len : %d | Severity Index: %d", len(distroMatrix), randomIndex))
 		newExceptionSeverity := distroMatrix[randomIndex]
 
 		if newExceptionSeverity != appconstants.SENSOR_EXCEPTION_SEVERITY_NONE {
 
-			customlog.CalloutConsole(consoleLogger, "Get New Exception")
+			//customlog.CalloutConsole(consoleLogger, "Get New Exception")
 			newException := getException(&sevCritical, &sevHigh, &sevLow, newExceptionSeverity)
 
 			//Compare the returned exception severity to what is currently assigned
 			//for the current Qubz unit and assign a new Exception as needed
-			customlog.CalloutConsole(consoleLogger, "Check Severity Level on Qubz Unit")
+			//customlog.CalloutConsole(consoleLogger, "Check Severity Level on Qubz Unit")
 
 			if x.ExceptionSeverity == appconstants.SENSOR_EXCEPTION_SEVERITY_NONE {
 				//Assign a new exception to this Qubz unit

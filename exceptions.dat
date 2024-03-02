@@ -43,7 +43,7 @@
           "fixedModValue": 1
         },
         {
-          "sensorDataPointId": 143,
+          "sensorDataPointId": 129,
           "sensorDataPointDesc": "Fire Suppression State",
           "valueModType": 6,
           "fixedModValue": 2

@@ -9,7 +9,7 @@ import (
 )
 
 func updateQubzMatrixSensors(qubzMatrix *[]datamodels.QubzMatrix, sensorRangeDS *[]datamodels.SensorRange, exceptionDS *[]datamodels.QubzException, consoleLogger *slog.Logger, fileLogger *slog.Logger) error {
-	//Walk through and update all sensors to new nominal values - exception values are set later
+	//Walk through and update all sensors to either nominal or exception values depending on the qubz Configuration
 
 	customlog.InfoConsole(consoleLogger, "Start Sensor Update ....", false)
 
@@ -21,7 +21,7 @@ func updateQubzMatrixSensors(qubzMatrix *[]datamodels.QubzMatrix, sensorRangeDS 
 	for i, x := range *qubzMatrix {
 
 		//Create a new sensor state of nominal values
-		sensorState, err := CreateSensorState(x, sensorRangeDS, exceptionDS, consoleLogger, fileLogger)
+		sensorState, err := updateSensorState(x, sensorRangeDS, exceptionDS, consoleLogger, fileLogger)
 
 		if err != nil {
 			return err

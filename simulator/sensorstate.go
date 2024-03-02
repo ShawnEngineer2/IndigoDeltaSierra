@@ -1,15 +1,18 @@
 package simulator
 
 import (
+	"fmt"
 	"indigodeltasierra/appconstants"
+	"indigodeltasierra/customlog"
 	"indigodeltasierra/datamodels"
+	"indigodeltasierra/datautil"
 	"indigodeltasierra/randomgen"
 	"log/slog"
 )
 
 //This package has routines to manage the creation and retrieval of new sensor states for qubz
 
-func CreateSensorState(qubzMatrix datamodels.QubzMatrix, sensorRangeDS *[]datamodels.SensorRange, exceptionDS *[]datamodels.QubzException, consoleLogger *slog.Logger, fileLogger *slog.Logger) (datamodels.QubzState, error) {
+func createSensorState(qubzMatrix datamodels.QubzMatrix, sensorRangeDS *[]datamodels.SensorRange, consoleLogger *slog.Logger, fileLogger *slog.Logger) (datamodels.QubzState, error) {
 
 	//This routine creates a new sensor state and returns it By Value to the caller
 
@@ -28,9 +31,9 @@ func CreateSensorState(qubzMatrix datamodels.QubzMatrix, sensorRangeDS *[]datamo
 	sensorState.ShipmentType = qubzMatrix.ShipmentType
 	sensorState.TransportMode = qubzMatrix.TransportMode
 
-	//Generate nominal values for sensors that are either ranged or boolean. Don't worry about Info or Calculated as
-	//these are set in individual sensor update routines.
-
+	//Generate nominal values for sensors that are either ranged or boolean. Don't worry about Info or Calculated and
+	//don't worry about exceptions. Those are set by other routines either in individual sensors or in other routines
+	//in this package
 	for i, x := range *sensorRangeDS {
 
 		//Fill in info
@@ -40,22 +43,10 @@ func CreateSensorState(qubzMatrix datamodels.QubzMatrix, sensorRangeDS *[]datamo
 		//Calculate the value based on the type of data point
 		switch x.DataPointTypeId {
 		case appconstants.DATA_POINT_TYPE_RANGED:
-			newValue, err := generateRangedSensorValue(x, exceptionDS, qubzMatrix.ExceptionAssignment, qubzMatrix.ExceptionType, qubzMatrix.CurrentExceptionInterval)
-
-			if err != nil {
-				return sensorState, err
-			}
-
-			sensorState.SensorDataPoints[i].DataPointValue = newValue
+			sensorState.SensorDataPoints[i].DataPointValue = generateRangedSensorValue(x.NominalMin, x.NominalMax, x.NumberScale, consoleLogger, fileLogger)
 
 		case appconstants.DATA_POINT_TYPE_BOOLEAN:
-			newValue, err := generateBooleanSensorValue(x, exceptionDS, qubzMatrix.ExceptionAssignment, qubzMatrix.ExceptionType, qubzMatrix.CurrentExceptionInterval)
-
-			if err != nil {
-				return sensorState, err
-			}
-
-			sensorState.SensorDataPoints[i].DataPointValue = newValue
+			sensorState.SensorDataPoints[i].DataPointValue = x.NominalMin
 
 		default:
 			sensorState.SensorDataPoints[i].DataPointValue = 0.00
@@ -66,68 +57,199 @@ func CreateSensorState(qubzMatrix datamodels.QubzMatrix, sensorRangeDS *[]datamo
 	return sensorState, nil
 }
 
-func generateRangedSensorValue(sensorInfo datamodels.SensorRange, exceptionDS *[]datamodels.QubzException, exceptionId int, exceptionType int, currentExceptionInterval int) (float64, error) {
+func generateRangedSensorValue(minValue float64, maxValue float64, numScale int, consoleLogger *slog.Logger, fileLogger *slog.Logger) float64 {
 
-	//This routine generates a new ranged value for the passed sensor, accomodating both nominal and exception states
-	//as determined by the parameters passed into this routine
-	var newValue float64 = 0
-	var err error = nil
+	//This routine generates a random value with the range specified. It then ensures the returned
+	//values are within the requested range as a safety precaution
+	newValue := randomgen.RandomIFloat(minValue, maxValue, numScale)
 
-	if exceptionType == appconstants.SENSOR_EXCEPTION_TYPE_NONE {
-		newValue = randomgen.RandomIFloat(sensorInfo.NominalMin, sensorInfo.NominalMax, sensorInfo.NumberScale)
+	if newValue < minValue {
+		newValue = minValue
+		//customlog.InfoAllChannels(consoleLogger, fileLogger, "Trim Requested Range up to requested Min Value", false)
 
-	} else {
-		//Painted myself into a corner - need to pull the exception definition, find out if the passed sensor data point
-		//is part of the exception, then either generate an exception value or a regular value accordingly
-		newValue, err = generateSensorExceptionValue(sensorInfo, exceptionDS, exceptionId, exceptionType, currentExceptionInterval)
+	} else if newValue > maxValue {
+		newValue = maxValue
+		//customlog.InfoAllChannels(consoleLogger, fileLogger, "Trim Requested Range up to requested Max Value", false)
+
+	}
+
+	//customlog.CalloutConsole(consoleLogger, fmt.Sprintf("New Range Value is %f", newValue))
+
+	return newValue
+}
+
+func generateBooleanSensorValue(consoleLogger *slog.Logger, fileLogger *slog.Logger) float64 {
+
+	//This routine generates a random boolean value. It then ensures the returned
+	//values are within the requested range as a safety precaution
+	newValue := randomgen.RandomBool()
+
+	if newValue < 0 {
+		newValue = 0
+		customlog.InfoAllChannels(consoleLogger, fileLogger, "Boolean Trimmed up to 0 (False)", true)
+
+	} else if newValue > 1 {
+		newValue = 1
+		customlog.InfoAllChannels(consoleLogger, fileLogger, "Boolean Trimmed down to 1 (True)", true)
+
+	}
+
+	return float64(newValue)
+}
+
+func updateSensorState(qubzMatrix datamodels.QubzMatrix, sensorRangeDS *[]datamodels.SensorRange, exceptionDS *[]datamodels.QubzException, consoleLogger *slog.Logger, fileLogger *slog.Logger) (datamodels.QubzState, error) {
+
+	//This routine creates a new sensor state and returns it By Value to the caller. It walks through each sensor in the
+	//passed Qubz unit and generates values based on the configuration of the Qubz unit
+
+	//customlog.CalloutConsole(consoleLogger, "In Update Sensor Routine")
+
+	sensorState := datamodels.QubzState{}
+	sensorState.SensorDataPoints = make([]datamodels.QubzSensorDataPoint, len(*sensorRangeDS))
+
+	//Update header information for use by the Qubz state (probably got some unnecessarily redundant data here - come back and check in next version)
+	sensorState.ExceptionAssignment = qubzMatrix.ExceptionAssignment
+	sensorState.ExceptionSeverity = qubzMatrix.ExceptionSeverity
+	sensorState.ExceptionType = qubzMatrix.ExceptionType
+	sensorState.ExceptionIntervalBoundary = qubzMatrix.ExceptionIntervalBoundary
+	sensorState.CurrentExceptionInterval = qubzMatrix.CurrentExceptionInterval
+	sensorState.QubzID = qubzMatrix.QubzID
+	sensorState.QubzName = qubzMatrix.QubzName
+	sensorState.RouteAssignment = qubzMatrix.RouteAssignment
+	sensorState.ShipmentType = qubzMatrix.ShipmentType
+	sensorState.TransportMode = qubzMatrix.TransportMode
+
+	//Testing only
+	//sensorState.ExceptionType = appconstants.SENSOR_EXCEPTION_TYPE_CONTINUOUS
+	//sensorState.ExceptionAssignment = 3
+
+	//If the Qubz unit has an exception state, get details for the excepton assigned to it
+	var qubzException datamodels.QubzException
+	var err error
+
+	qubzException = datamodels.QubzException{}
+
+	if sensorState.ExceptionType != appconstants.SENSOR_EXCEPTION_TYPE_NONE {
+		qubzException, err = datautil.GetSingleException(exceptionDS, sensorState.ExceptionAssignment)
 
 		if err != nil {
-			return 0, err
+			customlog.ErrorAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Error Retrieving Exception for Qubz Unit %s : Exception Id %d : %s", sensorState.QubzName, sensorState.ExceptionAssignment, err.Error()))
+			return sensorState, fmt.Errorf("qubz Unit %s not processed due to exception retrieval error", sensorState.QubzName)
 		}
 	}
 
-	return newValue, nil
-}
+	//fmt.Println(qubzException)
 
-func generateBooleanSensorValue(sensorInfo datamodels.SensorRange, exceptionDS *[]datamodels.QubzException, exceptionId int, exceptionType int, currentExceptionInterval int) (float64, error) {
+	//Generate new values for each sensor
+	for i, x := range *sensorRangeDS {
 
-	//This routine generates a new boolean value for the passed sensor, accomodating both nominal and exception states
-	//as determined by the parameters passed into this routine
-	var newValue float64 = 0
-	var err error = nil
+		//Fill in info
+		sensorState.SensorDataPoints[i].DataPointTypeId = x.DataPointTypeId
+		sensorState.SensorDataPoints[i].SensorDataPointId = x.SensorDataPointId
 
-	if exceptionType == appconstants.SENSOR_EXCEPTION_TYPE_NONE {
-		//Since this is boolean, we simply return the sensor Nominal Min which represents the "happy state"
-		newValue = sensorInfo.NominalMin
-		return newValue, nil
+		//If this Qubz unit has an exception state, send it to a different routine for handling - otherwise set new value here
+		if sensorState.ExceptionType == appconstants.SENSOR_EXCEPTION_TYPE_NONE {
+
+			//customlog.CalloutConsole(consoleLogger, "In Sensor Update Block")
+
+			//Calculate the value based on the type of data point - note: No DEFAULT block on this one so that fixed values set in sensor init will persist from run to run
+			switch x.DataPointTypeId {
+			case appconstants.DATA_POINT_TYPE_RANGED:
+				//customlog.CalloutConsole(consoleLogger, "In Range Value Block")
+				sensorState.SensorDataPoints[i].DataPointValue = generateRangedSensorValue(x.NominalMin, x.NominalMax, x.NumberScale, consoleLogger, fileLogger)
+
+			case appconstants.DATA_POINT_TYPE_BOOLEAN:
+				sensorState.SensorDataPoints[i].DataPointValue = x.NominalMin
+
+			}
+		} else {
+			//Acquire the correct value for this sensor data point
+			newValue, newIntervalValue := handleSensorExceptionState(x, qubzException, sensorState.CurrentExceptionInterval, consoleLogger, fileLogger)
+
+			//Assign the value to the data point
+			sensorState.SensorDataPoints[i].DataPointValue = newValue
+			sensorState.CurrentExceptionInterval = newIntervalValue
+
+		}
+
+		//fmt.Println(sensorState.SensorDataPoints[i].DataPointValue)
+
 	}
 
-	//If we get here, we have to create a new sensor exception value
-	newValue, err = generateSensorExceptionValue(sensorInfo, exceptionDS, exceptionId, exceptionType, currentExceptionInterval)
-
-	if err != nil {
-		return 0, err
-	}
-
-	return newValue, nil
+	return sensorState, nil
 }
 
-func generateSensorExceptionValue(sensorInfo datamodels.SensorRange, exceptionDS *[]datamodels.QubzException, exceptionId int, exceptionType int, currentExceptionInterval int) (float64, error) {
+func handleSensorExceptionState(sensorRange datamodels.SensorRange, exceptionDef datamodels.QubzException, currentExceptionInterval int, consoleLogger *slog.Logger, fileLogger *slog.Logger) (float64, int) {
 
-	//Generate a value for the passed exception based on the information provided.
-	//First, get the definition for the exception
+	//Walk through the sensor data points in the Exception definition and if one of them matches the passed sensor data point id
+	//then set a value based on Exception Type
 
-	// exceptionDef, exceptionDefErr := datautil.GetSingleException(exceptionDS, exceptionId)
+	var newValue float64
+	var newExceptionInterval int
 
-	// if exceptionDefErr != nil {
-	// 	return 0, exceptionDefErr
-	// }
+	for _, x := range exceptionDef.AffectedSensors {
 
-	//Try to locate the datapoint represented by the passed SensorRange struct in the exception definition. If it's there, update the
-	//the sensor value - otherwise return
+		if x.SensorDataPointId == sensorRange.SensorDataPointId {
 
-	//Generate a new value based on the type and value mod settings of the exception //TODO - make this work right at a later date. For now
-	//we're only doing continuous so don't accomodate type and just work off the value mod settings we'll be using
+			//Set an exception value based on the value mod type of the Sensor Exception
+			switch x.ValueModType {
+			case appconstants.SENSOR_EXCEPTION_VALUE_MOD_FIXED:
+				newValue = x.FixedModValue
+				newExceptionInterval = currentExceptionInterval
 
-	return 0, nil
+			case appconstants.SENSOR_EXCEPTION_VALUE_MOD_HARD_HIGH:
+				newValue = sensorRange.ExceptionMax
+				newExceptionInterval = currentExceptionInterval
+
+			case appconstants.SENSOR_EXCEPTION_VALUE_MOD_HARD_LOW:
+				newValue = sensorRange.ExceptionMin
+				newExceptionInterval = currentExceptionInterval
+
+			case appconstants.SENSOR_EXCEPTION_VALUE_MOD_HIGH:
+				//Determine the appropriate minimum value and then calculate
+				var newMin float64
+
+				if sensorRange.ExceptionMin > sensorRange.NominalMax {
+					newMin = sensorRange.ExceptionMin
+				} else {
+					newMin = sensorRange.NominalMax
+				}
+
+				newValue = randomgen.RandomIFloat(newMin, sensorRange.ExceptionMax, sensorRange.NumberScale)
+				newExceptionInterval = currentExceptionInterval
+
+			case appconstants.SENSOR_EXCEPTION_VALUE_MOD_LOW:
+				//Determine the appropriate Maximum value and then calculate
+				var newMax float64
+
+				if sensorRange.ExceptionMax < sensorRange.NominalMin {
+					newMax = sensorRange.ExceptionMax
+				} else {
+					newMax = sensorRange.NominalMin
+				}
+
+				newValue = randomgen.RandomIFloat(sensorRange.ExceptionMin, newMax, sensorRange.NumberScale)
+				newExceptionInterval = currentExceptionInterval
+
+			}
+
+			//Return the new values
+			return newValue, newExceptionInterval
+		}
+	}
+
+	//If you get this far then there was no match on the exception data point - just calculate as a normal sensor reading
+	newExceptionInterval = currentExceptionInterval //Just set here since this isn't relevant
+
+	switch sensorRange.DataPointTypeId {
+	case appconstants.DATA_POINT_TYPE_RANGED:
+		//customlog.CalloutConsole(consoleLogger, "In Range Value Block")
+		newValue = generateRangedSensorValue(sensorRange.NominalMin, sensorRange.NominalMax, sensorRange.NumberScale, consoleLogger, fileLogger)
+
+	case appconstants.DATA_POINT_TYPE_BOOLEAN:
+		newValue = sensorRange.NominalMin
+
+	}
+
+	return newValue, newExceptionInterval
 }
