@@ -50,9 +50,10 @@ func TestSensorStateUpdate() {
 	qubzStateDS.SensorDataPoints = make([]datamodels.QubzSensorDataPoint, len(sensorRangeDS))
 
 	qubzStateDS.ExceptionAssignment = -1
-	qubzStateDS.ExceptionIntermittent = false
-	qubzStateDS.ExceptionInterval = 0
 	qubzStateDS.ExceptionSeverity = 0
+	qubzStateDS.ExceptionType = 0
+	qubzStateDS.ExceptionIntervalBoundary = 0
+	qubzStateDS.CurrentExceptionInterval = 0
 	qubzStateDS.QubzID = 1
 	qubzStateDS.QubzName = "ParseyMcParseFace"
 	qubzStateDS.RouteAssignment = 1

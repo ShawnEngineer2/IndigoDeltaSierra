@@ -24,6 +24,7 @@ func StartSimulation() {
 	shipmentTypeDS := make([]datamodels.ShipmentType, 1)
 	transportModeDS := make([]datamodels.TransportMode, 1)
 	sensorRangeDS := make([]datamodels.SensorRange, 1)
+	sensorExceptionDS := make([]datamodels.QubzException, 1)
 
 	//Set up console logger
 	consoleLogger := slog.Default()
@@ -55,12 +56,14 @@ func StartSimulation() {
 	}()
 
 	//Load simulator configuration data
-	err = fileLoader(&configDS, &locationsDS, &routesDS, &classOfServiceDS, &qubzNameDS, &sensorTypeDS, &shipmentTypeDS, &transportModeDS, &sensorRangeDS, consoleLogger, fileLogger)
+	err = fileLoader(&configDS, &locationsDS, &routesDS, &classOfServiceDS, &qubzNameDS, &sensorTypeDS, &shipmentTypeDS, &transportModeDS, &sensorRangeDS, &sensorExceptionDS, consoleLogger, fileLogger)
 
 	if err != nil {
 		//Exit with Failure message
 		customlog.ErrorAllChannels(consoleLogger, fileLogger, appconstants.SIMULATION_FAILED_MSG)
 		return
+	} else {
+		fmt.Println(sensorExceptionDS)
 	}
 
 	//Determine the number of Qubz to simulate
@@ -145,8 +148,14 @@ func StartSimulation() {
 		copy(priorQubzMatrix, currentQubzMatrix)
 		datautil.AssignEventStatesAll(&priorQubzMatrix, appconstants.SENSOR_STATE_PREVIOUS)
 
+		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d of %d) Assign New Exception States", cycleNumber, configDS.EventCycleCount))
+		assignExceptions(&currentQubzMatrix, &sensorExceptionDS, consoleLogger, fileLogger)
+
 		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d of %d) Calculate New Sensor State", cycleNumber, configDS.EventCycleCount))
-		runSimulationCycle(&currentQubzMatrix, &sensorRangeDS, consoleLogger, fileLogger)
+		updateQubzMatrixSensors(&currentQubzMatrix, &sensorRangeDS, &sensorExceptionDS, consoleLogger, fileLogger)
+		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d of %d) Sensor State Updated ... Ready for Transmission", cycleNumber, configDS.EventCycleCount))
+
+		//fmt.Println(currentQubzMatrix)
 
 		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d of %d) Transmitting events to output channel", cycleNumber, configDS.EventCycleCount))
 		err = eventemitter.TransmitEvents(&currentQubzMatrix, &priorQubzMatrix, &configDS, consoleLogger, fileLogger)

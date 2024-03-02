@@ -1,0 +1,91 @@
+[
+    {
+      "exceptionId": 0,
+      "exceptionDesc": "Test Exception 1",
+      "severityLevel": 3,
+      "exceptionType": 1,
+      "intermittencyInterval": 0,
+      "affectedSensors": [
+        {
+          "sensorDataPointId": 143,
+          "sensorDataPointDesc": "Fire Suppression State",
+          "valueModType": 1,
+          "fixedModValue": 0
+        },
+        {
+          "sensorDataPointId": 143,
+          "sensorDataPointDesc": "Fire Suppression State",
+          "valueModType": 1,
+          "fixedModValue": 0
+        },
+        {
+          "sensorDataPointId": 143,
+          "sensorDataPointDesc": "Fire Suppression State",
+          "valueModType": 1,
+          "fixedModValue": 0
+        }
+      ]
+    },
+    {
+      "exceptionId": 1,
+      "exceptionDesc": "Test Exception 2",
+      "severityLevel": 3,
+      "exceptionType": 1,
+      "intermittencyInterval": 0,
+      "affectedSensors": [
+        {
+          "sensorDataPointId": 143,
+          "sensorDataPointDesc": "Fire Suppression State",
+          "valueModType": 1,
+          "fixedModValue": 0
+        },
+        {
+          "sensorDataPointId": 143,
+          "sensorDataPointDesc": "Fire Suppression State",
+          "valueModType": 1,
+          "fixedModValue": 0
+        },
+        {
+          "sensorDataPointId": 143,
+          "sensorDataPointDesc": "Fire Suppression State",
+          "valueModType": 1,
+          "fixedModValue": 0
+        }
+      ]
+    },
+    {
+      "exceptionId": 2,
+      "exceptionDesc": "Test Exception 3",
+      "severityLevel": 3,
+      "exceptionType": 1,
+      "intermittencyInterval": 0,
+      "affectedSensors": [
+        {
+          "sensorDataPointId": 143,
+          "sensorDataPointDesc": "Fire Suppression State",
+          "valueModType": 1,
+          "fixedModValue": 0
+        },
+        {
+          "sensorDataPointId": 143,
+          "sensorDataPointDesc": "Fire Suppression State",
+          "valueModType": 1,
+          "fixedModValue": 0
+        },
+        {
+          "sensorDataPointId": 143,
+          "sensorDataPointDesc": "Fire Suppression State",
+          "valueModType": 1,
+          "fixedModValue": 0
+        }
+      ]
+    },
+    {
+      "exceptionId": 4,
+      "exceptionDesc": "Qubz Unit Blackout",
+      "severityLevel": 1,
+      "exceptionType": 4,
+      "intermittencyInterval": 0,
+      "affectedSensors": []
+    }
+  ]
