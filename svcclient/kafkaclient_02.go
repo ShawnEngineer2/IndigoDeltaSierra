@@ -48,3 +48,17 @@ func S_produceKafkaMessage(event *models.EventData, topic string, brokers string
 
 	return nil
 }
+
+func GetSkafkaConnection(topic string, brokers string, partitionID int) (*skafka.Conn, error) {
+	//This routine returns a Segmentio Kafka Connection to the identified broker, topic, and partition
+	conn, err := skafka.DialLeader(context.Background(), "tcp", brokers, topic, partitionID)
+
+	if err != nil {
+		return conn, err
+	}
+
+	//Set Write Time out for the connection
+	conn.SetWriteDeadline(time.Now().Add(10 * time.Second))
+
+	return conn, nil
+}

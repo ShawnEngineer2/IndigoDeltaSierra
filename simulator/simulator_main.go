@@ -7,7 +7,10 @@ import (
 	"indigodeltasierra/datamodels"
 	"indigodeltasierra/datautil"
 	"indigodeltasierra/eventemitter"
+	"indigodeltasierra/svcclient"
+	clientmodels "indigodeltasierra/svcclient/models"
 	"log/slog"
+	"strings"
 	"time"
 )
 
@@ -25,6 +28,7 @@ func StartSimulation() {
 	transportModeDS := make([]datamodels.TransportMode, 1)
 	sensorRangeDS := make([]datamodels.SensorRange, 1)
 	sensorExceptionDS := make([]datamodels.QubzException, 1)
+	skafkaConnections := make([]clientmodels.S_kafkaConnection, 13)
 
 	//Set up console logger
 	consoleLogger := slog.Default()
@@ -82,6 +86,16 @@ func StartSimulation() {
 	} else {
 		//Set number of Qubz to simulate to the number in the Config file
 		qubz_simulation_count = configDS.QubzCount
+	}
+
+	//Connect to the Kafka output channel
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Initializing Kafka Connections ...", true)
+
+	err = configureKafkaConnections(&skafkaConnections, configDS.QueueTopic, configDS.QueueEndpoint, consoleLogger, fileLogger)
+
+	if err != nil {
+		customlog.ErrorAllChannels(consoleLogger, fileLogger, err.Error())
+		return
 	}
 
 	//Allocate and initialize the Qubz Matrix
@@ -180,4 +194,105 @@ func StartSimulation() {
 	//Exit with a success message
 	customlog.InfoAllChannels(consoleLogger, fileLogger, appconstants.SIMULATION_COMPLETE_MSG, true)
 
+}
+
+func configureKafkaConnections(kafkaConnections *[]clientmodels.S_kafkaConnection, topicName string, brokerAddress string, consoleLogger *slog.Logger, fileLogger *slog.Logger) error {
+	//Configure the connections in the passed connection Struct reference. TODO: Make this less "hard-coded" in next release
+
+	var errsOccurred bool = false
+
+	for i := 0; i < 13; i++ {
+
+		//Set connection metadata
+		switch i {
+		case 0:
+			(*kafkaConnections)[i].Key = strings.ToLower(appconstants.SENSOR_TYPE_ALTIMETER)
+			(*kafkaConnections)[i].Partition = 0
+			(*kafkaConnections)[i].Topic = topicName
+
+		case 1:
+			(*kafkaConnections)[i].Key = strings.ToLower(appconstants.SENSOR_TYPE_BATTERY)
+			(*kafkaConnections)[i].Partition = 1
+			(*kafkaConnections)[i].Topic = topicName
+
+		case 2:
+			(*kafkaConnections)[i].Key = strings.ToLower(appconstants.SENSOR_TYPE_COMPUTE)
+			(*kafkaConnections)[i].Partition = 2
+			(*kafkaConnections)[i].Topic = topicName
+		case 3:
+			(*kafkaConnections)[i].Key = strings.ToLower(appconstants.SENSOR_TYPE_GEIGER)
+			(*kafkaConnections)[i].Partition = 3
+			(*kafkaConnections)[i].Topic = topicName
+		case 4:
+			(*kafkaConnections)[i].Key = strings.ToLower(appconstants.SENSOR_TYPE_GPS)
+			(*kafkaConnections)[i].Partition = 4
+			(*kafkaConnections)[i].Topic = topicName
+		case 5:
+			(*kafkaConnections)[i].Key = strings.ToLower(appconstants.SENSOR_TYPE_GYRO)
+			(*kafkaConnections)[i].Partition = 5
+			(*kafkaConnections)[i].Topic = topicName
+		case 6:
+			(*kafkaConnections)[i].Key = strings.ToLower(appconstants.SENSOR_TYPE_LOCK)
+			(*kafkaConnections)[i].Partition = 6
+			(*kafkaConnections)[i].Topic = topicName
+		case 7:
+			(*kafkaConnections)[i].Key = strings.ToLower(appconstants.SENSOR_TYPE_MOTION)
+			(*kafkaConnections)[i].Partition = 7
+			(*kafkaConnections)[i].Topic = topicName
+		case 8:
+			(*kafkaConnections)[i].Key = strings.ToLower(appconstants.SENSOR_TYPE_RADIO)
+			(*kafkaConnections)[i].Partition = 8
+			(*kafkaConnections)[i].Topic = topicName
+		case 9:
+			(*kafkaConnections)[i].Key = strings.ToLower(appconstants.SENSOR_TYPE_SEAL)
+			(*kafkaConnections)[i].Partition = 9
+			(*kafkaConnections)[i].Topic = topicName
+		case 10:
+			(*kafkaConnections)[i].Key = strings.ToLower(appconstants.SENSOR_TYPE_SPECTROMETER)
+			(*kafkaConnections)[i].Partition = 10
+			(*kafkaConnections)[i].Topic = topicName
+		case 11:
+			(*kafkaConnections)[i].Key = strings.ToLower(appconstants.SENSOR_TYPE_TEMPHUMIDITY)
+			(*kafkaConnections)[i].Partition = 11
+			(*kafkaConnections)[i].Topic = topicName
+		case 12:
+			(*kafkaConnections)[i].Key = strings.ToLower(appconstants.SENSOR_TYPE_FIRE)
+			(*kafkaConnections)[i].Partition = 12
+			(*kafkaConnections)[i].Topic = topicName
+
+		}
+
+		//Get the connection
+		customlog.InfoAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Configuring Kafka Connection for sensor \"%s\"", (*kafkaConnections)[i].Key), false)
+		err := getKafkaConnection(kafkaConnections, i, brokerAddress)
+
+		if err != nil {
+			customlog.ErrorAllChannels(consoleLogger, fileLogger, err.Error())
+			errsOccurred = true
+
+		} else {
+			customlog.InfoAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Connection configured - Connected to topic \"%s\" on partition %d", (*kafkaConnections)[i].Topic, (*kafkaConnections)[i].Partition), false)
+		}
+	}
+
+	if errsOccurred {
+		return fmt.Errorf("fatal error(s) occurred configuring Kafka connections")
+	} else {
+		return nil
+	}
+
+}
+
+func getKafkaConnection(kafkaConnections *[]clientmodels.S_kafkaConnection, connectionIndex int, brokerAddress string) error {
+
+	conn, err := svcclient.GetSkafkaConnection((*kafkaConnections)[connectionIndex].Topic, brokerAddress, (*kafkaConnections)[connectionIndex].Partition)
+
+	if err != nil {
+		//Error - return it back to the caller
+		return err
+	}
+
+	(*kafkaConnections)[connectionIndex].Connection = conn
+
+	return nil
 }
