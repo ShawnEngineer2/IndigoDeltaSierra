@@ -8,7 +8,7 @@ import (
 	"indigodeltasierra/datamodels"
 	"indigodeltasierra/sensors"
 	"indigodeltasierra/svcclient"
-	"indigodeltasierra/svcclient/models"
+	clientmodels "indigodeltasierra/svcclient/models"
 	"log/slog"
 	"strings"
 
@@ -17,7 +17,7 @@ import (
 	"indigodeltasierra/datautil"
 )
 
-func TransmitEvents(qubzMatrixCurrent *[]datamodels.QubzMatrix, qubzMatrixPrevious *[]datamodels.QubzMatrix, configDS *datamodels.Config, consoleLogger *slog.Logger, fileLogger *slog.Logger) error {
+func TransmitEvents(qubzMatrixCurrent *[]datamodels.QubzMatrix, qubzMatrixPrevious *[]datamodels.QubzMatrix, configDS *datamodels.Config, kafkaConnections *[]clientmodels.S_kafkaConnection, consoleLogger *slog.Logger, fileLogger *slog.Logger) error {
 	//This routine manages the transmission of events to the designated output channel
 
 	//Validate the output channel
@@ -50,40 +50,40 @@ func TransmitEvents(qubzMatrixCurrent *[]datamodels.QubzMatrix, qubzMatrixPrevio
 
 		//Generate and Emit Events
 		altimeterEvent := sensors.AltimeterGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
-		transmitEvent(altimeterEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_ALTIMETER, altimeterEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+		transmitEvent(altimeterEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_ALTIMETER, altimeterEvent.EventHeader.EventUUID, (*kafkaConnections)[0], consoleLogger, fileLogger)
 
 		batteryEvent := sensors.BatteryGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
-		transmitEvent(batteryEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_BATTERY, batteryEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+		transmitEvent(batteryEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_BATTERY, batteryEvent.EventHeader.EventUUID, (*kafkaConnections)[1], consoleLogger, fileLogger)
 
 		computeEvent := sensors.ComputeGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
-		transmitEvent(computeEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_COMPUTE, computeEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+		transmitEvent(computeEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_COMPUTE, computeEvent.EventHeader.EventUUID, (*kafkaConnections)[2], consoleLogger, fileLogger)
 
 		fireEvent := sensors.FireGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
-		transmitEvent(fireEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_FIRE, fireEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+		transmitEvent(fireEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_FIRE, fireEvent.EventHeader.EventUUID, (*kafkaConnections)[12], consoleLogger, fileLogger)
 
 		geigerEvent := sensors.GeigerGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
-		transmitEvent(geigerEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_GEIGER, geigerEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+		transmitEvent(geigerEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_GEIGER, geigerEvent.EventHeader.EventUUID, (*kafkaConnections)[3], consoleLogger, fileLogger)
 
 		gyroEvent := sensors.GyroGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
-		transmitEvent(gyroEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_GYRO, gyroEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+		transmitEvent(gyroEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_GYRO, gyroEvent.EventHeader.EventUUID, (*kafkaConnections)[5], consoleLogger, fileLogger)
 
 		lockEvent := sensors.LockGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
-		transmitEvent(lockEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_LOCK, lockEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+		transmitEvent(lockEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_LOCK, lockEvent.EventHeader.EventUUID, (*kafkaConnections)[6], consoleLogger, fileLogger)
 
 		qubzSealEvent := sensors.QubzSealGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
-		transmitEvent(qubzSealEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_SEAL, qubzSealEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+		transmitEvent(qubzSealEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_SEAL, qubzSealEvent.EventHeader.EventUUID, (*kafkaConnections)[9], consoleLogger, fileLogger)
 
 		radioEvent := sensors.RadioGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
-		transmitEvent(radioEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_RADIO, radioEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+		transmitEvent(radioEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_RADIO, radioEvent.EventHeader.EventUUID, (*kafkaConnections)[8], consoleLogger, fileLogger)
 
 		spectrometerEvent := sensors.SpectrometerGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
-		transmitEvent(spectrometerEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_SPECTROMETER, spectrometerEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+		transmitEvent(spectrometerEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_SPECTROMETER, spectrometerEvent.EventHeader.EventUUID, (*kafkaConnections)[10], consoleLogger, fileLogger)
 
 		tempBarometricEvent := sensors.TempBarometricGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
-		transmitEvent(tempBarometricEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_TEMPHUMIDITY, tempBarometricEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+		transmitEvent(tempBarometricEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_TEMPHUMIDITY, tempBarometricEvent.EventHeader.EventUUID, (*kafkaConnections)[11], consoleLogger, fileLogger)
 
 		motionEvent := sensors.MotionGetEvent(qubzMatrixCurrent, qubzMatrixPrevious, i, &eventHeader, consoleLogger, fileLogger)
-		transmitEvent(motionEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_MOTION, motionEvent.EventHeader.EventUUID, consoleLogger, fileLogger)
+		transmitEvent(motionEvent, configDS, eventHeader.QubzId, appconstants.SENSOR_TYPE_MOTION, motionEvent.EventHeader.EventUUID, (*kafkaConnections)[7], consoleLogger, fileLogger)
 
 	}
 
@@ -91,7 +91,7 @@ func TransmitEvents(qubzMatrixCurrent *[]datamodels.QubzMatrix, qubzMatrixPrevio
 
 }
 
-func transmitEvent(eventStruct any, configDS *datamodels.Config, qubzName string, sensorType string, eventUUID string, consoleLogger *slog.Logger, fileLogger *slog.Logger) {
+func transmitEvent(eventStruct any, configDS *datamodels.Config, qubzName string, sensorType string, eventUUID string, kafkaConnection clientmodels.S_kafkaConnection, consoleLogger *slog.Logger, fileLogger *slog.Logger) {
 
 	//Transmits the event to the appropriate output channel as indicated by Config
 	if strings.ToLower(configDS.OutputChannel) == "segmentio" {
@@ -103,24 +103,15 @@ func transmitEvent(eventStruct any, configDS *datamodels.Config, qubzName string
 			fmt.Println(err.Error())
 		}
 
-		//Use the passed Sensor Type string and the Sensor ID to determine the target partition
-		sensorID := datautil.GetSensorIDForSensorDesc(sensorType)
-		partitionID := sensorID - 1
-
-		if partitionID < 0 || partitionID > 12 {
-			customlog.ErrorAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Transmission Error : Could not identify target partition for Sensor Type %s. Data Not Transmitted for this sensor.", sensorType))
-			return
-		}
-
 		//Create an event structure
-		eventData := models.EventData{
+		eventData := clientmodels.EventData{
 			EventKey:        sensorType,
 			EventData:       string(jsonbytes),
-			TargetPartition: partitionID,
+			TargetPartition: kafkaConnection.Partition,
 		}
 
 		//Send the message
-		svcclient.S_produceKafkaMessage(&eventData, configDS.QueueTopic, configDS.QueueEndpoint)
+		svcclient.S_produceKafkaMessage(&eventData, kafkaConnection.Connection)
 
 	} else if strings.ToLower(configDS.OutputChannel) == "kafka" {
 

@@ -9,7 +9,7 @@ import (
 	skafka "github.com/segmentio/kafka-go"
 )
 
-func S_produceKafkaMessage(event *models.EventData, topic string, brokers string) error {
+func S_produceKafkaMessage(event *models.EventData, skafkaConnection *skafka.Conn) error {
 	//This function produces to the indicated Topic and Partition via the indicated Broker(s)
 
 	//Uses Segementio's Kafka-Go library to produce messages into a Redpanda topic
@@ -20,29 +20,12 @@ func S_produceKafkaMessage(event *models.EventData, topic string, brokers string
 		Value: []byte(event.EventData),
 	}
 
-	//Create new Kafka Connection
-	conn, err := skafka.DialLeader(context.Background(), "tcp", brokers, topic, event.TargetPartition)
-
-	if err != nil {
-		fmt.Println("failed to dial leader:")
-		fmt.Println(err.Error())
-	}
-
-	//Set Write Time out
-	conn.SetWriteDeadline(time.Now().Add(10 * time.Second))
-
 	//Write the message to the queue
-	_, err = conn.WriteMessages(eventMsg)
+	_, err := skafkaConnection.WriteMessages(eventMsg)
 
 	//Verify the write
 	if err != nil {
 		fmt.Println("failed to write messages:")
-		fmt.Println(err.Error())
-	}
-
-	//Close the Kafka connection
-	if err := conn.Close(); err != nil {
-		fmt.Println("failed to close writer:")
 		fmt.Println(err.Error())
 	}
 
@@ -58,7 +41,7 @@ func GetSkafkaConnection(topic string, brokers string, partitionID int) (*skafka
 	}
 
 	//Set Write Time out for the connection
-	conn.SetWriteDeadline(time.Now().Add(10 * time.Second))
+	conn.SetWriteDeadline(time.Now().Add(10 * time.Hour)) //Set ridiculous 10 HOUR timeout for the write window (ugh)
 
 	return conn, nil
 }

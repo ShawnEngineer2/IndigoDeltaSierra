@@ -1,8 +1,8 @@
 {
-    "qubzCount":10,
+    "qubzCount":1000,
     "useInternalRandomizer":1,
     "eventInterval":0,
-    "eventCycleCount":5,
+    "eventCycleCount":20,
     "emailAddress":"shawn.engineer2@gmail.com",
     "outputChannel":"segmentio",
     "eventOutputLocation":"/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz",

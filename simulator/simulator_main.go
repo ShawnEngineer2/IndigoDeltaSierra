@@ -172,7 +172,7 @@ func StartSimulation() {
 		//fmt.Println(currentQubzMatrix)
 
 		customlog.CalloutAllChannels(consoleLogger, fileLogger, fmt.Sprintf("(Cycle %d of %d) Transmitting events to output channel", cycleNumber, configDS.EventCycleCount))
-		err = eventemitter.TransmitEvents(&currentQubzMatrix, &priorQubzMatrix, &configDS, consoleLogger, fileLogger)
+		err = eventemitter.TransmitEvents(&currentQubzMatrix, &priorQubzMatrix, &configDS, &skafkaConnections, consoleLogger, fileLogger)
 
 		if err != nil {
 			customlog.ErrorAllChannels(consoleLogger, fileLogger, "Simulation Run Terminated!")
