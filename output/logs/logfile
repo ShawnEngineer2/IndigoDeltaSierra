@@ -7387,3 +7387,924 @@
 {"time":"2024-03-02T20:16:22.213362-05:00","level":"INFO","msg":"(Cycle 5 of 5) Complete!"}
 {"time":"2024-03-02T20:16:22.213381-05:00","level":"INFO","msg":"5 cycles Complete ... Shutting Down"}
 {"time":"2024-03-02T20:16:22.213388-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-03-02T20:26:46.320021-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-03-02T20:26:46.320403-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-03-02T20:26:46.320493-05:00","level":"INFO","msg":"{QubzCount:10 InternalRandomizer:1 EventInterval:0 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./exceptions.dat OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-03-02T20:26:46.320613-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-03-02T20:26:46.320672-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-03-02T20:26:46.32075-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-03-02T20:26:46.321291-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-03-02T20:26:46.32135-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-03-02T20:26:46.32142-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-03-02T20:26:46.323712-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-03-02T20:26:46.323789-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-03-02T20:26:46.323885-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-03-02T20:26:46.324126-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-03-02T20:26:46.324197-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-03-02T20:26:46.324287-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-03-02T20:26:46.392549-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-03-02T20:26:46.39258-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-03-02T20:26:46.392602-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-03-02T20:26:46.39267-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-03-02T20:26:46.392677-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-03-02T20:26:46.392686-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-03-02T20:26:46.392728-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-03-02T20:26:46.392734-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-03-02T20:26:46.392742-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-03-02T20:26:46.392769-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-03-02T20:26:46.392774-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-03-02T20:26:46.392782-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-03-02T20:26:46.393132-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-03-02T20:26:46.393138-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./exceptions.dat ..."}
+{"time":"2024-03-02T20:26:46.393147-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-03-02T20:26:46.393265-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-03-02T20:26:46.393271-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-03-02T20:26:46.393285-05:00","level":"INFO","msg":"Initializing Kafka Connections ..."}
+{"time":"2024-03-02T20:26:46.393291-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"altimeter\""}
+{"time":"2024-03-02T20:26:46.398181-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 0"}
+{"time":"2024-03-02T20:26:46.398198-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"battery\""}
+{"time":"2024-03-02T20:26:46.401076-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 1"}
+{"time":"2024-03-02T20:26:46.401092-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"compute\""}
+{"time":"2024-03-02T20:26:46.403318-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 2"}
+{"time":"2024-03-02T20:26:46.403328-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"geiger counter\""}
+{"time":"2024-03-02T20:26:46.404703-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 3"}
+{"time":"2024-03-02T20:26:46.404724-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"gps\""}
+{"time":"2024-03-02T20:26:46.406269-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 4"}
+{"time":"2024-03-02T20:26:46.406284-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"gyroscopic positioning\""}
+{"time":"2024-03-02T20:26:46.409153-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 5"}
+{"time":"2024-03-02T20:26:46.409162-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"lock state\""}
+{"time":"2024-03-02T20:26:46.41119-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 6"}
+{"time":"2024-03-02T20:26:46.411199-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"motion sensor\""}
+{"time":"2024-03-02T20:26:46.412965-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 7"}
+{"time":"2024-03-02T20:26:46.412974-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"radio\""}
+{"time":"2024-03-02T20:26:46.414732-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 8"}
+{"time":"2024-03-02T20:26:46.414744-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"door seal\""}
+{"time":"2024-03-02T20:26:46.416613-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 9"}
+{"time":"2024-03-02T20:26:46.416625-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"spectrometer\""}
+{"time":"2024-03-02T20:26:46.418663-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 10"}
+{"time":"2024-03-02T20:26:46.418672-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"temperature and barometric\""}
+{"time":"2024-03-02T20:26:46.420178-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 11"}
+{"time":"2024-03-02T20:26:46.420186-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"fire\""}
+{"time":"2024-03-02T20:26:46.42139-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 12"}
+{"time":"2024-03-02T20:26:46.421397-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-03-02T20:26:46.421408-05:00","level":"INFO","msg":"Mapping first 10 QubzIds into Qubz Matrix ..."}
+{"time":"2024-03-02T20:26:46.421416-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 10 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-03-02T20:26:46.421421-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-03-02T20:26:46.421426-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-03-02T20:26:46.421431-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-03-02T20:26:46.421436-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-03-02T20:26:46.42144-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-03-02T20:26:46.421445-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-03-02T20:26:46.421451-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-03-02T20:26:46.421456-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-03-02T20:26:46.421461-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-03-02T20:26:46.421465-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-03-02T20:26:46.421469-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-03-02T20:26:46.421473-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-03-02T20:26:46.421478-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-03-02T20:26:46.421482-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-03-02T20:26:46.421587-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.4216-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.422524-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.422591-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.423442-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.423456-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.424368-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.424409-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.424441-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.425268-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.425284-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.425344-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.425356-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.427084-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.427127-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.428043-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.42887-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.429739-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.429754-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.429821-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.430546-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-03-02T20:26:46.430554-05:00","level":"INFO","msg":"Begin Simulation (5 cycles)"}
+{"time":"2024-03-02T20:26:46.430559-05:00","level":"INFO","msg":"(Cycle 1 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-03-02T20:26:46.430566-05:00","level":"INFO","msg":"(Cycle 1 of 5) Assign New Exception States"}
+{"time":"2024-03-02T20:26:46.43065-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit MorticianSlashingGlory : Exception Local Wi-Fi Down : Severity 2"}
+{"time":"2024-03-02T20:26:46.43069-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit DimeEngravingDelegate : Exception Radio Signal Weak : Severity 3"}
+{"time":"2024-03-02T20:26:46.430696-05:00","level":"INFO","msg":"(Cycle 1 of 5) Calculate New Sensor State"}
+{"time":"2024-03-02T20:26:46.430773-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.430795-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.431727-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.431846-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.432614-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.432685-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.432752-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.433511-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.433633-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.434379-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.434449-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.435244-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.43526-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.435289-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.43531-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.436156-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.436231-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.436251-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.437138-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.437159-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.437219-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.438073-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.438118-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.438139-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.439084-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.439825-05:00","level":"INFO","msg":"(Cycle 1 of 5) Sensor State Updated ... Ready for Transmission"}
+{"time":"2024-03-02T20:26:46.439833-05:00","level":"INFO","msg":"(Cycle 1 of 5) Transmitting events to output channel"}
+{"time":"2024-03-02T20:26:46.439839-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-03-02T20:26:46.636346-05:00","level":"INFO","msg":"(Cycle 1 of 5) Complete!"}
+{"time":"2024-03-02T20:26:46.636366-05:00","level":"INFO","msg":"(Cycle 2 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-03-02T20:26:46.636375-05:00","level":"INFO","msg":"(Cycle 2 of 5) Assign New Exception States"}
+{"time":"2024-03-02T20:26:46.636397-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit DazzlingUnmatchedBacklands : Exception Radio Signal Weak : Severity 3"}
+{"time":"2024-03-02T20:26:46.636434-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit UnwieldyAstronomyProfusely : Exception Radio Signal Weak : Severity 3"}
+{"time":"2024-03-02T20:26:46.636462-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit MomYearningSpotting : Exception Radio Signal Weak : Severity 3"}
+{"time":"2024-03-02T20:26:46.636478-05:00","level":"INFO","msg":"Exception generated but not assigned to Qubz Unit MorticianSlashingGlory : Exception Severity was 2 : Qubz Unit Existing Exception Severity 2"}
+{"time":"2024-03-02T20:26:46.636502-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit ReorderSlumMarbled : Exception Radio Signal Weak : Severity 3"}
+{"time":"2024-03-02T20:26:46.636517-05:00","level":"INFO","msg":"(Cycle 2 of 5) Calculate New Sensor State"}
+{"time":"2024-03-02T20:26:46.637487-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.637502-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.637514-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.637545-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.63757-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.637586-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.638371-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.638393-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.639297-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.639451-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.640192-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.640206-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.640284-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.641042-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.641054-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.641115-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.641917-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.641929-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.641942-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.642771-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.642784-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.64283-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.642902-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.643772-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.644635-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.644708-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.645479-05:00","level":"INFO","msg":"(Cycle 2 of 5) Sensor State Updated ... Ready for Transmission"}
+{"time":"2024-03-02T20:26:46.645487-05:00","level":"INFO","msg":"(Cycle 2 of 5) Transmitting events to output channel"}
+{"time":"2024-03-02T20:26:46.645494-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-03-02T20:26:46.805431-05:00","level":"INFO","msg":"(Cycle 2 of 5) Complete!"}
+{"time":"2024-03-02T20:26:46.805451-05:00","level":"INFO","msg":"(Cycle 3 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-03-02T20:26:46.805459-05:00","level":"INFO","msg":"(Cycle 3 of 5) Assign New Exception States"}
+{"time":"2024-03-02T20:26:46.805571-05:00","level":"INFO","msg":"(Cycle 3 of 5) Calculate New Sensor State"}
+{"time":"2024-03-02T20:26:46.805674-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.80573-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.805741-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.806578-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.80659-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.807374-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.807386-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.807396-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.808218-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.808232-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.809077-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.809122-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.809162-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.810112-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.810133-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.810959-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.810974-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.811835-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.812657-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.812712-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.812732-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.812787-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.81355-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.813619-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.814429-05:00","level":"INFO","msg":"(Cycle 3 of 5) Sensor State Updated ... Ready for Transmission"}
+{"time":"2024-03-02T20:26:46.814441-05:00","level":"INFO","msg":"(Cycle 3 of 5) Transmitting events to output channel"}
+{"time":"2024-03-02T20:26:46.814448-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-03-02T20:26:46.972283-05:00","level":"INFO","msg":"(Cycle 3 of 5) Complete!"}
+{"time":"2024-03-02T20:26:46.972303-05:00","level":"INFO","msg":"(Cycle 4 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-03-02T20:26:46.972313-05:00","level":"INFO","msg":"(Cycle 4 of 5) Assign New Exception States"}
+{"time":"2024-03-02T20:26:46.972446-05:00","level":"INFO","msg":"Exception generated but not assigned to Qubz Unit MorticianSlashingGlory : Exception Severity was 2 : Qubz Unit Existing Exception Severity 2"}
+{"time":"2024-03-02T20:26:46.972495-05:00","level":"INFO","msg":"Exception generated but not assigned to Qubz Unit DimeEngravingDelegate : Exception Severity was 3 : Qubz Unit Existing Exception Severity 3"}
+{"time":"2024-03-02T20:26:46.972523-05:00","level":"INFO","msg":"(Cycle 4 of 5) Calculate New Sensor State"}
+{"time":"2024-03-02T20:26:46.972706-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.972768-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.972789-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.972836-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.973558-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.973569-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.973584-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.973647-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.974413-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.974426-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.974482-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.97525-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.975263-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.976074-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.976093-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.976137-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.976157-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.976964-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.976993-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.977004-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.977058-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.977945-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.977964-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.978875-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.97896-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.978984-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.979034-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.979861-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.97988-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.979972-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.980819-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.980847-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:46.981578-05:00","level":"INFO","msg":"(Cycle 4 of 5) Sensor State Updated ... Ready for Transmission"}
+{"time":"2024-03-02T20:26:46.981584-05:00","level":"INFO","msg":"(Cycle 4 of 5) Transmitting events to output channel"}
+{"time":"2024-03-02T20:26:46.98159-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-03-02T20:26:47.153808-05:00","level":"INFO","msg":"(Cycle 4 of 5) Complete!"}
+{"time":"2024-03-02T20:26:47.153825-05:00","level":"INFO","msg":"(Cycle 5 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-03-02T20:26:47.153833-05:00","level":"INFO","msg":"(Cycle 5 of 5) Assign New Exception States"}
+{"time":"2024-03-02T20:26:47.153914-05:00","level":"INFO","msg":"Exception generated but not assigned to Qubz Unit MorticianSlashingGlory : Exception Severity was 2 : Qubz Unit Existing Exception Severity 2"}
+{"time":"2024-03-02T20:26:47.153948-05:00","level":"INFO","msg":"(Cycle 5 of 5) Calculate New Sensor State"}
+{"time":"2024-03-02T20:26:47.154056-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.154089-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.154112-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.155081-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.155132-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.155152-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.156782-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.156846-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.157636-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.157673-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.158466-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.158577-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.159282-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.159301-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.159414-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.160305-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.160383-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.160395-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.161204-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.161216-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.16126-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.162154-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.162211-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.162225-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.162284-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.162294-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:26:47.162985-05:00","level":"INFO","msg":"(Cycle 5 of 5) Sensor State Updated ... Ready for Transmission"}
+{"time":"2024-03-02T20:26:47.162992-05:00","level":"INFO","msg":"(Cycle 5 of 5) Transmitting events to output channel"}
+{"time":"2024-03-02T20:26:47.162998-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-03-02T20:26:47.335958-05:00","level":"INFO","msg":"(Cycle 5 of 5) Complete!"}
+{"time":"2024-03-02T20:26:47.335974-05:00","level":"INFO","msg":"5 cycles Complete ... Shutting Down"}
+{"time":"2024-03-02T20:26:47.33598-05:00","level":"INFO","msg":"Closing Kafka Connections ...."}
+{"time":"2024-03-02T20:26:47.335986-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-03-02T20:28:11.821349-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-03-02T20:28:11.821729-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-03-02T20:28:11.821821-05:00","level":"INFO","msg":"{QubzCount:10 InternalRandomizer:1 EventInterval:0 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./exceptions.dat OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-03-02T20:28:11.82194-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-03-02T20:28:11.822065-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-03-02T20:28:11.822159-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-03-02T20:28:11.822687-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-03-02T20:28:11.822742-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-03-02T20:28:11.822801-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-03-02T20:28:11.824979-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-03-02T20:28:11.82503-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-03-02T20:28:11.825088-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-03-02T20:28:11.825239-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-03-02T20:28:11.82529-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-03-02T20:28:11.825352-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-03-02T20:28:11.893767-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-03-02T20:28:11.893801-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-03-02T20:28:11.893822-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-03-02T20:28:11.893887-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-03-02T20:28:11.893894-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-03-02T20:28:11.893903-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-03-02T20:28:11.893945-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-03-02T20:28:11.893951-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-03-02T20:28:11.893959-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-03-02T20:28:11.893988-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-03-02T20:28:11.893994-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-03-02T20:28:11.894001-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-03-02T20:28:11.894377-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-03-02T20:28:11.894383-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./exceptions.dat ..."}
+{"time":"2024-03-02T20:28:11.894394-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-03-02T20:28:11.894491-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-03-02T20:28:11.894497-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-03-02T20:28:11.894512-05:00","level":"INFO","msg":"Initializing Kafka Connections ..."}
+{"time":"2024-03-02T20:28:11.894518-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"altimeter\""}
+{"time":"2024-03-02T20:28:11.898738-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 0"}
+{"time":"2024-03-02T20:28:11.898751-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"battery\""}
+{"time":"2024-03-02T20:28:11.900654-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 1"}
+{"time":"2024-03-02T20:28:11.900664-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"compute\""}
+{"time":"2024-03-02T20:28:11.90237-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 2"}
+{"time":"2024-03-02T20:28:11.902377-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"geiger counter\""}
+{"time":"2024-03-02T20:28:11.904851-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 3"}
+{"time":"2024-03-02T20:28:11.904863-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"gps\""}
+{"time":"2024-03-02T20:28:11.90615-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 4"}
+{"time":"2024-03-02T20:28:11.906163-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"gyroscopic positioning\""}
+{"time":"2024-03-02T20:28:11.907662-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 5"}
+{"time":"2024-03-02T20:28:11.907672-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"lock state\""}
+{"time":"2024-03-02T20:28:11.909475-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 6"}
+{"time":"2024-03-02T20:28:11.909482-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"motion sensor\""}
+{"time":"2024-03-02T20:28:11.910613-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 7"}
+{"time":"2024-03-02T20:28:11.910625-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"radio\""}
+{"time":"2024-03-02T20:28:11.911804-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 8"}
+{"time":"2024-03-02T20:28:11.911811-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"door seal\""}
+{"time":"2024-03-02T20:28:11.913002-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 9"}
+{"time":"2024-03-02T20:28:11.91301-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"spectrometer\""}
+{"time":"2024-03-02T20:28:11.914322-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 10"}
+{"time":"2024-03-02T20:28:11.914334-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"temperature and barometric\""}
+{"time":"2024-03-02T20:28:11.915672-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 11"}
+{"time":"2024-03-02T20:28:11.91568-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"fire\""}
+{"time":"2024-03-02T20:28:11.917275-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 12"}
+{"time":"2024-03-02T20:28:11.917287-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-03-02T20:28:11.917296-05:00","level":"INFO","msg":"Mapping first 10 QubzIds into Qubz Matrix ..."}
+{"time":"2024-03-02T20:28:11.917303-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 10 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-03-02T20:28:11.917308-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-03-02T20:28:11.917314-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-03-02T20:28:11.91732-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-03-02T20:28:11.917325-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-03-02T20:28:11.917329-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-03-02T20:28:11.917333-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-03-02T20:28:11.917338-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-03-02T20:28:11.917342-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-03-02T20:28:11.917347-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-03-02T20:28:11.917351-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-03-02T20:28:11.917355-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-03-02T20:28:11.91736-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-03-02T20:28:11.917364-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-03-02T20:28:11.917369-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-03-02T20:28:11.917457-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.91748-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.917549-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.918378-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.918404-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.918454-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.918466-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.919296-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.919312-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.919372-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.920207-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.92022-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.920283-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.920297-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.921157-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.92119-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.922042-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.922111-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.922133-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.922948-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.922961-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.92302-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.923032-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.923044-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.923843-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.923865-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.923896-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.923936-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.924754-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.925617-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.925629-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.925696-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.926436-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-03-02T20:28:11.926442-05:00","level":"INFO","msg":"Begin Simulation (5 cycles)"}
+{"time":"2024-03-02T20:28:11.926447-05:00","level":"INFO","msg":"(Cycle 1 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-03-02T20:28:11.926453-05:00","level":"INFO","msg":"(Cycle 1 of 5) Assign New Exception States"}
+{"time":"2024-03-02T20:28:11.926527-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit MomYearningSpotting : Exception Local Wi-Fi Down : Severity 2"}
+{"time":"2024-03-02T20:28:11.926556-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit ReenterFlatnessKnelt : Exception Local Wi-Fi Down : Severity 2"}
+{"time":"2024-03-02T20:28:11.926586-05:00","level":"INFO","msg":"(Cycle 1 of 5) Calculate New Sensor State"}
+{"time":"2024-03-02T20:28:11.926669-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.926681-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.926693-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.926724-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.926755-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.927584-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.927629-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.929345-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.929377-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.929398-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.929464-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.930312-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.931106-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.931127-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.931156-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.931177-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.931188-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.932053-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.932082-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.932991-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.933021-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.934003-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.934019-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.934091-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.934866-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:11.935729-05:00","level":"INFO","msg":"(Cycle 1 of 5) Sensor State Updated ... Ready for Transmission"}
+{"time":"2024-03-02T20:28:11.935736-05:00","level":"INFO","msg":"(Cycle 1 of 5) Transmitting events to output channel"}
+{"time":"2024-03-02T20:28:11.935741-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-03-02T20:28:12.128906-05:00","level":"INFO","msg":"(Cycle 1 of 5) Complete!"}
+{"time":"2024-03-02T20:28:12.128928-05:00","level":"INFO","msg":"(Cycle 2 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-03-02T20:28:12.128937-05:00","level":"INFO","msg":"(Cycle 2 of 5) Assign New Exception States"}
+{"time":"2024-03-02T20:28:12.129018-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit MorticianSlashingGlory : Exception Fire Suppression Failure : Severity 1"}
+{"time":"2024-03-02T20:28:12.129043-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit ReorderSlumMarbled : Exception Local Wi-Fi Down : Severity 2"}
+{"time":"2024-03-02T20:28:12.12906-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit DimeEngravingDelegate : Exception Radio Signal Weak : Severity 3"}
+{"time":"2024-03-02T20:28:12.129067-05:00","level":"INFO","msg":"(Cycle 2 of 5) Calculate New Sensor State"}
+{"time":"2024-03-02T20:28:12.129158-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.129169-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.129207-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.13003-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.130094-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.130842-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.130853-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.130864-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.130978-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.131853-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.13187-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.131916-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.131935-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.131989-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.132664-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.132692-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.132756-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.133476-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.133488-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.1335-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.134293-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.134305-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.134366-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.135112-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.135123-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.135134-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.135161-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.13518-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.136032-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.136047-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.136079-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.136108-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.136119-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.137052-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.137076-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.137105-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.137832-05:00","level":"INFO","msg":"(Cycle 2 of 5) Sensor State Updated ... Ready for Transmission"}
+{"time":"2024-03-02T20:28:12.13784-05:00","level":"INFO","msg":"(Cycle 2 of 5) Transmitting events to output channel"}
+{"time":"2024-03-02T20:28:12.137848-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-03-02T20:28:12.309357-05:00","level":"INFO","msg":"(Cycle 2 of 5) Complete!"}
+{"time":"2024-03-02T20:28:12.309376-05:00","level":"INFO","msg":"(Cycle 3 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-03-02T20:28:12.309384-05:00","level":"INFO","msg":"(Cycle 3 of 5) Assign New Exception States"}
+{"time":"2024-03-02T20:28:12.309405-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit DazzlingUnmatchedBacklands : Exception Local Wi-Fi Down : Severity 2"}
+{"time":"2024-03-02T20:28:12.309432-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit OutboundElsewhereChoice : Exception Local Wi-Fi Down : Severity 2"}
+{"time":"2024-03-02T20:28:12.309505-05:00","level":"INFO","msg":"(Cycle 3 of 5) Calculate New Sensor State"}
+{"time":"2024-03-02T20:28:12.309587-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.309677-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.310472-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.310493-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.310547-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.311326-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.311342-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.311354-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.311405-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.312234-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.31233-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.314021-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.314037-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.314108-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.3149-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.314963-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.315739-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.315764-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.315814-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.315836-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.316623-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.316637-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.317669-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.317733-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.317745-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.318467-05:00","level":"INFO","msg":"(Cycle 3 of 5) Sensor State Updated ... Ready for Transmission"}
+{"time":"2024-03-02T20:28:12.318475-05:00","level":"INFO","msg":"(Cycle 3 of 5) Transmitting events to output channel"}
+{"time":"2024-03-02T20:28:12.318483-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-03-02T20:28:12.486952-05:00","level":"INFO","msg":"(Cycle 3 of 5) Complete!"}
+{"time":"2024-03-02T20:28:12.486972-05:00","level":"INFO","msg":"(Cycle 4 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-03-02T20:28:12.486981-05:00","level":"INFO","msg":"(Cycle 4 of 5) Assign New Exception States"}
+{"time":"2024-03-02T20:28:12.487058-05:00","level":"INFO","msg":"Exception generated but not assigned to Qubz Unit MomYearningSpotting : Exception Severity was 2 : Qubz Unit Existing Exception Severity 2"}
+{"time":"2024-03-02T20:28:12.487103-05:00","level":"INFO","msg":"(Cycle 4 of 5) Calculate New Sensor State"}
+{"time":"2024-03-02T20:28:12.487201-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.487264-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.488125-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.488158-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.488944-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.488956-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.489011-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.489942-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.489956-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.490001-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.490774-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.490794-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.490846-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.490857-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.491606-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.491628-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.491695-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.491706-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.492442-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.492453-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.492464-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.492494-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.493274-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.493294-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.493338-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.493402-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.494185-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.494197-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.494208-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.49426-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.494272-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.495965-05:00","level":"INFO","msg":"(Cycle 4 of 5) Sensor State Updated ... Ready for Transmission"}
+{"time":"2024-03-02T20:28:12.495981-05:00","level":"INFO","msg":"(Cycle 4 of 5) Transmitting events to output channel"}
+{"time":"2024-03-02T20:28:12.49599-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-03-02T20:28:12.660701-05:00","level":"INFO","msg":"(Cycle 4 of 5) Complete!"}
+{"time":"2024-03-02T20:28:12.660723-05:00","level":"INFO","msg":"(Cycle 5 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-03-02T20:28:12.660732-05:00","level":"INFO","msg":"(Cycle 5 of 5) Assign New Exception States"}
+{"time":"2024-03-02T20:28:12.660751-05:00","level":"INFO","msg":"Exception generated but not assigned to Qubz Unit DazzlingUnmatchedBacklands : Exception Severity was 2 : Qubz Unit Existing Exception Severity 2"}
+{"time":"2024-03-02T20:28:12.660779-05:00","level":"INFO","msg":"Exception generated but not assigned to Qubz Unit OutboundElsewhereChoice : Exception Severity was 2 : Qubz Unit Existing Exception Severity 1"}
+{"time":"2024-03-02T20:28:12.660795-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit UnwieldyAstronomyProfusely : Exception Local Wi-Fi Down : Severity 2"}
+{"time":"2024-03-02T20:28:12.660858-05:00","level":"INFO","msg":"(Cycle 5 of 5) Calculate New Sensor State"}
+{"time":"2024-03-02T20:28:12.660938-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.66095-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.661084-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.661813-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.661834-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.661941-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.662667-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.663636-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.663656-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.663668-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.663697-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.664488-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.66456-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.664616-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.665319-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.665331-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.666135-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.66621-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.666962-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.666982-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.667011-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.667887-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.667907-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.668971-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:28:12.669744-05:00","level":"INFO","msg":"(Cycle 5 of 5) Sensor State Updated ... Ready for Transmission"}
+{"time":"2024-03-02T20:28:12.669753-05:00","level":"INFO","msg":"(Cycle 5 of 5) Transmitting events to output channel"}
+{"time":"2024-03-02T20:28:12.669761-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-03-02T20:28:12.830228-05:00","level":"INFO","msg":"(Cycle 5 of 5) Complete!"}
+{"time":"2024-03-02T20:28:12.830261-05:00","level":"INFO","msg":"5 cycles Complete ... Shutting Down"}
+{"time":"2024-03-02T20:28:12.830267-05:00","level":"INFO","msg":"Closing Kafka Connections ...."}
+{"time":"2024-03-02T20:28:12.830273-05:00","level":"INFO","msg":"Closing connection for sensor \"altimeter\""}
+{"time":"2024-03-02T20:28:12.830283-05:00","level":"INFO","msg":"Closing connection for sensor \"battery\""}
+{"time":"2024-03-02T20:28:12.830294-05:00","level":"INFO","msg":"Closing connection for sensor \"compute\""}
+{"time":"2024-03-02T20:28:12.830304-05:00","level":"INFO","msg":"Closing connection for sensor \"geiger counter\""}
+{"time":"2024-03-02T20:28:12.830315-05:00","level":"INFO","msg":"Closing connection for sensor \"gps\""}
+{"time":"2024-03-02T20:28:12.830323-05:00","level":"INFO","msg":"Closing connection for sensor \"gyroscopic positioning\""}
+{"time":"2024-03-02T20:28:12.83033-05:00","level":"INFO","msg":"Closing connection for sensor \"lock state\""}
+{"time":"2024-03-02T20:28:12.830339-05:00","level":"INFO","msg":"Closing connection for sensor \"motion sensor\""}
+{"time":"2024-03-02T20:28:12.830348-05:00","level":"INFO","msg":"Closing connection for sensor \"radio\""}
+{"time":"2024-03-02T20:28:12.830359-05:00","level":"INFO","msg":"Closing connection for sensor \"door seal\""}
+{"time":"2024-03-02T20:28:12.830367-05:00","level":"INFO","msg":"Closing connection for sensor \"spectrometer\""}
+{"time":"2024-03-02T20:28:12.830375-05:00","level":"INFO","msg":"Closing connection for sensor \"temperature and barometric\""}
+{"time":"2024-03-02T20:28:12.830386-05:00","level":"INFO","msg":"Closing connection for sensor \"fire\""}
+{"time":"2024-03-02T20:28:12.830396-05:00","level":"INFO","msg":"Simulation Complete"}
+{"time":"2024-03-02T20:29:00.573447-05:00","level":"INFO","msg":"System Starting"}
+{"time":"2024-03-02T20:29:00.573758-05:00","level":"INFO","msg":"Config Values for this run ..."}
+{"time":"2024-03-02T20:29:00.573948-05:00","level":"INFO","msg":"{QubzCount:10 InternalRandomizer:1 EventInterval:0 EventCycleCount:5 EmailAddress:shawn.engineer2@gmail.com QueueEndpoint:127.0.0.1:19092 QueueTopic:qubz LogLocation:./output/logs/logfile QubzNameFile:./qubz.dat LocationsFile:./locations.dat RoutesFile:./routes.dat ClassOfServiceFile:./classofservice.dat SensorTypesFile:./sensor_types.dat ShipmentTypesFile:./shipment_types.dat TransportModesFile:./transportmodes.dat SensorRangesFile:./sensor_ranges.dat SensorExceptionsFile:./exceptions.dat OutputChannel:segmentio EventOutputLocation:/Users/shawn.nance/outputdata/IndigoDeltaSierra/qubz}"}
+{"time":"2024-03-02T20:29:00.574023-05:00","level":"INFO","msg":"Beginning Simulator Data Configuration ..."}
+{"time":"2024-03-02T20:29:00.574058-05:00","level":"INFO","msg":"Checking for Locations file ./locations.dat ..."}
+{"time":"2024-03-02T20:29:00.574099-05:00","level":"INFO","msg":"Loading Locations file ..."}
+{"time":"2024-03-02T20:29:00.574566-05:00","level":"INFO","msg":"Locations file loaded"}
+{"time":"2024-03-02T20:29:00.574601-05:00","level":"INFO","msg":"Checking for Routes file ./routes.dat ..."}
+{"time":"2024-03-02T20:29:00.574646-05:00","level":"INFO","msg":"Loading Routes file ..."}
+{"time":"2024-03-02T20:29:00.576773-05:00","level":"INFO","msg":"Routes file loaded"}
+{"time":"2024-03-02T20:29:00.576816-05:00","level":"INFO","msg":"Checking for Class of Service file ./classofservice.dat ..."}
+{"time":"2024-03-02T20:29:00.576866-05:00","level":"INFO","msg":"Loading Class of Service file ..."}
+{"time":"2024-03-02T20:29:00.576996-05:00","level":"INFO","msg":"Class of Service file loaded"}
+{"time":"2024-03-02T20:29:00.577027-05:00","level":"INFO","msg":"Checking for Qubz Names file ./qubz.dat ..."}
+{"time":"2024-03-02T20:29:00.577064-05:00","level":"INFO","msg":"Loading Qubz Names file ..."}
+{"time":"2024-03-02T20:29:00.644675-05:00","level":"INFO","msg":"Qubz Names file loaded"}
+{"time":"2024-03-02T20:29:00.644704-05:00","level":"INFO","msg":"Checking for Sensor Types file ./sensor_types.dat ..."}
+{"time":"2024-03-02T20:29:00.644722-05:00","level":"INFO","msg":"Loading Sensor Types file ..."}
+{"time":"2024-03-02T20:29:00.644778-05:00","level":"INFO","msg":"Sensor Types file loaded"}
+{"time":"2024-03-02T20:29:00.644785-05:00","level":"INFO","msg":"Checking for Shipment Types file ./shipment_types.dat ..."}
+{"time":"2024-03-02T20:29:00.644793-05:00","level":"INFO","msg":"Loading Shipment Types file ..."}
+{"time":"2024-03-02T20:29:00.644837-05:00","level":"INFO","msg":"Shipment Types file loaded"}
+{"time":"2024-03-02T20:29:00.644846-05:00","level":"INFO","msg":"Checking for Transport Modes file ./transportmodes.dat ..."}
+{"time":"2024-03-02T20:29:00.644853-05:00","level":"INFO","msg":"Loading Transport Modes file ..."}
+{"time":"2024-03-02T20:29:00.644882-05:00","level":"INFO","msg":"Transport Modes file loaded"}
+{"time":"2024-03-02T20:29:00.644887-05:00","level":"INFO","msg":"Checking for Sensor Range file ./sensor_ranges.dat ..."}
+{"time":"2024-03-02T20:29:00.644894-05:00","level":"INFO","msg":"Loading Sensor Range file ..."}
+{"time":"2024-03-02T20:29:00.645254-05:00","level":"INFO","msg":"Sensor Range file loaded"}
+{"time":"2024-03-02T20:29:00.64526-05:00","level":"INFO","msg":"Checking for Sensor Exceptions file ./exceptions.dat ..."}
+{"time":"2024-03-02T20:29:00.645268-05:00","level":"INFO","msg":"Loading Sensor Exceptions file ..."}
+{"time":"2024-03-02T20:29:00.645374-05:00","level":"INFO","msg":"Sensor Exceptions file loaded"}
+{"time":"2024-03-02T20:29:00.645379-05:00","level":"INFO","msg":"Simulator Data Configuration Complete"}
+{"time":"2024-03-02T20:29:00.645394-05:00","level":"INFO","msg":"Initializing Kafka Connections ..."}
+{"time":"2024-03-02T20:29:00.6454-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"altimeter\""}
+{"time":"2024-03-02T20:29:00.649708-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 0"}
+{"time":"2024-03-02T20:29:00.649736-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"battery\""}
+{"time":"2024-03-02T20:29:00.653073-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 1"}
+{"time":"2024-03-02T20:29:00.653081-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"compute\""}
+{"time":"2024-03-02T20:29:00.656048-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 2"}
+{"time":"2024-03-02T20:29:00.656063-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"geiger counter\""}
+{"time":"2024-03-02T20:29:00.658175-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 3"}
+{"time":"2024-03-02T20:29:00.658187-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"gps\""}
+{"time":"2024-03-02T20:29:00.660796-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 4"}
+{"time":"2024-03-02T20:29:00.660808-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"gyroscopic positioning\""}
+{"time":"2024-03-02T20:29:00.662223-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 5"}
+{"time":"2024-03-02T20:29:00.66223-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"lock state\""}
+{"time":"2024-03-02T20:29:00.664394-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 6"}
+{"time":"2024-03-02T20:29:00.6644-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"motion sensor\""}
+{"time":"2024-03-02T20:29:00.666356-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 7"}
+{"time":"2024-03-02T20:29:00.666366-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"radio\""}
+{"time":"2024-03-02T20:29:00.668146-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 8"}
+{"time":"2024-03-02T20:29:00.668157-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"door seal\""}
+{"time":"2024-03-02T20:29:00.669419-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 9"}
+{"time":"2024-03-02T20:29:00.669426-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"spectrometer\""}
+{"time":"2024-03-02T20:29:00.670802-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 10"}
+{"time":"2024-03-02T20:29:00.670808-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"temperature and barometric\""}
+{"time":"2024-03-02T20:29:00.672008-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 11"}
+{"time":"2024-03-02T20:29:00.672015-05:00","level":"INFO","msg":"Configuring Kafka Connection for sensor \"fire\""}
+{"time":"2024-03-02T20:29:00.673368-05:00","level":"INFO","msg":"Connection configured - Connected to topic \"qubz\" on partition 12"}
+{"time":"2024-03-02T20:29:00.673384-05:00","level":"INFO","msg":"Initializing Qubz Matrix ..."}
+{"time":"2024-03-02T20:29:00.673395-05:00","level":"INFO","msg":"Mapping first 10 QubzIds into Qubz Matrix ..."}
+{"time":"2024-03-02T20:29:00.673403-05:00","level":"INFO","msg":"Qubz Matrix initialization complete - 10 QubzIds mapped into Qubz Matrix"}
+{"time":"2024-03-02T20:29:00.673408-05:00","level":"INFO","msg":"Qubz Matrix Initialized"}
+{"time":"2024-03-02T20:29:00.673413-05:00","level":"INFO","msg":"Assigning Routes to Qubz in Qubz Matrix ..."}
+{"time":"2024-03-02T20:29:00.673419-05:00","level":"INFO","msg":"Assigning Routes via Round Robin Algorithm ..."}
+{"time":"2024-03-02T20:29:00.673424-05:00","level":"INFO","msg":"Routes mapped to Qubz Matrix"}
+{"time":"2024-03-02T20:29:00.67343-05:00","level":"INFO","msg":"Route Assignment Complete"}
+{"time":"2024-03-02T20:29:00.673447-05:00","level":"INFO","msg":"Assigning Shipment Types to Qubz in Qubz Matrix ..."}
+{"time":"2024-03-02T20:29:00.673452-05:00","level":"INFO","msg":"Assigning Shipment Types via Round Robin Algorithm ..."}
+{"time":"2024-03-02T20:29:00.673457-05:00","level":"INFO","msg":"Shipment Types mapped to Qubz Matrix"}
+{"time":"2024-03-02T20:29:00.673461-05:00","level":"INFO","msg":"Shipment Type Assignment Complete"}
+{"time":"2024-03-02T20:29:00.673466-05:00","level":"INFO","msg":"Configuring Initial Exceptions in Qubz Matrix ..."}
+{"time":"2024-03-02T20:29:00.67347-05:00","level":"INFO","msg":"Initializing Exception States in Qubz Matrix ..."}
+{"time":"2024-03-02T20:29:00.673475-05:00","level":"INFO","msg":"Exception States set in Qubz Matrix"}
+{"time":"2024-03-02T20:29:00.67348-05:00","level":"INFO","msg":"Exception Configuration Complete"}
+{"time":"2024-03-02T20:29:00.673484-05:00","level":"INFO","msg":"Configuring Initial Sensor Values in Qubz Matrix ..."}
+{"time":"2024-03-02T20:29:00.673572-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.673595-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.674502-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.674566-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.674645-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.675401-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.675483-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.676331-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.676395-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.676407-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.677216-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.677229-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.677291-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.677303-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.67815-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.678176-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.678208-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.678249-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.679074-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.679087-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.6791-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.679131-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.679152-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.679165-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.679177-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.680023-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.680082-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.680161-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.680906-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.680918-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.680986-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.681815-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.681847-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.681887-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.682629-05:00","level":"INFO","msg":"Qubz Matrix Sensor Configuration Complete"}
+{"time":"2024-03-02T20:29:00.682635-05:00","level":"INFO","msg":"Begin Simulation (5 cycles)"}
+{"time":"2024-03-02T20:29:00.682641-05:00","level":"INFO","msg":"(Cycle 1 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-03-02T20:29:00.682646-05:00","level":"INFO","msg":"(Cycle 1 of 5) Assign New Exception States"}
+{"time":"2024-03-02T20:29:00.682674-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit PulseFlierSynergy : Exception Fire Suppression Failure : Severity 1"}
+{"time":"2024-03-02T20:29:00.682737-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit ReenterFlatnessKnelt : Exception Radio Signal Weak : Severity 3"}
+{"time":"2024-03-02T20:29:00.682752-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit ReorderSlumMarbled : Exception Local Wi-Fi Down : Severity 2"}
+{"time":"2024-03-02T20:29:00.682767-05:00","level":"INFO","msg":"(Cycle 1 of 5) Calculate New Sensor State"}
+{"time":"2024-03-02T20:29:00.682841-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.682853-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.682865-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.682924-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.682936-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.683751-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.683765-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.683833-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.684645-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.684658-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.684717-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.685527-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.685549-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.685579-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.6856-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.686464-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.686477-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.686517-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.68738-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.687395-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.687479-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.687491-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.688395-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.688422-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.688434-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.688451-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.689295-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.690274-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.690307-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.690342-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.690353-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.691196-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.691211-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.69127-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.691329-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.692046-05:00","level":"INFO","msg":"(Cycle 1 of 5) Sensor State Updated ... Ready for Transmission"}
+{"time":"2024-03-02T20:29:00.692054-05:00","level":"INFO","msg":"(Cycle 1 of 5) Transmitting events to output channel"}
+{"time":"2024-03-02T20:29:00.69206-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-03-02T20:29:00.871559-05:00","level":"INFO","msg":"(Cycle 1 of 5) Complete!"}
+{"time":"2024-03-02T20:29:00.871578-05:00","level":"INFO","msg":"(Cycle 2 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-03-02T20:29:00.871586-05:00","level":"INFO","msg":"(Cycle 2 of 5) Assign New Exception States"}
+{"time":"2024-03-02T20:29:00.871606-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit DazzlingUnmatchedBacklands : Exception Local Wi-Fi Down : Severity 2"}
+{"time":"2024-03-02T20:29:00.871644-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit UnwieldyAstronomyProfusely : Exception Fire Suppression Failure : Severity 1"}
+{"time":"2024-03-02T20:29:00.871709-05:00","level":"INFO","msg":"(Cycle 2 of 5) Calculate New Sensor State"}
+{"time":"2024-03-02T20:29:00.871797-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.87182-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.871848-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.871929-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.872651-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.872662-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.872673-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.872736-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.873504-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.873515-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.874448-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.874482-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.875298-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.875348-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.875362-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.87611-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.876125-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.87616-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.876932-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.876951-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.877743-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.877755-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.878627-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.87864-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.878651-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.87868-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.878706-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.879696-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.879718-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.879731-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.879777-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.879788-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.879851-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:00.880531-05:00","level":"INFO","msg":"(Cycle 2 of 5) Sensor State Updated ... Ready for Transmission"}
+{"time":"2024-03-02T20:29:00.880537-05:00","level":"INFO","msg":"(Cycle 2 of 5) Transmitting events to output channel"}
+{"time":"2024-03-02T20:29:00.880563-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-03-02T20:29:01.045231-05:00","level":"INFO","msg":"(Cycle 2 of 5) Complete!"}
+{"time":"2024-03-02T20:29:01.045247-05:00","level":"INFO","msg":"(Cycle 3 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-03-02T20:29:01.045253-05:00","level":"INFO","msg":"(Cycle 3 of 5) Assign New Exception States"}
+{"time":"2024-03-02T20:29:01.045271-05:00","level":"INFO","msg":"Exception generated but not assigned to Qubz Unit DazzlingUnmatchedBacklands : Exception Severity was 2 : Qubz Unit Existing Exception Severity 1"}
+{"time":"2024-03-02T20:29:01.045296-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit OutboundElsewhereChoice : Exception Fire Suppression Failure : Severity 1"}
+{"time":"2024-03-02T20:29:01.045337-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit MomYearningSpotting : Exception Radio Signal Weak : Severity 3"}
+{"time":"2024-03-02T20:29:01.045362-05:00","level":"INFO","msg":"Exception generated but not assigned to Qubz Unit ReenterFlatnessKnelt : Exception Severity was 3 : Qubz Unit Existing Exception Severity 2"}
+{"time":"2024-03-02T20:29:01.045386-05:00","level":"INFO","msg":"(Cycle 3 of 5) Calculate New Sensor State"}
+{"time":"2024-03-02T20:29:01.045461-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.045473-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.045485-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.046326-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.046337-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.046408-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.04718-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.047196-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.047208-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.047279-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.048032-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.048093-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.048107-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.048121-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.049093-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.049112-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.049928-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.04999-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.050706-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.05075-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.050777-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.050838-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.051556-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.052422-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.052436-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.052498-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.052512-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.053448-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.053473-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.053505-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.053537-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.054373-05:00","level":"INFO","msg":"(Cycle 3 of 5) Sensor State Updated ... Ready for Transmission"}
+{"time":"2024-03-02T20:29:01.054386-05:00","level":"INFO","msg":"(Cycle 3 of 5) Transmitting events to output channel"}
+{"time":"2024-03-02T20:29:01.054393-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-03-02T20:29:01.225454-05:00","level":"INFO","msg":"(Cycle 3 of 5) Complete!"}
+{"time":"2024-03-02T20:29:01.225471-05:00","level":"INFO","msg":"(Cycle 4 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-03-02T20:29:01.225478-05:00","level":"INFO","msg":"(Cycle 4 of 5) Assign New Exception States"}
+{"time":"2024-03-02T20:29:01.225518-05:00","level":"INFO","msg":"Exception level upgraded for Qubz Unit OutboundElsewhereChoice : Exception Radio Signal Weak : Severity 3"}
+{"time":"2024-03-02T20:29:01.225593-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit DimeEngravingDelegate : Exception Local Wi-Fi Down : Severity 2"}
+{"time":"2024-03-02T20:29:01.225598-05:00","level":"INFO","msg":"(Cycle 4 of 5) Calculate New Sensor State"}
+{"time":"2024-03-02T20:29:01.225673-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.22569-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.225728-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.225747-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.226564-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.226601-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.227461-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.227473-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.228382-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.228409-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.229213-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.230049-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.23006-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.230088-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.230857-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.230867-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.230877-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.230904-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.230981-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.231719-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.231766-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.231785-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.232741-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.233691-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.233712-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.233723-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.233784-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.234526-05:00","level":"INFO","msg":"(Cycle 4 of 5) Sensor State Updated ... Ready for Transmission"}
+{"time":"2024-03-02T20:29:01.234532-05:00","level":"INFO","msg":"(Cycle 4 of 5) Transmitting events to output channel"}
+{"time":"2024-03-02T20:29:01.234539-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-03-02T20:29:01.411135-05:00","level":"INFO","msg":"(Cycle 4 of 5) Complete!"}
+{"time":"2024-03-02T20:29:01.411151-05:00","level":"INFO","msg":"(Cycle 5 of 5) Capture Current Sensor State to Prior State Buffer"}
+{"time":"2024-03-02T20:29:01.411159-05:00","level":"INFO","msg":"(Cycle 5 of 5) Assign New Exception States"}
+{"time":"2024-03-02T20:29:01.411181-05:00","level":"INFO","msg":"Exception generated but not assigned to Qubz Unit DazzlingUnmatchedBacklands : Exception Severity was 2 : Qubz Unit Existing Exception Severity 2"}
+{"time":"2024-03-02T20:29:01.411249-05:00","level":"INFO","msg":"New Exception Assigned to Qubz Unit MorticianSlashingGlory : Exception Local Wi-Fi Down : Severity 2"}
+{"time":"2024-03-02T20:29:01.411284-05:00","level":"INFO","msg":"(Cycle 5 of 5) Calculate New Sensor State"}
+{"time":"2024-03-02T20:29:01.411389-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.411419-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.411447-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.412242-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.412253-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.412307-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.41236-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.413094-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.413166-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.413228-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.4141-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.414113-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.414938-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.414979-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.415006-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.415765-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.416581-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.416596-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.416606-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.41665-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.417512-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.418377-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.418409-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.418458-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.418524-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.419536-05:00","level":"INFO","msg":"Trim Requested Range up to requested Min Value"}
+{"time":"2024-03-02T20:29:01.420269-05:00","level":"INFO","msg":"(Cycle 5 of 5) Sensor State Updated ... Ready for Transmission"}
+{"time":"2024-03-02T20:29:01.420276-05:00","level":"INFO","msg":"(Cycle 5 of 5) Transmitting events to output channel"}
+{"time":"2024-03-02T20:29:01.420283-05:00","level":"INFO","msg":"Event Output Channel is segmentio : Broker Endpoint 127.0.0.1:19092 : Topic Name \"qubz\""}
+{"time":"2024-03-02T20:29:01.587637-05:00","level":"INFO","msg":"(Cycle 5 of 5) Complete!"}
+{"time":"2024-03-02T20:29:01.58766-05:00","level":"INFO","msg":"5 cycles Complete ... Shutting Down"}
+{"time":"2024-03-02T20:29:01.587667-05:00","level":"INFO","msg":"Closing Kafka Connections ...."}
+{"time":"2024-03-02T20:29:01.587671-05:00","level":"INFO","msg":"Closing connection for sensor \"altimeter\""}
+{"time":"2024-03-02T20:29:01.587681-05:00","level":"INFO","msg":"Closing connection for sensor \"battery\""}
+{"time":"2024-03-02T20:29:01.58769-05:00","level":"INFO","msg":"Closing connection for sensor \"compute\""}
+{"time":"2024-03-02T20:29:01.587699-05:00","level":"INFO","msg":"Closing connection for sensor \"geiger counter\""}
+{"time":"2024-03-02T20:29:01.587707-05:00","level":"INFO","msg":"Closing connection for sensor \"gps\""}
+{"time":"2024-03-02T20:29:01.587716-05:00","level":"INFO","msg":"Closing connection for sensor \"gyroscopic positioning\""}
+{"time":"2024-03-02T20:29:01.587724-05:00","level":"INFO","msg":"Closing connection for sensor \"lock state\""}
+{"time":"2024-03-02T20:29:01.587732-05:00","level":"INFO","msg":"Closing connection for sensor \"motion sensor\""}
+{"time":"2024-03-02T20:29:01.58774-05:00","level":"INFO","msg":"Closing connection for sensor \"radio\""}
+{"time":"2024-03-02T20:29:01.587746-05:00","level":"INFO","msg":"Closing connection for sensor \"door seal\""}
+{"time":"2024-03-02T20:29:01.587753-05:00","level":"INFO","msg":"Closing connection for sensor \"spectrometer\""}
+{"time":"2024-03-02T20:29:01.587759-05:00","level":"INFO","msg":"Closing connection for sensor \"temperature and barometric\""}
+{"time":"2024-03-02T20:29:01.587765-05:00","level":"INFO","msg":"Closing connection for sensor \"fire\""}
+{"time":"2024-03-02T20:29:01.587772-05:00","level":"INFO","msg":"Kafka Connections Closed"}
+{"time":"2024-03-02T20:29:01.587776-05:00","level":"INFO","msg":"Simulation Complete"}

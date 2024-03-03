@@ -191,9 +191,38 @@ func StartSimulation() {
 
 	customlog.InfoAllChannels(consoleLogger, fileLogger, fmt.Sprintf("%d cycles Complete ... Shutting Down", configDS.EventCycleCount), true)
 
+	//Close the Kafka connections
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Closing Kafka Connections ....", true)
+	err = closeKafkaConnections(&skafkaConnections, consoleLogger, fileLogger)
+
+	if err != nil {
+		customlog.ErrorAllChannels(consoleLogger, fileLogger, "Simulation Run Terminated!")
+		return
+	} else {
+		customlog.InfoAllChannels(consoleLogger, fileLogger, "Kafka Connections Closed", true)
+	}
+
 	//Exit with a success message
 	customlog.InfoAllChannels(consoleLogger, fileLogger, appconstants.SIMULATION_COMPLETE_MSG, true)
 
+}
+
+func closeKafkaConnections(kafkaConnections *[]clientmodels.S_kafkaConnection, consoleLogger *slog.Logger, fileLogger *slog.Logger) error {
+
+	//Cycle through the list of Kafka connections and close each of them
+
+	for _, x := range *kafkaConnections {
+
+		customlog.InfoAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Closing connection for sensor \"%s\"", x.Key), false)
+
+		err := x.Connection.Close()
+
+		if err != nil {
+			customlog.ErrorAllChannels(consoleLogger, fileLogger, fmt.Sprintf("Error closing connection for sensor \"%s\" : %s", x.Key, err.Error()))
+		}
+	}
+
+	return nil
 }
 
 func configureKafkaConnections(kafkaConnections *[]clientmodels.S_kafkaConnection, topicName string, brokerAddress string, consoleLogger *slog.Logger, fileLogger *slog.Logger) error {
