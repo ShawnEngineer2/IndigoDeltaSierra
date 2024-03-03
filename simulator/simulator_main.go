@@ -202,6 +202,28 @@ func StartSimulation() {
 		customlog.InfoAllChannels(consoleLogger, fileLogger, "Kafka Connections Closed", true)
 	}
 
+	//Spool exceptions to the log file and return a Processing Metrics struct
+	customlog.InfoAllChannels(consoleLogger, fileLogger, "Collecting Runtime Metrics and Recording Exceptions to Log ....", true)
+	runMetrics := logExceptionsAndCollectMetrics(&currentQubzMatrix, &sensorExceptionDS, configDS.EventCycleCount, len(sensorTypeDS), consoleLogger, fileLogger)
+
+	customlog.GreenlightConsole(consoleLogger, "===================================================")
+	customlog.GreenlightConsole(consoleLogger, "=========            RUN METRICS           ========")
+	customlog.GreenlightConsole(consoleLogger, "===================================================")
+	customlog.GreenlightConsole(consoleLogger, "")
+
+	customlog.CalloutConsole(consoleLogger, fmt.Sprintf("Total Qubz Processed Per Cycle: %d", runMetrics.TotalQubzCount))
+	customlog.CalloutConsole(consoleLogger, fmt.Sprintf("Total Number of Cycles: %d", configDS.EventCycleCount))
+	customlog.CalloutConsole(consoleLogger, fmt.Sprintf("Estimated Number of Sensor Events: %d", runMetrics.EstimatedEventCount))
+	customlog.CalloutConsole(consoleLogger, "")
+
+	customlog.CalloutConsole(consoleLogger, fmt.Sprintf("Total Exceptions During Simulation: %d", runMetrics.TotalExceptionCount))
+	customlog.CalloutConsole(consoleLogger, fmt.Sprintf("Total Severity 1 Exceptions: %d", runMetrics.Sev01ExceptionCount))
+	customlog.CalloutConsole(consoleLogger, fmt.Sprintf("Total Severity 2 Exceptions: %d", runMetrics.Sev02ExceptionCount))
+	customlog.CalloutConsole(consoleLogger, fmt.Sprintf("Total Severity 3 Exceptions: %d", runMetrics.Sev03ExceptionCount))
+
+	customlog.CalloutConsole(consoleLogger, "")
+	customlog.GreenlightConsole(consoleLogger, "===================================================")
+
 	//Exit with a success message
 	customlog.InfoAllChannels(consoleLogger, fileLogger, appconstants.SIMULATION_COMPLETE_MSG, true)
 

@@ -48,7 +48,7 @@ func updateQubzMatrixSensors(qubzMatrix *[]datamodels.QubzMatrix, sensorRangeDS 
 
 		if loopCounter == counterResetBoundary {
 			loopCounter = 0
-			customlog.InfoConsole(consoleLogger, fmt.Sprintf("%d of %d Qubz Initialized ...", numQubzProcessed, totalQubzToProcess), false)
+			customlog.InfoConsole(consoleLogger, fmt.Sprintf("%d of %d Qubz Updated ...", numQubzProcessed, totalQubzToProcess), false)
 		}
 
 	}

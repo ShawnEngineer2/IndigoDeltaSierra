@@ -45,9 +45,13 @@ func assignExceptions(qubzMatrix *[]datamodels.QubzMatrix, exceptionDS *[]datamo
 			//customlog.CalloutConsole(consoleLogger, "Check Severity Level on Qubz Unit")
 
 			if x.ExceptionSeverity == appconstants.SENSOR_EXCEPTION_SEVERITY_NONE {
-				//Assign a new exception to this Qubz unit
-				customlog.GreenlighAllChannels(consoleLogger, fileLogger, fmt.Sprintf("New Exception Assigned to Qubz Unit %s : Exception %s : Severity %d", x.QubzName, newException.ExceptionDesc, newException.SeverityLevel))
-				assignException(qubzMatrix, newException, i)
+				//Assign a new exception to this Qubz unit if a randomly generated number is divisible by both 5 and 7
+				randNum := randomgen.RandomInt(1, 100)
+
+				if randNum%5 == 0 && randNum%7 == 0 {
+					customlog.GreenlighAllChannels(consoleLogger, fileLogger, fmt.Sprintf("New Exception Assigned to Qubz Unit %s : Exception %s : Severity %d", x.QubzName, newException.ExceptionDesc, newException.SeverityLevel))
+					assignException(qubzMatrix, newException, i)
+				}
 
 			} else if x.ExceptionSeverity < newExceptionSeverity {
 				//Upgrade this Qubz unit to a higher Severity

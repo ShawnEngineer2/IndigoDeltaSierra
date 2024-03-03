@@ -44,7 +44,7 @@ func GetRandomException(exceptionDS *[]datamodels.QubzException) datamodels.Qubz
 		newException = (*exceptionDS)[0]
 	} else if exceptionIndexBoundary > 0 {
 		randomindex := randomgen.RandomInt(1, exceptionIndexBoundary)
-		newException = (*exceptionDS)[randomindex-1]
+		newException = (*exceptionDS)[randomindex]
 	} else {
 		//Empty list passed - throw error
 		customerror.CheckAndPanic(errors.New("cannot retrieve random exception from an empty exception list"))
