@@ -35,5 +35,6 @@ cp ./sensor_ranges.dat ./bin/sensor_ranges.dat
 cp ./sensor_types.dat ./bin/sensor_types.dat
 cp ./shipment_types.dat ./bin/shipment_types.dat
 cp ./transportmodes.dat ./bin/transportmodes.dat
+cp ./exceptions.dat ./bin/exceptions.dat
 
 echo "Done"

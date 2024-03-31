@@ -1,0 +1,125 @@
+[
+    {
+      "exceptionId": 1,
+      "exceptionDesc": "Radio Signal Weak",
+      "severityLevel": 3,
+      "exceptionType": 1,
+      "intermittencyInterval": 0,
+      "affectedSensors": [
+        {
+          "sensorDataPointId": 13,
+          "sensorDataPointDesc": "Radio Signal Strength",
+          "valueModType": 1,
+          "fixedModValue": 0
+        }
+      ]
+    },
+    {
+      "exceptionId": 2,
+      "exceptionDesc": "Local Wi-Fi Down",
+      "severityLevel": 2,
+      "exceptionType": 1,
+      "intermittencyInterval": 0,
+      "affectedSensors": [
+        {
+          "sensorDataPointId": 17,
+          "sensorDataPointDesc": "Local Wi-Fi Handshake",
+          "valueModType": 6,
+          "fixedModValue": 0
+        }
+      ]
+    },
+    {
+      "exceptionId": 3,
+      "exceptionDesc": "Fire Suppression Failure",
+      "severityLevel": 1,
+      "exceptionType": 1,
+      "intermittencyInterval": 0,
+      "affectedSensors": [
+        {
+          "sensorDataPointId": 128,
+          "sensorDataPointDesc": "Fire Detected",
+          "valueModType": 6,
+          "fixedModValue": 1
+        },
+        {
+          "sensorDataPointId": 129,
+          "sensorDataPointDesc": "Fire Suppression State",
+          "valueModType": 6,
+          "fixedModValue": 2
+        }
+      ]
+    },
+    {
+      "exceptionId": 4,
+      "exceptionDesc": "Fire with Successful Suppression",
+      "severityLevel": 1,
+      "exceptionType": 1,
+      "intermittencyInterval": 0,
+      "affectedSensors": [
+        {
+          "sensorDataPointId": 128,
+          "sensorDataPointDesc": "Fire Detected",
+          "valueModType": 6,
+          "fixedModValue": 1
+        },
+        {
+          "sensorDataPointId": 129,
+          "sensorDataPointDesc": "Fire Suppression State",
+          "valueModType": 6,
+          "fixedModValue": 1
+        }
+      ]
+    },
+    {
+      "exceptionId": 5,
+      "exceptionDesc": "Battery Temperature High",
+      "severityLevel": 3,
+      "exceptionType": 1,
+      "intermittencyInterval": 0,
+      "affectedSensors": [
+        {
+          "sensorDataPointId": 6,
+          "sensorDataPointDesc": "Battery Temperature",
+          "valueModType": 2,
+          "fixedModValue": 0
+        }
+      ]
+    },
+    {
+      "exceptionId": 6,
+      "exceptionDesc": "Reduced WiFi Bandwidth",
+      "severityLevel": 3,
+      "exceptionType": 1,
+      "intermittencyInterval": 0,
+      "affectedSensors": [
+        {
+          "sensorDataPointId": 20,
+          "sensorDataPointDesc": "WiFi Download Speed",
+          "valueModType": 1,
+          "fixedModValue": 0
+        },
+        {
+          "sensorDataPointId": 21,
+          "sensorDataPointDesc": "WiFi Upload Speed",
+          "valueModType": 1,
+          "fixedModValue": 0
+        }
+      ]
+    },
+    {
+      "exceptionId": 7,
+      "exceptionDesc": "Local WiFi Weak",
+      "severityLevel": 3,
+      "exceptionType": 1,
+      "intermittencyInterval": 0,
+      "affectedSensors": [
+        {
+          "sensorDataPointId": 15,
+          "sensorDataPointDesc": "Local WiFi Signal Strength",
+          "valueModType": 1,
+          "fixedModValue": 0
+        }
+      ]
+    }
+  ]
